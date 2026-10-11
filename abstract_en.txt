@@ -1,0 +1,20 @@
+An affine Singer layer on F2^6, its (T,D,K) triple, and <T,D> = AGL(1,64)
+
+Let V = F2^6 carry the ordered basis G = (63,33,18,49,1,21), and define
+T(x) = 63 xor coords_G(x), where the coordinates are read as a six-bit word
+with the first coordinate most significant. We prove that T has fixed point 38
+and one 63-cycle; its linear part has primitive characteristic polynomial
+x^6+x^5+x^3+x^2+1. The maps D = (id xor T)^{-1} and K = (id xor D)^{-1}
+have cycle types 1+63 and 1+7x9, with fixed points 41 and 63, respectively,
+and satisfy (id xor K)^{-1} = T. We give an elementary proof that
+<T,D> = AGL(1,64), of order 4032. For every k >= 1, we construct an analogous
+triple on F2^{2k} with T,D of type 1+(2^{2k}-1) and K of type
+1+(2^k-1)x(2^k+1), generating AGL(1,2^{2k}). The linear part of K has
+characteristic polynomial an irreducible degree-(2k) factor of Phi_{2^k+1}.
+The existence proof uses the classical prescribed-trace primitive-element theorem,
+reconstructed in Appendix B with a deterministic certificate for k <= 29;
+no priority is claimed for this input. Explicit coordinate bases are verified
+for k = 1,2,3,4, with group orders 12,240,4032,65280. We also classify the
+orbits of F(f) = (id xor f)^{-1} on scalar affine maps over F2^{2k}.
+The note brings together this coordinate realization, the triple identities,
+and the affine group-generation argument.

@@ -1,34 +1,37 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \title{An affine Singer layer on $\mathbb{F}_2^6$, its $(T,D,K)$ triple, and $\langle T,D\rangle = \mathrm{AGL}(1,64)$}
 \author{Baohua Li}
-\date{\today}
+\date{October 11, 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-Let $V=\mathbb{F}_2^6$ carry a fixed ordered basis $G=(g_0,\dots,g_5)$, and define the
-affine map $T(x)=63\oplus \mathrm{coords}_G(x)$, where
-$\mathrm{coords}_G(x)$ is the coordinate vector of $x$ in $G$, read as a six-bit word with the
-first coordinate most significant. We show that $T$ has one fixed point $38$ and one $63$-cycle
-(its linear part is a Singer cycle with characteristic polynomial
-$x^6+x^5+x^3+x^2+1$); that $D=(\mathrm{id}\oplus T)^{-1}$ and
-$K=(\mathrm{id}\oplus D)^{-1}$ are defined with cycle types $D=1+63$, $K=1+7\cdot 9$,
-fixed points $\{38\},\{41\},\{63\}$, and the third-iterate identity
-$(\mathrm{id}\oplus K)^{-1}=T$; and that $\langle T,D\rangle=\mathrm{AGL}(1,64)$,
-whose order is $4032=64\cdot 63$. The analogous construction on $2k$-bit words is treated in \S\ref{sec:2k}: the cycle-type
-existence for every $k$ is reduced to a prescribed-trace primitive-element (PTE) theorem, whose self-contained proof is given in Appendix~\ref{app:pte}
-(historically, the even-characteristic case is covered by \cite{Mor} and
-\cite[Theorem~1, p.~1]{Coh90}, and it also follows from an equivalent square-order formulation in
-\cite[Theorem~1.5, p.~170]{Coh}); the generation
-$\langle T,D\rangle=\mathrm{AGL}(1,2^{2k})$ holds for every $k$, and the concrete coordinate presentation is verified for $k=1,2,3,4$ (orders $12,240,4032,65280$). The linear
-part of $K$ has characteristic polynomial an irreducible degree-$2k$ factor of the
-cyclotomic polynomial $\Phi_{2^k+1}$. The main case is elementary over
-$\mathbb{F}_{64}$; the even-characteristic existence input is proved self-containedly in Appendix~\ref{app:pte}, with historical references given for attribution.
+Let $V=\mathbb{F}_2^6$ carry the ordered basis
+$G=(63,33,18,49,1,21)$, and define $T(x)=63\oplus\mathrm{coords}_G(x)$,
+where the coordinates are read as a six-bit word with the first coordinate
+most significant. We prove that $T$ has fixed point $38$ and one $63$-cycle;
+its linear part has primitive characteristic polynomial
+$x^6+x^5+x^3+x^2+1$. The maps $D=(\mathrm{id}\oplus T)^{-1}$ and
+$K=(\mathrm{id}\oplus D)^{-1}$ have cycle types $1+63$ and $1+7\cdot9$,
+with fixed points $41$ and $63$, respectively, and satisfy
+$(\mathrm{id}\oplus K)^{-1}=T$. We give an elementary proof that
+$\langle T,D\rangle=\mathrm{AGL}(1,64)$, of order $4032$.
+For every $k\ge1$, we construct an analogous triple on $\mathbb{F}_{2^{2k}}$
+with $T,D$ of type $1+(2^{2k}-1)$ and $K$ of type
+$1+(2^k-1)\times(2^k+1)$, generating $\mathrm{AGL}(1,2^{2k})$.
+The linear part of $K$ has characteristic polynomial an irreducible
+degree-$2k$ factor of $\Phi_{2^k+1}$. The existence proof uses the classical
+prescribed-trace primitive-element theorem, reconstructed in Appendix~\ref{app:pte}
+with a deterministic certificate for $k\le29$; no priority is claimed for this input.
+Explicit coordinate bases are verified for $k=1,2,3,4$, with group orders
+$12,240,4032,65280$. We also classify the orbits of $F(f)=(\mathrm{id}\oplus f)^{-1}$
+on scalar affine maps over $\mathbb{F}_{2^{2k}}$. The note brings together this
+coordinate realization, the triple identities, and the affine group-generation argument.
 \end{abstract}
 
 \section{Introduction}\label{sec:intro}
@@ -44,9 +47,23 @@ permutations over $\mathbb{F}_2^n$ with prescribed cycle structure and algebraic
 degree were studied by Gravel, Panario and Thomson \cite{GPT}. The underlying
 even-characteristic existence statement is classical (see \cite{Mor} and
 \cite[Theorem~1, p.~1]{Coh90}; an equivalent square-order formulation is \cite[Theorem~1.5, p.~170]{Coh});
-Appendix~\ref{app:pte} gives a self-contained proof.
-Apart from these historical attributions, the paper is self-contained; the classical
-names of the words are not used.
+Cohen and Presern \cite{CP05} subsequently gave a self-contained account of
+the prescribed-trace theorem with reduced computation.
+Appendix~\ref{app:pte} reconstructs the even-characteristic trace-one case and
+provides an explicit finite certificate; neither the existence theorem nor its
+character-sum method is claimed as new.
+
+The focus of this note is the explicit coordinate realization in dimension six
+and its organization into a triple linked to affine group generation. We give
+the concrete basis, fixed points, characteristic polynomials, and cycle types;
+connect the three-step operator identity to a direct group-generation proof;
+and extend this presentation to every even dimension using the classical
+existence input. Proposition~\ref{prop:F-orbits} records the elementary orbit
+classification of this operator on scalar affine maps. The finite certificates
+make the existence proof reproducible, and the Lean formalization covers the
+group-generation argument, with its scope stated in Appendix~\ref{app:code}.
+These contributions are an explicit realization and a unified presentation of
+the affine structure. The classical names of the words are not used.
 
 \section{Notation}\label{sec:not}
 $V=\mathbb{F}_2^6$; coordinates $x=(x_1,\dots,x_6)$ with $x_1$ the most significant
@@ -80,6 +97,25 @@ p_T(t)=t^6+t^5+t^3+t^2+1,
 \end{equation}
 computed directly as $\det(tI+L_T)$ (code appendix), primitive of degree $6$.
 \end{proposition}
+\begin{proof}
+The matrix in Appendix~\ref{app:code} gives the displayed determinant.
+Modulo $p_T$, repeated squaring and multiplication give
+\[
+t^{64}=t,\qquad \gcd(p_T,t^8+t)=\gcd(p_T,t^4+t)=1.
+\]
+The degree-$6$ irreducibility criterion therefore shows that $p_T$ is
+irreducible. In $\mathbb F_2[t]/(p_T)$ the residue $\bar t$ satisfies
+\[
+\bar t^{63}=1,\qquad
+\bar t^{21}=\bar t^4+\bar t^2+\bar t+1\ne1,\qquad
+\bar t^9=\bar t^2+\bar t\ne1.
+\]
+Since $63=3^2\cdot7$, its order is $63$. The irreducible characteristic
+polynomial identifies $L_T$ with multiplication by $\bar t$ on this field.
+Finally, $T(38)=38$ implies $T(x)\oplus38=L_T(x\oplus38)$, proving
+the fixed-point and cycle claims of Lemma~\ref{lem:fix}.
+\end{proof}
+
 
 \subsection*{3.2 Powers and $63=7\cdot 9=3\cdot 21$}
 Since $L_T$ has order $63$, $T^d$ for $d\mid 63$ has type $1+d\times(63/d)$ (one fixed point plus $d$ cycles of length $63/d$):
@@ -222,7 +258,7 @@ $T$ and $D$ have cycle type $1+M$, $K$ has cycle type
 $1+(2^k-1)\times(2^k+1)$, and the fixed-point operator satisfies $F^3=\mathrm{id}$
 with $T\mapsto D\mapsto K\mapsto T$.
 \end{theorem}
-\begin{proof}[Proof (summary)]
+\begin{proof}
 Take $T(x)=\alpha x\oplus b$ with $b\ne0$. The linear parts of $T$, $D$, $K$ are
 $\alpha$, $(1\oplus\alpha)^{-1}$, and
 $\kappa=1\oplus\alpha^{-1}=(1\oplus\alpha)/\alpha$
@@ -233,25 +269,29 @@ $1+\frac{M}{\mathrm{ord}(\mu)}\times\mathrm{ord}(\mu)$ (the translation only mov
 fixed point; a shorter orbit would force $T^d$, $d<\mathrm{ord}(\mu)$, to have a second
 fixed point, impossible since $\mu^d\ne1$); the stated types therefore follow once
 $\mathrm{ord}(\alpha)=\mathrm{ord}(1\oplus\alpha)=M$ and
-$\mathrm{ord}(\kappa)=2^k+1$. Existence of such an $\alpha$ follows from Theorem~\ref{thm:pte}. Choose
-$\beta\in\mathbb{F}_{q^2}^*$ with
-$\mathrm{ord}(\beta)=M$ and $\operatorname{Tr}_{\mathbb{F}_{q^2}/\mathbb{F}_q}(\beta)=1$,
-and put $\gamma=\beta^{q-1}$. Then $\gamma\in\mathbb{F}_q$,
-$\mathrm{ord}(\gamma)=q+1$, and $1\oplus\gamma=\beta^{-1}$; hence
+$\mathrm{ord}(\kappa)=2^k+1$. Existence of such an $\alpha$ follows directly from Theorem~\ref{thm:pte}.
+Put $q=2^k$ and choose a primitive $\beta\in\mathbb F_{q^2}$ with
+$\beta^q\oplus\beta=1$. Take $\alpha=\beta$. Then $1\oplus\alpha=\alpha^q$,
+so
 \[
-\tau=\gamma\oplus\gamma^{-1}
-=(1\oplus\gamma)^q(1\oplus\gamma)
-=\beta^{-(q+1)}
+\mathrm{ord}(\alpha)=\mathrm{ord}(1\oplus\alpha)=q^2-1=M,
+\qquad
+\kappa=\frac{1\oplus\alpha}{\alpha}=\alpha^{q-1},
+\qquad \mathrm{ord}(\kappa)=q+1.
 \]
-has order $q-1$, so $\tau$ is primitive in $\mathbb{F}_q$. The $\tau$-collapse
-now applies with $\alpha=(1\oplus\gamma)^{-1}$.
+Here the last equality follows from
+$\mathrm{ord}(\alpha^{q-1})=M/\gcd(M,q-1)=q+1$.
+These are exactly the required slope orders.
 \end{proof}
 Since the $K$-slope has order $2^k+1$, the degree over $\mathbb{F}_2$ of its
 minimal polynomial is $\operatorname{ord}_{2^k+1}(2)=2k$ by
 Lemma~\ref{lem:ord}; this polynomial is therefore an irreducible degree-$2k$
 factor of $\Phi_{2^k+1}$.
 \textbf{Remark (the $\tau$-collapse).}
-For an element $\gamma$ of order $2^k+1$, the Frobenius identities
+Put $q=2^k$. For $\gamma\in\mathbb F_{q^2}^*$ of order $q+1$,
+one has $\gamma^q=\gamma^{-1}$; hence
+$\tau=\gamma\oplus\gamma^{-1}$ satisfies $\tau^q=\tau$ and belongs to
+$\mathbb F_q$. The Frobenius identities
 $(1\oplus\gamma)^{2^k-1}=\gamma^{-1}$ and $(1\oplus\gamma)^{2^k+1}=\tau$,
 together with $\gcd(2^k-1,2^k+1)=1$, give
 $\mathrm{ord}(1\oplus\gamma)=\mathrm{lcm}(\mathrm{ord}(\gamma^{-1}),\mathrm{ord}(\tau))
@@ -315,8 +355,9 @@ $\tau=t^5+t^3+1$ is primitive and $\mathrm{Tr}(1/\tau)=1$, but the roots of
 $x^2+\tau x+1$ have order $13$, not $65$. The theorem of
 Appendix~\ref{app:pte} guarantees that a jointly successful candidate exists, so a
 deterministic enumeration that tests both conditions terminates. Certifying them requires factoring $2^k-1$ and
-$2^k+1$ (or an equivalent exact-order test). Only a factorization-free closed
-form (the classical explicit-primitive-element problem) is left open.
+$2^k+1$ (or an equivalent exact-order test). This procedure supplies a
+deterministic construction with certification; no factorization-free closed
+formula is supplied here.
 A necessary restatement is that $u=1/\tau$ is a primitive element of
 $\mathbb{F}_{2^k}$ with $\mathrm{Tr}_{\mathbb{F}_{2^k}/\mathbb{F}_2}(u)=1$;
 equivalently, its degree-$k$ minimal polynomial has $x^{k-1}$-coefficient
@@ -325,14 +366,50 @@ the root-order condition above must also be checked.
 \endgroup
 
 \section{Remarks}\label{sec:rem}
-The fixed point $38$ is a ``power-layer'' origin (domain zero after relabeling), while
-the value $0$ is the additive origin; no interpretive claim is made here. In the value set $\{0,\dots,63\}$ the $9$-multiples are exactly the $8$ self-doubled words ($x_i=x_{i+3}$), a $3$-dimensional subspace; the $63$-cycle of $T$ is parametrized by the cyclic group $\mathbb{Z}/63\cong\mathbb{Z}/7\times\mathbb{Z}/9$ (CRT decomposition); the all-ones word $63$ represents the zero class modulo $63$, hence the $(0,0)$ corner of this decomposition. The
-cyclotomic factor $\Phi_{2^k+1}$ mirrors the identity $(2^k-1)(2^k+1)=2^{2k}-1$; the
-single fixed point of $K$ accounts for the remaining point, so $K$ permutes all
-$2^{2k}$ words. Two questions are left open: the orbit structure of the fixed-point operator $F$
-(a bijection of order three on the admissible affine maps in characteristic two)
-has not been classified, and whether analogous cycle-type/factorization
-correspondences hold for other factorizations of $q^n-1$ is not pursued here.
+The fixed point $38$ is a ``power-layer'' origin (domain zero after relabeling),
+while the value $0$ is the additive origin; no interpretive claim is made here.
+In the value set $\{0,\dots,63\}$ the $9$-multiples are exactly the $8$
+self-doubled words ($x_i=x_{i+3}$), a $3$-dimensional subspace.
+To parametrize the long orbit, define
+\[
+\theta(j)=T^j(63),\qquad j\in\mathbb Z/63.
+\]
+This is a bijection onto $V\setminus\{38\}$. Apply the CRT isomorphism to the
+\emph{iteration exponent} $j$, sending it to $(j\bmod7,j\bmod9)$.
+Thus the all-ones word $\theta(0)=63$ corresponds to $(0,0)$, whereas the
+word $0=\theta(62)$ corresponds to $(6,8)$, since $T(0)=63$.
+Reduction of the integer word labels modulo $63$ does not give this parametrization.
+
+The cyclotomic factor $\Phi_{2^k+1}$ reflects the identity
+$(2^k-1)(2^k+1)=2^{2k}-1$; the single fixed point of $K$ accounts for the
+remaining point. The operator's ordinary orbits on scalar affine maps admit
+the following complete description.
+\begin{proposition}\label{prop:F-orbits}
+Let $Q=2^{2k}$ and
+$\mathcal A_Q=\{f_{a,c}:x\mapsto ax\oplus c\mid a\in\mathbb F_Q\setminus\{0,1\},\ c\in\mathbb F_Q\}$.
+The operator $F$ acts on $\mathcal A_Q$ with two singleton orbits and
+$\bigl(Q(Q-2)-2\bigr)/3$ orbits of length three. Its fixed maps are exactly
+$f_{a,0}$ with $a^2+a+1=0$. On the invariant subset $c\ne0$, every orbit
+has length three.
+\end{proposition}
+\begin{proof}
+In coefficient pairs,
+\[
+F(a,c)=\left((1+a)^{-1},\frac{c}{1+a}\right).
+\]
+The new slope again lies outside $\{0,1\}$, and Lemma~\ref{lem:F3} gives
+$F^3=\mathrm{id}$, so each orbit has length one or three. A fixed pair
+must satisfy $a=(1+a)^{-1}$, equivalently $a^2+a+1=0$; the constant-term
+equation is $c(1+a)=c$, so $ac=0$ and $c=0$.
+Conversely these conditions give a fixed pair. The polynomial $a^2+a+1$
+has two distinct roots in $\mathbb F_Q$, since $\mathbb F_4\subseteq\mathbb F_Q$.
+There are $Q(Q-2)$ pairs in total, yielding the stated counts.
+Multiplication of $c$ by $(1+a)^{-1}\ne0$ preserves $c\ne0$, and no fixed
+pair lies in that subset.
+\end{proof}
+This proposition concerns scalar affine maps in field coordinates.
+Analogous cycle-type correspondences for other factorizations of $q^n-1$
+are a possible direction for further investigation.
 
 \begin{thebibliography}{9}
 \bibitem{LN} R.~Lidl, H.~Niederreiter, \emph{Finite Fields}, 2nd ed., Cambridge, 1997.
@@ -340,6 +417,7 @@ correspondences hold for other factorizations of $q^n-1$ is not pursued here.
 \bibitem{Coh} S.~D.~Cohen, \emph{The orders of related elements of a finite field}, Ramanujan J.~7 (2003) 169--183, doi:10.1023/A:1026295128600.
 \bibitem{Mor} O.~Moreno, \emph{On the existence of a primitive quadratic of trace $1$ over $GF(p^m)$}, J.~Combin.~Theory Ser.~A 51 (1989) 104--110.
 \bibitem{Coh90} S.~D.~Cohen, \emph{Primitive elements and polynomials with arbitrary trace}, Discrete Math.~83 (1990) 1--7.
+\bibitem{CP05} S.~D.~Cohen, M.~Presern, \emph{Primitive finite field elements with prescribed trace}, Southeast Asian Bull.~Math.~29 (2005) 283--300.
 \bibitem{GPT} C.~Gravel, D.~Panario, D.~Thomson, \emph{Unicyclic strong permutations}, arXiv:1809.03551 (2018); Cryptogr.~Commun.~11 (2019) 1211--1231.
 \end{thebibliography}
 
@@ -347,9 +425,14 @@ correspondences hold for other factorizations of $q^n-1$ is not pursued here.
 \section{Computational appendix}\label{app:code}
 All numerical claims (fixed points, cycle types, group order $4032$, and the
 characteristic polynomials of $L_T$, $L_D$, and $L_K$) were verified
-computationally; the verification code is available from the author, and the finite k<=29 verifier is included as \texttt{verify\_k1\_29.py}. The characteristic
-polynomials were computed as $\det(tI+L)$ via evaluation over $\mathbb{F}_8$ and
-interpolation. Relative to the standard basis $e_1,\dots,e_6$, the linear part of
+computationally. The script \texttt{verify\_paperA\_structure.py} reproduces
+the coordinate, cycle, group-order, basis-ordering, and $\tau$-collapse data,
+as well as the $\mathbb F_{64}$ instance of Proposition~\ref{prop:F-orbits}
+and the CRT exponent convention. It computes the characteristic polynomials
+as $\det(tI+L)$ by the permutation expansion in characteristic two.
+The separate \texttt{verify\_k1\_29.py} checks the finite PTE certificate.
+Both scripts are included in the
+\href{https://github.com/63331849121/yijing-mathematical-structures}{companion repository}. Relative to the standard basis $e_1,\dots,e_6$, the linear part of
 the main map is
 \[
 L_T=\begin{pmatrix}
@@ -396,6 +479,7 @@ was reproduced by enumerating all orderings of the six displayed vectors, solvin
 the corresponding $\mathbb{F}_2$ linear system for $\mathrm{coords}_G$, and
 recording the cycle types of $T,D,K$ whenever the two inverses exist.
 
+\begin{samepage}
 \subsection*{Explicit $\tau$-collapse data}
 With $\mathbb{F}_{2^{2k}}=\mathbb{F}_2[t]/(f)$ and elements written as polynomials in $t$,
 the following rows realize the order conditions of Theorem~\ref{thm:2k}:
@@ -409,6 +493,7 @@ $k$ & $f$ & $\gamma$ & $\tau=\gamma\oplus\gamma^{-1}$ & $\alpha=(1\oplus\gamma)^
 4 & $t^8+t^4+t^3+t^2+1$ & $t^3+t^2+t+1$ & $t^7+t^4+t^3+1$ & $t^6+t^4+t^3+t^2+1$ \\
 \end{tabular}
 \end{center}
+\end{samepage}
 In each row $\mathrm{ord}(\gamma)=\mathrm{ord}(1\oplus\alpha^{-1})=2^k+1$, $\tau$ is
 primitive in $\mathbb{F}_{2^k}$, and
 $\mathrm{ord}(\alpha)=\mathrm{ord}(1\oplus\alpha)=2^{2k}-1$ (all verified). The defining polynomial $f$ is a field-representation choice and need not coincide with the characteristic polynomial $p_T$ of \eqref{eq:pT}; for instance, the $k=3$ row uses $f=t^6+t+1$, while $p_T(t)=t^6+t^5+t^3+t^2+1$.
@@ -420,7 +505,10 @@ $\mathrm{ord}(\alpha)=\mathrm{ord}(1\oplus\alpha)=2^{2k}-1$ (all verified). The 
 The statement is classical (see \cite{Mor} and
 \cite[Theorem~1, p.~1]{Coh90}; it also follows from the equivalent square-order formulation in
 \cite[Theorem~1.5, p.~170]{Coh}); we give a self-contained proof in the
-even-characteristic case used above. This is a reconstruction of known results (Moreno; Cohen), and no priority is claimed; it is included only to make the paper self-contained.
+even-characteristic case used above. Cohen and Presern \cite{CP05} also give a
+self-contained treatment of prescribed traces. This appendix reconstructs the
+classical trace-one argument and makes its finite verification explicit; no
+priority is claimed for the existence result or the character-sum method.
 Put $q=2^k$, $L=\mathbb{F}_{q^2}$, $K_0=\mathbb{F}_q$, and
 $M=q^2-1=(q-1)(q+1)$. Let
 \[
@@ -434,7 +522,7 @@ order $M$.
 Let $\psi$ be the nontrivial additive character of $\mathbb F_2$, and put
 $\psi_L(x)=\psi(\operatorname{Tr}_{L/\mathbb F_2}(x))$ and
 $\psi_{K_0}(a)=\psi(\operatorname{Tr}_{K_0/\mathbb F_2}(a))$. For a multiplicative
-character $\chi$ of $L^*$ define
+character $\chi$ of $L^*$, extend $\chi$ to $0$ by $\chi(0)=0$ and define
 \[
 g_L(\chi)=\sum_{x\in L^*}\chi(x)\psi_L(x),\qquad
 g_{K_0}(\chi)=\sum_{a\in K_0^*}\chi(a)\psi_{K_0}(a),\qquad
@@ -452,7 +540,8 @@ and the same argument in $K_0$ gives $q$.
 We first compute $S(\chi)$. For $\alpha\in K_0$ set
 $E_\alpha=\{x\in L:x^q+x=\alpha\}$; these sets partition $L$, and
 $E_\alpha=\alpha E_1$ for $\alpha\ne0$. If $\chi^{q+1}\ne1$, then the
-restriction of $\chi$ to $K_0^*$ is nontrivial; hence
+restriction of $\chi$ to $K_0^*$ is nontrivial. Since $E_0=K_0$,
+its contribution is $\sum_{x\in E_0}\chi(x)=0$; hence
 \[
 g_L(\chi)
 =\sum_{\alpha\in K_0}\psi_{K_0}(\alpha)\sum_{x\in E_\alpha}\chi(x)
@@ -480,8 +569,9 @@ We shall use the primitive-element indicator
 \sum_{\operatorname{ord}(\chi)=\delta}\chi(x).
 \end{equation}
 To see this, fix a generator $g$ of $L^*$ and write $x=g^a$. The left side
-is the indicator of $\gcd(a,M)=1$. Its Fourier coefficient at a character
-of order $\delta$ is the Ramanujan sum
+is the indicator of $\gcd(a,M)=1$. For a character with
+$\chi(g)=e^{2\pi i j/M}$ and order $\delta=M/\gcd(M,j)$, its unnormalized
+Fourier coefficient is the Ramanujan sum
 $c_M(j)=\mu(\delta)\varphi(M)/\varphi(\delta)$; Fourier inversion gives
 \eqref{eq:pte-indicator}. (The displayed identity for $c_M(j)$ follows by
 M\"obius inversion.)
@@ -502,7 +592,7 @@ $\delta\mid q+1$, $\delta>1$, gives $1$. For the remaining squarefree
 divisors $\delta\nmid q+1$, the character sums are bounded by $\sqrt q$,
 and their number is at most $2^s-2^{s'}$. Consequently,
 \[
-q+1\le(2^s-2^{s'})\sqrt q. \tag{A.2}
+q+1\le(2^s-2^{s'})\sqrt q. \tag{B.1}\label{eq:pte-bound}
 \]
 Since $q+1>\sqrt q$, this implies
 \[
@@ -581,10 +671,3 @@ Combining this with the contradiction for $k\ge30$ proves the theorem.
 \end{proof}
 
 \end{document}
-
-
-
-
-
-
-
