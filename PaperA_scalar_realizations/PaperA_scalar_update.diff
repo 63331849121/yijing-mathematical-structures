@@ -1,0 +1,282 @@
+--- PaperA_revised.tex (before scalar realization update)
++++ PaperA_revised.tex (2026-10-12 scalar realization update)
+@@ -21,9 +21,10 @@
+ $\langle f,F(f)\rangle=\mathbb F_2[A]c\rtimes\langle A,(I+A)^{-1}\rangle$
+ and obtain exact transitivity, primitivity, and double-transitivity criteria.
+ For specified scalar affine subgroups, we give an exact inverse-realization
+-criterion and count their realizing affine companion maps; this yields an
+-infinite family of primitive affine groups that are not realizable by
+-companion pairs.
++criterion and count their realizing affine companion maps. Alongside an
++infinite primitive nonrealizable family, we prove realization at every
++fixed odd index greater than one in all sufficiently large admissible
++dimensions. At index three, the exact threshold is even dimension eight.
+ The fixed maps of $F$ correspond to oriented line spreads.
+ A local line-stabilizer criterion determines when a spread automorphism
+ group admits an invariant orientation.
+@@ -79,7 +80,13 @@
+ divisor-sum sieve for realizing slopes
+ (Corollaries~\ref{cor:scalar-realization} and~\ref{cor:scalar-sieve}),
+ leading to an infinite family of primitive nonrealizable groups
+-(Theorem~\ref{thm:fermat-obstruction}). For fixed maps, the oriented-spread
++(Theorem~\ref{thm:fermat-obstruction}). A classical Jacobi-sum estimate
++and a maximal-subgroup sieve give a positive counterpart: every fixed odd
++index greater than one admits realizable proper primitive groups in all
++sufficiently large admissible dimensions
++(Theorem~\ref{thm:fixed-index-realization}), with the exact index-three
++threshold in Corollary~\ref{cor:index-three-realization}.
++For fixed maps, the oriented-spread
+ correspondence, the signed Burnside formula, and the standard-spread orbit
+ analysis are complemented by a local criterion for invariant orientations
+ (Proposition~\ref{prop:orientation-local}). The nonlinear example is placed
+@@ -577,9 +584,11 @@
+        \sum_{x\in\mathbb F_q}\chi^i(x)\chi^j(1+x).
+ \]
+ This identity is simply the multiplicative-character indicator
+-of $C_e$. It suggests applying classical Jacobi-sum estimates
+-to the genuinely additional question of which $\mathcal R_d$
+-are nonempty; it is not a new character-sum estimate.
++of $C_e$. Accounting separately for the trivial-character terms gives
++the effective classical estimate in
++Proposition~\ref{prop:scalar-positive-bound}; its combination with a
++maximal-subgroup sieve will prove that $\mathcal R_d$ is nonempty
++in the families below.
+ 
+ \begin{theorem}[An infinite family of primitive nonrealizable groups]
+ \label{thm:fermat-obstruction}
+@@ -633,6 +642,195 @@
+ The theorem gives an obstruction beyond irreducibility and
+ primitivity; it does not claim that all nonrealizable primitive
+ affine groups have a complement of this form.
++
++\begin{proposition}[A positive lower bound for realizing slopes]
++\label{prop:scalar-positive-bound}
++Let $q=2^n$, let $d>1$ divide $q-1$, and set $k=(q-1)/d$.
++Write $\omega(d)$ for the number of distinct prime divisors of $d$, and put
++\[
++ b_k=\frac{(k-1)(k-2)}{k^2}.
++\]
++For every divisor $e$ of $q-1$, with $\ell=(q-1)/e$, one has
++\begin{equation}\label{eq:scalar-intersection-bound}
++ \left|T_e-\frac{q+1-3\ell}{\ell^2}\right|
++ \le b_\ell\sqrt q.
++\end{equation}
++Consequently,
++\begin{equation}\label{eq:scalar-positive-bound}
++ |\mathcal R_d|\ge
++ \frac{q}{k^2}\left(1-\sum_{p\mid d}\frac1{p^2}\right)
++ -\frac{3k-1}{k^2}-(\omega(d)+b_k)\sqrt q,
++\end{equation}
++where the sum runs over the distinct prime divisors of $d$. In particular,
++\begin{equation}\label{eq:scalar-uniform-bound}
++ |\mathcal R_d|>
++ \frac{3q}{4k^2}-\frac{3k-1}{k^2}
++ -(\omega(d)+b_k)\sqrt q.
++\end{equation}
++\end{proposition}
++\begin{proof}
++The input is the classical Jacobi-sum calculation
++\cite[Theorems~1--2]{vW02}; we include its character-sum proof.
++Choose a character $\chi$ of order $\ell$, and extend all its powers,
++including the trivial character, by zero at zero. The subgroup indicator gives
++\[
++ T_e=\frac1{\ell^2}\sum_{i,j=0}^{\ell-1}J(\chi^i,\chi^j),
++ \qquad J(\eta,\theta)=\sum_{x\in\mathbb F_q}\eta(x)\theta(1+x).
++\]
++The term $i=j=0$ is $q-2$. Each of the $2(\ell-1)$ terms with
++exactly one nontrivial character is $-1$. The $\ell-1$ terms with
++both characters nontrivial and product trivial are also $-1$:
++the substitution $u=x/(1+x)$ identifies their sum with the sum of
++a nontrivial character over $\mathbb F_q^\times\setminus\{1\}$.
++
++For completeness, fix a nontrivial additive character $\psi$ and set
++$G(\eta)=\sum_{x\ne0}\eta(x)\psi(x)$. For nontrivial $\eta$,
++substituting $x=ty$ into its squared modulus gives
++\[
++ |G(\eta)|^2
++ =\sum_{t\ne0}\eta(t)\sum_{y\ne0}\psi((t+1)y)
++ =(q-1)-\sum_{t\ne0,1}\eta(t)=q.
++\]
++If $\eta$, $\theta$, and $\eta\theta$ are all nontrivial,
++grouping $G(\eta)G(\theta)$ by $z=x+y$ gives
++\[
++ G(\eta)G(\theta)=J(\eta,\theta)G(\eta\theta).
++\]
++Here the $z=0$ contribution vanishes by multiplicative-character
++orthogonality; for $z\ne0$ put $x=zu$, $y=z(1+u)$.
++Thus $|J(\eta,\theta)|=\sqrt q$.
++There are $(\ell-1)(\ell-2)$ remaining terms.
++Their triangle bound, together with the terms evaluated above, proves
++\eqref{eq:scalar-intersection-bound}, also when $\ell=1$.
++
++A pair counted by $T_d$ that does not generate $C_d$ lies in at least
++one maximal subgroup $C_{d/p}$, for a prime $p\mid d$. Therefore
++\[
++ |\mathcal R_d|\ge T_d-\sum_{p\mid d}T_{d/p}.
++\]
++Applying \eqref{eq:scalar-intersection-bound} to the first term gives
++$T_d\ge(q+1-3k)/k^2-b_k\sqrt q$. For the subgroup of index $kp$,
++the same bound gives
++\[
++ T_{d/p}\le\frac{q+1-3kp}{k^2p^2}+b_{kp}\sqrt q
++ \le\frac{q}{k^2p^2}+\sqrt q.
++\]
++This proves \eqref{eq:scalar-positive-bound}.
++All the primes dividing $d$ are odd. The elementary telescoping bound
++\[
++ \sum_{p\mid d}\frac1{p^2}
++ \le\sum_{j=1}^\infty\frac1{(2j+1)^2}
++ <\frac14\sum_{j=1}^\infty\frac1{j(j+1)}=\frac14
++\]
++proves \eqref{eq:scalar-uniform-bound}.
++\end{proof}
++
++\begin{theorem}[Realization at any fixed odd index]
++\label{thm:fixed-index-realization}
++Let $k>1$ be odd. For every sufficiently large $n$ satisfying
++$k\mid2^n-1$, put $q=2^n$ and $d=(q-1)/k$. Then
++\[
++ H_d=\mathbb F_q^+\rtimes C_d
++\]
++is a primitive subgroup of index $k$ in $\mathrm{AGL}(1,q)$ and
++is generated by $f$ and $F(f)$ for a scalar affine complete mapping.
++An explicit sufficient condition is $d>\sqrt q-1$ and
++\begin{equation}\label{eq:fixed-index-sufficient}
++ L_{q,k,d}:=\frac{3q}{4k^2}-\frac{3k-1}{k^2}
++ -(\omega(d)+b_k)\sqrt q>0.
++\end{equation}
++Under these conditions the number of realizing maps in the specified
++field coordinates is $(q-1)|\mathcal R_d|>(q-1)L_{q,k,d}$.
++In particular, each fixed odd index $k>1$ gives an infinite family of
++realizable proper primitive affine groups.
++\end{theorem}
++\begin{proof}
++The degree $s=\operatorname{ord}_d(2)$ of the field generated by $C_d$
++divides $n$. If $s<n$, then $s\le n/2$ and
++$d\mid2^s-1\le\sqrt q-1$, contrary to the assumed inequality.
++Hence $s=n$. Proposition~\ref{prop:scalar-positive-bound} and
++\eqref{eq:fixed-index-sufficient} imply $\mathcal R_d\ne\varnothing$.
++Corollaries~\ref{cor:scalar-realization} and~\ref{cor:affine-actions}
++give the realization, primitivity, and exact count. The index is $k$
++because the translation subgroup is full and the complement has order
++$(q-1)/k$.
++
++To establish the infinite-family assertion without an arithmetic
++assumption on $d$, note that $3^{\omega(d)}\le d<2^n$.
++Since $3>2^{3/2}$, this yields $\omega(d)<2n/3$.
++Also $0\le b_k\le1$. For fixed $k$, the positive term
++$3\cdot2^n/(4k^2)$ in \eqref{eq:fixed-index-sufficient} eventually
++exceeds the constant term and $(2n/3+1)2^{n/2}$.
++Likewise $(2^n-1)/k>2^{n/2}-1$ eventually.
++There are infinitely many admissible $n$, namely multiples of
++$\operatorname{ord}_k(2)$. The sufficient conditions therefore hold
++for every sufficiently large admissible dimension.
++\end{proof}
++
++\begin{corollary}[The exact threshold at index three]
++\label{cor:index-three-realization}
++For even $n\ge4$, the specified subgroup
++\[
++ \mathbb F_{2^n}^+\rtimes C_{(2^n-1)/3}
++\]
++is primitive and is generated by a scalar affine complete mapping
++and its prescribed companion if and only if $n\ge8$.
++Thus index-three proper primitive companion groups exist in every
++even dimension from eight onwards.
++\end{corollary}
++\begin{proof}
++For every even $n\ge4$, writing $t=2^{n/2}>2$ gives
++$(t^2-1)/3>t-1$. The field-degree argument in
++Theorem~\ref{thm:fixed-index-realization} proves primitivity.
++At $n=4$ the complement has order $5=2^2+1$, excluded by
++Theorem~\ref{thm:fermat-obstruction}. At $n=6$ it has order $21$,
++and the polynomial identities following Corollary~\ref{cor:scalar-sieve}
++give $\mathcal R_{21}=\varnothing$.
++
++For $k=3$, $b_3=2/9$. Using $\omega(d)<2n/3$, the uniform lower
++bound in \eqref{eq:scalar-uniform-bound} is greater than
++\[
++ \frac{2^n}{12}-\frac89-
++ \left(\frac{2n}{3}+\frac29\right)2^{n/2}.
++\]
++This expression equals $424/3>0$ at $n=14$. After division by $2^{n/2}$,
++increasing $n$ by two doubles its positive exponential term,
++whereas its linear term increases by $4/3$ and its negative
++exponential term decreases in magnitude. Its increase is greater than
++$2^{n/2}/12-4/3>0$ for even $n\ge14$, proving positivity there.
++For $n=10$, $d=341=11\cdot31$ and $\omega(d)=2$;
++for $n=12$, $d=1365=3\cdot5\cdot7\cdot13$ and $\omega(d)=4$.
++The bound $L_{q,3,d}$ equals $40/3$ and $632/9$, respectively,
++so these dimensions are covered as well.
++
++Finally take $n=8$ and
++\[
++ \mathbb F_{256}=\mathbb F_2[t]/(m(t)),\qquad
++ m(t)=t^8+t^4+t^3+t+1,
++ \qquad a=t^5+t^3+t^2+t.
++\]
++The irreducibility criterion for $m$ is certified by
++$t^{256}\equiv t\pmod m$ and
++$\gcd(m,t^{16}+t)=1$; these are polynomial identities over $\mathbb F_2$.
++Direct reduction modulo $m$ gives
++\[
++ a^{85}=(1+a)^{85}=1,\qquad
++ a^5=t^7+t^5+t^3+t+1\ne1,\qquad
++ a^{17}=t^7+t^6+t^5+t^3+t^2+1\ne1.
++\]
++Since $85=5\cdot17$, these identities show that $a$ has exact order
++$85$ and $1+a\in C_{85}$. Thus $a\in\mathcal R_{85}$;
++$f(x)=ax+c$ realizes the group for every $c\ne0$ by
++Corollary~\ref{cor:scalar-realization}.
++This closes all the even dimensions claimed.
++\end{proof}
++
++The square-root estimate above is classical; the results specialize it
++to the subgroup generated by the linked slopes $a$ and $1+a$.
++The sufficient bound is not a general necessary condition for
++realizability, and no priority claim is made for the character-sum
++method or these particular applications.
++
+ 
+ \begin{theorem}[The six-dimensional Singer application]\label{thm:agld}
+ $\langle T,D\rangle=\mathrm{AGL}(1,64)$; its order is $4032=64\cdot63$.
+@@ -1554,6 +1752,9 @@
+ LIPIcs~237 (2022) 25:1--25:17,
+ \href{https://doi.org/10.4230/LIPIcs.ITP.2022.25}{doi:10.4230/LIPIcs.ITP.2022.25}.
+ \bibitem{LN} R.~Lidl, H.~Niederreiter, \emph{Finite Fields}, 2nd ed., Cambridge, 1997.
++\bibitem{vW02} P.~van Wamelen, \emph{Jacobi sums over finite fields},
++Acta Arith.~102(1) (2002) 1--20,
++\href{https://doi.org/10.4064/aa102-1-1}{doi:10.4064/aa102-1-1}.
+ \bibitem{DM} J.~D.~Dixon, B.~Mortimer, \emph{Permutation Groups}, Springer, 1996.
+ \bibitem{Coh} S.~D.~Cohen, \emph{The orders of related elements of a finite field}, Ramanujan J.~7 (2003) 169--183, doi:10.1023/A:1026295128600.
+ \bibitem{Mor} O.~Moreno, \emph{On the existence of a primitive quadratic of trace $1$ over $GF(p^m)$}, J.~Combin.~Theory Ser.~A 51 (1989) 104--110.
+@@ -1680,7 +1881,9 @@
+ formula, four-dimensional conjugacy classification, coordinate-permutation
+ description, line-spread classification, and affine orbit-count proof are
+ paper proofs, not Lean proofs. The inverse-realization and arithmetic-sieve criteria, the
+-primitive-group nonrealizability theorem, the local invariant-orientation
++primitive-group nonrealizability theorem, the positive Jacobi-sum/sieve
++bound, the fixed-index realization theorem and index-three threshold,
++the local invariant-orientation
+ criterion, and the long-cycle double-transitivity criterion are also
+ paper proofs, not part of the Lean formalization.
+ 
+@@ -1713,6 +1916,18 @@
+ proof in Proposition~\ref{prop:nonlinear-A16}.
+ The arbitrary-dimensional asymptotic and translated-fixed results
+ are paper proofs, outside the supplied Lean formalization.
++
++The verifier \path{verify_scalar_realization.py} compares two independent
++finite counting methods: binary-polynomial gcds and explicit multiplicative
++subgroups in finite-field coordinates. It covers every divisor of $2^n-1$
++for $n=2,4,6,8,10,12,14$, checks the Jacobi bounds and slope-generation
++sieve, and verifies the degree-eight witness in
++Corollary~\ref{cor:index-three-realization}. The data
++\path{scalar_realization_results.json} include the index-three counts
++$|\mathcal R_d|=0,0,24,90,396,1722$ for
++$n=4,6,8,10,12,14$, respectively. These computations verify finite
++arithmetic certificates; the infinite-family and threshold assertions
++use the paper proofs in Section~\ref{sec:group}.
+ 
+ \subsection*{Bases for the coordinate presentation}
+ For the coordinate presentation $T(x)=(2^{2k}-1)\oplus\mathrm{coords}_G(x)$ on

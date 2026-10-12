@@ -1,0 +1,321 @@
+--- before_submission_tightening/PaperA_revised.tex
++++ PaperA_revised.tex
+@@ -7,48 +7,43 @@
+ \newtheorem{lemma}[theorem]{Lemma}
+ \newtheorem{proposition}[theorem]{Proposition}
+ \newtheorem{corollary}[theorem]{Corollary}
++\newtheorem*{auxlemma}{Lemma}
+ \title{Complete-mapping triality over $\mathbb{F}_2^n$: oriented spreads and generated groups}
+ \author{Baohua Li}
+ \date{October 12, 2026}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+-A complete mapping of $V=\mathbb F_2^n$ is a permutation $f$ for which
+-$\mathrm{id}\oplus f$ is a permutation. The operator
+-$F(f)=(\mathrm{id}\oplus f)^{-1}$ realizes cyclic coordinate symmetry
+-of Cayley-table transversals and satisfies $F^3(f)=f$.
+-For every affine complete mapping $f(x)=Ax\oplus c$, we determine
+-$\langle f,F(f)\rangle=\mathbb F_2[A]c\rtimes\langle A,(I+A)^{-1}\rangle$
+-and obtain exact action criteria. We classify the primitive affine
+-companion groups and count their realizing maps and linear-conjugacy classes.
+-A divisor sieve and classical Jacobi sums give an explicit main term and
+-error for scalar realizations. Every fixed odd index greater than one is
+-realizable in all sufficiently large admissible dimensions, and the exact
+-index-three threshold is even dimension eight.
+-Uniform realization holds for $n\ge16$ and $k\le q^{1/4}/\sqrt n$,
+-where $q=2^n$. Norm descent produces primitive nonrealizable groups at
+-$q=2^{4s}$ and $k=q^{1/4}+1$, proving that the uniform exponent $1/4$
+-cannot be increased. At the adjacent index $k=q^{1/4}-1$, we prove
+-realization in every dimension $4s$ with $s\ge2$, even with a slope
+-of full subgroup order. Genus-one norm fibers and a uniform character
+-bound give a quantitative count; exact finite certificates complete
+-the existence proof. A mixed-character estimate gives joint generation
+-density and double full-order asymptotics, with explicit errors.
+-Generating triangles in generalized Paley graphs
+-interpret the realization criterion.
+-The fixed maps of $F$ correspond to oriented line spreads.
+-A local stabilizer criterion characterizes invariant orientations;
+-a signed Burnside formula gives three classes in dimension four and
+-$80$ on the six-dimensional Desarguesian spread. For the standard spread
+-on $\mathbb F_4^m$, an explicit error bound proves that almost every
+-orientation has scalar $C_3$ stabilizer and yields a class-count asymptotic.
+-We also construct a nonlinear four-dimensional companion triple with
+-cycle type $1+15$ generating $A_{16}$, and prove a four-point orbit
+-obstruction for translations of fixed maps.
+-All-affine orbit counts and uniform even-dimensional Singer triples
+-are included. Function-level triality and field-Singer generation are
+-checked in Lean; the other results have paper proofs, with finite
+-certificates supplied separately.
++We give quantitative density theorems for scalar realizations of
++primitive affine companion groups in characteristic two.
++For $t=2^s$, $s\ge2$, and $d=(t+1)(t^2+1)$, let $C_d$ be the
++norm-one subgroup of $\mathbb F_{t^4}^{\times}$.
++The number of slopes $a,1+a\in C_d$ generating $C_d$ is
++$\theta_2(d)(t+1)^2+O(t^{3/2}2^{\omega(d)})$, where
++$\theta_2(d)=\prod_{p\mid d}(1-p^{-2})$.
++The number for which both slopes have order $d$ is asymptotic to
++$(\varphi(d)/d)^2(t+1)^2$, with an explicit error and a sufficient
++condition for existence. These statements concern the full parameter
++family; a fixed norm fiber has size $O(t)$ and a norm-dependent density.
++The proof constructs a geometrically connected product Lang cover of
++genus-one norm fibers, classifies constant norm-character exceptions,
++and proves a uniform mixed-character bound $8\sqrt t$ with tame
++conductor at most eight.
++Separately, exact finite certificates complete an all-dimensional
++existence theorem with one slope of order $d$; double full-order
++existence is proved for all sufficiently large $s$.
++For an affine complete mapping $f(x)=Mx\oplus c$, we determine
++$\langle f,F(f)\rangle=\mathbb F_2[M]c\rtimes
++\langle M,(I+M)^{-1}\rangle$, where
++$F(f)=(\mathrm{id}\oplus f)^{-1}$, and derive its action criteria.
++Scalar realization estimates and norm-descent obstructions show
++that the uniform index exponent $1/4$ is optimal.
++The operator satisfies $F^3=\mathrm{id}$; its fixed maps correspond
++to oriented line spreads, for which we give conjugacy counts and a
++standard-spread asymptotic. A nonlinear four-dimensional example
++generates $A_{16}$. Specified triality and field-Singer statements
++are checked in Lean; the density results have paper proofs using
++classical curve bounds.
+ \end{abstract}
+ 
+ \section{Introduction}\label{sec:intro}
+@@ -109,7 +104,31 @@
+ are the contributions developed below. No claim of priority is made
+ solely on the basis of the literature compared here.
+ 
++\paragraph{Classical inputs and limits.}
++The Lang construction, the curve character bound, and the multiplicative
++freeness indicators are classical tools
++\cite{Katz89,FFSTV13,CKR22}. The factors
++$\theta_2(n)=\prod_{p\mid n}(1-p^{-2})$ and
++$\theta(n)=\varphi(n)/n$ are the standard cyclic generation and
++full-order probabilities. The arithmetic content below is their
++effective appearance on the specified coupled norm fibers: it includes
++the character exceptions, geometric independence, uniform conductor,
++and explicit errors. Theorem~\ref{thm:inner-all} proves one full-order
++slope in every dimension $4s$, $s\ge2$.
++Theorem~\ref{thm:inner-double-count} proves double full-order
++asymptotics and eventual existence; it does not prove double full order
++for every $s\ge2$. The uniform realization range and its obstruction
++likewise leave a logarithmic gap, rather than classifying every index.
++
+ \paragraph{Main contributions and scope.}
++Our quantitative realization results distinguish three slope populations:
++jointly generating slopes, slopes of full subgroup order, and slopes whose
++translate also has full order. Theorems~\ref{thm:inner-joint-density}
++and~\ref{thm:inner-double-count} give their joint-generation and
++double full-order statistics at the inner quartic boundary. A fixed
++norm fiber has a linear population and a norm-dependent coefficient;
++averaging over all norms gives a quadratic population and the cyclic
++joint-generation coefficient $\theta_2(d)$.
+ The principal general structural result is Theorem~\ref{thm:affine-group},
+ with its action criteria, the inverse-realization corollary, and a
+ divisor-sum sieve for realizing slopes
+@@ -1629,8 +1648,40 @@
+ \begin{equation}\label{eq:inner-mixed-variables}
+  w=(1+a)^B\in U,\qquad v=a^A\in V,\qquad v_+=(1+a)^A\in V.
+ \end{equation}
++\begin{auxlemma}[Character decomposition]
+ The map $C_d\longrightarrow U\times V$, $z\mapsto(z^B,z^A)$,
+-is an isomorphism of finite groups because $\gcd(A,B)=1$.
++is an isomorphism. Every pair $\xi,\zeta\in\widehat{C_d}$ has a
++unique decomposition
++\[
++ \xi(z)=\alpha(z^B)\chi(z^A),\qquad
++ \zeta(z)=\eta(z^B)\psi(z^A),
++ \quad \alpha,\eta\in\widehat U,\quad\chi,\psi\in\widehat V.
++\]
++Define the two-character sum and the norm-character exception set by
++\begin{equation}\label{eq:inner-pair-sum}
++ \begin{aligned}
++ S_b(\xi,\zeta)&=\sum_{a\in X_b(K)}\xi(a)\zeta(1+a),\\
++ \mathcal E_{\mathrm{norm}}
++ &=\{(\alpha\circ(z\mapsto z^B),1):\alpha\in\widehat U\}.
++ \end{aligned}
++\end{equation}
++For every $b\in U$ the sum is
++\[
++ S_b(\xi,\zeta)=\alpha(b)
++       \sum_{a\in X_b(K)}\eta(w)\chi(v)\psi(v_+).
++\]
++Moreover $(\xi,\zeta)\in\mathcal E_{\mathrm{norm}}$ if and only if
++$\eta=\chi=\psi=1$.
++\end{auxlemma}
++\begin{proof}
++The two powers have orders dividing $A$ and $B$, respectively.
++An element in the kernel has both its $A$-th and $B$-th powers equal
++to one, hence is one because $\gcd(A,B)=1$.
++The source and target have the same order $AB$, so the map is an
++isomorphism. Taking characters gives the unique decomposition.
++On the fiber $a^B=b$; substitution gives the identity for the sum.
++Uniqueness also proves the stated equivalence for the exception set.
++\end{proof}
+ 
+ \begin{proposition}[Mixed characters on a norm fiber]
+ \label{prop:inner-mixed-character}
+@@ -1755,6 +1806,8 @@
+ Reduction of the first two valuations modulo $A$ gives $A\mid e_0$;
+ their difference modulo $B$ gives $B\mid e_2$, and either valuation
+ then gives $B\mid e_1$.
++This is independence of the relevant functions modulo powers in
++$\overline K(C_b)^\times$, verified by their local valuations.
+ 
+ Equivalently, consider the geometric monodromy subgroup of the
+ product deck group $G=U\times V\times V$.
+@@ -1791,12 +1844,9 @@
+ 
+ \begin{corollary}[The precise two-character exception]
+ \label{cor:inner-mixed-exception}
+-Let $b^3\ne1$ and $\xi,\zeta\in\widehat{C_d}$. Write uniquely
+-\[
+- \xi(z)=\alpha(z^B)\chi(z^A),\qquad
+- \zeta(z)=\eta(z^B)\psi(z^A).
+-\]
+-If $\eta=\chi=\psi=1$, then
++Let $b\in U$ satisfy $b^3\ne1$ and let $\xi,\zeta\in\widehat{C_d}$.
++Use the character decomposition lemma and \eqref{eq:inner-pair-sum}.
++If $(\xi,\zeta)\in\mathcal E_{\mathrm{norm}}$, then
+ \[
+  S_b(\xi,\zeta)=\alpha(b)\#X_b(K).
+ \]
+@@ -1806,25 +1856,57 @@
+ is constant on the norm fiber.
+ \end{corollary}
+ \begin{proof}
+-The finite-group isomorphism preceding
+-Proposition~\ref{prop:inner-mixed-character} gives the unique
+-decomposition. On the fiber the sum is $\alpha(b)$ times the
+-three-character sum in that proposition. Its trivial triple gives
+-the stated exact exception, and all other triples satisfy the bound.
++The decomposition lemma identifies the exception set with the
++trivial varying triple. That triple gives the exact constant sum.
++Every pair outside the set has a nontrivial varying triple, so
++Proposition~\ref{prop:inner-mixed-character} gives the bound.
++\end{proof}
++
++\begin{auxlemma}[Local averaging in a cyclic group]
++Put
++\[
++ \begin{aligned}
++ \theta_2(n)&=\prod_{p\mid n}(1-p^{-2}),&
++ J_b&=\{p\mid A:b\in U^p\},\\
++ \lambda_A(b)&=\prod_{p\in J_b}(1-p^{-1}),&
++ H(A)&=\prod_{p\mid A}\frac{p+2}{p+1}.
++ \end{aligned}
++\]
++The following are exact averages over all $A$ elements of $U$:
++\begin{equation}\label{eq:inner-local-averages}
++ \begin{aligned}
++  \frac1A\sum_{b\in U}\lambda_A(b)&=\theta_2(A),\\
++  \frac1A\sum_{b\in U}\lambda_A(b)2^{|J_b|}
++       &=\theta_2(A)H(A).
++ \end{aligned}
++\end{equation}
++In particular the average of $\lambda_A(b)\theta_2(B)$ is
++$\theta_2(A)\theta_2(B)=\theta_2(d)$.
++\end{auxlemma}
++\begin{proof}
++Fix a generator $u$ and write $b=u^j$, $j\in\mathbb Z/A\mathbb Z$.
++For $p\mid A$ the condition $b\in U^p$ is equivalent to $p\mid j$.
++Reduction of uniform $j$ modulo $\operatorname{rad}(A)$ is uniform;
++the Chinese remainder theorem makes the residues modulo the distinct
++primes independent. The probability of $p\in J_b$ is therefore $1/p$.
++The local expectation for $\lambda_A$ is
++\[
++ (1-1/p)+\frac1p(1-1/p)=1-p^{-2}.
++\]
++For $\lambda_A(b)2^{|J_b|}$ it is
++\[
++ (1-1/p)+\frac2p(1-1/p)
++       =(1-p^{-2})\frac{p+2}{p+1}.
++\]
++Multiplication of these independent local expectations proves both
++identities. Since $\gcd(A,B)=1$, their prime supports are disjoint,
++which proves the last equality.
+ \end{proof}
+ 
+ \begin{theorem}[Joint generation density at the inner boundary]
+ \label{thm:inner-joint-density}
+-Put
+-\[
+- \theta_2(n)=\prod_{p\mid n}(1-p^{-2}),\qquad W(n)=2^{\omega(n)},
+- \qquad J_b=\{p\mid A:b\in U^p\},
+-\]
+-\[
+- \lambda_A(b)=\prod_{p\in J_b}(1-p^{-1}),\qquad
+- H(A)=\prod_{p\mid A}\frac{p+2}{p+1},\qquad
+- r_0=\gcd(3,A)\le3.
+-\]
++Use $\theta_2,\lambda_A,J_b,H(A)$ from the local averaging lemma,
++and put $W(n)=2^{\omega(n)}$, $r_0=\gcd(3,A)\le3$.
+ Let $\mathcal R_{d,b}=\mathcal R_d\cap X_b(K)$.
+ For every $b\in U$ with $b^3\ne1$,
+ \begin{equation}\label{eq:inner-joint-fiber}
+@@ -1879,16 +1961,11 @@
+ Proposition~\ref{prop:inner-mixed-character} bounds all other
+ terms by $8\sqrt t$. This proves \eqref{eq:inner-joint-fiber}.
+ 
+-Uniform $b\in U$ has independent prime-primary components and
+-$b\in U^p$ with proportion $1/p$. Consequently
+-\[
+- \sum_{b\in U}\lambda_A(b)=A\theta_2(A),\qquad
+- \sum_{b\in U}\lambda_A(b)2^{|J_b|}
+-       =A\theta_2(A)H(A).
+-\]
+-These are exact finite averages: the local factors are respectively
+-$(1-1/p)+(1/p)(1-1/p)=1-1/p^2$ and
+-$(1-1/p)+(2/p)(1-1/p)=(1-1/p^2)(p+2)/(p+1)$.
++The local averaging lemma supplies \eqref{eq:inner-local-averages}.
++Multiplication by $\theta_2(B)$ turns $\theta_2(A)$ into
++$\theta_2(d)$; it also turns the weighted average into
++$\theta_2(d)H(A)$. These identities average over all $b\in U$,
++before separating the exceptional fibers.
+ 
+ There are precisely $r_0$ exceptional $b$ with $b^3=1$.
+ For every $b$, each $w\in U$ allows at most two roots of
+@@ -1909,7 +1986,7 @@
+ This proves its bound and, by division, the density assertion.
+ \end{proof}
+ 
+-\begin{theorem}[Double full-order count]
++\begin{theorem}[Double full-order asymptotics and eventual existence]
+ \label{thm:inner-double-count}
+ Define $\theta(n)=\varphi(n)/n$ and
+ \[
+@@ -1928,9 +2005,15 @@
+  \le\theta(d)^2A\bigl(8W(A)W(B)^2-6\bigr)\sqrt t,
+ \end{equation}
+ and $D_d\sim\theta(d)^2t^2$ as $s\to\infty$.
+-Thus double full-order slopes exist for all sufficiently large $s$;
+-an explicit sufficient condition is
+-$A>(8W(A)W(B)^2-6)\sqrt t$.
++Define the explicit analytic range
++\begin{equation}\label{eq:inner-double-range}
++ \mathcal S_{\mathrm{an}}
++ =\{s\in\mathbb Z_{\ge2}:A>(8W(A)W(B)^2-6)\sqrt t\},
++\end{equation}
++with $t=2^s$, $A=t+1$, and $B=t^2+1$.
++For every $s\in\mathcal S_{\mathrm{an}}$ and every primitive
++$b\in U$, $D_{d,b}>0$. This set contains all sufficiently large
++integers $s$.
+ \end{theorem}
+ \begin{proof}
+ Order $d$ forces $a^B=b$ to have order $A$, which proves the
+@@ -1959,9 +2042,13 @@
+ $D_d$ impose respectively joint generation, one full-order slope,
+ and two full-order slopes. Their proven main terms are different.
+ The all-dimensional result in Theorem~\ref{thm:inner-all} concerns
+-$N_d^{\mathrm{prim}}>0$. Exact double-order certificates for
+-$2\le s\le32$ and the preceding eventual bound do not, by themselves,
+-cover every intervening parameter.
++$N_d^{\mathrm{prim}}>0$. For double full order, the finite certificates
++in Appendix~\ref{app:inner-cert} and the analytic condition
++\eqref{eq:inner-double-range} certify the range
++$\{2,\ldots,32\}\cup\mathcal S_{\mathrm{an}}$.
++The single full-order cutoff $s\ge33$ in
++Theorem~\ref{thm:inner-all} is not a cutoff for this double-order sieve.
++No assertion that the certified union contains every $s\ge2$ is made.
+ 
+ 
+ \begin{theorem}[The six-dimensional Singer application]\label{thm:agld}

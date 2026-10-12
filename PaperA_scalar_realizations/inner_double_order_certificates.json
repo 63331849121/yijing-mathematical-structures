@@ -1,0 +1,553 @@
+{
+  "range": [
+    2,
+    32
+  ],
+  "construction": "same E,b as supplied; independent primitive w search; L=E[Z]/(Z\u00b2+(1+b+w)Z+b), a=Z; both a and 1+a have full d order",
+  "certificates": [
+    {
+      "s": 2,
+      "E_modulus_hex": "0x13",
+      "b_hex": "0x8",
+      "w_hex": "0x8",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        17
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 3,
+      "E_modulus_hex": "0x43",
+      "b_hex": "0x6",
+      "w_hex": "0x1c",
+      "w_exponent": 4,
+      "c_hex": "0x1b",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        13
+      ],
+      "tested_primitive_w": 3
+    },
+    {
+      "s": 4,
+      "E_modulus_hex": "0x11b",
+      "b_hex": "0x2f",
+      "w_hex": "0x2f",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        17,
+        257
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 5,
+      "E_modulus_hex": "0x409",
+      "b_hex": "0x9b",
+      "w_hex": "0x3e5",
+      "w_exponent": 4,
+      "c_hex": "0x37f",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        11,
+        41
+      ],
+      "tested_primitive_w": 3
+    },
+    {
+      "s": 6,
+      "E_modulus_hex": "0x1009",
+      "b_hex": "0xc78",
+      "w_hex": "0x8e5",
+      "w_exponent": 3,
+      "c_hex": "0x49c",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        13,
+        17,
+        241
+      ],
+      "tested_primitive_w": 3
+    },
+    {
+      "s": 7,
+      "E_modulus_hex": "0x4021",
+      "b_hex": "0x3e8a",
+      "w_hex": "0x3e8a",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        29,
+        43,
+        113
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 8,
+      "E_modulus_hex": "0x1002b",
+      "b_hex": "0x2878",
+      "w_hex": "0x689",
+      "w_exponent": 4,
+      "c_hex": "0x2ef0",
+      "absolute_trace": 1,
+      "prime_factors": [
+        257,
+        65537
+      ],
+      "tested_primitive_w": 4
+    },
+    {
+      "s": 9,
+      "E_modulus_hex": "0x40009",
+      "b_hex": "0x303be",
+      "w_hex": "0x1bafe",
+      "w_exponent": 26,
+      "c_hex": "0x2b941",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        13,
+        19,
+        37,
+        109
+      ],
+      "tested_primitive_w": 17
+    },
+    {
+      "s": 10,
+      "E_modulus_hex": "0x100009",
+      "b_hex": "0xa3085",
+      "w_hex": "0xa3085",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        17,
+        41,
+        61681
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 11,
+      "E_modulus_hex": "0x400003",
+      "b_hex": "0x662cc",
+      "w_hex": "0x5251a",
+      "w_exponent": 7,
+      "c_hex": "0x347d7",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        397,
+        683,
+        2113
+      ],
+      "tested_primitive_w": 5
+    },
+    {
+      "s": 12,
+      "E_modulus_hex": "0x100001b",
+      "b_hex": "0xd0842d",
+      "w_hex": "0xd0842d",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        17,
+        97,
+        241,
+        257,
+        673
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 13,
+      "E_modulus_hex": "0x400001b",
+      "b_hex": "0x32f9317",
+      "w_hex": "0x32f9317",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        53,
+        157,
+        1613,
+        2731
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 14,
+      "E_modulus_hex": "0x10000003",
+      "b_hex": "0x15a3baa",
+      "w_hex": "0x6c6a1f9",
+      "w_exponent": 8,
+      "c_hex": "0x79c9a52",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        17,
+        29,
+        113,
+        15790321
+      ],
+      "tested_primitive_w": 7
+    },
+    {
+      "s": 15,
+      "E_modulus_hex": "0x40000003",
+      "b_hex": "0x317d6a85",
+      "w_hex": "0x36559252",
+      "w_exponent": 4,
+      "c_hex": "0x728f8d6",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        11,
+        13,
+        41,
+        61,
+        331,
+        1321
+      ],
+      "tested_primitive_w": 3
+    },
+    {
+      "s": 16,
+      "E_modulus_hex": "0x10000008d",
+      "b_hex": "0x4893e13d",
+      "w_hex": "0x2e37b719",
+      "w_exponent": 4,
+      "c_hex": "0x66a45625",
+      "absolute_trace": 1,
+      "prime_factors": [
+        641,
+        65537,
+        6700417
+      ],
+      "tested_primitive_w": 4
+    },
+    {
+      "s": 17,
+      "E_modulus_hex": "0x40000001b",
+      "b_hex": "0xdcbd299",
+      "w_hex": "0x35043f4fc",
+      "w_exponent": 7,
+      "c_hex": "0x35d882664",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        137,
+        953,
+        26317,
+        43691
+      ],
+      "tested_primitive_w": 5
+    },
+    {
+      "s": 18,
+      "E_modulus_hex": "0x1000000035",
+      "b_hex": "0x78c0283c4",
+      "w_hex": "0x78c0283c4",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        13,
+        17,
+        37,
+        109,
+        241,
+        433,
+        38737
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 19,
+      "E_modulus_hex": "0x4000000063",
+      "b_hex": "0x1153a3d1ef",
+      "w_hex": "0x16004f10d3",
+      "w_exponent": 5,
+      "c_hex": "0x753ecc13d",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        229,
+        457,
+        174763,
+        525313
+      ],
+      "tested_primitive_w": 4
+    },
+    {
+      "s": 20,
+      "E_modulus_hex": "0x10000000039",
+      "b_hex": "0x1f9215dca7",
+      "w_hex": "0x1f9215dca7",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        17,
+        257,
+        61681,
+        4278255361
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 21,
+      "E_modulus_hex": "0x40000000027",
+      "b_hex": "0x2657c0cd035",
+      "w_hex": "0x10624d5768f",
+      "w_exponent": 5,
+      "c_hex": "0x36358d9a6bb",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        13,
+        29,
+        43,
+        113,
+        1429,
+        5419,
+        14449
+      ],
+      "tested_primitive_w": 4
+    },
+    {
+      "s": 22,
+      "E_modulus_hex": "0x100000000021",
+      "b_hex": "0xfe622270c1c",
+      "w_hex": "0xfe622270c1c",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        17,
+        353,
+        397,
+        2113,
+        2931542417
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 23,
+      "E_modulus_hex": "0x400000000003",
+      "b_hex": "0x17c45ffbd76",
+      "w_hex": "0x29bd79b1ae4",
+      "w_exponent": 8,
+      "c_hex": "0x3e79264a793",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        277,
+        1013,
+        1657,
+        30269,
+        2796203
+      ],
+      "tested_primitive_w": 6
+    },
+    {
+      "s": 24,
+      "E_modulus_hex": "0x100000000002d",
+      "b_hex": "0xfed891dbe6c9",
+      "w_hex": "0xec7a6a1920af",
+      "w_exponent": 4,
+      "c_hex": "0x12a2fbc2c667",
+      "absolute_trace": 1,
+      "prime_factors": [
+        97,
+        193,
+        257,
+        673,
+        65537,
+        22253377
+      ],
+      "tested_primitive_w": 4
+    },
+    {
+      "s": 25,
+      "E_modulus_hex": "0x400000000001d",
+      "b_hex": "0x2907b6c341c09",
+      "w_hex": "0x2907b6c341c09",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        11,
+        41,
+        101,
+        251,
+        4051,
+        8101,
+        268501
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 26,
+      "E_modulus_hex": "0x10000000000009",
+      "b_hex": "0xc6d27ccd2b0df",
+      "w_hex": "0x432bf4829f702",
+      "w_exponent": 3,
+      "c_hex": "0x85f9884fb47dc",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        17,
+        53,
+        157,
+        1613,
+        858001,
+        308761441
+      ],
+      "tested_primitive_w": 3
+    },
+    {
+      "s": 27,
+      "E_modulus_hex": "0x4000000000007d",
+      "b_hex": "0x28047cef28c34e",
+      "w_hex": "0x28047cef28c34e",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        13,
+        19,
+        37,
+        109,
+        87211,
+        246241,
+        279073
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 28,
+      "E_modulus_hex": "0x100000000000095",
+      "b_hex": "0xa586528c5b1c9",
+      "w_hex": "0xa586528c5b1c9",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        17,
+        257,
+        5153,
+        15790321,
+        54410972897
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 29,
+      "E_modulus_hex": "0x400000000000063",
+      "b_hex": "0x243f16ec4e21119",
+      "w_hex": "0x243f16ec4e21119",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        59,
+        3033169,
+        107367629,
+        536903681
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 30,
+      "E_modulus_hex": "0x1000000000000003",
+      "b_hex": "0x8c388b10c413f59",
+      "w_hex": "0x8c388b10c413f59",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        5,
+        13,
+        17,
+        41,
+        61,
+        241,
+        1321,
+        61681,
+        4562284561
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 31,
+      "E_modulus_hex": "0x4000000000000069",
+      "b_hex": "0x12dfcd22c3b1728b",
+      "w_hex": "0x12dfcd22c3b1728b",
+      "w_exponent": 1,
+      "c_hex": "0x1",
+      "absolute_trace": 1,
+      "prime_factors": [
+        3,
+        5,
+        5581,
+        8681,
+        49477,
+        384773,
+        715827883
+      ],
+      "tested_primitive_w": 1
+    },
+    {
+      "s": 32,
+      "E_modulus_hex": "0x1000000000000001b",
+      "b_hex": "0xae3111b3bb81428f",
+      "w_hex": "0xc171e75cc47c2b2e",
+      "w_exponent": 3,
+      "c_hex": "0x6f40f6ef7ffd69a0",
+      "absolute_trace": 1,
+      "prime_factors": [
+        641,
+        274177,
+        6700417,
+        67280421310721
+      ],
+      "tested_primitive_w": 3
+    }
+  ]
+}

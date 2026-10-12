@@ -1,0 +1,14 @@
+{
+  "revision": "paperA-revised-2026-10-12-mixed-character-density",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "exit_code": 0,
+  "input_sha256": {
+    "verify_inner_mixed.py": "88626e40629051181f3e78e8d4d1ec048b71b5df2ae65d55247869528eddbe60",
+    "inner_double_order_certificates.json": "cb78b310e0db8d51dcba3e0cfb2d5f99ce248065bfa9e498cca4d421b13ffbf9",
+    "inner_critical_certificates.json": "e9f58ed6c1d0677c91ac50d24fa02420883bbb08dacff4c38ee3c3094770ea8c",
+    "verify_inner_critical.py": "bac7303f19197022af01f2ad7230fb22c229df2d16385359683a6d261d582a57"
+  },
+  "output_sha256": "a2e1ae890290116fb514b04f73cd1be840b1c82dd4d00db345b954d3c9e07427",
+  "rerun_scope": "New mixed-related exact arithmetic only; prior unrelated verifiers and Lean not rerun."
+}

@@ -1,0 +1,66 @@
+{
+  "revision": "paperA-revised-2026-10-12-mixed-character-density",
+  "source_sha256": "da8842f0d9c785dc2f3ab700d33b9247a06bf44aa9e5caa5d6dab7c7a976e79f",
+  "labels": 90,
+  "references": 187,
+  "bibliography_entries": 31,
+  "citations": 51,
+  "all_references_resolved": true,
+  "abstracts_and_forms_synchronized": true,
+  "new_fragments_match_source": true,
+  "section_5_numbers": {
+    "thm:affine-group": "5.1",
+    "cor:affine-actions": "5.2",
+    "cor:scalar-realization": "5.3",
+    "cor:scalar-sieve": "5.4",
+    "thm:fermat-obstruction": "5.5",
+    "prop:scalar-positive-bound": "5.6",
+    "thm:fixed-index-realization": "5.7",
+    "cor:index-three-realization": "5.8",
+    "thm:scalar-density": "5.9",
+    "cor:growing-index-realization": "5.10",
+    "thm:norm-subfield-descent": "5.11",
+    "cor:quarter-power-barrier": "5.12",
+    "prop:primitive-scalar-classification": "5.13",
+    "prop:Paley-generating-triangles": "5.14",
+    "prop:inner-quadratic": "5.15",
+    "lem:inner-fiber": "5.16",
+    "lem:inner-character": "5.17",
+    "prop:inner-four-torsion": "5.18",
+    "thm:inner-primitive-count": "5.19",
+    "thm:inner-all": "5.20",
+    "prop:inner-mixed-character": "5.21",
+    "cor:inner-mixed-exception": "5.22",
+    "thm:inner-joint-density": "5.23",
+    "thm:inner-double-count": "5.24",
+    "thm:agld": "5.25"
+  },
+  "built_in_compilation": {
+    "kind": "success",
+    "successful_calls": 2,
+    "diagnostics": [
+      {
+        "path": "C:\\Users\\master\\Documents\\Codex\\2026-10-11\\paper-review-recovery\\outputs\\PaperA_revised.tex",
+        "kind": "success",
+        "message": "The current source compiled successfully with the desktop editor's compiler."
+      },
+      {
+        "path": "C:\\Users\\master\\Documents\\Codex\\2026-10-11\\paper-review-recovery\\outputs\\PaperA_revised.tex",
+        "kind": "success",
+        "message": "The current source compiled successfully with the desktop editor's compiler."
+      }
+    ]
+  },
+  "finite_scope": {
+    "double_certificates": [
+      2,
+      32
+    ],
+    "complete_norm_fiber_counts": [
+      2,
+      6
+    ]
+  },
+  "all_dimensional_double_existence": "open",
+  "pdf_export_or_new_tab_created": false
+}

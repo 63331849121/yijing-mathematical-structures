@@ -1,0 +1,22 @@
+{
+  "revision": "paperA-revised-2026-10-12-double-full-order-closure",
+  "started_utc": "2026-10-12T08:14:59.509528+00:00",
+  "python_executable": "C:\\Users\\master\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "exit_code": 0,
+  "elapsed_seconds": 2.344,
+  "inputs_sha256": {
+    "verify_inner_double_all.py": "ff5f75a3a254e19f53e4f2b0f167c5dca25bc9bee2eaffb5df29794967b8b313",
+    "verify_inner_critical.py": "bac7303f19197022af01f2ad7230fb22c229df2d16385359683a6d261d582a57",
+    "verify_inner_mixed.py": "88626e40629051181f3e78e8d4d1ec048b71b5df2ae65d55247869528eddbe60",
+    "inner_critical_certificates.json": "e9f58ed6c1d0677c91ac50d24fa02420883bbb08dacff4c38ee3c3094770ea8c",
+    "inner_double_order_certificates.json": "cb78b310e0db8d51dcba3e0cfb2d5f99ce248065bfa9e498cca4d421b13ffbf9",
+    "inner_double_omega_certificates.json": "694e9680b64270278b12588a03b3ebe18d284710d1cf4d9590e1d498f131e328"
+  },
+  "outputs_sha256": {
+    "inner_double_all_verification.json": "7521955e2de8c7b1e8e385f316d524375ff38281c7d738f0ba568aab9e97119d",
+    "inner_double_all_run.log": "9ed470591ff6c8b9d5eec4abd4d3d7497815f3f4a6c89a79c2ca05440175fc8f"
+  },
+  "scope": "Double certificates s=2..32, omega bounds s=33..113, constant, diagonal enumeration s=2..6; no Lean."
+}

@@ -4,7 +4,25 @@ Independent research on finite-field, combinatorial, and affine structures inspi
 
 ## Current preprints
 
-### Paper A: affine Singer layers and the (T,D,K) triple
+### Paper A: scalar realizations of affine companion groups
+
+**Affine companion groups in characteristic two: scalar realizations and density**
+
+The general-article preprint studies scalar realizations in characteristic two,
+with norm-fiber density formulas, exact local averaging, and an
+all-dimensional double full-order existence result. It is kept in the generic
+`article` class so that journal-specific formatting can be done later in a
+separate copy.
+
+- [Paper A PDF](PaperA_scalar_realizations/PaperA_revised.pdf)
+- [LaTeX source](PaperA_scalar_realizations/PaperA_revised.tex)
+- [Reproduction package and audit](PaperA_scalar_realizations/)
+
+This is the current general preprint. The earlier Singer-layer note below is
+preserved as a separate, narrower paper and its existing DOI continues to
+refer to that archived note only.
+
+### Earlier Paper A note: affine Singer layers and the (T,D,K) triple
 
 **An affine Singer layer on F2^6, its (T,D,K) triple, and <T,D> = AGL(1,64)**
 
@@ -29,8 +47,8 @@ defines CRT coordinates using iteration exponents. The primitive-polynomial
 checks, character-at-zero convention, contribution statement, and reference
 list have also been clarified. See [revision notes](PaperA_revision_notes.md).
 
-- [Paper A PDF](PaperA_singer_TDK.pdf)
-- [LaTeX source](PaperA_singer_TDK.tex)
+- [Earlier note PDF](PaperA_singer_TDK.pdf)
+- [Earlier note LaTeX source](PaperA_singer_TDK.tex)
 - [English abstract](abstract_en.txt) / [Chinese abstract](abstract_zh.txt)
 
 ### Paper F: four-zero tail-palindromic primitive polynomials
@@ -46,35 +64,26 @@ finite-pair association statistics for n=2p, and computational evidence.
 
 ## Reproduce Paper A's computations
 
-Requires Python 3 and its standard library only.
+Requires Python 3 and its standard library only. From the repository root:
 
 ```text
-python verify_paperA_structure.py
-python verify_k1_29.py
+python PaperA_scalar_realizations/reproduce_paperA.py
 ```
 
-Expected final lines:
-
-```text
-All structural checks passed.
-All certificates verified.
-```
-
-The first script independently checks the four displayed bases, exact finite
-group orders, characteristic polynomials, all 720 basis orderings, the
-tau-collapse examples, scalar-affine F-orbits over F64, and CRT indexing.
-The second verifies every finite certificate for k=1,...,29 used in Appendix B.
-These computations do not replace the paper proof for all k.
-The existing Lean formalization covers the group-generation argument; the
-analytic PTE proof and finite certificate are not Lean-formalized.
+The driver checks the package manifest, runs the supplied finite verifiers and
+exporter, then checks regenerated data against the manifest. These finite
+checks do not replace proofs of statements for arbitrary dimensions. See the
+[reproduction guide](PaperA_scalar_realizations/PaperA_REPRODUCIBILITY.md) for
+coverage and limitations.
 
 ## Repository contents
 
-- `PaperA_singer_TDK.pdf` and `.tex`: current Paper A preprint.
-- `abstract_en.txt`, `abstract_zh.txt`: synchronized abstracts.
-- `verify_paperA_structure.py`: finite structural checks.
-- `verify_k1_29.py`: deterministic finite PTE certificate verifier.
-- `PaperA_revision_notes.md`: review corrections and verification record.
+- `PaperA_scalar_realizations/`: general-article Paper A source, PDF, abstracts,
+  finite verifiers, data, Lean sources, and audit/reproduction materials.
+- `PaperA_singer_TDK.pdf` and `.tex`: earlier focused Paper A note.
+- `abstract_en.txt`, `abstract_zh.txt`: abstracts for the earlier Singer note.
+- `verify_paperA_structure.py`, `verify_k1_29.py`: checks for that note.
+- `PaperA_revision_notes.md`: its review corrections and verification record.
 - `PaperD_primitive_trace_even_detailed_supplement.pdf`, `.tex`, and
   `detailed_proof_body.tex`: detailed proof archive.
 - `PaperF_fourzero/`: Paper F preprint, reproducibility scripts, and data tables.
@@ -89,8 +98,9 @@ inspired by the Yijing. The mathematical papers and programs are self-contained.
 Li, Baohua. (2026). *An affine Singer layer on F2^6, its (T,D,K) triple,
 and <T,D> = AGL(1,64).* [Zenodo archive](https://doi.org/10.5281/zenodo.22731492).
 
-The DOI links to the existing archived record. The October 11 revision is
-available in this repository; this update does not change the archived record.
+That DOI links to the existing archived Singer-layer note. The general-article
+preprint is available in `PaperA_scalar_realizations/`; this update does not
+change the archived record.
 
 ## License
 

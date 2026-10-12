@@ -1,0 +1,261 @@
+--- before_review_merge/PaperA_revised.tex
++++ PaperA_revised.tex
+@@ -75,6 +75,38 @@
+ semidirect-product and Burnside mechanisms are made explicit for these objects;
+ we do not assert priority for these general mechanisms.
+ 
++\paragraph{Related work on prescribed orders and norms.}
++The existence of elements of prescribed multiplicative order under
++additive relations is a classical theme. The line and translate
++properties for $r$-primitive elements were studied by Cohen and
++Kapetanakis~\cite{CK21}. Their Theorem~1.3 fixes $r$ and the
++extension degree; Remark~4.1 also observes that sufficiently slow
++growth of $r$ can be allowed. Thus varying $r$ alone does not
++establish a distinction from that work.
++Cohen, Kapetanakis and Reis~\cite{CKR22} developed an $(r,n)$-freeness
++indicator and sieve, including applications to primitive points on
++curves. Arithmetic progressions of $r$-primitive elements are treated
++in~\cite{SSL24}, while additional norm constraints are studied in
++\cite{CSST25,CSh25}. These papers provide important predecessors for
++the use of multiplicative characters and prescribed-order sieves.
++Our quartic problem requires exact order $(t+1)(t^2+1)$ and
++simultaneously requires the translate by $1$ to lie in the same
++norm-one subgroup. These constraints require a comparison of
++quantitative hypotheses, as well as of prescribed orders. For
++example, the sufficient condition in \cite[Theorem~1]{CSh25}
++contains $q^{n/2-m}$ on its left-hand side; for base field size
++$q=t$, extension degree $n=4$ and two terms $m=2$, this is $1$,
++whereas its right-hand side is at least $2$. That particular
++criterion therefore gives no positivity in our parameters.
++The associated \emph{ordinary} cyclotomic intersection count belongs
++to the theory studied, in particular, by Kudo and Nogata~\cite{KN26};
++our additional exact-order requirement is separate from this count.
++We use the classical Lang--Kummer and conductor methods rather than
++claiming a new general character-sum theorem. The specific norm-fiber
++construction and its application to the critical realization problem
++are the contributions developed below. No claim of priority is made
++solely on the basis of the literature compared here.
++
+ \paragraph{Main contributions and scope.}
+ The principal general structural result is Theorem~\ref{thm:affine-group},
+ with its action criteria, the inverse-realization corollary, and a
+@@ -1307,25 +1339,169 @@
+  z_0^B=\frac{r_1^t}{r_0}.
+ \]
+ Thus this pullback is geometrically a Kummer cover with defining
+-function $h=(y/u^t)^t/(x/u)$.
++function $h=(y/u^t)^t/(x/u)=y^t/x$, since $u^{t^2}=u$.
+ For a character of exact order $m\mid B$, its quotient cover has
+ equation $z^m=h$ over $\overline K$.
++This geometric Kummer presentation must be distinguished from the
++$K$-structure of the quotient cover: the latter is inherited from
++the pullback of the $K$-defined Lang isogeny, with its corresponding
++Frobenius descent datum. In particular, $h$ need not belong to the
++function field $K(C_b)$ in these split coordinates. All statements
++about geometric ramification and geometric connectedness are checked
++after base change to $\overline K$, whereas the character sum is
++taken using the descended $K$-cover.
++
++The Frobenius descent can be made explicit, so that the character
++trace is not merely inferred from a convention.  On geometric points,
++the $K$-Frobenius on the base and on the pullback Lang cover is
++\begin{equation}\label{eq:inner-lang-frobenius}
++ \begin{aligned}
++ F_{C_b}(x,y)&=\left(\frac b{y^t},x^t\right),\\
++ F_Y(x,y,z_0)&=\left(\frac b{y^t},x^t,\frac xu z_0\right).
++ \end{aligned}
++\end{equation}
++Indeed, the two Lang equations give $z_1^{-t}=r_0z_0$, while
++$F_{\mathcal T}$ acts on the first split coordinate as
++$z_0\mapsto z_1^{-t}$.  The displayed formula is also compatible
++with the Kummer equation, since $u^B=b$ and
++\[
++ h\left(\frac b{y^t},x^t\right)
++  =\frac{x^{t^2}y^t}{b}
++  =\left(\frac xu\right)^B h(x,y).
++\]
++For a $K$-rational point, $(x,y)=(a,a^t)$ with $a^B=b$;
++thus Frobenius fixes the base point and acts on its geometric
++Lang fiber by $z_0\mapsto(a/u)z_0$.  This is precisely the deck
++transformation indexed by $a/u\in V$.  In the character eigensheaf
++associated with $\chi$, its Frobenius trace is therefore
++$\chi(a/u)$, or $\chi^{-1}(a/u)$ if the inverse Frobenius convention
++is used.  The latter choice is immaterial for the asserted bound.
++In particular, this computation verifies the Frobenius trace
++identification for the actual $K$-descent of the cover, rather
++than for the bare geometric Kummer equation.
+ 
+ The zeros and poles of $x$ are simple and supported on $D_x$;
+ those of $y$ are simple and supported on the disjoint set $D_y$.
+-Therefore the eight nonzero valuations of $h$ are
+-$1,-1,t,-t$, each occurring twice.
++The valuations can be read point by point:
++\[
++ \begin{array}{c|c}
++ \text{points}&\operatorname{ord}_P(h)\\\hline
++ (0,1),\ (0,b^{-1})&-1\\
++ (\infty,1),\ (\infty,b^{-1})&1\\
++ (1,0),\ (b,0)&t\\
++ (1,\infty),\ (b,\infty)&-t
++ \end{array}
++\]
++Thus the eight nonzero valuations are $1,-1,t,-t$, each twice.
+ Since $m$ is odd and $\gcd(m,t)=1$, the character is tamely and
+ nontrivially ramified at all eight points. A valuation of absolute
+ value one also makes this cover geometrically connected, excluding
+ a constant-field character or a geometrically trivial pullback.
+ The conductor degree is consequently exactly eight, independently
+-of $m,t,b$. At a rational point the Lang character evaluates to
+-$\chi(a/u)$, up to replacing $\chi$ by its inverse according to
+-the Frobenius convention; this does not affect the estimate.
+-Lemma~\ref{lem:inner-fiber} and the curve bound now give
++of $m,t,b$. Lemma~\ref{lem:inner-fiber} and the curve bound now give
+ $(2\cdot1-2+8)\sqrt t=8\sqrt t$.
+ \end{proof}
++
++
++\begin{proposition}[Four-torsion symmetry of a norm fiber]
++\label{prop:inner-four-torsion}
++In the setting of Lemma~\ref{lem:inner-fiber}, let $u\in U$ satisfy
++$u^2=b$. On the geometric $(x,y)$-model of $C_b$ set
++\[
++ \rho(x,y)=\left(\frac1y,\frac xb\right),\qquad
++ h=\frac{(y/u^t)^t}{x/u}=\frac{y^t}{x}.
++\]
++Then $\rho$ descends to a $K$-automorphism of order four. After
++choosing a $K$-rational origin, it is translation by a $K$-rational
++point of exact order four. The eight boundary points form exactly
++two $\rho$-orbits of length four:
++\[
++ \begin{split}
++ (0,1)&\longmapsto(1,0)\longmapsto(\infty,b^{-1})
++     \longmapsto(b,\infty)\longmapsto(0,1),\\
++ (0,b^{-1})&\longmapsto(b,0)\longmapsto(\infty,1)
++     \longmapsto(1,\infty)\longmapsto(0,b^{-1}).
++ \end{split}
++\]
++Moreover, as identities in the geometric function field,
++\begin{equation}\label{eq:inner-rho-kummer}
++ \rho^*h=(uy)^B h^{-t},\qquad (\rho^2)^*h=h^{-1}.
++\end{equation}
++For every character $\chi$ of $V$, the sums in
++Lemma~\ref{lem:inner-character} satisfy
++\[
++ S_b(\chi):=\sum_{a\in X_b(K)}\chi(a/u)
++      =S_b(\chi^{-t})=S_b(\chi^{-1})\in\mathbb R.
++\]
++Every nontrivial character belongs to an orbit of length four
++under $\chi\mapsto\chi^{-t}$. If
++$N_b^{\mathrm{prim}}$ denotes the number of $a\in X_b(K)$
++with $\operatorname{ord}(a)=d$, then
++$4\mid\#X_b(K)$ and $4\mid N_b^{\mathrm{prim}}$.
++\end{proposition}
++\begin{proof}
++The field automorphism $\sigma:a\mapsto a^t$ of $L/K$
++extends as $\sigma\otimes1$ to an $R$-linear automorphism of
++$L\otimes_K R$ for every $K$-algebra $R$;
++composing this extension with inversion gives a $K$-automorphism
++of the ambient restriction-of-scalars torus. On $K$-points its
++action is $a\mapsto(a^t)^{-1}$. Here this notation refers to the
++Galois automorphism $\sigma$, not the relative Frobenius morphism
++on the torus. The functorial norm identities
++\[
++ N_{L/E}((\sigma a)^{-1})=b^{-t}=b,\qquad
++ N_{L/K}(1+(\sigma a)^{-1})
++   =\frac{N_{L/K}(1+a)}{N_{L/K}(a)}=1
++\]
++show that it preserves both defining conditions, since
++$N_{L/K}(a)=N_{E/K}(b)=1$. It gives the displayed $\rho$
++in split coordinates. Equivalently, the split-coordinate
++$K$-Frobenius descent is $(x,y)\mapsto(b/y^t,x^t)$, with which
++$\rho$ commutes. Direct
++iteration gives
++\[
++ \rho^2(x,y)=(b/x,b^{-1}/y),\qquad \rho^4=1.
++\]
++The eight boundary points are paired without fixed points by
++$\rho^2$. Any remaining geometric fixed point would have
++$x^2=b$, $y^2=b^{-1}$, hence $(x,y)=(u,u^{-1})$.
++Substitution in the equation of $C_b$ forces
++$b+b^{-1}=1$, equivalently $u^2+u+1=0$, whence $b^3=1$,
++contrary to $\operatorname{ord}(b)=t+1\ge5$. Thus $\rho^2$,
++and hence $\rho$, has no geometric fixed point. The bound
++$\#C_b(K)\ge t+1-2\sqrt t>0$ supplies a rational origin.
++After choosing a rational origin, any automorphism of a genus-one
++curve is a translation followed by an origin-preserving
++automorphism. If the latter is nontrivial, its difference from the
++identity is a nonzero, hence surjective, elliptic-curve
++endomorphism, so the composite has a geometric fixed point.
++Consequently $\rho$ is a translation, necessarily by a
++$K$-rational point of exact order four.
++
++The two boundary cycles follow by substitution in the rational
++formula, interpreted on $\mathbb P^1\times\mathbb P^1$. Since
++$u^{t+1}=1$, $u^B=u^2=b$ and $b^t=b^{-1}$,
++\[
++ \rho^*h=\frac{(x/b)^t}{1/y}
++   =b x^t y=(uy)^B\left(\frac{y^t}{x}\right)^{-t},
++\]
++while the formula for $\rho^2$ yields $(\rho^2)^*h=h^{-1}$.
++For $a=uv$ with $v\in V$, $\rho$ sends $a$ to
++$uv^{-t}$. It therefore permutes $X_b(K)$ and preserves
++$\operatorname{ord}(a)$; changing variables in the character sum
++proves the stated equalities. Finally $B=t^2+1$ is odd,
++$(-t)^2\equiv-1\pmod B$. For a character of order $m>1$,
++an orbit of length one or two would imply $m\mid2$,
++which is impossible since $m\mid B$ is odd. Thus every
++nontrivial character has an orbit of length four. Translation
++by a point of exact order four acts freely, proving both
++divisibilities.
++\end{proof}
++
++These symmetries do not by themselves reduce the bound in
++Lemma~\ref{lem:inner-character}: grouping the characters into
++four-element orbits leaves the total absolute sieve coefficients
++unchanged. The estimate used below remains $8\sqrt t$.
+ 
+ \begin{theorem}[Primitive slopes in the inner critical family]
+ \label{thm:inner-primitive-count}
+@@ -2380,6 +2556,26 @@
+ M.~Tibouchi, J.~F.~Voloch, \emph{Indifferentiable deterministic hashing
+ to elliptic and hyperelliptic curves}, Math.~Comp.~82 (2013) 491--512,
+ \href{https://doi.org/10.1090/S0025-5718-2012-02606-8}{doi:10.1090/S0025-5718-2012-02606-8}.
++\bibitem{CK21} S.~D.~Cohen, G.~Kapetanakis,
++\emph{Finite field extensions with the line or translate property for
++$r$-primitive elements}, J.~Aust.~Math.~Soc.~111 (2021) 313--319,
++\href{https://doi.org/10.1017/S1446788720000099}{doi:10.1017/S1446788720000099}.
++\bibitem{CKR22} S.~D.~Cohen, G.~Kapetanakis, L.~Reis,
++\emph{The existence of $\mathbb F_q$-primitive points on curves using
++freeness}, C.~R.~Math.~360 (2022) 641--652,
++\href{https://doi.org/10.5802/crmath.328}{doi:10.5802/crmath.328}.
++\bibitem{SSL24} J.~Sharma, R.~Sarma, S.~Laishram,
++\emph{Arithmetic progressions of $r$-primitive elements in a field},
++Bull.~Braz.~Math.~Soc.~(N.S.)~55 (2024), Article~40,
++\href{https://doi.org/10.1007/s00574-024-00412-9}{doi:10.1007/s00574-024-00412-9}.
++\bibitem{CSST25} K.~Chatterjee, H.~Sharma, A.~Shukla, S.~K.~Tiwari,
++\emph{Arithmetic progression in a finite field with prescribed norms},
++Forum Math.~37(1) (2025) 345--357,
++\href{https://doi.org/10.1515/forum-2024-0026}{doi:10.1515/forum-2024-0026}.
++\bibitem{CSh25} A.~Choudhary, J.~Sharma,
++\emph{Arithmetic progressions of some special elements in finite fields},
++Commun.~Algebra (published online 2025),
++\href{https://doi.org/10.1080/00927872.2025.2561951}{doi:10.1080/00927872.2025.2561951}.
+ \bibitem{KN26} H.~Kudo, Y.~Nogata, \emph{Cyclotomic numbers of order
+ $q-1$ over $\mathbb F_{q^r}$}, arXiv:2604.25461 (2026),
+ \url{https://arxiv.org/abs/2604.25461}.
+@@ -2635,6 +2831,15 @@
+ $a^{d/p}$ for a prime $p\mid d$, and recursive Lucas primality
+ certificates for those primes. Verification consists of the following
+ finite identities, carried out by \path{verify_inner_critical.py}.
++The additional \path{verify_inner_symmetry.py} checks the
++four-torsion identities and rational Lang-fiber multiplier at
++all 31 certificate points, and enumerates every primitive-norm
++fiber for $s=2,\ldots,6$. It checks four-point orbits, order
++preservation, divisibility by four and the exact integer
++multiplicity distributions underlying the character symmetries.
++The new verification logs and runtime metadata are supplied with
++the ancillary files; these finite checks supplement the paper
++proof of Proposition~\ref{prop:inner-four-torsion}.
+ First, $M_s$ has degree $n=2s$, and
+ \[
+  X^{2^n}\equiv X\pmod {M_s},\qquad

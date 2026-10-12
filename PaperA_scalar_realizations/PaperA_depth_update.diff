@@ -1,0 +1,454 @@
+--- PaperA_revised.tex (before critical-index update)
++++ PaperA_revised.tex (critical-index update)
+@@ -14,38 +14,36 @@
+ \maketitle
+ \begin{abstract}
+ A complete mapping of $V=\mathbb F_2^n$ is a permutation $f$ for which
+-$\mathrm{id}\oplus f$ is also a permutation. The operator
+-$F(f)=(\mathrm{id}\oplus f)^{-1}$ realizes the classical cyclic coordinate
+-symmetry of Cayley-table transversals and satisfies $F^3(f)=f$.
++$\mathrm{id}\oplus f$ is a permutation. The operator
++$F(f)=(\mathrm{id}\oplus f)^{-1}$ realizes cyclic coordinate symmetry
++of Cayley-table transversals and satisfies $F^3(f)=f$.
+ For every affine complete mapping $f(x)=Ax\oplus c$, we determine
+ $\langle f,F(f)\rangle=\mathbb F_2[A]c\rtimes\langle A,(I+A)^{-1}\rangle$
+-and obtain exact transitivity, primitivity, and double-transitivity criteria.
+-For specified scalar affine subgroups, we give an exact inverse-realization
+-criterion and count their realizing affine companion maps. Alongside an
+-infinite primitive nonrealizable family, we prove realization at every
+-fixed odd index greater than one in all sufficiently large admissible
+-dimensions. At index three, the exact threshold is even dimension eight.
++and obtain exact action criteria. We classify the primitive affine
++companion groups and count their realizing maps and linear-conjugacy classes.
++A divisor sieve and classical Jacobi sums give an explicit main term and
++error for scalar realizations. Every fixed odd index greater than one is
++realizable in all sufficiently large admissible dimensions, and the exact
++index-three threshold is even dimension eight.
++Uniform realization holds for $n\ge16$ and $k\le q^{1/4}/\sqrt n$,
++where $q=2^n$. Norm descent produces primitive nonrealizable groups at
++$q=2^{4s}$ and $k=q^{1/4}+1$, proving that the uniform exponent $1/4$
++cannot be increased. Generating triangles in generalized Paley graphs
++interpret the realization criterion and distinguish it from ordinary
++triangle existence.
+ The fixed maps of $F$ correspond to oriented line spreads.
+-A local line-stabilizer criterion determines when a spread automorphism
+-group admits an invariant orientation.
+-An orientation-sensitive Burnside formula gives three linear-conjugacy
+-classes in dimension four and $80$ classes on the six-dimensional
+-Desarguesian spread. For the standard spread on $\mathbb F_4^m$, we give
+-an explicit error bound showing that almost every orientation has precisely
+-the scalar $C_3$ stabilizer, and obtain an asymptotic class count.
+-We also give a general double-transitivity criterion for pairs of
+-long-cycle permutations with distinct fixed points and exhibit a nonlinear
+-four-dimensional triple in which all three maps have cycle type $1+15$
+-and the prescribed pair generates $A_{16}$.
+-Translating any fixed map gives a companion group with a
+-four-point invariant orbit, an obstruction to transitivity in larger dimensions.
+-All-affine $F$-orbit counts and uniform even-dimensional Singer triples
+-are included; the latter use the classical prescribed-trace primitive-element
+-theorem reconstructed in Appendix~\ref{app:pte}.
+-Function-level triality and field-Singer generation are checked in Lean.
+-The further structural results have paper proofs, with deterministic finite
+-certificates and complete six-dimensional standard-spread orbit data
+-supplied separately.
++A local stabilizer criterion characterizes invariant orientations;
++a signed Burnside formula gives three classes in dimension four and
++$80$ on the six-dimensional Desarguesian spread. For the standard spread
++on $\mathbb F_4^m$, an explicit error bound proves that almost every
++orientation has scalar $C_3$ stabilizer and yields a class-count asymptotic.
++We also construct a nonlinear four-dimensional companion triple with
++cycle type $1+15$ generating $A_{16}$, and prove a four-point orbit
++obstruction for translations of fixed maps.
++All-affine orbit counts and uniform even-dimensional Singer triples
++are included. Function-level triality and field-Singer generation are
++checked in Lean; the other results have paper proofs, with finite
++certificates supplied separately.
+ \end{abstract}
+ 
+ \section{Introduction}\label{sec:intro}
+@@ -86,6 +84,18 @@
+ sufficiently large admissible dimensions
+ (Theorem~\ref{thm:fixed-index-realization}), with the exact index-three
+ threshold in Corollary~\ref{cor:index-three-realization}.
++The quantitative main term in Theorem~\ref{thm:scalar-density} and
++Corollary~\ref{cor:growing-index-realization} extend this to growing
++indices $k\le q^{1/4}/\sqrt{\log_2q}$.
++The norm-descent theorem and its quarter-power corollary
++(Theorem~\ref{thm:norm-subfield-descent},
++Corollary~\ref{cor:quarter-power-barrier}) give nonrealizable primitive
++groups at $k=q^{1/4}+1$ for every $q=2^{4s}$.
++Thus the exponent $1/4$ is optimal for a universal index guarantee,
++with a remaining logarithmic gap. Primitive inverse classification and
++generating triangles in generalized Paley graphs complete this realization
++picture (Propositions~\ref{prop:primitive-scalar-classification}
++and~\ref{prop:Paley-generating-triangles}).
+ For fixed maps, the oriented-spread
+ correspondence, the signed Burnside formula, and the standard-spread orbit
+ analysis are complemented by a local criterion for invariant orientations
+@@ -830,6 +840,315 @@
+ The sufficient bound is not a general necessary condition for
+ realizability, and no priority claim is made for the character-sum
+ method or these particular applications.
++
++
++\subsection{Quantitative realization and the quarter-power obstruction}
++
++The divisor sieve yields a main term as well as positivity. The next
++two results allow the subgroup index to grow with the field size.
++
++\begin{theorem}[Quantitative slope counts]\label{thm:scalar-density}
++Let $q=2^n$, $d>1$ divide $q-1$, and $k=(q-1)/d$. Set
++\[
++ \theta_j(d)=\prod_{p\mid d}(1-p^{-j})\quad(j=1,2),\qquad
++ S_{k,d}=\sum_{h\mid\operatorname{rad}(d)}b_{kh},
++ \qquad b_\ell=\frac{(\ell-1)(\ell-2)}{\ell^2}.
++\]
++Here $\operatorname{rad}(d)$ is the product of its distinct prime divisors.
++Then
++\begin{equation}\label{eq:scalar-density}
++ |\mathcal R_d|=\frac{q+1}{k^2}\theta_2(d)
++                -\frac3k\theta_1(d)+E_{q,k,d},
++ \qquad |E_{q,k,d}|\le S_{k,d}\sqrt q\le2^{\omega(d)}\sqrt q.
++\end{equation}
++The sharper error coefficient is
++\begin{equation}\label{eq:scalar-error-coefficient}
++ S_{k,d}=2^{\omega(d)}-\frac3k\prod_{p\mid d}(1+p^{-1})
++                    +\frac2{k^2}\prod_{p\mid d}(1+p^{-2}).
++\end{equation}
++For fixed $k$, as $n$ tends to infinity through admissible dimensions,
++\begin{equation}\label{eq:scalar-density-asymptotic}
++ |\mathcal R_d|=\frac q{k^2}\theta_2(d)+O_k(q^{1/2+o(1)}),
++ \qquad
++ \frac{|\mathcal R_d|}{T_d}
++       =\theta_2(d)+O_k(q^{-1/2+o(1)}).
++\end{equation}
++In particular $\theta_2(d)>3/4$: asymptotically at least three quarters
++of the slopes satisfying the two subgroup-membership conditions generate
++the specified complement jointly.
++\end{theorem}
++\begin{proof}
++Write $T_{d/h}=(q+1-3kh)/(kh)^2+\varepsilon_h$ in
++\eqref{eq:realization-mobius}. Proposition~\ref{prop:scalar-positive-bound}
++gives $|\varepsilon_h|\le b_{kh}\sqrt q$. Only squarefree $h$ contribute.
++The identities
++\[
++ \sum_{h\mid d}\frac{\mu(h)}{h^j}=\theta_j(d),\qquad
++ \sum_{h\mid\operatorname{rad}(d)}h^{-j}
++       =\prod_{p\mid d}(1+p^{-j})
++\]
++give \eqref{eq:scalar-density} and, since $b_\ell=1-3/\ell+2/\ell^2$,
++\eqref{eq:scalar-error-coefficient}. All these coefficients are
++nonnegative and at most one for integer $\ell\ge1$.
++
++For each $\epsilon>0$, choose a fixed cutoff beyond which $2\le p^\epsilon$.
++The bounded contribution of smaller primes can be absorbed into a constant,
++so $2^{\omega(d)}\le C_\epsilon d^\epsilon$. Consequently
++$2^{\omega(d)}=q^{o(1)}$. The first asymptotic follows from
++\eqref{eq:scalar-density}; the omitted terms are bounded for fixed $k$.
++Also $T_d=q/k^2+O_k(\sqrt q)$ by
++\eqref{eq:scalar-intersection-bound}, which gives the ratio assertion.
++Finally $\prod(1-x_i)\ge1-\sum x_i$ for $0\le x_i\le1$, and the
++odd-prime bound in Proposition~\ref{prop:scalar-positive-bound} is
++strictly less than $1/4$. Thus $\theta_2(d)>3/4$.
++\end{proof}
++
++\begin{corollary}[A uniform range of growing indices]
++\label{cor:growing-index-realization}
++Let $n\ge16$, $q=2^n$, and $k>1$ divide $q-1$. If
++\begin{equation}\label{eq:growing-index-range}
++ k\le\frac{q^{1/4}}{\sqrt n},
++\end{equation}
++then $H_{(q-1)/k}$ is a realizable proper primitive affine companion group.
++\end{corollary}
++\begin{proof}
++Put $d=(q-1)/k$. Since $k<\sqrt q+1$, we have $d>\sqrt q-1$,
++so the field-degree argument in Theorem~\ref{thm:fixed-index-realization}
++gives $\operatorname{ord}_d(2)=n$. The index is odd and at least three;
++hence $(3k-1)/k^2<1$. Using $\omega(d)<2n/3$ and $b_k\le1$ gives
++\[
++ L_{q,k,d}>\left(\frac n{12}-1\right)\sqrt q-1>0
++ \qquad(n\ge16).
++\]
++Theorem~\ref{thm:fixed-index-realization} proves the assertion.
++\end{proof}
++
++The exponent $1/4$ has a structural obstruction. It is not merely
++an artifact of bounding each Jacobi sum separately.
++
++\begin{theorem}[Norm descent into a proper subfield]
++\label{thm:norm-subfield-descent}
++Let $1\le s<r$, $s\mid r$, $u\mid2^s-1$, and work in
++$L=\mathbb F_{2^{2r}}$. Put
++\[
++ d=u(2^r+1),\qquad
++ g=\begin{cases}
++     u,&r/s\text{ even},\\
++     u(2^s+1),&r/s\text{ odd}.
++   \end{cases}
++\]
++The two membership conditions descend exactly:
++\begin{equation}\label{eq:norm-subfield-descent}
++ \{a\in C_d:1+a\in C_d\}
++ =\{a\in C_g\subset\mathbb F_{2^{2s}}^\times:1+a\in C_g\}.
++\end{equation}
++Thus $T_d=T_g$, $\mathcal R_d=\varnothing$, and
++$H_d=L^+\rtimes C_d$ is primitive but cannot be generated by an
++affine complete mapping and its prescribed companion.
++The nonrealizability also holds for every linear conjugate of $H_d$.
++\end{theorem}
++\begin{proof}
++Set $Q=2^r$, $K=\mathbb F_Q$, and $E=\mathbb F_{2^s}\subset K$.
++The norm $N_{L/K}(x)=x^{Q+1}$ has kernel $C_{Q+1}$ and maps $C_d$
++onto $C_u\subset E^\times$: its image has order
++$d/\gcd(d,Q+1)=u$, since $\gcd(u,Q+1)=1$.
++If $a,1+a\in C_d$, put $U=N(a)$ and $W=N(1+a)$. Both lie in $E$, and
++\[
++ a+a^Q=1+U+W\in E,\qquad
++ a^2+(1+U+W)a+U=0.
++\]
++Thus $a$ has degree at most two over $E$ and belongs to
++$\mathbb F_{2^{2s}}\subset L$. The same holds for $1+a$.
++
++Write $t=2^s$ and $m=r/s$. Cyclic subgroup intersection gives
++$C_d\cap\mathbb F_{t^2}^\times=C_{\gcd(d,t^2-1)}$.
++If $m$ is even, $t^m+1\equiv2\pmod{t^2-1}$, so this gcd is $u$.
++If $m$ is odd, $t^m+1\equiv t+1\pmod{t^2-1}$; since
++$u\mid t-1$ and $\gcd(t-1,t+1)=1$, the gcd is $u(t+1)$.
++This proves one inclusion in \eqref{eq:norm-subfield-descent};
++the other follows from $C_g\subset C_d$.
++In both cases $g<d$, so every pair in the left-hand set generates
++a proper subgroup of $C_d$. Therefore $\mathcal R_d=\varnothing$.
++
++The group $C_d$ contains $C_{2^r+1}$, whose action on $L$ is irreducible
++by the field-degree proof in Theorem~\ref{thm:fermat-obstruction}.
++Hence $H_d$ is primitive. Corollary~\ref{cor:scalar-realization}
++excludes scalar realizations, and every affine permutation in the
++specified group is scalar. Linear-conjugacy equivariance of $F$
++excludes realizations of its linear conjugates as well.
++\end{proof}
++
++\begin{corollary}[The quarter-power barrier]
++\label{cor:quarter-power-barrier}
++For every $s\ge1$, put $t=2^s$, $q=t^4$, and
++\[
++ k=t+1=q^{1/4}+1,\qquad d=(t-1)(t^2+1)=\frac{q-1}{k}.
++\]
++Then $H_d$ is a proper primitive nonrealizable affine companion group,
++and its membership pairs are exactly
++\begin{equation}\label{eq:quarter-subfield-pairs}
++ \{a\in C_d:1+a\in C_d\}=\mathbb F_t\setminus\{0,1\}.
++ \qquad T_d=t-2,\quad |\mathcal R_d|=0.
++\end{equation}
++Consequently no exponent $\beta>1/4$ can give universal eventual
++realizability for all admissible indices $1<k\le q^\beta$.
++Even the range $1<k\le Cq^{1/4}$ fails for every fixed $C>1$.
++\end{corollary}
++\begin{proof}
++Apply Theorem~\ref{thm:norm-subfield-descent} with $r=2s$ and
++$u=t-1$. Here $g=t-1$ and $C_g=\mathbb F_t^\times$, yielding
++\eqref{eq:quarter-subfield-pairs}. The indices are proper and
++$k/q^{1/4}=1+1/t\to1$. Hence these infinitely many exceptions
++eventually lie in either range in the statement.
++\end{proof}
++
++Together, Corollaries~\ref{cor:growing-index-realization}
++and~\ref{cor:quarter-power-barrier} determine the exponent $1/4$
++for a universal growing-index guarantee. They leave a factor of
++$\sqrt n=\sqrt{\log_2q}$ between the sufficient range and the
++obstructed family. In particular, the exact boundary $k\le q^{1/4}$
++has not been decided by these arguments.
++
++\subsection{Primitive classification and generating triangles}
++
++\begin{proposition}[Primitive inverse classification and linear conjugacy]
++\label{prop:primitive-scalar-classification}
++Up to $\mathrm{GL}(n,2)$ conjugacy, the primitive groups generated by
++an affine complete mapping and its prescribed companion are exactly
++\[
++ H_d=\mathbb F_{2^n}^+\rtimes C_d,
++ \qquad d\mid2^n-1,\quad \operatorname{ord}_d(2)=n,
++ \quad \mathcal R_d\ne\varnothing.
++\]
++Distinct admissible $d$ give distinct group-conjugacy classes.
++For each such $d$, the normalizer in $\mathrm{GL}(n,2)$ has order
++$n(2^n-1)$ and is the semilinear scalar group $\Gamma\mathrm L(1,2^n)$.
++The affine complete mappings realizing a linear conjugate of $H_d$
++form exactly $|\mathcal R_d|/n$ linear-conjugacy classes, each of size
++$|\mathrm{GL}(n,2)|$.
++\end{proposition}
++\begin{proof}
++Corollary~\ref{cor:affine-actions} makes the linear part $A$ of every
++primitive realization irreducible and its translation nonzero.
++The field $\mathbb F_2[A]$ then identifies $V$ with $\mathbb F_{2^n}$;
++the complement is generated by $a$ and $1+a$ and has some order $d$.
++The characterization follows from Corollary~\ref{cor:scalar-realization}.
++Conversely that corollary realizes every listed $H_d$.
++Different orders $2^n d$ distinguish the group classes.
++
++A linear transformation normalizes $H_d$ exactly when it normalizes
++its stabilizer $C_d$ of zero. Since $\mathbb F_2[C_d]=\mathbb F_{2^n}$,
++conjugation by such a transformation induces an automorphism of this
++field, hence a power of Frobenius. After removing that power, the
++transformation centralizes all scalar multiplications and is itself
++scalar. Conversely every map $x\mapsto b x^{2^i}$ normalizes $C_d$.
++The normalizer therefore has the asserted order.
++
++For maps realizing the specified $H_d$, normalizer conjugation sends
++$(a,c)$ to $(a^{2^i},bc^{2^i})$. Scalar transformations act transitively
++on $c\ne0$. Every $a\in\mathcal R_d$ has degree $n$ over $\mathbb F_2$:
++a proper subfield containing $a$ would contain $1+a$ and all of $C_d$.
++Thus its Frobenius orbit has length $n$, giving $|\mathcal R_d|/n$
++normalizer orbits. Conjugacy between two maps with group $H_d$ must
++normalize $H_d$, so these are also the full linear-conjugacy classes
++when group conjugates are included. Finally, a linear transformation
++centralizing $f(x)=ax+c$ centralizes the irreducible multiplier $a$,
++so is scalar; fixing $c\ne0$ forces it to be the identity.
++All full linear-conjugacy classes consequently have size
++$|\mathrm{GL}(n,2)|$.
++\end{proof}
++
++For an explicit polynomial encoding, set
++\[
++ G_e(t)=\gcd(t^e+1,(t+1)^e+1),\qquad
++ P_d(t)=\prod_{e\mid d}G_e(t)^{\mu(d/e)}.
++\]
++Although written as a quotient, $P_d$ is a monic squarefree polynomial
++over $\mathbb F_2$ with root set $\mathcal R_d$. Indeed the exponent
++of a root whose pair generates $C_h$ is
++$\sum_{h\mid e\mid d}\mu(d/e)$, which is one if $h=d$ and zero otherwise.
++When $\operatorname{ord}_d(2)=n$, all irreducible factors of $P_d$
++have degree $n$ and encode the classes in
++Proposition~\ref{prop:primitive-scalar-classification}.
++For example the index-three counts in dimensions $8,10,12,14$ give
++$3,9,33,123$ map classes, respectively.
++
++The graph interpretation clarifies the distinction between subgroup
++membership and joint generation. Write
++\[
++ \Gamma(q,d)=\operatorname{Cay}(\mathbb F_q^+,C_d),
++ \qquad x\sim y\ \Longleftrightarrow\ y-x\in C_d.
++\]
++This is the usual generalized Paley graph (including the complete
++graph when $d=q-1$). Its connectivity and ordinary triangle counts
++are classical \cite{LP09,DaMc21}. For a triangle with ordered vertices
++$(x,y,z)$, define its ratio subgroup to be
++\[
++ K(\{x,y,z\})=\left\langle a,1+a\right\rangle,
++ \qquad a=\frac{z-x}{y-x}.
++\]
++This subgroup is independent of the vertex ordering. We call the
++triangle \emph{generating} when its ratio subgroup is $C_d$.
++The definition uses normalized ratios, not the subgroup generated
++by the unnormalized edge differences.
++
++\begin{proposition}[Generating triangles and companion realization]
++\label{prop:Paley-generating-triangles}
++For $d>1$ dividing $q-1$, $\Gamma(q,d)$ is connected exactly when
++$\operatorname{ord}_d(2)=n$. Each edge belongs to $T_d$ ordinary
++triangles and $|\mathcal R_d|$ generating triangles. The total number
++of generating triangles is $qd|\mathcal R_d|/6$.
++Thus $H_d$ is realizable exactly when the graph is connected and
++has a generating triangle.
++If $d>3$, the action of $H_d$ on generating triangles is free,
++with $|\mathcal R_d|/6$ orbits; in particular $6\mid|\mathcal R_d|$.
++\end{proposition}
++\begin{proof}
++The additive span of $C_d$ is closed under products, contains one,
++and is a finite subfield. It is therefore $\mathbb F_2[C_d]
++=\mathbb F_{2^{\operatorname{ord}_d(2)}}$.
++The components are its additive cosets, proving the connectivity
++assertion (compare \cite[Theorem~2.2]{LP09}).
++
++For the edge $\{0,1\}$, its third vertices are precisely the $a$
++with $a,1+a\in C_d$, and the generating ones are precisely
++$a\in\mathcal R_d$. Reordering vertices replaces $a$ by one of
++\[
++ a,\quad 1+a,\quad a^{-1},\quad(1+a)^{-1},\quad
++ \frac{a}{1+a},\quad\frac{1+a}{a};
++\]
++these all generate the same subgroup together with one plus themselves.
++Translations and multiplication by $C_d$ preserve the ratios and act
++transitively on edges. Counting the $qd/2$ edges and three edges per
++triangle gives the total. The realization equivalence now follows
++from Corollary~\ref{cor:scalar-realization}.
++
++For $d>3$ the six transforms of $a\in\mathcal R_d$ are distinct.
++A transposition can fix only an excluded value $0$ or $1$, whereas
++a three-cycle can fix only $a^2+a+1=0$, whose pair generates $C_3$.
++Any affine stabilizer of a generating triangle induces a vertex
++permutation and would make the corresponding transform fix $a$.
++It must therefore fix the vertices individually, forcing its
++multiplier to be one and its translation to be zero.
++The action is free. Each orbit has size $qd$, giving the orbit count
++and divisibility. No claim about the full graph automorphism group
++is required here.
++\end{proof}
++
++In the family of Corollary~\ref{cor:quarter-power-barrier}, the graph
++is connected and every edge has exactly $t-2$ third vertices. For an
++edge $\{x,y\}$ they are $x+(y-x)a$ with
++$a\in\mathbb F_t\setminus\{0,1\}$. Thus all its triangles lie in the
++clique $x+(y-x)\mathbb F_t$, and none is generating.
++These graphs are the already studied $(t+1)$-power graphs
++$\Gamma_{t,4}(1)$ of Podest\'a and Videla \cite{PV24}; their ordinary
++intersection parameter $t-2$ follows also from
++\cite[Theorem~5.2]{PV24}. The descent proof supplies the exact subfield
++location and its companion-group obstruction. Connectedness and
++ordinary triangles alone do not guarantee realization.
++The graph family, character-sum method, and ordinary triangle counts
++are not claimed as new, and priority of the companion-specific
++applications remains to be established.
+ 
+ 
+ \begin{theorem}[The six-dimensional Singer application]\label{thm:agld}
+@@ -1755,6 +2074,18 @@
+ \bibitem{vW02} P.~van Wamelen, \emph{Jacobi sums over finite fields},
+ Acta Arith.~102(1) (2002) 1--20,
+ \href{https://doi.org/10.4064/aa102-1-1}{doi:10.4064/aa102-1-1}.
++\bibitem{LP09} T.~K.~Lim, C.~E.~Praeger,
++\emph{On generalized Paley graphs and their automorphism groups},
++Michigan Math.~J.~58(1) (2009) 293--308,
++\href{https://doi.org/10.1307/mmj/1242071694}{doi:10.1307/mmj/1242071694}.
++\bibitem{DaMc21} M.~L.~Dawsey, D.~McCarthy,
++\emph{Generalized Paley graphs and their complete subgraphs of orders
++three and four}, Res.~Math.~Sci.~8 (2021), Article~18,
++\href{https://arxiv.org/abs/2006.14716}{arXiv:2006.14716}.
++\bibitem{PV24} R.~A.~Podest\'a, D.~E.~Videla,
++\emph{Spectral properties of generalized Paley graphs of
++$(q^\ell+1)$-th powers and applications},
++\href{https://arxiv.org/abs/1812.03332v7}{arXiv:1812.03332v7} (2024).
+ \bibitem{DM} J.~D.~Dixon, B.~Mortimer, \emph{Permutation Groups}, Springer, 1996.
+ \bibitem{Coh} S.~D.~Cohen, \emph{The orders of related elements of a finite field}, Ramanujan J.~7 (2003) 169--183, doi:10.1023/A:1026295128600.
+ \bibitem{Mor} O.~Moreno, \emph{On the existence of a primitive quadratic of trace $1$ over $GF(p^m)$}, J.~Combin.~Theory Ser.~A 51 (1989) 104--110.
+@@ -1883,6 +2214,9 @@
+ paper proofs, not Lean proofs. The inverse-realization and arithmetic-sieve criteria, the
+ primitive-group nonrealizability theorem, the positive Jacobi-sum/sieve
+ bound, the fixed-index realization theorem and index-three threshold,
++the quantitative density and growing-index results, norm descent and
++the quarter-power obstruction, primitive inverse classification and
++the generating-triangle correspondence,
+ the local invariant-orientation
+ criterion, and the long-cycle double-transitivity criterion are also
+ paper proofs, not part of the Lean formalization.
+@@ -1928,6 +2262,21 @@
+ $n=4,6,8,10,12,14$, respectively. These computations verify finite
+ arithmetic certificates; the infinite-family and threshold assertions
+ use the paper proofs in Section~\ref{sec:group}.
++
++The verifier \path{verify_scalar_depth.py} audits the quantitative
++main term and error by exact rational arithmetic in even dimensions
++$2$ through $14$. It checks norm descent by polynomial gcds for
++$2\le r\le8$, all proper divisors $s\mid r$, and all $u\mid2^s-1$.
++The quarter-power counts are checked for $s=1,2,3,4,5$ by polynomial
++gcds and the divisor sieve, with independent field enumeration and
++subfield-location checks for $s=1,2,3,4$.
++For primitive subgroup orders in even dimensions $2$ through $14$,
++it checks Frobenius and six-ratio orbits, the degree of the polynomial
++encoding the realizing slopes, and the conjugacy-class counts.
++It also directly enumerates generating triangles and their affine
++stabilizers on $4$ and $16$ vertices. The corresponding data are
++\path{scalar_depth_results.json}. These are finite arithmetic audits;
++the uniform exponent obstruction and classification use the paper proofs.
+ 
+ \subsection*{Bases for the coordinate presentation}
+ For the coordinate presentation $T(x)=(2^{2k}-1)\oplus\mathrm{coords}_G(x)$ on

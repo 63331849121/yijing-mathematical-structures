@@ -1,0 +1,31 @@
+{
+  "research_date": "2026-10-12",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\master\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "third_party_dependencies": [],
+  "assertions_enabled": true,
+  "runs": [
+    {
+      "script": "verify_inner_critical.py",
+      "log": "inner_critical_review_run.log",
+      "exit_code": 0,
+      "elapsed_seconds": 1.471
+    },
+    {
+      "script": "verify_inner_symmetry.py",
+      "log": "inner_symmetry_review_run.log",
+      "exit_code": 0,
+      "elapsed_seconds": 3.44
+    }
+  ],
+  "input_output_sha256": {
+    "verify_inner_critical.py": "bac7303f19197022af01f2ad7230fb22c229df2d16385359683a6d261d582a57",
+    "verify_inner_symmetry.py": "94acaeacbf9256a2365b299734ed8fe141c7d91efa00a23137740124c143211d",
+    "inner_critical_certificates.json": "e9f58ed6c1d0677c91ac50d24fa02420883bbb08dacff4c38ee3c3094770ea8c",
+    "inner_critical_verification.json": "3d08e406211a32ef10f4d8cd8158a2906746029a24d2ffaed3f66fb92ae9df3e",
+    "inner_symmetry_verification.json": "2d05421c85c8e73ee7bfc10ee422a4ac65439fff0edec2e6c94b31ed6b784632",
+    "inner_critical_review_run.log": "2e408b2105cce5c7dba950347a01f9b4c96c88c986c5bcd723fbe83cf41a7016",
+    "inner_symmetry_review_run.log": "bf5d8e21d8032082db360fe814ffc7cfe42fa3291ed2ad21229d0400d3f1b2de"
+  }
+}

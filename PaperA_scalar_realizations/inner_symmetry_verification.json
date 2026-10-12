@@ -1,0 +1,668 @@
+{
+  "certificate_geometry_range": [
+    2,
+    32
+  ],
+  "number_of_certificate_points_checked": 31,
+  "exhaustive_primitive_norm_fiber_range": [
+    2,
+    6
+  ],
+  "certificate_geometry": [
+    {
+      "s": 2,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 3,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 4,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 5,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 6,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 7,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 8,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 9,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 10,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 11,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 12,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 13,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 14,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 15,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 16,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 17,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 18,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 19,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 20,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 21,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 22,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 23,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 24,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 25,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 26,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 27,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 28,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 29,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 30,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 31,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    },
+    {
+      "s": 32,
+      "four_distinct_iterates": true,
+      "rational_frobenius_and_deck_multiplier": true,
+      "rho_kummer_identities": true,
+      "primitive_order_preserved": true
+    }
+  ],
+  "small_fibers": [
+    {
+      "s": 2,
+      "primitive_norm_fibers_checked": 4,
+      "candidate_points_checked": 16,
+      "primitive_points_checked": 16,
+      "all_four_cycles_free": true,
+      "all_fiber_and_primitive_counts_divisible_by_four": true,
+      "integer_character_distributions_invariant": true,
+      "nontrivial_character_orbits_checked": 4,
+      "fiber_counts": {
+        "1": [
+          4,
+          4
+        ],
+        "2": [
+          4,
+          4
+        ],
+        "3": [
+          4,
+          4
+        ],
+        "4": [
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "s": 3,
+      "primitive_norm_fibers_checked": 6,
+      "candidate_points_checked": 48,
+      "primitive_points_checked": 48,
+      "all_four_cycles_free": true,
+      "all_fiber_and_primitive_counts_divisible_by_four": true,
+      "integer_character_distributions_invariant": true,
+      "nontrivial_character_orbits_checked": 16,
+      "fiber_counts": {
+        "1": [
+          8,
+          8
+        ],
+        "2": [
+          8,
+          8
+        ],
+        "4": [
+          8,
+          8
+        ],
+        "5": [
+          8,
+          8
+        ],
+        "7": [
+          8,
+          8
+        ],
+        "8": [
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "s": 4,
+      "primitive_norm_fibers_checked": 16,
+      "candidate_points_checked": 224,
+      "primitive_points_checked": 224,
+      "all_four_cycles_free": true,
+      "all_fiber_and_primitive_counts_divisible_by_four": true,
+      "integer_character_distributions_invariant": true,
+      "nontrivial_character_orbits_checked": 64,
+      "fiber_counts": {
+        "1": [
+          16,
+          16
+        ],
+        "2": [
+          16,
+          16
+        ],
+        "3": [
+          12,
+          12
+        ],
+        "4": [
+          16,
+          16
+        ],
+        "5": [
+          12,
+          12
+        ],
+        "6": [
+          12,
+          12
+        ],
+        "7": [
+          12,
+          12
+        ],
+        "8": [
+          16,
+          16
+        ],
+        "9": [
+          16,
+          16
+        ],
+        "10": [
+          12,
+          12
+        ],
+        "11": [
+          12,
+          12
+        ],
+        "12": [
+          12,
+          12
+        ],
+        "13": [
+          16,
+          16
+        ],
+        "14": [
+          12,
+          12
+        ],
+        "15": [
+          16,
+          16
+        ],
+        "16": [
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "s": 5,
+      "primitive_norm_fibers_checked": 20,
+      "candidate_points_checked": 640,
+      "primitive_points_checked": 520,
+      "all_four_cycles_free": true,
+      "all_fiber_and_primitive_counts_divisible_by_four": true,
+      "integer_character_distributions_invariant": true,
+      "nontrivial_character_orbits_checked": 256,
+      "fiber_counts": {
+        "1": [
+          36,
+          28
+        ],
+        "2": [
+          36,
+          28
+        ],
+        "4": [
+          36,
+          28
+        ],
+        "5": [
+          28,
+          24
+        ],
+        "7": [
+          28,
+          24
+        ],
+        "8": [
+          36,
+          28
+        ],
+        "10": [
+          28,
+          24
+        ],
+        "13": [
+          28,
+          24
+        ],
+        "14": [
+          28,
+          24
+        ],
+        "16": [
+          36,
+          28
+        ],
+        "17": [
+          36,
+          28
+        ],
+        "19": [
+          28,
+          24
+        ],
+        "20": [
+          28,
+          24
+        ],
+        "23": [
+          28,
+          24
+        ],
+        "25": [
+          36,
+          28
+        ],
+        "26": [
+          28,
+          24
+        ],
+        "28": [
+          28,
+          24
+        ],
+        "29": [
+          36,
+          28
+        ],
+        "31": [
+          36,
+          28
+        ],
+        "32": [
+          36,
+          28
+        ]
+      }
+    },
+    {
+      "s": 6,
+      "primitive_norm_fibers_checked": 48,
+      "candidate_points_checked": 3072,
+      "primitive_points_checked": 2928,
+      "all_four_cycles_free": true,
+      "all_fiber_and_primitive_counts_divisible_by_four": true,
+      "integer_character_distributions_invariant": true,
+      "nontrivial_character_orbits_checked": 1024,
+      "fiber_counts": {
+        "1": [
+          60,
+          60
+        ],
+        "2": [
+          60,
+          60
+        ],
+        "3": [
+          68,
+          60
+        ],
+        "4": [
+          60,
+          60
+        ],
+        "6": [
+          68,
+          60
+        ],
+        "7": [
+          64,
+          60
+        ],
+        "8": [
+          60,
+          60
+        ],
+        "9": [
+          64,
+          60
+        ],
+        "11": [
+          64,
+          64
+        ],
+        "12": [
+          68,
+          60
+        ],
+        "14": [
+          64,
+          60
+        ],
+        "16": [
+          60,
+          60
+        ],
+        "17": [
+          68,
+          60
+        ],
+        "18": [
+          64,
+          60
+        ],
+        "19": [
+          64,
+          64
+        ],
+        "21": [
+          64,
+          64
+        ],
+        "22": [
+          64,
+          64
+        ],
+        "23": [
+          64,
+          64
+        ],
+        "24": [
+          68,
+          60
+        ],
+        "27": [
+          64,
+          64
+        ],
+        "28": [
+          64,
+          60
+        ],
+        "29": [
+          64,
+          60
+        ],
+        "31": [
+          68,
+          60
+        ],
+        "32": [
+          60,
+          60
+        ],
+        "33": [
+          60,
+          60
+        ],
+        "34": [
+          68,
+          60
+        ],
+        "36": [
+          64,
+          60
+        ],
+        "37": [
+          64,
+          60
+        ],
+        "38": [
+          64,
+          64
+        ],
+        "41": [
+          68,
+          60
+        ],
+        "42": [
+          64,
+          64
+        ],
+        "43": [
+          64,
+          64
+        ],
+        "44": [
+          64,
+          64
+        ],
+        "46": [
+          64,
+          64
+        ],
+        "47": [
+          64,
+          60
+        ],
+        "48": [
+          68,
+          60
+        ],
+        "49": [
+          60,
+          60
+        ],
+        "51": [
+          64,
+          60
+        ],
+        "53": [
+          68,
+          60
+        ],
+        "54": [
+          64,
+          64
+        ],
+        "56": [
+          64,
+          60
+        ],
+        "57": [
+          60,
+          60
+        ],
+        "58": [
+          64,
+          60
+        ],
+        "59": [
+          68,
+          60
+        ],
+        "61": [
+          60,
+          60
+        ],
+        "62": [
+          68,
+          60
+        ],
+        "63": [
+          60,
+          60
+        ],
+        "64": [
+          60,
+          60
+        ]
+      }
+    }
+  ]
+}

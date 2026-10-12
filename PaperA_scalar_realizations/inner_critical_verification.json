@@ -1,0 +1,107 @@
+{
+  "finite_range_verified": [
+    2,
+    32
+  ],
+  "number_of_certificates": 31,
+  "recursive_primality_certificates": 112,
+  "exact_small_counts": [
+    {
+      "s": 2,
+      "t": 4,
+      "d": 85,
+      "T_d": 24,
+      "R_d": 24,
+      "primitive_slope_count": 16,
+      "degenerate_subfield_elements": 0,
+      "diagonal_candidates": 8,
+      "diagonal_realizing": 8,
+      "primitive_norm_fiber_min": 4,
+      "primitive_norm_fiber_max": 4
+    },
+    {
+      "s": 3,
+      "t": 8,
+      "d": 585,
+      "T_d": 86,
+      "R_d": 72,
+      "primitive_slope_count": 48,
+      "degenerate_subfield_elements": 2,
+      "diagonal_candidates": 4,
+      "diagonal_realizing": 0,
+      "primitive_norm_fiber_min": 8,
+      "primitive_norm_fiber_max": 8
+    },
+    {
+      "s": 4,
+      "t": 16,
+      "d": 4369,
+      "T_d": 240,
+      "R_d": 240,
+      "primitive_slope_count": 224,
+      "degenerate_subfield_elements": 0,
+      "diagonal_candidates": 16,
+      "diagonal_realizing": 16,
+      "primitive_norm_fiber_min": 12,
+      "primitive_norm_fiber_max": 16
+    },
+    {
+      "s": 5,
+      "t": 32,
+      "d": 33825,
+      "T_d": 1214,
+      "R_d": 960,
+      "primitive_slope_count": 520,
+      "degenerate_subfield_elements": 2,
+      "diagonal_candidates": 44,
+      "diagonal_realizing": 0,
+      "primitive_norm_fiber_min": 28,
+      "primitive_norm_fiber_max": 36
+    },
+    {
+      "s": 6,
+      "t": 64,
+      "d": 266305,
+      "T_d": 4104,
+      "R_d": 3960,
+      "primitive_slope_count": 2928,
+      "degenerate_subfield_elements": 0,
+      "diagonal_candidates": 56,
+      "diagonal_realizing": 24,
+      "primitive_norm_fiber_min": 60,
+      "primitive_norm_fiber_max": 68
+    }
+  ],
+  "effective_constant": {
+    "small_primes_1_mod_4": [
+      5,
+      13,
+      17,
+      29,
+      37,
+      41,
+      53,
+      61,
+      73,
+      89,
+      97,
+      101,
+      109,
+      113,
+      137,
+      149,
+      157,
+      173,
+      181,
+      193,
+      197,
+      229,
+      233,
+      241
+    ],
+    "constant_eighth_power_numerator": "6277101735386680763835789423207666416102355444464034512896",
+    "constant_eighth_power_denominator": "6045408114863853991373345088496297320256672385",
+    "constant_less_than": 32,
+    "analytic_range_s_at_least": 33
+  }
+}

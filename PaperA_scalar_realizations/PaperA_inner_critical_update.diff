@@ -1,0 +1,460 @@
+--- PaperA_revised.tex (before inner critical update)
++++ PaperA_revised.tex (all-dimensional inner critical update)
+@@ -28,9 +28,12 @@
+ Uniform realization holds for $n\ge16$ and $k\le q^{1/4}/\sqrt n$,
+ where $q=2^n$. Norm descent produces primitive nonrealizable groups at
+ $q=2^{4s}$ and $k=q^{1/4}+1$, proving that the uniform exponent $1/4$
+-cannot be increased. Generating triangles in generalized Paley graphs
+-interpret the realization criterion and distinguish it from ordinary
+-triangle existence.
++cannot be increased. At the adjacent index $k=q^{1/4}-1$, we prove
++realization in every dimension $4s$ with $s\ge2$, even with a slope
++of full subgroup order. Genus-one norm fibers and a uniform character
++bound give a quantitative count; exact finite certificates complete
++the existence proof. Generating triangles in generalized Paley graphs
++interpret the realization criterion.
+ The fixed maps of $F$ correspond to oriented line spreads.
+ A local stabilizer criterion characterizes invariant orientations;
+ a signed Burnside formula gives three classes in dimension four and
+@@ -91,8 +94,16 @@
+ (Theorem~\ref{thm:norm-subfield-descent},
+ Corollary~\ref{cor:quarter-power-barrier}) give nonrealizable primitive
+ groups at $k=q^{1/4}+1$ for every $q=2^{4s}$.
++At the adjacent inner index $k=q^{1/4}-1$ we obtain an
++all-dimensional positive result (Theorem~\ref{thm:inner-all}): one
++can choose a slope that itself generates the entire multiplier subgroup.
++The proof passes through a genus-one norm fiber, a Lang-character
++bound with conductor eight, a primitive-element sieve, and 31 exact
++finite certificates; it uses the classical Weil bound for curves.
++Theorem~\ref{thm:inner-primitive-count} also gives a quantitative count.
+ Thus the exponent $1/4$ is optimal for a universal index guarantee,
+-with a remaining logarithmic gap. Primitive inverse classification and
++and the two adjacent quartic families are resolved. The universal
++range still has a logarithmic gap. Primitive inverse classification and
+ generating triangles in generalized Paley graphs complete this realization
+ picture (Propositions~\ref{prop:primitive-scalar-classification}
+ and~\ref{prop:Paley-generating-triangles}).
+@@ -1149,6 +1160,282 @@
+ The graph family, character-sum method, and ordinary triangle counts
+ are not claimed as new, and priority of the companion-specific
+ applications remains to be established.
++
++
++\subsection{Realization at the inner quarter-power boundary}
++\label{subsec:inner-critical}
++
++The obstruction at $k=t+1$ has a positive counterpart at $k=t-1$.
++Throughout this subsection put
++\[
++ t=2^s\ (s\ge2),\quad K=\mathbb F_t,\quad E=\mathbb F_{t^2},
++ \quad L=\mathbb F_{t^4},\quad A=t+1,\quad B=t^2+1,\quad d=AB.
++\]
++Then $\gcd(A,B)=1$ and $C_d=\ker N_{L/K}$.
++Write $U=\ker N_{E/K}=C_A$ and $V=\ker N_{L/E}=C_B$.
++The next results prove the stronger assertion that some $a\in C_d$
++has order $d$ and satisfies $1+a\in C_d$.
++
++\begin{proposition}[Quadratic parametrization]\label{prop:inner-quadratic}
++The elements $a\in L\setminus E$ with $a,1+a\in C_d$ correspond,
++two at a time, to the ordered pairs $(b,w)\in U^2$ satisfying
++\[
++ c=1+b+w\ne0,\qquad
++ \operatorname{Tr}_{E/\mathbb F_2}(b/c^2)=1.
++\]
++The two elements are the roots of $X^2+cX+b$, and
++$N_{L/E}(a)=b$, $N_{L/E}(1+a)=w$.
++The remaining elements, in $E$, are precisely the two roots of
++$X^2+X+1$ when $s$ is odd, and there are none when $s$ is even.
++These remaining elements generate only $C_3$.
++\end{proposition}
++\begin{proof}
++If $a\notin E$, write $b=a^{t^2+1}$ and $c=a+a^{t^2}$.
++Then $c\ne0$, the minimal polynomial is $X^2+cX+b$, and
++$(1+a)^{t^2+1}=1+b+c=w$. Norm transitivity puts $b,w$ in $U$.
++After division by $c^2$, the quadratic is an Artin--Schreier equation;
++it is irreducible exactly when the displayed absolute trace is one.
++Conversely, that trace condition makes the quadratic irreducible over
++$E$, with both roots in $L\setminus E$. Their two relative norms are
++$b,w$, so norm transitivity gives $a,1+a\in C_d$.
++The relative norms determine the ordered pair uniquely.
++
++For $a\in E$, the same norm conditions reduce to $a,1+a\in U$, since
++$N_{L/K}(a)=N_{E/K}(a)^2$. Thus $a^t=a^{-1}$ and
++$(1+a)^t=(1+a)^{-1}$. Substitution gives
++$(1+a)(1+a^{-1})=1$, or $a^2+a+1=0$.
++Such roots lie in $U$ exactly when $3\mid t+1$, equivalently when
++$s$ is odd. Their two norms satisfy $1+b+w=0$.
++In particular, the omitted $c=0$ branch contributes no realizing slope.
++\end{proof}
++
++\begin{lemma}[A genus-one norm fiber]\label{lem:inner-fiber}
++Fix $b\in U$ of order $A$ and put
++\[
++ X_b(K)=\{a\in L:N_{L/E}(a)=b,\ N_{L/K}(1+a)=1\}.
++\]
++This set is the full set of $K$-points of a smooth projective
++geometrically connected curve $C_b/K$ of genus one. Over $\overline K$
++the affine part has equation
++\begin{equation}\label{eq:inner-fiber}
++ (x+1)(x+b)(y+1)(y+b^{-1})=xy
++ \qquad (x,y\ne0).
++\end{equation}
++Its completion in $\mathbb P^1\times\mathbb P^1$ has eight boundary
++points, none rational over $K$. Consequently
++\[
++ \bigl|\#X_b(K)-(t+1)\bigr|\le2\sqrt t.
++\]
++\end{lemma}
++\begin{proof}
++The relative-norm equation defines a variety over $K$ by restriction
++of scalars. In the four split coordinates of $\operatorname{Res}_{L/K}
++\mathbb G_m$, write
++$(a_0,a_1,a_2,a_3)=(x,y,b/x,b^{-1}/y)$.
++The remaining norm equation is exactly \eqref{eq:inner-fiber}.
++Let $P=(x+1)(x+b)$ and $Q=(y+1)(y+b^{-1})$.
++At a singular point in the torus, $PQ=xy\ne0$ and
++\[
++ (b+1)Q+y=0,\qquad (b^{-1}+1)P+x=0.
++\]
++Multiplication would force $b+b^{-1}=1$, hence $b^3=1$.
++This contradicts $\operatorname{ord}(b)=A\ge5$.
++The boundary points are
++\[
++\begin{split}
++ D_x&=\{(0,1),(0,b^{-1}),(\infty,1),(\infty,b^{-1})\},\\
++ D_y&=\{(1,0),(b,0),(1,\infty),(b,\infty)\}.
++\end{split}
++\]
++They are distinct and smooth: in the appropriate affine charts the
++derivative along the finite coordinate is a nonzero multiple of
++$1+b$ or $1+b^{-1}$. No corner of the square is on the curve.
++The smooth bidegree-$(2,2)$ curve is geometrically connected:
++distinct components with zero intersection would all have to be
++fibers of the same projection, contrary to the total bidegree.
++It is therefore geometrically irreducible and has genus
++$(2-1)(2-1)=1$. Its smooth completion descends to $K$.
++
++The $t$-power Frobenius on these coordinates is
++$(x,y)\mapsto(b/y^t,x^t)$. A rational point satisfies $y=x^t$,
++which excludes all eight boundary points. Hence
++$C_b(K)=X_b(K)$, with the stated interpretation in $L$.
++The final bound is the Hasse--Weil bound.
++\end{proof}
++
++\begin{lemma}[Uniform character bound on a norm fiber]
++\label{lem:inner-character}
++Let $b$ be as in Lemma~\ref{lem:inner-fiber}, and let $u\in U$ be
++the unique square root of $b$. For every nontrivial multiplicative
++character $\chi$ of $V$, one has
++\begin{equation}\label{eq:inner-character}
++ \left|\sum_{a\in X_b(K)}\chi(a/u)\right|\le8\sqrt t.
++\end{equation}
++\end{lemma}
++\begin{proof}
++We use the classical Weil bound for a geometrically nontrivial
++finite-order rank-one character on a curve: on a genus-$g$ curve,
++tame ramification at $r$ geometric points gives the bound
++$(2g-2+r)\sqrt t$, when the character is nontrivial at every one
++of those points. This is the curve Artin-character estimate
++discussed in \cite[\S4]{FFSTV13}; the Lang-torsor interpretation
++of finite-field multiplicative characters is also used in \cite{Katz89}.
++For completeness, the dimension underlying this estimate is
++$2g-2+r$: compactly supported cohomology in degrees zero and two
++vanishes, and the tame Euler-characteristic formula gives this
++dimension in degree one. The trace formula and the Weil theorem
++for curves bound each eigenvalue by $\sqrt t$.
++For finite-order characters this is a character component of a
++finite cover of the curve. We now check all these hypotheses here.
++
++Let $\mathcal T=\operatorname{Res}_{E/K}
++(\ker N_{L/E})$ denote the two-dimensional norm torus.
++It has $\mathcal T(K)=V$, and $a\mapsto a/u$ maps $X_b$ to
++$\mathcal T$, since $N_{L/E}(u)=u^2=b$.
++Over $\overline K$ use coordinates $(z_0,z_1)$ on the torus;
++its Frobenius is
++\[
++ F_{\mathcal T}(z_0,z_1)=(z_1^{-t},z_0^t).
++\]
++The Lang isogeny $z\mapsto F_{\mathcal T}(z)/z$ has constant
++kernel $V$. Pulling it back along $a\mapsto a/u$, and writing
++$r_0=x/u$, $r_1=y/u^t$, gives
++\[
++ \frac{z_1^{-t}}{z_0}=r_0,\qquad
++ \frac{z_0^t}{z_1}=r_1,
++ \qquad\text{hence}\qquad
++ z_0^B=\frac{r_1^t}{r_0}.
++\]
++Thus this pullback is geometrically a Kummer cover with defining
++function $h=(y/u^t)^t/(x/u)$.
++For a character of exact order $m\mid B$, its quotient cover has
++equation $z^m=h$ over $\overline K$.
++
++The zeros and poles of $x$ are simple and supported on $D_x$;
++those of $y$ are simple and supported on the disjoint set $D_y$.
++Therefore the eight nonzero valuations of $h$ are
++$1,-1,t,-t$, each occurring twice.
++Since $m$ is odd and $\gcd(m,t)=1$, the character is tamely and
++nontrivially ramified at all eight points. A valuation of absolute
++value one also makes this cover geometrically connected, excluding
++a constant-field character or a geometrically trivial pullback.
++The conductor degree is consequently exactly eight, independently
++of $m,t,b$. At a rational point the Lang character evaluates to
++$\chi(a/u)$, up to replacing $\chi$ by its inverse according to
++the Frobenius convention; this does not affect the estimate.
++Lemma~\ref{lem:inner-fiber} and the curve bound now give
++$(2\cdot1-2+8)\sqrt t=8\sqrt t$.
++\end{proof}
++
++\begin{theorem}[Primitive slopes in the inner critical family]
++\label{thm:inner-primitive-count}
++Put $\theta(B)=\varphi(B)/B$ and $W(B)=2^{\omega(B)}$.
++For each $b\in U$ of order $A$, let
++\[
++ N_b^{\mathrm{prim}}=\#\{a\in X_b(K):\operatorname{ord}(a)=d\}.
++\]
++Then
++\begin{equation}\label{eq:inner-fiber-count}
++ \bigl|N_b^{\mathrm{prim}}-\theta(B)(t+1)\bigr|
++ \le\theta(B)(8W(B)-6)\sqrt t.
++\end{equation}
++In particular, with
++$N_d^{\mathrm{prim}}=\#\{a\in C_d:\operatorname{ord}(a)=d,\ 1+a\in C_d\}$,
++\begin{equation}\label{eq:inner-total-count}
++ \bigl|N_d^{\mathrm{prim}}-\varphi(A)\theta(B)(t+1)\bigr|
++ \le\varphi(A)\theta(B)(8W(B)-6)\sqrt t.
++\end{equation}
++Thus $N_d^{\mathrm{prim}}\sim\varphi(A)\theta(B)t$ as $s\to\infty$.
++\end{theorem}
++\begin{proof}
++Every $a\in X_b(K)$ has a unique expression $a=uv$ with
++$v\in V$, where $u$ is the square root of $b$ in $U$.
++Since $\operatorname{ord}(u)=A$ and $\gcd(A,B)=1$, it has order
++$d$ exactly when $v$ has order $B$.
++The usual character indicator in a cyclic group of order $B$ is
++\[
++ \mathbf1_{\operatorname{ord}(v)=B}
++ =\theta(B)\sum_{m\mid B}\frac{\mu(m)}{\varphi(m)}
++   \sum_{\operatorname{ord}(\chi)=m}\chi(v).
++\]
++Indeed the sum factors over primes $p\mid B$: the corresponding
++factor is zero on $V^p$ and $p/(p-1)$ off $V^p$, which cancels
++the factor $(p-1)/p$ in $\theta(B)$.
++The trivial-character term is $\theta(B)\#X_b(K)$.
++For each nontrivial squarefree divisor $m$ the sum of the absolute
++values of its coefficients is one. There are $W(B)-1$ such
++divisors. Lemmas~\ref{lem:inner-fiber} and~\ref{lem:inner-character}
++therefore give an error of at most
++$\theta(B)(2+8(W(B)-1))\sqrt t$, proving
++\eqref{eq:inner-fiber-count}.
++
++An element of order $d$ has relative norm of order $A$, because
++$N_{L/E}(a)=a^B$. Hence these $\varphi(A)$ norm fibers partition
++the elements counted by $N_d^{\mathrm{prim}}$. Summing proves
++\eqref{eq:inner-total-count}. Finally $2^{\omega(N)}=N^{o(1)}$:
++for any $\epsilon>0$, all but finitely many primes satisfy
++$2\le p^\epsilon$, and the remaining primes contribute only a
++constant. Since $B\asymp t^2$, the relative error tends to zero.
++\end{proof}
++
++\begin{theorem}[All-dimensional realization at index $t-1$]
++\label{thm:inner-all}
++For every $s\ge2$, there exists $a\in\mathbb F_{2^{4s}}$ with
++\[
++ \operatorname{ord}(a)=(2^s+1)(2^{2s}+1),\qquad
++ (1+a)^{(2^s+1)(2^{2s}+1)}=1.
++\]
++Consequently $\mathcal R_d\ne\varnothing$ at $k=t-1$ for every
++such $s$. The proper primitive group $L^+\rtimes C_d$ is generated
++by $f(x)=ax+c$ and $F(f)$ for every $c\in L^\times$.
++\end{theorem}
++\begin{proof}
++Every prime divisor $p$ of $B=t^2+1$ is $1$ modulo $4$, since
++$t^2\equiv-1\pmod p$. If $p\ge256$, then $2\le p^{1/8}$.
++For the smaller primes a direct integer product gives
++\[
++ \prod_{\substack{p<256\ \mathrm{prime}\\p\equiv1\pmod4}}
++ \frac{256}{p}<32^8.
++\]
++The 24 primes in this product and the exact integer comparison
++are supplied with the finite verifier in Appendix~\ref{app:inner-cert}.
++It follows for every $B$ under consideration that
++\[
++ W(B)<32B^{1/8}.
++\]
++For $s\ge33$, $t^2\ge2^{66}$ and $t^2+1<2t^2$ imply
++$t^4>2^{64}(t^2+1)$. Equivalently,
++$\sqrt t>256B^{1/8}>8W(B)$.
++The lower bound in \eqref{eq:inner-fiber-count} is then positive
++for every primitive $b\in U$.
++
++For $2\le s\le32$, Appendix~\ref{app:inner-cert} gives explicit
++field towers $E=\mathbb F_2[X]/(M_s)$ and
++$L=E[Z]/(Z^2+cZ+b)$, in which $a=Z$ is a certificate.
++Irreducibility, both norm conditions and the exact order $d$
++are verified by deterministic finite arithmetic, with complete
++factorizations and recursively certified primes. These 31 cases
++exhaust the remaining range; they are not an extrapolation.
++
++Finally $d>t^2-1$ implies $\mathbb F_2[a]=L$: every proper
++subfield of $L$ has at most $t^2$ elements. Thus $C_d$ acts
++irreducibly, while $k=t-1>1$ makes it a proper multiplier group.
++The affine conclusion follows from
++Corollary~\ref{cor:scalar-realization}.
++\end{proof}
++
++The two adjacent indices $t-1$ and $t+1$ therefore have opposite
++realization behavior for every $s\ge2$.
++This does not settle the universal question for all admissible
++$k\le q^{1/4}$. Also, $N_d^{\mathrm{prim}}$ counts primitive individual slopes;
++it is a subset count within $|\mathcal R_d|$, and its asymptotic
++does not assert an asymptotic formula for the latter.
++Ordinary intersections for index $t-1$ belong to cyclotomic
++number theory, including the general norm-based treatment of
++Kudo and Nogata \cite{KN26}. The additional exact-order condition
++is the focus here. The classical Weil bound, Lang construction,
++and primitive-character sieve are attributed above; priority
++for this particular realization theorem is not asserted.
+ 
+ 
+ \begin{theorem}[The six-dimensional Singer application]\label{thm:agld}
+@@ -2086,6 +2373,16 @@
+ \emph{Spectral properties of generalized Paley graphs of
+ $(q^\ell+1)$-th powers and applications},
+ \href{https://arxiv.org/abs/1812.03332v7}{arXiv:1812.03332v7} (2024).
++\bibitem{Katz89} N.~M.~Katz, \emph{An estimate for character sums},
++J.~Amer.~Math.~Soc.~2 (1989) 197--200,
++\href{https://web.math.princeton.edu/~nmk/old/estcharsums.pdf}{author's copy}.
++\bibitem{FFSTV13} R.~R.~Farashahi, P.-A.~Fouque, I.~E.~Shparlinski,
++M.~Tibouchi, J.~F.~Voloch, \emph{Indifferentiable deterministic hashing
++to elliptic and hyperelliptic curves}, Math.~Comp.~82 (2013) 491--512,
++\href{https://doi.org/10.1090/S0025-5718-2012-02606-8}{doi:10.1090/S0025-5718-2012-02606-8}.
++\bibitem{KN26} H.~Kudo, Y.~Nogata, \emph{Cyclotomic numbers of order
++$q-1$ over $\mathbb F_{q^r}$}, arXiv:2604.25461 (2026),
++\url{https://arxiv.org/abs/2604.25461}.
+ \bibitem{DM} J.~D.~Dixon, B.~Mortimer, \emph{Permutation Groups}, Springer, 1996.
+ \bibitem{Coh} S.~D.~Cohen, \emph{The orders of related elements of a finite field}, Ramanujan J.~7 (2003) 169--183, doi:10.1023/A:1026295128600.
+ \bibitem{Mor} O.~Moreno, \emph{On the existence of a primitive quadratic of trace $1$ over $GF(p^m)$}, J.~Combin.~Theory Ser.~A 51 (1989) 104--110.
+@@ -2277,6 +2574,123 @@
+ stabilizers on $4$ and $16$ vertices. The corresponding data are
+ \path{scalar_depth_results.json}. These are finite arithmetic audits;
+ the uniform exponent obstruction and classification use the paper proofs.
++
++
++\subsection*{Finite certificates for the inner critical theorem}
++\label{app:inner-cert}
++Theorem~\ref{thm:inner-all} uses the analytic argument for $s\ge33$
++and the following complete finite certificate for $2\le s\le32$.
++A hexadecimal integer encodes a binary polynomial with its least
++significant bit the constant coefficient. Each row means
++\[
++ E=\mathbb F_2[X]/(M_s),\qquad
++ L=E[Z]/(Z^2+(1+b+w)Z+b),\qquad a=Z.
++\]
++Thus only $M_s,b,w$ need be specified; all field operations are exact.
++\begin{center}\small
++\begin{tabular}{r|lll}
++$s$ & $M_s$ (hex) & $b$ (hex) & $w$ (hex)\\\hline
++2 & \texttt{13} & \texttt{8} & \texttt{1}\\
++3 & \texttt{43} & \texttt{6} & \texttt{3b}\\
++4 & \texttt{11b} & \texttt{2f} & \texttt{1}\\
++5 & \texttt{409} & \texttt{9b} & \texttt{2c9}\\
++6 & \texttt{1009} & \texttt{c78} & \texttt{8e5}\\
++7 & \texttt{4021} & \texttt{3e8a} & \texttt{1}\\
++8 & \texttt{1002b} & \texttt{2878} & \texttt{689}\\
++9 & \texttt{40009} & \texttt{303be} & \texttt{12d39}\\
++10 & \texttt{100009} & \texttt{a3085} & \texttt{1}\\
++11 & \texttt{400003} & \texttt{662cc} & \texttt{3205f9}\\
++12 & \texttt{100001b} & \texttt{d0842d} & \texttt{1}\\
++13 & \texttt{400001b} & \texttt{32f9317} & \texttt{1}\\
++14 & \texttt{10000003} & \texttt{15a3baa} & \texttt{6c6a1f9}\\
++15 & \texttt{40000003} & \texttt{317d6a85} & \texttt{36559252}\\
++16 & \texttt{10000008d} & \texttt{4893e13d} & \texttt{2e37b719}\\
++17 & \texttt{40000001b} & \texttt{dcbd299} & \texttt{91607c0b}\\
++\end{tabular}
++\end{center}
++
++\begin{center}\small
++\begin{tabular}{r|lll}
++$s$ & $M_s$ (hex) & $b$ (hex) & $w$ (hex)\\\hline
++18 & \texttt{1000000035} & \texttt{78c0283c4} & \texttt{1}\\
++19 & \texttt{4000000063} & \texttt{1153a3d1ef} & \texttt{16004f10d3}\\
++20 & \texttt{10000000039} & \texttt{1f9215dca7} & \texttt{1}\\
++21 & \texttt{40000000027} & \texttt{2657c0cd035} & \texttt{374caba3695}\\
++22 & \texttt{100000000021} & \texttt{fe622270c1c} & \texttt{1}\\
++23 & \texttt{400000000003} & \texttt{17c45ffbd76} & \texttt{29bd79b1ae4}\\
++24 & \texttt{100000000002d} & \texttt{fed891dbe6c9} & \texttt{ec7a6a1920af}\\
++25 & \texttt{400000000001d} & \texttt{2907b6c341c09} & \texttt{1}\\
++26 & \texttt{10000000000009} & \texttt{c6d27ccd2b0df} & \texttt{432bf4829f702}\\
++27 & \texttt{4000000000007d} & \texttt{28047cef28c34e} & \texttt{1}\\
++28 & \texttt{100000000000095} & \texttt{a586528c5b1c9} & \texttt{1}\\
++29 & \texttt{400000000000063} & \texttt{243f16ec4e21119} & \texttt{1}\\
++30 & \texttt{1000000000000003} & \texttt{8c388b10c413f59} & \texttt{1}\\
++31 & \texttt{4000000000000069} & \texttt{12dfcd22c3b1728b} & \texttt{1}\\
++32 & \texttt{1000000000000001b} & \texttt{ae3111b3bb81428f} & \texttt{c171e75cc47c2b2e}\\
++\end{tabular}
++\end{center}
++
++The ancillary file \path{inner_critical_certificates.json} also records
++the full factorizations of $A,B$, every nonidentity residue
++$a^{d/p}$ for a prime $p\mid d$, and recursive Lucas primality
++certificates for those primes. Verification consists of the following
++finite identities, carried out by \path{verify_inner_critical.py}.
++First, $M_s$ has degree $n=2s$, and
++\[
++ X^{2^n}\equiv X\pmod {M_s},\qquad
++ \gcd(M_s,X^{2^{n/r}}-X)=1\quad(r\mid n\text{ prime}),
++\]
++which certify irreducibility. Second, $b^A=w^A=1$,
++$b^{A/p}\ne1$ for every prime $p\mid A$, $c=1+b+w\ne0$,
++and $\operatorname{Tr}_{E/\mathbb F_2}(b/c^2)=1$.
++Third, in the quadratic field one checks
++\[
++ a^d=(1+a)^d=1,\quad a^B=b,\quad(1+a)^B=w,\quad
++ a^{d/p}\ne1\quad(p\mid d\text{ prime}).
++\]
++Primality is certified without probable-prime assumptions: the base
++case is $2$; for an integer $p>2$ one supplies a complete recursively
++certified factorization of $p-1$ and an integer $v$ with
++$v^{p-1}\equiv1\pmod p$ and
++$\gcd(v^{(p-1)/r}-1,p)=1$ for every prime $r\mid p-1$.
++For any prime divisor $\ell$ of $p$, these conditions force the order
++of $v$ modulo $\ell$ to be $p-1$, hence $\ell\ge p$ and $p$ is prime.
++The independent verifier uses different field multiplication and
++powering implementations from the certificate finder; it requires
++only the Python standard library, run without the \texttt{-O} flag.
++
++The small-prime list used in the analytic constant is
++\[
++\begin{gathered}
++5,13,17,29,37,41,53,61,73,89,97,101,\\
++109,113,137,149,157,173,181,193,197,229,233,241.
++\end{gathered}
++\]
++Their product is
++$6045408114863853991373345088496297320256672385$;
++the integer comparison is $256^{24}<32^8$ times this product.
++The verifier checks this comparison as well.
++
++As a separate small-field audit, multiplicative-subgroup enumeration
++and polynomial gcds with the M\"obius sieve agree on the following
++counts. Here $N_d^{\mathrm{prim}}$ has the meaning in
++Theorem~\ref{thm:inner-primitive-count}.
++\[
++\begin{array}{c|r|r|r|r}
++s&d&T_d&|\mathcal R_d|&N_d^{\mathrm{prim}}\\\hline
++2&85&24&24&16\\
++3&585&86&72&48\\
++4&4369&240&240&224\\
++5&33825&1214&960&520\\
++6&266305&4104&3960&2928
++\end{array}
++\]
++The data also verify the genus-one Hasse bounds on every primitive
++norm fiber in this small range. They confirm that the diagonal
++$b=w$ gives no realizing slope for $s=3,5$.
++These supplementary counts do not replace the general proof.
++The present all-dimensional theorem uses the classical Weil bound
++and a finite exact certificate, and is outside the Lean formalization.
+ 
+ \subsection*{Bases for the coordinate presentation}
+ For the coordinate presentation $T(x)=(2^{2k}-1)\oplus\mathrm{coords}_G(x)$ on

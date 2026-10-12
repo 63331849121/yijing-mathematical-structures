@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-12",
+  "revision": "paperA-revised-2026-10-12-lang-trace-four-torsion",
+  "source_sha256": "7e0ddc9453f884f456cfb91d8f05706a5f7f8486f4f1463960eb72038c0a27d5",
+  "built_in_compile": {
+    "kind": "success",
+    "path": "C:\\Users\\master\\Documents\\Codex\\2026-10-11\\paper-review-recovery\\outputs\\PaperA_revised.tex",
+    "source_changed_after_compile": false
+  },
+  "static_checks": {
+    "labels": 76,
+    "references": 169,
+    "bibliography_entries": 31,
+    "citations": 49,
+    "unresolved_references": [],
+    "unresolved_citations": [],
+    "english_abstract_matches_source": true,
+    "both_forms_synchronized": true,
+    "paper_fragments_match_full_report": true,
+    "all_54_existing_files_match_editor_folder": true,
+    "review_inputs_unchanged": true,
+    "runtime_hashes_and_exit_codes_match": true,
+    "ledger_closed_and_positions_synchronized": true
+  },
+  "verification_scope": {
+    "certificate_points_s": [
+      2,
+      32
+    ],
+    "exhaustive_primitive_norm_fibers_s": [
+      2,
+      6
+    ],
+    "older_verifiers_and_lean_rerun": false,
+    "pdf_visual_review": false
+  }
+}

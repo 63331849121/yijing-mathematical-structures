@@ -1,0 +1,102 @@
+{
+  "revision": "paperA-revised-2026-10-12-double-full-order-closure",
+  "source_sha256": "65761978f60bf38c55cb1a580c79ec6749b15163f44ae107ce912cb95ab1d2e0",
+  "baseline_source_sha256": "40f6831455439d43430486acc9efdad70cf3c093c6c0725b9de16c6b353c22a1",
+  "source_path": "C:/Users/master/Documents/Codex/2026-10-11/paper-review-recovery/outputs/PaperA_revised.tex",
+  "labels": 100,
+  "references": 208,
+  "citations": 56,
+  "bibliography_entries": 31,
+  "all_references_resolved": true,
+  "unused_bibliography_keys": [],
+  "section_5_numbers": {
+    "thm:affine-group": "5.1",
+    "cor:affine-actions": "5.2",
+    "cor:scalar-realization": "5.3",
+    "cor:scalar-sieve": "5.4",
+    "thm:fermat-obstruction": "5.5",
+    "prop:scalar-positive-bound": "5.6",
+    "thm:fixed-index-realization": "5.7",
+    "cor:index-three-realization": "5.8",
+    "thm:scalar-density": "5.9",
+    "cor:growing-index-realization": "5.10",
+    "thm:norm-subfield-descent": "5.11",
+    "cor:quarter-power-barrier": "5.12",
+    "prop:primitive-scalar-classification": "5.13",
+    "prop:Paley-generating-triangles": "5.14",
+    "prop:inner-quadratic": "5.15",
+    "lem:inner-fiber": "5.16",
+    "lem:inner-character": "5.17",
+    "prop:inner-four-torsion": "5.18",
+    "thm:inner-primitive-count": "5.19",
+    "thm:inner-all": "5.20",
+    "prop:inner-mixed-character": "5.21",
+    "cor:inner-mixed-exception": "5.22",
+    "thm:inner-joint-density": "5.23",
+    "thm:inner-double-count": "5.24",
+    "prop:inner-diagonal-double": "5.25",
+    "thm:agld": "5.26"
+  },
+  "abstracts_and_forms_synchronized": true,
+  "fragments_match_source": true,
+  "double_full_order_for_every_s_at_least_2": true,
+  "proof_status": "已证（依赖外部定理）",
+  "coverage": [
+    {
+      "range": [
+        2,
+        32
+      ],
+      "method": "31 exact field certificates with deterministic Lucas proofs"
+    },
+    {
+      "range": [
+        33,
+        113
+      ],
+      "method": "81 exact partial-factorization bounds; four-point Lang estimate"
+    },
+    {
+      "range": [
+        114,
+        null
+      ],
+      "method": "universal odd-integer divisor bound and four-point Lang estimate"
+    }
+  ],
+  "conductor": 4,
+  "diagonal_subfamily_guaranteed_s_at_least": 33,
+  "diagonal_subfamily_empty_at": [
+    3,
+    5
+  ],
+  "minimum_middle_margin": 5,
+  "full_family_statistics_retained": true,
+  "new_arithmetic_verification_performed": true,
+  "finite_verifier_exit_code": 0,
+  "built_in_compilation": {
+    "kind": "success",
+    "successful_compilations": [
+      {
+        "path": "C:/Users/master/Documents/Codex/2026-10-11/paper-review-recovery/outputs/PaperA_revised.tex",
+        "kind": "success",
+        "message": "The current source compiled successfully with the desktop editor's compiler."
+      },
+      {
+        "path": "C:/Users/master/Documents/Codex/2026-10-11/paper-review-recovery/outputs/PaperA_revised.tex",
+        "kind": "success",
+        "message": "The current source compiled successfully with the desktop editor's compiler."
+      }
+    ],
+    "repair_attempts": 1,
+    "initial_failure": {
+      "kind": "compile-failed",
+      "line": 2094,
+      "reason": "A paragraph heading inside the proof environment conflicted with amsthm's list structure."
+    },
+    "separate_pdf_exported": false
+  },
+  "lean_rerun": false,
+  "priority_confirmed": false,
+  "separate_pdf_exported": false
+}

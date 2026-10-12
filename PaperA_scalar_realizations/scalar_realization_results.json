@@ -1,0 +1,231 @@
+{
+  "scope": "Even dimensions n=2,4,6,8,10,12,14; all d dividing 2^n-1",
+  "methods": [
+    "F2 polynomial gcd",
+    "explicit finite-field subgroup enumeration"
+  ],
+  "index_three": [
+    {
+      "n": 4,
+      "q": 16,
+      "d": 5,
+      "modulus_hex": "0x13",
+      "field_generator_hex": "0x2",
+      "T_d": 0,
+      "R_d": 0,
+      "number_of_realizing_maps": 0,
+      "uniform_lower_bound": "-40/9",
+      "checked_divisor_counts": {
+        "1": {
+          "T": 0,
+          "R": 0
+        },
+        "5": {
+          "T": 0,
+          "R": 0
+        }
+      }
+    },
+    {
+      "n": 6,
+      "q": 64,
+      "d": 21,
+      "modulus_hex": "0x43",
+      "field_generator_hex": "0x2",
+      "T_d": 8,
+      "R_d": 0,
+      "number_of_realizing_maps": 0,
+      "uniform_lower_bound": "-40/3",
+      "checked_divisor_counts": {
+        "1": {
+          "T": 0,
+          "R": 0
+        },
+        "3": {
+          "T": 2,
+          "R": 2
+        },
+        "7": {
+          "T": 6,
+          "R": 6
+        },
+        "21": {
+          "T": 8,
+          "R": 0
+        }
+      }
+    },
+    {
+      "n": 8,
+      "q": 256,
+      "d": 85,
+      "modulus_hex": "0x11b",
+      "field_generator_hex": "0x3",
+      "T_d": 24,
+      "R_d": 24,
+      "number_of_realizing_maps": 6120,
+      "uniform_lower_bound": "-136/9",
+      "checked_divisor_counts": {
+        "1": {
+          "T": 0,
+          "R": 0
+        },
+        "5": {
+          "T": 0,
+          "R": 0
+        },
+        "17": {
+          "T": 0,
+          "R": 0
+        },
+        "85": {
+          "T": 24,
+          "R": 24
+        }
+      }
+    },
+    {
+      "n": 10,
+      "q": 1024,
+      "d": 341,
+      "modulus_hex": "0x409",
+      "field_generator_hex": "0x2",
+      "T_d": 120,
+      "R_d": 90,
+      "number_of_realizing_maps": 92070,
+      "uniform_lower_bound": "40/3",
+      "checked_divisor_counts": {
+        "1": {
+          "T": 0,
+          "R": 0
+        },
+        "11": {
+          "T": 0,
+          "R": 0
+        },
+        "31": {
+          "T": 30,
+          "R": 30
+        },
+        "341": {
+          "T": 120,
+          "R": 90
+        }
+      }
+    },
+    {
+      "n": 12,
+      "q": 4096,
+      "d": 1365,
+      "modulus_hex": "0x1009",
+      "field_generator_hex": "0x3",
+      "T_d": 440,
+      "R_d": 396,
+      "number_of_realizing_maps": 1621620,
+      "uniform_lower_bound": "632/9",
+      "checked_divisor_counts": {
+        "1": {
+          "T": 0,
+          "R": 0
+        },
+        "3": {
+          "T": 2,
+          "R": 2
+        },
+        "5": {
+          "T": 0,
+          "R": 0
+        },
+        "7": {
+          "T": 6,
+          "R": 6
+        },
+        "13": {
+          "T": 0,
+          "R": 0
+        },
+        "15": {
+          "T": 14,
+          "R": 12
+        },
+        "21": {
+          "T": 8,
+          "R": 0
+        },
+        "35": {
+          "T": 6,
+          "R": 0
+        },
+        "39": {
+          "T": 2,
+          "R": 0
+        },
+        "65": {
+          "T": 0,
+          "R": 0
+        },
+        "91": {
+          "T": 6,
+          "R": 0
+        },
+        "105": {
+          "T": 20,
+          "R": 0
+        },
+        "195": {
+          "T": 14,
+          "R": 0
+        },
+        "273": {
+          "T": 32,
+          "R": 24
+        },
+        "455": {
+          "T": 6,
+          "R": 0
+        },
+        "1365": {
+          "T": 440,
+          "R": 396
+        }
+      }
+    },
+    {
+      "n": 14,
+      "q": 16384,
+      "d": 5461,
+      "modulus_hex": "0x4021",
+      "field_generator_hex": "0x7",
+      "T_d": 1848,
+      "R_d": 1722,
+      "number_of_realizing_maps": 28211526,
+      "uniform_lower_bound": "1080",
+      "checked_divisor_counts": {
+        "1": {
+          "T": 0,
+          "R": 0
+        },
+        "43": {
+          "T": 0,
+          "R": 0
+        },
+        "127": {
+          "T": 126,
+          "R": 126
+        },
+        "5461": {
+          "T": 1848,
+          "R": 1722
+        }
+      }
+    }
+  ],
+  "n8_witness": {
+    "modulus_hex": "0x11b",
+    "slope_hex": "0x2e",
+    "a_power_5_hex": "0xab",
+    "a_power_17_hex": "0xed",
+    "a_power_85": 1,
+    "one_plus_a_power_85": 1
+  }
+}

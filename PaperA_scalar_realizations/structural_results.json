@@ -1,0 +1,287 @@
+{
+  "basis_k1": {
+    "cycle_types": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "fixed_points": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "offsets": [
+      3,
+      1,
+      2
+    ],
+    "group_order": 12,
+    "charpolys": [
+      "0x7",
+      "0x7",
+      "0x7"
+    ],
+    "F3": true
+  },
+  "basis_k2": {
+    "cycle_types": [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        5,
+        5,
+        5
+      ]
+    ],
+    "fixed_points": [
+      [
+        3
+      ],
+      [
+        11
+      ],
+      [
+        15
+      ]
+    ],
+    "offsets": [
+      15,
+      3,
+      11
+    ],
+    "group_order": 240,
+    "charpolys": [
+      "0x13",
+      "0x19",
+      "0x1f"
+    ],
+    "F3": true
+  },
+  "basis_k3": {
+    "cycle_types": [
+      [
+        1,
+        63
+      ],
+      [
+        1,
+        63
+      ],
+      [
+        1,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    ],
+    "fixed_points": [
+      [
+        38
+      ],
+      [
+        41
+      ],
+      [
+        63
+      ]
+    ],
+    "offsets": [
+      63,
+      38,
+      41
+    ],
+    "group_order": 4032,
+    "charpolys": [
+      "0x6d",
+      "0x5b",
+      "0x49"
+    ],
+    "F3": true
+  },
+  "basis_k4": {
+    "cycle_types": [
+      [
+        1,
+        255
+      ],
+      [
+        1,
+        255
+      ],
+      [
+        1,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ]
+    ],
+    "fixed_points": [
+      [
+        16
+      ],
+      [
+        87
+      ],
+      [
+        255
+      ]
+    ],
+    "offsets": [
+      255,
+      16,
+      87
+    ],
+    "group_order": 65280,
+    "charpolys": [
+      "0x169",
+      "0x12d",
+      "0x139"
+    ],
+    "F3": true
+  },
+  "720_basis_counts": {
+    "D_defined": 148,
+    "T_Singer_and_D_defined": 54,
+    "exact_triple": 9,
+    "D_undefined": 572
+  },
+  "swapped_4_6": {
+    "fixed_T": [
+      11
+    ],
+    "cycles": [
+      [
+        1,
+        63
+      ],
+      [
+        1,
+        21,
+        21,
+        21
+      ],
+      [
+        1,
+        63
+      ]
+    ]
+  },
+  "tau_table_k1": {
+    "data_agrees": true,
+    "orders": [
+      3,
+      1,
+      3,
+      3
+    ],
+    "gamma_in_subfield": false
+  },
+  "tau_table_k2": {
+    "data_agrees": true,
+    "orders": [
+      5,
+      3,
+      15,
+      15
+    ],
+    "gamma_in_subfield": false
+  },
+  "tau_table_k3": {
+    "data_agrees": true,
+    "orders": [
+      9,
+      7,
+      63,
+      63
+    ],
+    "gamma_in_subfield": false
+  },
+  "tau_table_k4": {
+    "data_agrees": true,
+    "orders": [
+      17,
+      15,
+      255,
+      255
+    ],
+    "gamma_in_subfield": false
+  },
+  "F_scalar_affine_F64": {
+    "count": 3968,
+    "fixed": [
+      [
+        58,
+        0
+      ],
+      [
+        59,
+        0
+      ]
+    ],
+    "three_cycles": 1322,
+    "F3": true
+  },
+  "k6_counterexample": {
+    "tau_order": 63,
+    "trace_inverse": 1,
+    "root_order": 13
+  },
+  "numeric_CRT": {
+    "T_63": 31,
+    "T_0": 63,
+    "orbit_has_0_and_63": true,
+    "same_residue": true
+  },
+  "CRT_exponents": {
+    "word_63": 0,
+    "word_0": 62,
+    "word_0_CRT": [
+      6,
+      8
+    ]
+  },
+  "nonzero_translation_F64": {
+    "PTE_slopes": 6,
+    "nonzero_b_per_slope": 63,
+    "triples_checked": 378,
+    "fixed_points_cycles_and_conjugacy": true
+  }
+}

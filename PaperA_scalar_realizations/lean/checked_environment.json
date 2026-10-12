@@ -1,0 +1,27 @@
+{
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "check_method": "lake env lean, each file, existing pinned dependency environment",
+  "fresh_dependency_download_or_cloud_CI": false,
+  "files": {
+    "AGL.lean": {
+      "result": "exit 0",
+      "sha256": "31aa639d8208aab236d5266ae3976f6dd27beff4b077ab7382ff7952103518c9"
+    },
+    "CohenEvenConditional.lean": {
+      "result": "exit 0",
+      "sha256": "1549aee243ff6385e232bdb7c1afe55e73349c493c3aa5f0eb700771746ada1e"
+    },
+    "CompleteMappingTriality.lean": {
+      "result": "exit 0",
+      "sha256": "446f158ca02c5ab0c5f11897bdb9e30118768c72684349dce00af91bdf7d50a5"
+    }
+  },
+  "warnings": "AGL.lean has 13 style linter warnings; no Lean errors. Other two files emitted no warnings.",
+  "configuration_validation": {
+    "command": "lake translate-config toml lakefile.checked.toml",
+    "result": "exit 0",
+    "context": "isolated temporary configuration copy; no dependencies downloaded",
+    "sha256": "7965d503212904fe9dab27a71e327b933b3adf1167e89ecae5b74efb41204670"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "revision": "paperA-revised-2026-10-12-submission-tightening",
+  "source_path": "C:/Users/master/Documents/Codex/2026-10-11/paper-review-recovery/outputs/PaperA_revised.tex",
+  "source_sha256": "40f6831455439d43430486acc9efdad70cf3c093c6c0725b9de16c6b353c22a1",
+  "baseline_source_sha256": "da8842f0d9c785dc2f3ab700d33b9247a06bf44aa9e5caa5d6dab7c7a976e79f",
+  "labels": 93,
+  "references": 196,
+  "bibliography_entries": 31,
+  "citations": 54,
+  "all_references_resolved": true,
+  "unused_bibliography_keys": [],
+  "source_and_english_abstract_match_after_explicit_math_translation": true,
+  "abstracts_and_forms_synchronized": true,
+  "fragments_match_source": true,
+  "section_5_numbers": {
+    "thm:affine-group": "5.1",
+    "cor:affine-actions": "5.2",
+    "cor:scalar-realization": "5.3",
+    "cor:scalar-sieve": "5.4",
+    "thm:fermat-obstruction": "5.5",
+    "prop:scalar-positive-bound": "5.6",
+    "thm:fixed-index-realization": "5.7",
+    "cor:index-three-realization": "5.8",
+    "thm:scalar-density": "5.9",
+    "cor:growing-index-realization": "5.10",
+    "thm:norm-subfield-descent": "5.11",
+    "cor:quarter-power-barrier": "5.12",
+    "prop:primitive-scalar-classification": "5.13",
+    "prop:Paley-generating-triangles": "5.14",
+    "prop:inner-quadratic": "5.15",
+    "lem:inner-fiber": "5.16",
+    "lem:inner-character": "5.17",
+    "prop:inner-four-torsion": "5.18",
+    "thm:inner-primitive-count": "5.19",
+    "thm:inner-all": "5.20",
+    "prop:inner-mixed-character": "5.21",
+    "cor:inner-mixed-exception": "5.22",
+    "thm:inner-joint-density": "5.23",
+    "thm:inner-double-count": "5.24",
+    "thm:agld": "5.25"
+  },
+  "main_numbering_unchanged": true,
+  "named_auxiliary_lemmas": [
+    "Character decomposition",
+    "Local averaging in a cyclic group"
+  ],
+  "built_in_compilation": {
+    "kind": "success",
+    "successful_calls": 2,
+    "diagnostics": [
+      {
+        "path": "C:\\Users\\master\\Documents\\Codex\\2026-10-11\\paper-review-recovery\\outputs\\PaperA_revised.tex",
+        "kind": "success",
+        "message": "The current source compiled successfully with the desktop editor's compiler."
+      },
+      {
+        "path": "C:\\Users\\master\\Documents\\Codex\\2026-10-11\\paper-review-recovery\\outputs\\PaperA_revised.tex",
+        "kind": "success",
+        "message": "The current source compiled successfully with the desktop editor's compiler."
+      }
+    ]
+  },
+  "proof_review_scope": "Proposition 5.21, Corollary 5.22, Theorems 5.23 and 5.24 with their stated dependencies; three review perspectives by one reviewer.",
+  "new_arithmetic_verification_performed": false,
+  "lean_rerun": false,
+  "prior_verification_records_unchanged": true,
+  "inherited_finite_scope": {
+    "double_certificates": [
+      2,
+      32
+    ],
+    "complete_norm_fiber_counts": [
+      2,
+      6
+    ]
+  },
+  "all_dimensional_double_existence": "open",
+  "double_existence_range": "{2,...,32} union S_an; eq:inner-double-range",
+  "literature_priority": "not established; closest-theorem direct-implication comparison remains",
+  "separate_pdf_export_or_new_tab_created": false
+}

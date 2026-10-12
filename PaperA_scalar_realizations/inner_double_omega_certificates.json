@@ -1,0 +1,3242 @@
+{
+  "prime_trial_bound": 4096,
+  "analytic_cutoff": 114,
+  "range": [
+    33,
+    113
+  ],
+  "small_prime_product": "32133165458954322436165317614053356655440093295804604057122379340449075183940351576262600371617210115",
+  "constant_power_of_two": 12,
+  "rows": [
+    {
+      "s": 33,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            67,
+            1
+          ],
+          [
+            683,
+            1
+          ]
+        ],
+        "remainder": "20857",
+        "large_factor_count_bound": 1,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            397,
+            1
+          ],
+          [
+            2113,
+            1
+          ]
+        ],
+        "remainder": "1353244757701",
+        "large_factor_count_bound": 3,
+        "omega_bound": 7
+      },
+      "omega_d_bound": 11,
+      "sufficient_condition": true
+    },
+    {
+      "s": 34,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            137,
+            1
+          ],
+          [
+            953,
+            1
+          ]
+        ],
+        "remainder": "26317",
+        "large_factor_count_bound": 1,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            2
+          ]
+        ],
+        "remainder": "1021273028302258913",
+        "large_factor_count_bound": 4,
+        "omega_bound": 5
+      },
+      "omega_d_bound": 9,
+      "sufficient_condition": true
+    },
+    {
+      "s": 35,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            43,
+            1
+          ],
+          [
+            281,
+            1
+          ]
+        ],
+        "remainder": "86171",
+        "large_factor_count_bound": 1,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            113,
+            1
+          ]
+        ],
+        "remainder": "351479006145541",
+        "large_factor_count_bound": 4,
+        "omega_bound": 8
+      },
+      "omega_d_bound": 13,
+      "sufficient_condition": true
+    },
+    {
+      "s": 36,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ],
+          [
+            433,
+            1
+          ]
+        ],
+        "remainder": "38737",
+        "large_factor_count_bound": 1,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            97,
+            1
+          ],
+          [
+            257,
+            1
+          ],
+          [
+            577,
+            1
+          ],
+          [
+            673,
+            1
+          ]
+        ],
+        "remainder": "487824887233",
+        "large_factor_count_bound": 3,
+        "omega_bound": 7
+      },
+      "omega_d_bound": 11,
+      "sufficient_condition": true
+    },
+    {
+      "s": 37,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            1777,
+            1
+          ]
+        ],
+        "remainder": "25781083",
+        "large_factor_count_bound": 2,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            149,
+            1
+          ],
+          [
+            593,
+            1
+          ]
+        ],
+        "remainder": "42757146420721801",
+        "large_factor_count_bound": 4,
+        "omega_bound": 7
+      },
+      "omega_d_bound": 11,
+      "sufficient_condition": true
+    },
+    {
+      "s": 38,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            229,
+            1
+          ],
+          [
+            457,
+            1
+          ]
+        ],
+        "remainder": "525313",
+        "large_factor_count_bound": 1,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            1217,
+            1
+          ]
+        ],
+        "remainder": "3652079062589507633",
+        "large_factor_count_bound": 5,
+        "omega_bound": 7
+      },
+      "omega_d_bound": 11,
+      "sufficient_condition": true
+    },
+    {
+      "s": 39,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            2731,
+            1
+          ]
+        ],
+        "remainder": "22366891",
+        "large_factor_count_bound": 2,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            53,
+            1
+          ],
+          [
+            157,
+            1
+          ],
+          [
+            313,
+            1
+          ],
+          [
+            1249,
+            1
+          ],
+          [
+            1613,
+            1
+          ],
+          [
+            3121,
+            1
+          ]
+        ],
+        "remainder": "21841",
+        "large_factor_count_bound": 1,
+        "omega_bound": 9
+      },
+      "omega_d_bound": 13,
+      "sufficient_condition": true
+    },
+    {
+      "s": 40,
+      "A": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "4278255361",
+        "large_factor_count_bound": 2,
+        "omega_bound": 3
+      },
+      "B": {
+        "small_factors": [],
+        "remainder": "1208925819614629174706177",
+        "large_factor_count_bound": 6,
+        "omega_bound": 6
+      },
+      "omega_d_bound": 9,
+      "sufficient_condition": true
+    },
+    {
+      "s": 41,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            83,
+            1
+          ]
+        ],
+        "remainder": "8831418697",
+        "large_factor_count_bound": 2,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "967140655691703339764941",
+        "large_factor_count_bound": 6,
+        "omega_bound": 7
+      },
+      "omega_d_bound": 11,
+      "sufficient_condition": true
+    },
+    {
+      "s": 42,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            1429,
+            1
+          ]
+        ],
+        "remainder": "14449",
+        "large_factor_count_bound": 1,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ],
+          [
+            3361,
+            1
+          ]
+        ],
+        "remainder": "1404705100497266401",
+        "large_factor_count_bound": 5,
+        "omega_bound": 8
+      },
+      "omega_d_bound": 14,
+      "sufficient_condition": true
+    },
+    {
+      "s": 43,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "2932031007403",
+        "large_factor_count_bound": 3,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            173,
+            1
+          ]
+        ],
+        "remainder": "89446534630446551654561",
+        "large_factor_count_bound": 6,
+        "omega_bound": 8
+      },
+      "omega_d_bound": 12,
+      "sufficient_condition": true
+    },
+    {
+      "s": 44,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            353,
+            1
+          ]
+        ],
+        "remainder": "2931542417",
+        "large_factor_count_bound": 2,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "1204221828098618944454401",
+        "large_factor_count_bound": 6,
+        "omega_bound": 7
+      },
+      "omega_d_bound": 11,
+      "sufficient_condition": true
+    },
+    {
+      "s": 45,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            3
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            19,
+            1
+          ],
+          [
+            331,
+            1
+          ]
+        ],
+        "remainder": "18837001",
+        "large_factor_count_bound": 2,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            61,
+            1
+          ],
+          [
+            109,
+            1
+          ],
+          [
+            181,
+            1
+          ],
+          [
+            1321,
+            1
+          ]
+        ],
+        "remainder": "1579402941661",
+        "large_factor_count_bound": 3,
+        "omega_bound": 11
+      },
+      "omega_d_bound": 17,
+      "sufficient_condition": true
+    },
+    {
+      "s": 46,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            277,
+            1
+          ],
+          [
+            1013,
+            1
+          ],
+          [
+            1657,
+            1
+          ]
+        ],
+        "remainder": "30269",
+        "large_factor_count_bound": 1,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "291280009243618888211558641",
+        "large_factor_count_bound": 7,
+        "omega_bound": 8
+      },
+      "omega_d_bound": 13,
+      "sufficient_condition": true
+    },
+    {
+      "s": 47,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            283,
+            1
+          ]
+        ],
+        "remainder": "165768537521",
+        "large_factor_count_bound": 3,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            3761,
+            1
+          ]
+        ],
+        "remainder": "1053285861662647402200797",
+        "large_factor_count_bound": 6,
+        "omega_bound": 8
+      },
+      "omega_d_bound": 13,
+      "sufficient_condition": true
+    },
+    {
+      "s": 48,
+      "A": {
+        "small_factors": [
+          [
+            193,
+            1
+          ]
+        ],
+        "remainder": "1458419568449",
+        "large_factor_count_bound": 3,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            641,
+            1
+          ]
+        ],
+        "remainder": "123600877557354660832361857",
+        "large_factor_count_bound": 7,
+        "omega_bound": 8
+      },
+      "omega_d_bound": 12,
+      "sufficient_condition": true
+    },
+    {
+      "s": 49,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            43,
+            1
+          ]
+        ],
+        "remainder": "4363953127297",
+        "large_factor_count_bound": 3,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            197,
+            1
+          ]
+        ],
+        "remainder": "98180876113028150476301",
+        "large_factor_count_bound": 6,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 15,
+      "sufficient_condition": true
+    },
+    {
+      "s": 50,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            3
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            101,
+            1
+          ]
+        ],
+        "remainder": "2175126601",
+        "large_factor_count_bound": 2,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            401,
+            1
+          ]
+        ],
+        "remainder": "185954320115627020903139681",
+        "large_factor_count_bound": 7,
+        "omega_bound": 9
+      },
+      "omega_d_bound": 14,
+      "sufficient_condition": true
+    },
+    {
+      "s": 51,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            307,
+            1
+          ],
+          [
+            2857,
+            1
+          ]
+        ],
+        "remainder": "285258539",
+        "large_factor_count_bound": 2,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            137,
+            1
+          ],
+          [
+            409,
+            1
+          ],
+          [
+            953,
+            1
+          ],
+          [
+            3061,
+            1
+          ]
+        ],
+        "remainder": "477250174306861093",
+        "large_factor_count_bound": 4,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 15,
+      "sufficient_condition": true
+    },
+    {
+      "s": 52,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "264917625139441",
+        "large_factor_count_bound": 3,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "78919881726271091143763623681",
+        "large_factor_count_bound": 7,
+        "omega_bound": 8
+      },
+      "omega_d_bound": 12,
+      "sufficient_condition": true
+    },
+    {
+      "s": 53,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            107,
+            1
+          ]
+        ],
+        "remainder": "28059810762433",
+        "large_factor_count_bound": 3,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "16225927682921336339157801028813",
+        "large_factor_count_bound": 8,
+        "omega_bound": 9
+      },
+      "omega_d_bound": 14,
+      "sufficient_condition": true
+    },
+    {
+      "s": 54,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            109,
+            1
+          ]
+        ],
+        "remainder": "68719214593",
+        "large_factor_count_bound": 2,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ],
+          [
+            433,
+            1
+          ]
+        ],
+        "remainder": "182930310444259460272658257",
+        "large_factor_count_bound": 7,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 16,
+      "sufficient_condition": true
+    },
+    {
+      "s": 55,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            683,
+            1
+          ],
+          [
+            2971,
+            1
+          ]
+        ],
+        "remainder": "48912491",
+        "large_factor_count_bound": 2,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            397,
+            1
+          ],
+          [
+            2113,
+            1
+          ]
+        ],
+        "remainder": "1509682614801884712528901",
+        "large_factor_count_bound": 6,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 16,
+      "sufficient_condition": true
+    },
+    {
+      "s": 56,
+      "A": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "280379743338241",
+        "large_factor_count_bound": 3,
+        "omega_bound": 4
+      },
+      "B": {
+        "small_factors": [
+          [
+            449,
+            1
+          ],
+          [
+            2689,
+            1
+          ]
+        ],
+        "remainder": "4300533857342441596614845377",
+        "large_factor_count_bound": 7,
+        "omega_bound": 9
+      },
+      "omega_d_bound": 13,
+      "sufficient_condition": true
+    },
+    {
+      "s": 57,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            571,
+            1
+          ]
+        ],
+        "remainder": "28043430254107",
+        "large_factor_count_bound": 3,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            229,
+            1
+          ],
+          [
+            457,
+            1
+          ]
+        ],
+        "remainder": "3053194466715910310795895493",
+        "large_factor_count_bound": 7,
+        "omega_bound": 11
+      },
+      "omega_d_bound": 16,
+      "sufficient_condition": true
+    },
+    {
+      "s": 58,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "57646075230342349",
+        "large_factor_count_bound": 4,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "4886867631562190709205173015736561",
+        "large_factor_count_bound": 9,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 15,
+      "sufficient_condition": true
+    },
+    {
+      "s": 59,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            2833,
+            1
+          ]
+        ],
+        "remainder": "67826891670011",
+        "large_factor_count_bound": 3,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            1181,
+            1
+          ],
+          [
+            3541,
+            1
+          ]
+        ],
+        "remainder": "15892552678361402246764191149",
+        "large_factor_count_bound": 7,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 15,
+      "sufficient_condition": true
+    },
+    {
+      "s": 60,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ]
+        ],
+        "remainder": "281406274007041",
+        "large_factor_count_bound": 3,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            97,
+            1
+          ],
+          [
+            257,
+            1
+          ],
+          [
+            673,
+            1
+          ]
+        ],
+        "remainder": "79228157791898136198858670081",
+        "large_factor_count_bound": 7,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 15,
+      "sufficient_condition": true
+    },
+    {
+      "s": 61,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "768614336404564651",
+        "large_factor_count_bound": 4,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            733,
+            1
+          ],
+          [
+            1709,
+            1
+          ]
+        ],
+        "remainder": "848874385927269482024021489813",
+        "large_factor_count_bound": 8,
+        "omega_bound": 11
+      },
+      "omega_d_bound": 16,
+      "sufficient_condition": true
+    },
+    {
+      "s": 62,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "922337203685477581",
+        "large_factor_count_bound": 4,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "1251038113679920821556524292028559601",
+        "large_factor_count_bound": 9,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 15,
+      "sufficient_condition": true
+    },
+    {
+      "s": 63,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            3
+          ],
+          [
+            19,
+            1
+          ],
+          [
+            43,
+            1
+          ]
+        ],
+        "remainder": "418122854021251",
+        "large_factor_count_bound": 4,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            109,
+            1
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            1429,
+            1
+          ]
+        ],
+        "remainder": "69299356975384300459021489",
+        "large_factor_count_bound": 7,
+        "omega_bound": 14
+      },
+      "omega_d_bound": 21,
+      "sufficient_condition": true
+    },
+    {
+      "s": 64,
+      "A": {
+        "small_factors": [],
+        "remainder": "18446744073709551617",
+        "large_factor_count_bound": 5,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [],
+        "remainder": "340282366920938463463374607431768211457",
+        "large_factor_count_bound": 10,
+        "omega_bound": 10
+      },
+      "omega_d_bound": 15,
+      "sufficient_condition": true
+    },
+    {
+      "s": 65,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            131,
+            1
+          ],
+          [
+            2731,
+            1
+          ]
+        ],
+        "remainder": "3124947910241",
+        "large_factor_count_bound": 3,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            53,
+            1
+          ],
+          [
+            157,
+            1
+          ],
+          [
+            521,
+            1
+          ],
+          [
+            1613,
+            1
+          ]
+        ],
+        "remainder": "189901308940781986085759261",
+        "large_factor_count_bound": 7,
+        "omega_bound": 13
+      },
+      "omega_d_bound": 20,
+      "sufficient_condition": true
+    },
+    {
+      "s": 66,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            397,
+            1
+          ],
+          [
+            2113,
+            1
+          ]
+        ],
+        "remainder": "1353244757701",
+        "large_factor_count_bound": 3,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ],
+          [
+            353,
+            1
+          ]
+        ],
+        "remainder": "3764599310028560534111530318189217",
+        "large_factor_count_bound": 9,
+        "omega_bound": 12
+      },
+      "omega_d_bound": 19,
+      "sufficient_condition": true
+    },
+    {
+      "s": 67,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "49191317529892137643",
+        "large_factor_count_bound": 5,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            269,
+            1
+          ]
+        ],
+        "remainder": "16191874708505622053275817751400123073",
+        "large_factor_count_bound": 10,
+        "omega_bound": 12
+      },
+      "omega_d_bound": 18,
+      "sufficient_condition": true
+    },
+    {
+      "s": 68,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            2
+          ]
+        ],
+        "remainder": "1021273028302258913",
+        "large_factor_count_bound": 4,
+        "omega_bound": 5
+      },
+      "B": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "338958311018522360492699998064329424641",
+        "large_factor_count_bound": 10,
+        "omega_bound": 11
+      },
+      "omega_d_bound": 16,
+      "sufficient_condition": true
+    },
+    {
+      "s": 69,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            139,
+            1
+          ]
+        ],
+        "remainder": "471859160958197963",
+        "large_factor_count_bound": 4,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            277,
+            1
+          ],
+          [
+            1013,
+            1
+          ],
+          [
+            1657,
+            1
+          ]
+        ],
+        "remainder": "11529602168962659397859142374129",
+        "large_factor_count_bound": 8,
+        "omega_bound": 13
+      },
+      "omega_d_bound": 19,
+      "sufficient_condition": true
+    },
+    {
+      "s": 70,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            113,
+            1
+          ]
+        ],
+        "remainder": "351479006145541",
+        "large_factor_count_bound": 4,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "81988033818127290961528376002383682007281",
+        "large_factor_count_bound": 11,
+        "omega_bound": 12
+      },
+      "omega_d_bound": 20,
+      "sufficient_condition": true
+    },
+    {
+      "s": 71,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "787061080478274202283",
+        "large_factor_count_bound": 5,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            569,
+            1
+          ]
+        ],
+        "remainder": "1959643690556293773421416368422527373109",
+        "large_factor_count_bound": 10,
+        "omega_bound": 12
+      },
+      "omega_d_bound": 18,
+      "sufficient_condition": true
+    },
+    {
+      "s": 72,
+      "A": {
+        "small_factors": [
+          [
+            97,
+            1
+          ],
+          [
+            257,
+            1
+          ],
+          [
+            577,
+            1
+          ],
+          [
+            673,
+            1
+          ]
+        ],
+        "remainder": "487824887233",
+        "large_factor_count_bound": 3,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            193,
+            1
+          ],
+          [
+            1153,
+            1
+          ]
+        ],
+        "remainder": "100215006576808519975085127208805870273",
+        "large_factor_count_bound": 10,
+        "omega_bound": 12
+      },
+      "omega_d_bound": 19,
+      "sufficient_condition": true
+    },
+    {
+      "s": 73,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            1753,
+            1
+          ]
+        ],
+        "remainder": "1795918038741070627",
+        "large_factor_count_bound": 5,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            293,
+            1
+          ]
+        ],
+        "remainder": "60889406685407844755046329754671294214281",
+        "large_factor_count_bound": 11,
+        "omega_bound": 13
+      },
+      "omega_d_bound": 20,
+      "sufficient_condition": true
+    },
+    {
+      "s": 74,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            149,
+            1
+          ],
+          [
+            593,
+            1
+          ]
+        ],
+        "remainder": "42757146420721801",
+        "large_factor_count_bound": 4,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "20988936657440586486151264256610222593863921",
+        "large_factor_count_bound": 11,
+        "omega_bound": 12
+      },
+      "omega_d_bound": 19,
+      "sufficient_condition": true
+    },
+    {
+      "s": 75,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            251,
+            1
+          ],
+          [
+            331,
+            1
+          ],
+          [
+            4051,
+            1
+          ]
+        ],
+        "remainder": "1133836730401",
+        "large_factor_count_bound": 3,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            3
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            61,
+            1
+          ],
+          [
+            101,
+            1
+          ],
+          [
+            1201,
+            1
+          ],
+          [
+            1321,
+            1
+          ]
+        ],
+        "remainder": "2191619186234203897364981803801",
+        "large_factor_count_bound": 8,
+        "omega_bound": 15
+      },
+      "omega_d_bound": 23,
+      "sufficient_condition": true
+    },
+    {
+      "s": 76,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            1217,
+            1
+          ]
+        ],
+        "remainder": "3652079062589507633",
+        "large_factor_count_bound": 5,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "22213971870909881417249587073143893173272321",
+        "large_factor_count_bound": 11,
+        "omega_bound": 12
+      },
+      "omega_d_bound": 19,
+      "sufficient_condition": true
+    },
+    {
+      "s": 77,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            43,
+            1
+          ],
+          [
+            617,
+            1
+          ],
+          [
+            683,
+            1
+          ]
+        ],
+        "remainder": "2779803440557067",
+        "large_factor_count_bound": 4,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            397,
+            1
+          ],
+          [
+            2113,
+            1
+          ]
+        ],
+        "remainder": "1661433192755907923906963983109636101",
+        "large_factor_count_bound": 10,
+        "omega_bound": 15
+      },
+      "omega_d_bound": 23,
+      "sufficient_condition": true
+    },
+    {
+      "s": 78,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            53,
+            1
+          ],
+          [
+            157,
+            1
+          ],
+          [
+            313,
+            1
+          ],
+          [
+            1249,
+            1
+          ],
+          [
+            1613,
+            1
+          ],
+          [
+            3121,
+            1
+          ]
+        ],
+        "remainder": "21841",
+        "large_factor_count_bound": 1,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ]
+        ],
+        "remainder": "22295302009563444566202172820299655535390721",
+        "large_factor_count_bound": 11,
+        "omega_bound": 13
+      },
+      "omega_d_bound": 22,
+      "sufficient_condition": true
+    },
+    {
+      "s": 79,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "201487636602438195784363",
+        "large_factor_count_bound": 6,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            317,
+            1
+          ]
+        ],
+        "remainder": "230520762985946832524240509892158204993049297",
+        "large_factor_count_bound": 12,
+        "omega_bound": 14
+      },
+      "omega_d_bound": 21,
+      "sufficient_condition": true
+    },
+    {
+      "s": 80,
+      "A": {
+        "small_factors": [],
+        "remainder": "1208925819614629174706177",
+        "large_factor_count_bound": 6,
+        "omega_bound": 6
+      },
+      "B": {
+        "small_factors": [
+          [
+            641,
+            1
+          ]
+        ],
+        "remainder": "2280033755586432009678135464455979749853248897",
+        "large_factor_count_bound": 12,
+        "omega_bound": 13
+      },
+      "omega_d_bound": 19,
+      "sufficient_condition": true
+    },
+    {
+      "s": 81,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            5
+          ],
+          [
+            19,
+            1
+          ],
+          [
+            163,
+            1
+          ]
+        ],
+        "remainder": "3212788745818345843",
+        "large_factor_count_bound": 5,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            109,
+            1
+          ]
+        ],
+        "remainder": "22300660128263410222642962218867924540325889",
+        "large_factor_count_bound": 11,
+        "omega_bound": 15
+      },
+      "omega_d_bound": 23,
+      "sufficient_condition": true
+    },
+    {
+      "s": 82,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "967140655691703339764941",
+        "large_factor_count_bound": 6,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "1375530952782026275956409254321207547911465922801",
+        "large_factor_count_bound": 13,
+        "omega_bound": 14
+      },
+      "omega_d_bound": 21,
+      "sufficient_condition": true
+    },
+    {
+      "s": 83,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            499,
+            1
+          ],
+          [
+            1163,
+            1
+          ],
+          [
+            2657,
+            1
+          ]
+        ],
+        "remainder": "2090723354788667",
+        "large_factor_count_bound": 4,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            997,
+            1
+          ]
+        ],
+        "remainder": "18763511492312494837519725033870032749845472969",
+        "large_factor_count_bound": 12,
+        "omega_bound": 14
+      },
+      "omega_d_bound": 22,
+      "sufficient_condition": true
+    },
+    {
+      "s": 84,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ],
+          [
+            3361,
+            1
+          ]
+        ],
+        "remainder": "1404705100497266401",
+        "large_factor_count_bound": 5,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            97,
+            1
+          ],
+          [
+            257,
+            1
+          ],
+          [
+            673,
+            1
+          ],
+          [
+            2017,
+            1
+          ]
+        ],
+        "remainder": "11056392597571991365779691257797471534113",
+        "large_factor_count_bound": 11,
+        "omega_bound": 15
+      },
+      "omega_d_bound": 23,
+      "sufficient_condition": true
+    },
+    {
+      "s": 85,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            11,
+            1
+          ]
+        ],
+        "remainder": "1172291703868731320927201",
+        "large_factor_count_bound": 6,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            137,
+            1
+          ],
+          [
+            953,
+            1
+          ],
+          [
+            1021,
+            1
+          ]
+        ],
+        "remainder": "10953078181279431297017000635395953379157",
+        "large_factor_count_bound": 11,
+        "omega_bound": 16
+      },
+      "omega_d_bound": 24,
+      "sufficient_condition": true
+    },
+    {
+      "s": 86,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            173,
+            1
+          ]
+        ],
+        "remainder": "89446534630446551654561",
+        "large_factor_count_bound": 6,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "352135923912198726644840769106229132265335276237041",
+        "large_factor_count_bound": 13,
+        "omega_bound": 14
+      },
+      "omega_d_bound": 22,
+      "sufficient_condition": true
+    },
+    {
+      "s": 87,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            59,
+            1
+          ]
+        ],
+        "remainder": "291417146724430384863259",
+        "large_factor_count_bound": 6,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            349,
+            1
+          ]
+        ],
+        "remainder": "1055554014812850492036551567080607493676120731061",
+        "large_factor_count_bound": 13,
+        "omega_bound": 16
+      },
+      "omega_d_bound": 24,
+      "sufficient_condition": true
+    },
+    {
+      "s": 88,
+      "A": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "1204221828098618944454401",
+        "large_factor_count_bound": 6,
+        "omega_bound": 7
+      },
+      "B": {
+        "small_factors": [],
+        "remainder": "95780971304118053647396689196894323976171195136475137",
+        "large_factor_count_bound": 14,
+        "omega_bound": 14
+      },
+      "omega_d_bound": 21,
+      "sufficient_condition": true
+    },
+    {
+      "s": 89,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            179,
+            1
+          ]
+        ],
+        "remainder": "1152644356876517946833449",
+        "large_factor_count_bound": 6,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            1069,
+            1
+          ]
+        ],
+        "remainder": "71678930816926513487294061138929335061680969232161",
+        "large_factor_count_bound": 13,
+        "omega_bound": 15
+      },
+      "omega_d_bound": 23,
+      "sufficient_condition": true
+    },
+    {
+      "s": 90,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            61,
+            1
+          ],
+          [
+            109,
+            1
+          ],
+          [
+            181,
+            1
+          ],
+          [
+            1321,
+            1
+          ]
+        ],
+        "remainder": "1579402941661",
+        "large_factor_count_bound": 3,
+        "omega_bound": 11
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ],
+          [
+            433,
+            1
+          ]
+        ],
+        "remainder": "863863966742909873420785572922624724348373604177",
+        "large_factor_count_bound": 13,
+        "omega_bound": 16
+      },
+      "omega_d_bound": 27,
+      "sufficient_condition": true
+    },
+    {
+      "s": 91,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            43,
+            1
+          ],
+          [
+            2731,
+            1
+          ]
+        ],
+        "remainder": "7027780602757204958851",
+        "large_factor_count_bound": 6,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            53,
+            1
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            157,
+            1
+          ],
+          [
+            1093,
+            2
+          ],
+          [
+            1613,
+            1
+          ]
+        ],
+        "remainder": "23332568624600098029078397904470679629",
+        "large_factor_count_bound": 10,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 26,
+      "sufficient_condition": true
+    },
+    {
+      "s": 92,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "291280009243618888211558641",
+        "large_factor_count_bound": 7,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "95408282699821874450325106748657381081322279980302081",
+        "large_factor_count_bound": 14,
+        "omega_bound": 15
+      },
+      "omega_d_bound": 23,
+      "sufficient_condition": true
+    },
+    {
+      "s": 93,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ]
+        ],
+        "remainder": "1100391146031449133243665977",
+        "large_factor_count_bound": 7,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            373,
+            1
+          ]
+        ],
+        "remainder": "4045358408555037613319620941951733873029461902237597",
+        "large_factor_count_bound": 14,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 25,
+      "sufficient_condition": true
+    },
+    {
+      "s": 94,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            3761,
+            1
+          ]
+        ],
+        "remainder": "1053285861662647402200797",
+        "large_factor_count_bound": 6,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "23077579909509855749396284644145832412141012663470715121",
+        "large_factor_count_bound": 15,
+        "omega_bound": 16
+      },
+      "omega_d_bound": 24,
+      "sufficient_condition": true
+    },
+    {
+      "s": 95,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            2281,
+            1
+          ]
+        ],
+        "remainder": "526272119579825020880953",
+        "large_factor_count_bound": 6,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            229,
+            1
+          ],
+          [
+            457,
+            1
+          ],
+          [
+            761,
+            1
+          ]
+        ],
+        "remainder": "19223788140013930885772476380767622183108189293",
+        "large_factor_count_bound": 12,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 26,
+      "sufficient_condition": true
+    },
+    {
+      "s": 96,
+      "A": {
+        "small_factors": [
+          [
+            641,
+            1
+          ]
+        ],
+        "remainder": "123600877557354660832361857",
+        "large_factor_count_bound": 7,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [
+          [
+            769,
+            1
+          ]
+        ],
+        "remainder": "8162681060320781227354732669970957628221528536364154113",
+        "large_factor_count_bound": 15,
+        "omega_bound": 16
+      },
+      "omega_d_bound": 24,
+      "sufficient_condition": true
+    },
+    {
+      "s": 97,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            971,
+            1
+          ],
+          [
+            1553,
+            1
+          ]
+        ],
+        "remainder": "35026572276315505351057",
+        "large_factor_count_bound": 6,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            389,
+            1
+          ],
+          [
+            3881,
+            1
+          ]
+        ],
+        "remainder": "3326257833999363195866641543877749376126051017494913",
+        "large_factor_count_bound": 14,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 26,
+      "sufficient_condition": true
+    },
+    {
+      "s": 98,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            197,
+            1
+          ]
+        ],
+        "remainder": "98180876113028150476301",
+        "large_factor_count_bound": 6,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "5907860456834523071845448868901333097508099241848503070961",
+        "large_factor_count_bound": 15,
+        "omega_bound": 16
+      },
+      "omega_d_bound": 26,
+      "sufficient_condition": true
+    },
+    {
+      "s": 99,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            3
+          ],
+          [
+            19,
+            1
+          ],
+          [
+            67,
+            1
+          ],
+          [
+            683,
+            1
+          ]
+        ],
+        "remainder": "26999560778987372043073",
+        "large_factor_count_bound": 6,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            109,
+            1
+          ],
+          [
+            397,
+            1
+          ],
+          [
+            2113,
+            1
+          ]
+        ],
+        "remainder": "1826869642147674280810453248671259339396548919301",
+        "large_factor_count_bound": 13,
+        "omega_bound": 19
+      },
+      "omega_d_bound": 29,
+      "sufficient_condition": true
+    },
+    {
+      "s": 100,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            401,
+            1
+          ]
+        ],
+        "remainder": "185954320115627020903139681",
+        "large_factor_count_bound": 7,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            257,
+            1
+          ],
+          [
+            1601,
+            1
+          ]
+        ],
+        "remainder": "3905482332926624836962214988057470410084657676945082561",
+        "large_factor_count_bound": 15,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 26,
+      "sufficient_condition": true
+    },
+    {
+      "s": 101,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "845100400152152934331135470251",
+        "large_factor_count_bound": 8,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            809,
+            1
+          ]
+        ],
+        "remainder": "1589061106807406947383893292797194168130732255903874249989",
+        "large_factor_count_bound": 15,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 26,
+      "sufficient_condition": true
+    },
+    {
+      "s": 102,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            137,
+            1
+          ],
+          [
+            409,
+            1
+          ],
+          [
+            953,
+            1
+          ],
+          [
+            3061,
+            1
+          ]
+        ],
+        "remainder": "477250174306861093",
+        "large_factor_count_bound": 4,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            2
+          ],
+          [
+            241,
+            1
+          ]
+        ],
+        "remainder": "369151153758759557332788603963568775436190726363977736433",
+        "large_factor_count_bound": 15,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 27,
+      "sufficient_condition": true
+    },
+    {
+      "s": 103,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "3380401600608611737324541881003",
+        "large_factor_count_bound": 8,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "20568806966515075526937114781966881312284198320419748291857613",
+        "large_factor_count_bound": 16,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 26,
+      "sufficient_condition": true
+    },
+    {
+      "s": 104,
+      "A": {
+        "small_factors": [
+          [
+            257,
+            1
+          ]
+        ],
+        "remainder": "78919881726271091143763623681",
+        "large_factor_count_bound": 7,
+        "omega_bound": 8
+      },
+      "B": {
+        "small_factors": [],
+        "remainder": "411376139330301510538742295639337626245683966408394965837152257",
+        "large_factor_count_bound": 17,
+        "omega_bound": 17
+      },
+      "omega_d_bound": 25,
+      "sufficient_condition": true
+    },
+    {
+      "s": 105,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            43,
+            1
+          ],
+          [
+            211,
+            1
+          ],
+          [
+            281,
+            1
+          ],
+          [
+            331,
+            1
+          ]
+        ],
+        "remainder": "485544596754911090489",
+        "large_factor_count_bound": 5,
+        "omega_bound": 11
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            61,
+            1
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            421,
+            1
+          ],
+          [
+            1321,
+            1
+          ],
+          [
+            1429,
+            1
+          ]
+        ],
+        "remainder": "777335412699343519125078310500849046728638749",
+        "large_factor_count_bound": 12,
+        "omega_bound": 21
+      },
+      "omega_d_bound": 32,
+      "sufficient_condition": true
+    },
+    {
+      "s": 106,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "16225927682921336339157801028813",
+        "large_factor_count_bound": 8,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ]
+        ],
+        "remainder": "387177542899107304036463337072317765878290791913783497258496241",
+        "large_factor_count_bound": 17,
+        "omega_bound": 18
+      },
+      "omega_d_bound": 27,
+      "sufficient_condition": true
+    },
+    {
+      "s": 107,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            643,
+            1
+          ]
+        ],
+        "remainder": "84115747449047881488635567801",
+        "large_factor_count_bound": 8,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            857,
+            1
+          ]
+        ],
+        "remainder": "6144241054174865034884365675826746342992712683812666934323861",
+        "large_factor_count_bound": 16,
+        "omega_bound": 18
+      },
+      "omega_d_bound": 28,
+      "sufficient_condition": true
+    },
+    {
+      "s": 108,
+      "A": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            241,
+            1
+          ],
+          [
+            433,
+            1
+          ]
+        ],
+        "remainder": "182930310444259460272658257",
+        "large_factor_count_bound": 7,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            97,
+            1
+          ],
+          [
+            257,
+            1
+          ],
+          [
+            577,
+            1
+          ],
+          [
+            673,
+            1
+          ]
+        ],
+        "remainder": "10878858511685067431314578276899365716414505008744172993",
+        "large_factor_count_bound": 15,
+        "omega_bound": 19
+      },
+      "omega_d_bound": 29,
+      "sufficient_condition": true
+    },
+    {
+      "s": 109,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "remainder": "216345702438951151188770680384171",
+        "large_factor_count_bound": 8,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "84249833334845749358334422146936345855116076320439289003448782029",
+        "large_factor_count_bound": 17,
+        "omega_bound": 18
+      },
+      "omega_d_bound": 27,
+      "sufficient_condition": true
+    },
+    {
+      "s": 110,
+      "A": {
+        "small_factors": [
+          [
+            5,
+            2
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            397,
+            1
+          ],
+          [
+            2113,
+            1
+          ]
+        ],
+        "remainder": "1509682614801884712528901",
+        "large_factor_count_bound": 6,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            17,
+            1
+          ],
+          [
+            353,
+            1
+          ]
+        ],
+        "remainder": "280785980119465920207746782692672374121366693285916643904178577",
+        "large_factor_count_bound": 17,
+        "omega_bound": 19
+      },
+      "omega_d_bound": 29,
+      "sufficient_condition": true
+    },
+    {
+      "s": 111,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            2
+          ],
+          [
+            1777,
+            1
+          ],
+          [
+            3331,
+            1
+          ]
+        ],
+        "remainder": "48733202141656987958824003",
+        "large_factor_count_bound": 7,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            149,
+            1
+          ],
+          [
+            593,
+            1
+          ],
+          [
+            3109,
+            1
+          ]
+        ],
+        "remainder": "377471352250699467135701200357825273704215919739385798569",
+        "large_factor_count_bound": 15,
+        "omega_bound": 20
+      },
+      "omega_d_bound": 30,
+      "sufficient_condition": true
+    },
+    {
+      "s": 112,
+      "A": {
+        "small_factors": [
+          [
+            449,
+            1
+          ],
+          [
+            2689,
+            1
+          ]
+        ],
+        "remainder": "4300533857342441596614845377",
+        "large_factor_count_bound": 7,
+        "omega_bound": 9
+      },
+      "B": {
+        "small_factors": [
+          [
+            641,
+            1
+          ]
+        ],
+        "remainder": "42059199168721746949558525876785695278685092702871407926838705537",
+        "large_factor_count_bound": 17,
+        "omega_bound": 18
+      },
+      "omega_d_bound": 27,
+      "sufficient_condition": true
+    },
+    {
+      "s": 113,
+      "A": {
+        "small_factors": [
+          [
+            3,
+            1
+          ],
+          [
+            227,
+            1
+          ]
+        ],
+        "remainder": "15249036295256468806256964256153",
+        "large_factor_count_bound": 8,
+        "omega_bound": 10
+      },
+      "B": {
+        "small_factors": [
+          [
+            5,
+            1
+          ]
+        ],
+        "remainder": "21567957333720511835733612069615704538909715538032457984882888199373",
+        "large_factor_count_bound": 18,
+        "omega_bound": 19
+      },
+      "omega_d_bound": 29,
+      "sufficient_condition": true
+    }
+  ],
+  "purpose": "Exact partial-factorization upper bounds for omega(d), s=33..113, and the uniform odd-integer divisor constant; used with the separately proved four-point Lang bound."
+}

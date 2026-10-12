@@ -1,0 +1,2580 @@
+{
+  "revision": "local-v2.39",
+  "encoding": "integer vectors; low bit first matrix columns",
+  "group_verification": "direct permutation closure at all matrix-class representatives and every translation; complete GL conjugacy transport for n<=4",
+  "affine": {
+    "1": {
+      "admissible_matrices": 0,
+      "matrix_conjugacy_classes": 0,
+      "direct_closure_cases": 0,
+      "affine_pairs_covered_by_linear_conjugacy": 0,
+      "group_order_distribution": {},
+      "action_counts": {},
+      "cases": []
+    },
+    "2": {
+      "admissible_matrices": 2,
+      "matrix_conjugacy_classes": 1,
+      "direct_closure_cases": 4,
+      "affine_pairs_covered_by_linear_conjugacy": 8,
+      "group_order_distribution": {
+        "3": 2,
+        "12": 6
+      },
+      "action_counts": {
+        "transitive": 6,
+        "primitive": 6,
+        "doubly_transitive": 6
+      },
+      "cases": [
+        {
+          "matrix_columns": [
+            2,
+            3
+          ],
+          "matrix_conjugacy_class_size": 2,
+          "order_A": 3,
+          "order_B": 3,
+          "multiplier_group_order": 3,
+          "irreducible": true,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 3,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "admissible_matrices": 48,
+      "matrix_conjugacy_classes": 2,
+      "direct_closure_cases": 16,
+      "affine_pairs_covered_by_linear_conjugacy": 384,
+      "group_order_distribution": {
+        "7": 48,
+        "56": 336
+      },
+      "action_counts": {
+        "transitive": 336,
+        "primitive": 336,
+        "doubly_transitive": 336
+      },
+      "cases": [
+        {
+          "matrix_columns": [
+            2,
+            4,
+            3
+          ],
+          "matrix_conjugacy_class_size": 24,
+          "order_A": 7,
+          "order_B": 7,
+          "multiplier_group_order": 7,
+          "irreducible": true,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 7,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 4,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 5,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 6,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 7,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            }
+          ]
+        },
+        {
+          "matrix_columns": [
+            2,
+            4,
+            5
+          ],
+          "matrix_conjugacy_class_size": 24,
+          "order_A": 7,
+          "order_B": 7,
+          "multiplier_group_order": 7,
+          "irreducible": true,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 7,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 4,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 5,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 6,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 7,
+              "cyclic_dimension": 3,
+              "group_order": 56,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "admissible_matrices": 5824,
+      "matrix_conjugacy_classes": 5,
+      "direct_closure_cases": 80,
+      "affine_pairs_covered_by_linear_conjugacy": 93184,
+      "group_order_distribution": {
+        "3": 112,
+        "12": 3360,
+        "15": 4032,
+        "48": 5040,
+        "192": 20160,
+        "240": 60480
+      },
+      "action_counts": {
+        "transitive": 80640,
+        "primitive": 60480,
+        "doubly_transitive": 60480
+      },
+      "cases": [
+        {
+          "matrix_columns": [
+            2,
+            3,
+            8,
+            12
+          ],
+          "matrix_conjugacy_class_size": 112,
+          "order_A": 3,
+          "order_B": 3,
+          "multiplier_group_order": 3,
+          "irreducible": false,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 3,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 4,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 5,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 6,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 7,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 8,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 9,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 10,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 11,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 12,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 13,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 14,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 15,
+              "cyclic_dimension": 2,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            }
+          ]
+        },
+        {
+          "matrix_columns": [
+            2,
+            3,
+            8,
+            13
+          ],
+          "matrix_conjugacy_class_size": 1680,
+          "order_A": 6,
+          "order_B": 6,
+          "multiplier_group_order": 12,
+          "irreducible": false,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 12,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 2,
+              "group_order": 48,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 2,
+              "group_order": 48,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 2,
+              "group_order": 48,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 4,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 5,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 6,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 7,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 8,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 9,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 10,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 11,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 12,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 13,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 14,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 15,
+              "cyclic_dimension": 4,
+              "group_order": 192,
+              "transitive": true,
+              "primitive": false,
+              "doubly_transitive": false
+            }
+          ]
+        },
+        {
+          "matrix_columns": [
+            2,
+            4,
+            8,
+            3
+          ],
+          "matrix_conjugacy_class_size": 1344,
+          "order_A": 15,
+          "order_B": 15,
+          "multiplier_group_order": 15,
+          "irreducible": true,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 15,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 4,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 5,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 6,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 7,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 8,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 9,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 10,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 11,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 12,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 13,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 14,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 15,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            }
+          ]
+        },
+        {
+          "matrix_columns": [
+            2,
+            4,
+            8,
+            9
+          ],
+          "matrix_conjugacy_class_size": 1344,
+          "order_A": 15,
+          "order_B": 5,
+          "multiplier_group_order": 15,
+          "irreducible": true,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 15,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 4,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 5,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 6,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 7,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 8,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 9,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 10,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 11,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 12,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 13,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 14,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 15,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            }
+          ]
+        },
+        {
+          "matrix_columns": [
+            2,
+            4,
+            8,
+            15
+          ],
+          "matrix_conjugacy_class_size": 1344,
+          "order_A": 5,
+          "order_B": 15,
+          "multiplier_group_order": 15,
+          "irreducible": true,
+          "translations": [
+            {
+              "c": 0,
+              "cyclic_dimension": 0,
+              "group_order": 15,
+              "transitive": false,
+              "primitive": false,
+              "doubly_transitive": false
+            },
+            {
+              "c": 1,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 2,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 3,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 4,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 5,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 6,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 7,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 8,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 9,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 10,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 11,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 12,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 13,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 14,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            },
+            {
+              "c": 15,
+              "cyclic_dimension": 4,
+              "group_order": 240,
+              "transitive": true,
+              "primitive": true,
+              "doubly_transitive": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fixed_map_n4": {
+    "GL_order": 20160,
+    "standard_spread": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        8,
+        12
+      ],
+      [
+        5,
+        10,
+        15
+      ],
+      [
+        6,
+        11,
+        13
+      ],
+      [
+        7,
+        9,
+        14
+      ]
+    ],
+    "standard_spread_stabilizer_order": 360,
+    "line_spreads": 56,
+    "fixed_maps": 1792,
+    "GL_conjugacy_classes": [
+      {
+        "reversed_lines": 0,
+        "representative_values": [
+          0,
+          2,
+          3,
+          1,
+          8,
+          10,
+          11,
+          9,
+          12,
+          14,
+          15,
+          13,
+          4,
+          6,
+          7,
+          5
+        ],
+        "GL_orbit_size": 112,
+        "GL_stabilizer_order": 180,
+        "fixed_spread_orbit_size": 2,
+        "linear": true,
+        "GL_stabilizer_matrices": [
+          [
+            1,
+            2,
+            4,
+            8
+          ],
+          [
+            1,
+            2,
+            5,
+            10
+          ],
+          [
+            1,
+            2,
+            6,
+            11
+          ],
+          [
+            1,
+            2,
+            7,
+            9
+          ],
+          [
+            1,
+            2,
+            8,
+            12
+          ],
+          [
+            1,
+            2,
+            9,
+            14
+          ],
+          [
+            1,
+            2,
+            10,
+            15
+          ],
+          [
+            1,
+            2,
+            11,
+            13
+          ],
+          [
+            1,
+            2,
+            12,
+            4
+          ],
+          [
+            1,
+            2,
+            13,
+            6
+          ],
+          [
+            1,
+            2,
+            14,
+            7
+          ],
+          [
+            1,
+            2,
+            15,
+            5
+          ],
+          [
+            2,
+            3,
+            4,
+            8
+          ],
+          [
+            2,
+            3,
+            5,
+            10
+          ],
+          [
+            2,
+            3,
+            6,
+            11
+          ],
+          [
+            2,
+            3,
+            7,
+            9
+          ],
+          [
+            2,
+            3,
+            8,
+            12
+          ],
+          [
+            2,
+            3,
+            9,
+            14
+          ],
+          [
+            2,
+            3,
+            10,
+            15
+          ],
+          [
+            2,
+            3,
+            11,
+            13
+          ],
+          [
+            2,
+            3,
+            12,
+            4
+          ],
+          [
+            2,
+            3,
+            13,
+            6
+          ],
+          [
+            2,
+            3,
+            14,
+            7
+          ],
+          [
+            2,
+            3,
+            15,
+            5
+          ],
+          [
+            3,
+            1,
+            4,
+            8
+          ],
+          [
+            3,
+            1,
+            5,
+            10
+          ],
+          [
+            3,
+            1,
+            6,
+            11
+          ],
+          [
+            3,
+            1,
+            7,
+            9
+          ],
+          [
+            3,
+            1,
+            8,
+            12
+          ],
+          [
+            3,
+            1,
+            9,
+            14
+          ],
+          [
+            3,
+            1,
+            10,
+            15
+          ],
+          [
+            3,
+            1,
+            11,
+            13
+          ],
+          [
+            3,
+            1,
+            12,
+            4
+          ],
+          [
+            3,
+            1,
+            13,
+            6
+          ],
+          [
+            3,
+            1,
+            14,
+            7
+          ],
+          [
+            3,
+            1,
+            15,
+            5
+          ],
+          [
+            4,
+            8,
+            1,
+            2
+          ],
+          [
+            4,
+            8,
+            2,
+            3
+          ],
+          [
+            4,
+            8,
+            3,
+            1
+          ],
+          [
+            4,
+            8,
+            5,
+            10
+          ],
+          [
+            4,
+            8,
+            6,
+            11
+          ],
+          [
+            4,
+            8,
+            7,
+            9
+          ],
+          [
+            4,
+            8,
+            9,
+            14
+          ],
+          [
+            4,
+            8,
+            10,
+            15
+          ],
+          [
+            4,
+            8,
+            11,
+            13
+          ],
+          [
+            4,
+            8,
+            13,
+            6
+          ],
+          [
+            4,
+            8,
+            14,
+            7
+          ],
+          [
+            4,
+            8,
+            15,
+            5
+          ],
+          [
+            5,
+            10,
+            1,
+            2
+          ],
+          [
+            5,
+            10,
+            2,
+            3
+          ],
+          [
+            5,
+            10,
+            3,
+            1
+          ],
+          [
+            5,
+            10,
+            4,
+            8
+          ],
+          [
+            5,
+            10,
+            6,
+            11
+          ],
+          [
+            5,
+            10,
+            7,
+            9
+          ],
+          [
+            5,
+            10,
+            8,
+            12
+          ],
+          [
+            5,
+            10,
+            9,
+            14
+          ],
+          [
+            5,
+            10,
+            11,
+            13
+          ],
+          [
+            5,
+            10,
+            12,
+            4
+          ],
+          [
+            5,
+            10,
+            13,
+            6
+          ],
+          [
+            5,
+            10,
+            14,
+            7
+          ],
+          [
+            6,
+            11,
+            1,
+            2
+          ],
+          [
+            6,
+            11,
+            2,
+            3
+          ],
+          [
+            6,
+            11,
+            3,
+            1
+          ],
+          [
+            6,
+            11,
+            4,
+            8
+          ],
+          [
+            6,
+            11,
+            5,
+            10
+          ],
+          [
+            6,
+            11,
+            7,
+            9
+          ],
+          [
+            6,
+            11,
+            8,
+            12
+          ],
+          [
+            6,
+            11,
+            9,
+            14
+          ],
+          [
+            6,
+            11,
+            10,
+            15
+          ],
+          [
+            6,
+            11,
+            12,
+            4
+          ],
+          [
+            6,
+            11,
+            14,
+            7
+          ],
+          [
+            6,
+            11,
+            15,
+            5
+          ],
+          [
+            7,
+            9,
+            1,
+            2
+          ],
+          [
+            7,
+            9,
+            2,
+            3
+          ],
+          [
+            7,
+            9,
+            3,
+            1
+          ],
+          [
+            7,
+            9,
+            4,
+            8
+          ],
+          [
+            7,
+            9,
+            5,
+            10
+          ],
+          [
+            7,
+            9,
+            6,
+            11
+          ],
+          [
+            7,
+            9,
+            8,
+            12
+          ],
+          [
+            7,
+            9,
+            10,
+            15
+          ],
+          [
+            7,
+            9,
+            11,
+            13
+          ],
+          [
+            7,
+            9,
+            12,
+            4
+          ],
+          [
+            7,
+            9,
+            13,
+            6
+          ],
+          [
+            7,
+            9,
+            15,
+            5
+          ],
+          [
+            8,
+            12,
+            1,
+            2
+          ],
+          [
+            8,
+            12,
+            2,
+            3
+          ],
+          [
+            8,
+            12,
+            3,
+            1
+          ],
+          [
+            8,
+            12,
+            5,
+            10
+          ],
+          [
+            8,
+            12,
+            6,
+            11
+          ],
+          [
+            8,
+            12,
+            7,
+            9
+          ],
+          [
+            8,
+            12,
+            9,
+            14
+          ],
+          [
+            8,
+            12,
+            10,
+            15
+          ],
+          [
+            8,
+            12,
+            11,
+            13
+          ],
+          [
+            8,
+            12,
+            13,
+            6
+          ],
+          [
+            8,
+            12,
+            14,
+            7
+          ],
+          [
+            8,
+            12,
+            15,
+            5
+          ],
+          [
+            9,
+            14,
+            1,
+            2
+          ],
+          [
+            9,
+            14,
+            2,
+            3
+          ],
+          [
+            9,
+            14,
+            3,
+            1
+          ],
+          [
+            9,
+            14,
+            4,
+            8
+          ],
+          [
+            9,
+            14,
+            5,
+            10
+          ],
+          [
+            9,
+            14,
+            6,
+            11
+          ],
+          [
+            9,
+            14,
+            8,
+            12
+          ],
+          [
+            9,
+            14,
+            10,
+            15
+          ],
+          [
+            9,
+            14,
+            11,
+            13
+          ],
+          [
+            9,
+            14,
+            12,
+            4
+          ],
+          [
+            9,
+            14,
+            13,
+            6
+          ],
+          [
+            9,
+            14,
+            15,
+            5
+          ],
+          [
+            10,
+            15,
+            1,
+            2
+          ],
+          [
+            10,
+            15,
+            2,
+            3
+          ],
+          [
+            10,
+            15,
+            3,
+            1
+          ],
+          [
+            10,
+            15,
+            4,
+            8
+          ],
+          [
+            10,
+            15,
+            6,
+            11
+          ],
+          [
+            10,
+            15,
+            7,
+            9
+          ],
+          [
+            10,
+            15,
+            8,
+            12
+          ],
+          [
+            10,
+            15,
+            9,
+            14
+          ],
+          [
+            10,
+            15,
+            11,
+            13
+          ],
+          [
+            10,
+            15,
+            12,
+            4
+          ],
+          [
+            10,
+            15,
+            13,
+            6
+          ],
+          [
+            10,
+            15,
+            14,
+            7
+          ],
+          [
+            11,
+            13,
+            1,
+            2
+          ],
+          [
+            11,
+            13,
+            2,
+            3
+          ],
+          [
+            11,
+            13,
+            3,
+            1
+          ],
+          [
+            11,
+            13,
+            4,
+            8
+          ],
+          [
+            11,
+            13,
+            5,
+            10
+          ],
+          [
+            11,
+            13,
+            7,
+            9
+          ],
+          [
+            11,
+            13,
+            8,
+            12
+          ],
+          [
+            11,
+            13,
+            9,
+            14
+          ],
+          [
+            11,
+            13,
+            10,
+            15
+          ],
+          [
+            11,
+            13,
+            12,
+            4
+          ],
+          [
+            11,
+            13,
+            14,
+            7
+          ],
+          [
+            11,
+            13,
+            15,
+            5
+          ],
+          [
+            12,
+            4,
+            1,
+            2
+          ],
+          [
+            12,
+            4,
+            2,
+            3
+          ],
+          [
+            12,
+            4,
+            3,
+            1
+          ],
+          [
+            12,
+            4,
+            5,
+            10
+          ],
+          [
+            12,
+            4,
+            6,
+            11
+          ],
+          [
+            12,
+            4,
+            7,
+            9
+          ],
+          [
+            12,
+            4,
+            9,
+            14
+          ],
+          [
+            12,
+            4,
+            10,
+            15
+          ],
+          [
+            12,
+            4,
+            11,
+            13
+          ],
+          [
+            12,
+            4,
+            13,
+            6
+          ],
+          [
+            12,
+            4,
+            14,
+            7
+          ],
+          [
+            12,
+            4,
+            15,
+            5
+          ],
+          [
+            13,
+            6,
+            1,
+            2
+          ],
+          [
+            13,
+            6,
+            2,
+            3
+          ],
+          [
+            13,
+            6,
+            3,
+            1
+          ],
+          [
+            13,
+            6,
+            4,
+            8
+          ],
+          [
+            13,
+            6,
+            5,
+            10
+          ],
+          [
+            13,
+            6,
+            7,
+            9
+          ],
+          [
+            13,
+            6,
+            8,
+            12
+          ],
+          [
+            13,
+            6,
+            9,
+            14
+          ],
+          [
+            13,
+            6,
+            10,
+            15
+          ],
+          [
+            13,
+            6,
+            12,
+            4
+          ],
+          [
+            13,
+            6,
+            14,
+            7
+          ],
+          [
+            13,
+            6,
+            15,
+            5
+          ],
+          [
+            14,
+            7,
+            1,
+            2
+          ],
+          [
+            14,
+            7,
+            2,
+            3
+          ],
+          [
+            14,
+            7,
+            3,
+            1
+          ],
+          [
+            14,
+            7,
+            4,
+            8
+          ],
+          [
+            14,
+            7,
+            5,
+            10
+          ],
+          [
+            14,
+            7,
+            6,
+            11
+          ],
+          [
+            14,
+            7,
+            8,
+            12
+          ],
+          [
+            14,
+            7,
+            10,
+            15
+          ],
+          [
+            14,
+            7,
+            11,
+            13
+          ],
+          [
+            14,
+            7,
+            12,
+            4
+          ],
+          [
+            14,
+            7,
+            13,
+            6
+          ],
+          [
+            14,
+            7,
+            15,
+            5
+          ],
+          [
+            15,
+            5,
+            1,
+            2
+          ],
+          [
+            15,
+            5,
+            2,
+            3
+          ],
+          [
+            15,
+            5,
+            3,
+            1
+          ],
+          [
+            15,
+            5,
+            4,
+            8
+          ],
+          [
+            15,
+            5,
+            6,
+            11
+          ],
+          [
+            15,
+            5,
+            7,
+            9
+          ],
+          [
+            15,
+            5,
+            8,
+            12
+          ],
+          [
+            15,
+            5,
+            9,
+            14
+          ],
+          [
+            15,
+            5,
+            11,
+            13
+          ],
+          [
+            15,
+            5,
+            12,
+            4
+          ],
+          [
+            15,
+            5,
+            13,
+            6
+          ],
+          [
+            15,
+            5,
+            14,
+            7
+          ]
+        ]
+      },
+      {
+        "reversed_lines": 1,
+        "representative_values": [
+          0,
+          3,
+          1,
+          2,
+          8,
+          10,
+          11,
+          9,
+          12,
+          14,
+          15,
+          13,
+          4,
+          6,
+          7,
+          5
+        ],
+        "GL_orbit_size": 560,
+        "GL_stabilizer_order": 36,
+        "fixed_spread_orbit_size": 10,
+        "linear": false,
+        "GL_stabilizer_matrices": [
+          [
+            1,
+            2,
+            4,
+            8
+          ],
+          [
+            1,
+            2,
+            5,
+            10
+          ],
+          [
+            1,
+            2,
+            6,
+            11
+          ],
+          [
+            1,
+            2,
+            7,
+            9
+          ],
+          [
+            1,
+            2,
+            8,
+            12
+          ],
+          [
+            1,
+            2,
+            9,
+            14
+          ],
+          [
+            1,
+            2,
+            10,
+            15
+          ],
+          [
+            1,
+            2,
+            11,
+            13
+          ],
+          [
+            1,
+            2,
+            12,
+            4
+          ],
+          [
+            1,
+            2,
+            13,
+            6
+          ],
+          [
+            1,
+            2,
+            14,
+            7
+          ],
+          [
+            1,
+            2,
+            15,
+            5
+          ],
+          [
+            2,
+            3,
+            4,
+            8
+          ],
+          [
+            2,
+            3,
+            5,
+            10
+          ],
+          [
+            2,
+            3,
+            6,
+            11
+          ],
+          [
+            2,
+            3,
+            7,
+            9
+          ],
+          [
+            2,
+            3,
+            8,
+            12
+          ],
+          [
+            2,
+            3,
+            9,
+            14
+          ],
+          [
+            2,
+            3,
+            10,
+            15
+          ],
+          [
+            2,
+            3,
+            11,
+            13
+          ],
+          [
+            2,
+            3,
+            12,
+            4
+          ],
+          [
+            2,
+            3,
+            13,
+            6
+          ],
+          [
+            2,
+            3,
+            14,
+            7
+          ],
+          [
+            2,
+            3,
+            15,
+            5
+          ],
+          [
+            3,
+            1,
+            4,
+            8
+          ],
+          [
+            3,
+            1,
+            5,
+            10
+          ],
+          [
+            3,
+            1,
+            6,
+            11
+          ],
+          [
+            3,
+            1,
+            7,
+            9
+          ],
+          [
+            3,
+            1,
+            8,
+            12
+          ],
+          [
+            3,
+            1,
+            9,
+            14
+          ],
+          [
+            3,
+            1,
+            10,
+            15
+          ],
+          [
+            3,
+            1,
+            11,
+            13
+          ],
+          [
+            3,
+            1,
+            12,
+            4
+          ],
+          [
+            3,
+            1,
+            13,
+            6
+          ],
+          [
+            3,
+            1,
+            14,
+            7
+          ],
+          [
+            3,
+            1,
+            15,
+            5
+          ]
+        ]
+      },
+      {
+        "reversed_lines": 2,
+        "representative_values": [
+          0,
+          3,
+          1,
+          2,
+          12,
+          10,
+          11,
+          9,
+          4,
+          14,
+          15,
+          13,
+          8,
+          6,
+          7,
+          5
+        ],
+        "GL_orbit_size": 1120,
+        "GL_stabilizer_order": 18,
+        "fixed_spread_orbit_size": 20,
+        "linear": false,
+        "GL_stabilizer_matrices": [
+          [
+            1,
+            2,
+            4,
+            8
+          ],
+          [
+            1,
+            2,
+            8,
+            12
+          ],
+          [
+            1,
+            2,
+            12,
+            4
+          ],
+          [
+            2,
+            3,
+            4,
+            8
+          ],
+          [
+            2,
+            3,
+            8,
+            12
+          ],
+          [
+            2,
+            3,
+            12,
+            4
+          ],
+          [
+            3,
+            1,
+            4,
+            8
+          ],
+          [
+            3,
+            1,
+            8,
+            12
+          ],
+          [
+            3,
+            1,
+            12,
+            4
+          ],
+          [
+            4,
+            8,
+            1,
+            2
+          ],
+          [
+            4,
+            8,
+            2,
+            3
+          ],
+          [
+            4,
+            8,
+            3,
+            1
+          ],
+          [
+            8,
+            12,
+            1,
+            2
+          ],
+          [
+            8,
+            12,
+            2,
+            3
+          ],
+          [
+            8,
+            12,
+            3,
+            1
+          ],
+          [
+            12,
+            4,
+            1,
+            2
+          ],
+          [
+            12,
+            4,
+            2,
+            3
+          ],
+          [
+            12,
+            4,
+            3,
+            1
+          ]
+        ]
+      }
+    ],
+    "burnside_fixed_orientation_sum": 1080,
+    "burnside_orientation_classes": 3,
+    "burnside_signatures": [
+      {
+        "line_cycle_lengths": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "global_flip": 0,
+        "fixed_orientations": 32,
+        "matrices": 3
+      },
+      {
+        "line_cycle_lengths": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "global_flip": 1,
+        "fixed_orientations": 0,
+        "matrices": 30
+      },
+      {
+        "line_cycle_lengths": [
+          1,
+          1,
+          3
+        ],
+        "global_flip": 0,
+        "fixed_orientations": 8,
+        "matrices": 60
+      },
+      {
+        "line_cycle_lengths": [
+          1,
+          2,
+          2
+        ],
+        "global_flip": 0,
+        "fixed_orientations": 8,
+        "matrices": 45
+      },
+      {
+        "line_cycle_lengths": [
+          1,
+          4
+        ],
+        "global_flip": 1,
+        "fixed_orientations": 0,
+        "matrices": 90
+      },
+      {
+        "line_cycle_lengths": [
+          2,
+          3
+        ],
+        "global_flip": 1,
+        "fixed_orientations": 0,
+        "matrices": 60
+      },
+      {
+        "line_cycle_lengths": [
+          5
+        ],
+        "global_flip": 0,
+        "fixed_orientations": 2,
+        "matrices": 72
+      }
+    ]
+  }
+}

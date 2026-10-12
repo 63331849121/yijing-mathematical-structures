@@ -1,0 +1,616 @@
+{
+  "scope": {
+    "quantitative_and_classes": "All d|2^n-1, even n=2..14",
+    "norm_descent": "2<=r<=8, every proper s|r, every u|2^s-1",
+    "quarter_polynomials": "s=1..5",
+    "quarter_field_enumeration": "s=1..4",
+    "direct_graphs": "All subgroup orders on 4 and 16 vertices"
+  },
+  "dimensions": [
+    {
+      "n": 2,
+      "all_divisors_checked": 2,
+      "primitive_orders": [
+        {
+          "d": 3,
+          "k": 1,
+          "T_d": 2,
+          "R_d": 2,
+          "linear_map_classes": 1,
+          "main_term": "22/9",
+          "error_coefficient": "2/9"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "all_divisors_checked": 4,
+      "primitive_orders": [
+        {
+          "d": 5,
+          "k": 3,
+          "T_d": 0,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "76/75",
+          "error_coefficient": "232/225"
+        },
+        {
+          "d": 15,
+          "k": 1,
+          "T_d": 14,
+          "R_d": 12,
+          "linear_map_classes": 3,
+          "main_term": "968/75",
+          "error_coefficient": "68/45"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "all_divisors_checked": 6,
+      "primitive_orders": [
+        {
+          "d": 9,
+          "k": 7,
+          "T_d": 2,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "394/441",
+          "error_coefficient": "650/441"
+        },
+        {
+          "d": 21,
+          "k": 3,
+          "T_d": 8,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "7564/1323",
+          "error_coefficient": "10828/3969"
+        },
+        {
+          "d": 63,
+          "k": 1,
+          "T_d": 62,
+          "R_d": 54,
+          "linear_map_classes": 9,
+          "main_term": "8068/147",
+          "error_coefficient": "748/441"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "all_divisors_checked": 8,
+      "primitive_orders": [
+        {
+          "d": 17,
+          "k": 15,
+          "T_d": 0,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "6864/7225",
+          "error_coefficient": "23372/13005"
+        },
+        {
+          "d": 51,
+          "k": 5,
+          "T_d": 2,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "63072/7225",
+          "error_coefficient": "42164/13005"
+        },
+        {
+          "d": 85,
+          "k": 3,
+          "T_d": 24,
+          "R_d": 24,
+          "linear_map_classes": 3,
+          "main_term": "191936/7225",
+          "error_coefficient": "38512/13005"
+        },
+        {
+          "d": 255,
+          "k": 1,
+          "T_d": 254,
+          "R_d": 216,
+          "linear_map_classes": 27,
+          "main_term": "1568128/7225",
+          "error_coefficient": "68104/13005"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "all_divisors_checked": 8,
+      "primitive_orders": [
+        {
+          "d": 11,
+          "k": 93,
+          "T_d": 0,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "30770/348843",
+          "error_coefficient": "2056474/1046529"
+        },
+        {
+          "d": 33,
+          "k": 31,
+          "T_d": 2,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "307540/348843",
+          "error_coefficient": "4041244/1046529"
+        },
+        {
+          "d": 93,
+          "k": 11,
+          "T_d": 32,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "2562620/348843",
+          "error_coefficient": "3812524/1046529"
+        },
+        {
+          "d": 341,
+          "k": 3,
+          "T_d": 120,
+          "R_d": 90,
+          "linear_map_classes": 9,
+          "main_term": "13017700/116281",
+          "error_coefficient": "3242348/1046529"
+        },
+        {
+          "d": 1023,
+          "k": 1,
+          "T_d": 1022,
+          "R_d": 900,
+          "linear_map_classes": 90,
+          "main_term": "104755400/116281",
+          "error_coefficient": "6005528/1046529"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "all_divisors_checked": 24,
+      "primitive_orders": [
+        {
+          "d": 13,
+          "k": 315,
+          "T_d": 0,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "25756/798525",
+          "error_coefficient": "1334656/670761"
+        },
+        {
+          "d": 35,
+          "k": 117,
+          "T_d": 6,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "491656/1863225",
+          "error_coefficient": "1022908/257985"
+        },
+        {
+          "d": 39,
+          "k": 105,
+          "T_d": 2,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "248168/798525",
+          "error_coefficient": "13278308/3353805"
+        },
+        {
+          "d": 45,
+          "k": 91,
+          "T_d": 14,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "251288/621075",
+          "error_coefficient": "113156/28665"
+        },
+        {
+          "d": 65,
+          "k": 63,
+          "T_d": 0,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "252848/266175",
+          "error_coefficient": "203240/51597"
+        },
+        {
+          "d": 91,
+          "k": 45,
+          "T_d": 6,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "510376/266175",
+          "error_coefficient": "13143436/3353805"
+        },
+        {
+          "d": 105,
+          "k": 39,
+          "T_d": 20,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "4129808/1863225",
+          "error_coefficient": "2027992/257985"
+        },
+        {
+          "d": 117,
+          "k": 35,
+          "T_d": 2,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "257528/88725",
+          "error_coefficient": "1445396/372645"
+        },
+        {
+          "d": 195,
+          "k": 21,
+          "T_d": 14,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "296992/38025",
+          "error_coefficient": "2001736/257985"
+        },
+        {
+          "d": 273,
+          "k": 15,
+          "T_d": 32,
+          "R_d": 24,
+          "linear_map_classes": 2,
+          "main_term": "4167248/266175",
+          "error_coefficient": "25763704/3353805"
+        },
+        {
+          "d": 315,
+          "k": 13,
+          "T_d": 74,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "4173488/207025",
+          "error_coefficient": "217624/28665"
+        },
+        {
+          "d": 455,
+          "k": 9,
+          "T_d": 6,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "4176608/88725",
+          "error_coefficient": "1943672/257985"
+        },
+        {
+          "d": 585,
+          "k": 7,
+          "T_d": 86,
+          "R_d": 72,
+          "linear_map_classes": 6,
+          "main_term": "2091424/29575",
+          "error_coefficient": "209512/28665"
+        },
+        {
+          "d": 819,
+          "k": 5,
+          "T_d": 194,
+          "R_d": 108,
+          "linear_map_classes": 9,
+          "main_term": "4185968/29575",
+          "error_coefficient": "2648248/372645"
+        },
+        {
+          "d": 1365,
+          "k": 3,
+          "T_d": 440,
+          "R_d": 396,
+          "linear_map_classes": 33,
+          "main_term": "4789312/12675",
+          "error_coefficient": "3687728/257985"
+        },
+        {
+          "d": 4095,
+          "k": 1,
+          "T_d": 4094,
+          "R_d": 3420,
+          "linear_map_classes": 285,
+          "main_term": "100650432/29575",
+          "error_coefficient": "357296/28665"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "all_divisors_checked": 8,
+      "primitive_orders": [
+        {
+          "d": 43,
+          "k": 381,
+          "T_d": 0,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "9405074/89467563",
+          "error_coefficient": "534646522/268402689"
+        },
+        {
+          "d": 129,
+          "k": 127,
+          "T_d": 2,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "79369108/89467563",
+          "error_coefficient": "1064997532/268402689"
+        },
+        {
+          "d": 381,
+          "k": 43,
+          "T_d": 128,
+          "R_d": 0,
+          "linear_map_classes": 0,
+          "main_term": "233519188/29822521",
+          "error_coefficient": "1048769068/268402689"
+        },
+        {
+          "d": 5461,
+          "k": 3,
+          "T_d": 1848,
+          "R_d": 1722,
+          "linear_map_classes": 123,
+          "main_term": "54231928548/29822521",
+          "error_coefficient": "856484588/268402689"
+        },
+        {
+          "d": 16383,
+          "k": 1,
+          "T_d": 16382,
+          "R_d": 14532,
+          "linear_map_classes": 1038,
+          "main_term": "434028826056/29822521",
+          "error_coefficient": "1636802840/268402689"
+        }
+      ]
+    }
+  ],
+  "norm_descent": [
+    {
+      "r": 2,
+      "s": 1,
+      "u": 1,
+      "d": 5,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 3,
+      "s": 1,
+      "u": 1,
+      "d": 9,
+      "g": 3,
+      "T_d": 2
+    },
+    {
+      "r": 4,
+      "s": 1,
+      "u": 1,
+      "d": 17,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 4,
+      "s": 2,
+      "u": 1,
+      "d": 17,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 4,
+      "s": 2,
+      "u": 3,
+      "d": 51,
+      "g": 3,
+      "T_d": 2
+    },
+    {
+      "r": 5,
+      "s": 1,
+      "u": 1,
+      "d": 33,
+      "g": 3,
+      "T_d": 2
+    },
+    {
+      "r": 6,
+      "s": 1,
+      "u": 1,
+      "d": 65,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 6,
+      "s": 2,
+      "u": 1,
+      "d": 65,
+      "g": 5,
+      "T_d": 0
+    },
+    {
+      "r": 6,
+      "s": 2,
+      "u": 3,
+      "d": 195,
+      "g": 15,
+      "T_d": 14
+    },
+    {
+      "r": 6,
+      "s": 3,
+      "u": 1,
+      "d": 65,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 6,
+      "s": 3,
+      "u": 7,
+      "d": 455,
+      "g": 7,
+      "T_d": 6
+    },
+    {
+      "r": 7,
+      "s": 1,
+      "u": 1,
+      "d": 129,
+      "g": 3,
+      "T_d": 2
+    },
+    {
+      "r": 8,
+      "s": 1,
+      "u": 1,
+      "d": 257,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 8,
+      "s": 2,
+      "u": 1,
+      "d": 257,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 8,
+      "s": 2,
+      "u": 3,
+      "d": 771,
+      "g": 3,
+      "T_d": 2
+    },
+    {
+      "r": 8,
+      "s": 4,
+      "u": 1,
+      "d": 257,
+      "g": 1,
+      "T_d": 0
+    },
+    {
+      "r": 8,
+      "s": 4,
+      "u": 3,
+      "d": 771,
+      "g": 3,
+      "T_d": 2
+    },
+    {
+      "r": 8,
+      "s": 4,
+      "u": 5,
+      "d": 1285,
+      "g": 5,
+      "T_d": 0
+    },
+    {
+      "r": 8,
+      "s": 4,
+      "u": 15,
+      "d": 3855,
+      "g": 15,
+      "T_d": 14
+    }
+  ],
+  "quarter_power": [
+    {
+      "s": 1,
+      "n": 4,
+      "q": 16,
+      "k": 3,
+      "d": 5,
+      "T_d": 0,
+      "R_d": 0,
+      "independent_field_enumeration": true,
+      "modulus_hex": "0x13"
+    },
+    {
+      "s": 2,
+      "n": 8,
+      "q": 256,
+      "k": 5,
+      "d": 51,
+      "T_d": 2,
+      "R_d": 0,
+      "independent_field_enumeration": true,
+      "modulus_hex": "0x11b"
+    },
+    {
+      "s": 3,
+      "n": 12,
+      "q": 4096,
+      "k": 9,
+      "d": 455,
+      "T_d": 6,
+      "R_d": 0,
+      "independent_field_enumeration": true,
+      "modulus_hex": "0x1009"
+    },
+    {
+      "s": 4,
+      "n": 16,
+      "q": 65536,
+      "k": 17,
+      "d": 3855,
+      "T_d": 14,
+      "R_d": 0,
+      "independent_field_enumeration": true,
+      "modulus_hex": "0x1002b"
+    },
+    {
+      "s": 5,
+      "n": 20,
+      "q": 1048576,
+      "k": 33,
+      "d": 31775,
+      "T_d": 30,
+      "R_d": 0
+    }
+  ],
+  "direct_graphs": [
+    {
+      "n": 2,
+      "d": 3,
+      "triangles": 4,
+      "generating_triangles": 4,
+      "free_affine_action_checked": false
+    },
+    {
+      "n": 4,
+      "d": 3,
+      "triangles": 16,
+      "generating_triangles": 16,
+      "free_affine_action_checked": false
+    },
+    {
+      "n": 4,
+      "d": 5,
+      "triangles": 0,
+      "generating_triangles": 0,
+      "free_affine_action_checked": true
+    },
+    {
+      "n": 4,
+      "d": 15,
+      "triangles": 560,
+      "generating_triangles": 480,
+      "free_affine_action_checked": true
+    }
+  ]
+}
