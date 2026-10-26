@@ -4,23 +4,23 @@ Independent research on finite-field, combinatorial, and affine structures inspi
 
 ## Current preprints
 
-### Paper A: scalar realizations of affine companion groups
+### Paper A: norm-fiber densities and relative traces
 
-**Affine companion groups in characteristic two: scalar realizations and density**
+**Norm-fiber densities and relative traces in characteristic two** · Baohua Li · **2026-10-26**
 
-The general-article preprint studies scalar realizations in characteristic two,
-with norm-fiber density formulas, exact local averaging, and an
-all-dimensional double full-order existence result. It is kept in the generic
-`article` class so that journal-specific formatting can be done later in a
-separate copy.
+The current main paper develops effective norm-fiber densities, uniform
+relative traces over the whole intermediate field, the complete C9/C11
+exception classification, and their affine companion-group interpretation.
 
-- [Paper A PDF](PaperA_scalar_realizations/PaperA_revised.pdf)
-- [LaTeX source](PaperA_scalar_realizations/PaperA_revised.tex)
-- [Reproduction package and audit](PaperA_scalar_realizations/)
+- [Main paper (40 pages)](PaperA_norm_fibers/main.pdf)
+- [Supplement (36 pages)](PaperA_norm_fibers/supplement.pdf)
+- [Chinese visual overview (22 pages)](PaperA_norm_fibers/overview_zh.pdf)
+- [Sources, exact certificates, Lean scope and reproduction guide](PaperA_norm_fibers/)
+- [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26)
 
-This is the current general preprint. The earlier Singer-layer note below is
-preserved as a separate, narrower paper and its existing DOI continues to
-refer to that archived note only.
+The [preceding scalar-realization archive](PaperA_scalar_realizations/) is
+retained for provenance. The Singer-layer note's existing DOI below continues
+to refer only to that archived note, not to the new main paper.
 
 ### Earlier Paper A note: affine Singer layers and the (T,D,K) triple
 
@@ -64,6 +64,9 @@ finite-pair association statistics for n=2p, and computational evidence.
 
 ## Reproduce Paper A's computations
 
+For the current paper, start with the [current source and verification package](PaperA_norm_fibers/).
+The command below reproduces the retained earlier scalar-realization archive.
+
 Requires Python 3 and its standard library only. From the repository root:
 
 ```text
@@ -77,6 +80,9 @@ checks do not replace proofs of statements for arbitrary dimensions. See the
 coverage and limitations.
 
 ## Repository contents
+
+- `PaperA_norm_fibers/`: current main paper, supplement, visual overview,
+  complete sources/verification archive, citation metadata and checksums.
 
 - `PaperA_scalar_realizations/`: general-article Paper A source, PDF, abstracts,
   finite verifiers, data, Lean sources, and audit/reproduction materials.
@@ -95,7 +101,9 @@ inspired by the Yijing. The mathematical papers and programs are self-contained.
 
 ## Citation
 
-Li, Baohua. (2026). *An affine Singer layer on F2^6, its (T,D,K) triple,
+Current Paper A: Li, Baohua. (2026). *Norm-fiber densities and relative traces in characteristic two*. Version 2026-10-26. [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26).
+
+Earlier Singer-layer note: Li, Baohua. (2026). *An affine Singer layer on F2^6, its (T,D,K) triple,
 and <T,D> = AGL(1,64).* [Zenodo archive](https://doi.org/10.5281/zenodo.22731492).
 
 That DOI links to the existing archived Singer-layer note. The general-article
