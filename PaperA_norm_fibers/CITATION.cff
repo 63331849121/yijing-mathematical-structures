@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "For the current Paper A preprint, use the preferred citation below."
+type: software
+title: "Norm-fiber densities and relative traces in characteristic two: source and verification package"
+authors:
+  - family-names: Li
+    given-names: Baohua
+version: "2026.10.26"
+date-released: "2026-10-26"
+url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26"
+repository-code: "https://github.com/63331849121/yijing-mathematical-structures"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Norm-fiber densities and relative traces in characteristic two"
+  authors:
+    - family-names: Li
+      given-names: Baohua
+  year: 2026
+  date-published: "2026-10-26"
+  url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26"
