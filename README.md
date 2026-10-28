@@ -17,6 +17,7 @@ complete all-parameter classification remain outside the formal build.
 - [Main paper (41 pages)](PaperA_norm_fibers/main.pdf) / [supplement (36 pages)](PaperA_norm_fibers/supplement.pdf).
 - [Sources, raw data, exact certificates and Lean scope](PaperA_norm_fibers/).
 - [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17).
+- [Zenodo archive and DOI](https://doi.org/10.5281/zenodo.23721670) / [deposit details](PaperA_v17_Zenodo.md).
 - [Chinese visual overview (2026-10-26 snapshot)](PaperA_norm_fibers/overview_zh.pdf).
 
 The [preceding scalar-realization archive](PaperA_scalar_realizations/) remains
@@ -102,7 +103,7 @@ inspired by the Yijing. The mathematical papers and programs are self-contained.
 
 ## Citation
 
-Current Paper A: Li, Baohua. (2026). *Norm-fiber densities and relative traces in characteristic two*. Version 2026-10-26. [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26).
+Current Paper A: Li, Baohua. (2026). *Norm-fiber densities and relative traces in characteristic two* (v17). Zenodo. [10.5281/zenodo.23721670](https://doi.org/10.5281/zenodo.23721670).
 
 Earlier Singer-layer note: Li, Baohua. (2026). *An affine Singer layer on F2^6, its (T,D,K) triple,
 and <T,D> = AGL(1,64).* [Zenodo archive](https://doi.org/10.5281/zenodo.22731492).
