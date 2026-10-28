@@ -1,0 +1,6 @@
+formalization/.lake/
+formalization/__pycache__/
+formalization/*.olean
+formalization/*.ilean
+formalization/*.ir
+!formalization/*.log

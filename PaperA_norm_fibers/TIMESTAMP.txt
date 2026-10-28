@@ -1,21 +1,8 @@
-Version evidence and independent timestamp verification
-Release: paperA-v2026.10.26
-https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26
+v17 version evidence
+Release tag: paperA-v2026.10.28-v17
+Release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17
 
-1. Verify SHA256SUMS.txt against the downloaded files. These hashes identify
-   exact bytes; hashes by themselves do not establish a publication time.
-2. The GitHub commit and release page provide server-recorded public version
-   history. A Git author date alone is not an independent timestamp.
-3. If SHA256SUMS.txt.ots is supplied, it is an OpenTimestamps detached proof
-   for SHA256SUMS.txt, which in turn commits the PDFs, source archive and
-   metadata. A new receipt can contain only pending calendar attestations.
-   Do not treat that pending receipt as a confirmed Bitcoin attestation.
-4. With the official opentimestamps-client, later run:
-     ots upgrade SHA256SUMS.txt.ots
-     ots verify SHA256SUMS.txt.ots
-   Keep the original SHA256SUMS.txt. The official verifier is also available
-   at https://opentimestamps.org/ . A confirmed proof establishes that these
-   bytes existed before its attested time; it does not adjudicate authorship
-   or mathematical priority.
-5. A separate Zenodo preprint record can provide a DOI for this work.
-   Existing DOIs for the earlier note and Paper F must not be relabelled.
+The Git commit/tag and GitHub release identify this version. Verify the supplied
+files against SHA256SUMS.txt. No new Bitcoin-confirmed or detached OpenTimestamps
+receipt is claimed for v17. The receipt in history/2026-10-26/ commits the old
+checksum file stored beside it; it must not be used as a receipt for v17.

@@ -1,0 +1,331 @@
+Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)
+
+===== InverseSupportGrid =====
+'PaperA.InverseSupportGrid.cover_inverse' does not depend on any axioms
+'PaperA.InverseSupportGrid.mixed_corners' does not depend on any axioms
+'PaperA.InverseSupportGrid.two_crosses_intersect_in_inverse_pair' does not depend on any axioms
+'PaperA.InverseSupportGrid.covered_inverse_support_is_pair' does not depend on any axioms
+'PaperA.InverseSupportGrid.third_point_excludes_cover' does not depend on any axioms
+'PaperA.InverseSupportGrid.inverse_pair_cover_iff' does not depend on any axioms
+
+
+===== SupportCoverBranches =====
+'PaperA.SupportCoverBranches.empty_support_cover_one' does not depend on any axioms
+'PaperA.SupportCoverBranches.inverse_closed_one_cover_iff' does not depend on any axioms
+'PaperA.SupportCoverBranches.inverse_closed_pair_cover_iff' does not depend on any axioms
+'PaperA.SupportCoverBranches.axis_support_cover_iff' does not depend on any axioms
+
+
+===== CyclicSupport =====
+'PaperA.CyclicSupport.coprime_prime_support_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_quotient_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_iff_full_addOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.prime_support_prime_powers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.product_dvd_prime_powers' depends on axioms: [propext, Quot.sound]
+'PaperA.CyclicSupport.isUnit_mod513_iff_mod57' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_iff_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_sub_two_iff_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.no_unit_iff_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.nonzero_ne_neg_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.third_witness_all_translates_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.third_witness_all_translates_full_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.CyclicSupport.isUnit_sub_two_mod513_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.full_order_sub_two_mod513_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.third_witness_mod513' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+===== ReciprocalTraceSupport =====
+'PaperA.ReciprocalTrace.square_add_one_coprime' depends on axioms: [propext, Quot.sound]
+'PaperA.ReciprocalTrace.orderOf_pow_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.pow_eq_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.norm_one_quadratic_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.exact_order_quartic_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.frobenius_reciprocalTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.transformed_trace_eq_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.inv_mem_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.inv_mem_support_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.inverse_image_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.binary_inverse_image_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+===== MultiplicativeSupport =====
+'PaperA.MultiplicativeSupport.exponentEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.element' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponentSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.groupCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_element' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.element_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_zpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_mul_inv_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_orderOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.full_order_iff_exponent_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.element_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponentSupport_neg_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponentSupport_at_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exists_full_order_iff_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.groupCoordinates_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.third_witness_all_translates' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+===== ReciprocalTraceCounting =====
+'PaperA.ReciprocalTraceCounting.normalizedTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.normalizedTrace_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.normalizedTrace_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.orderOf_inverse_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.nonzero_of_exact_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.not_self_inverse_of_exact_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitiveFiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitive_fiber_eq_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitive_fiber_card_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.support_fiber_card_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.filteredSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.filteredSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.mem_filteredSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.mem_filteredSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.filtered_fiber_eq_primitiveFiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.filtered_source_maps_to_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.filtered_source_card_eq_two_mul_support_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitive_order_filter_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.binary_filtered_source_card_eq_two_mul_support_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+===== NormOneSupportBridge =====
+'PaperA.NormOneSupportBridge.roots_card_of_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.plus_one_dvd_quartic_sub_one' depends on axioms: [propext, Quot.sound]
+'PaperA.NormOneSupportBridge.norm_group_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_injective' depends on axioms: [propext, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_orderOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.groupSupport_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_mul_inv_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.finite_base_norm_group_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.field_support_all_translates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.group_support_count_eq_field_support_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NormOneSupportBridge.parameter_count_eq_two_mul_group_support_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NormOneSupportBridge.parameter_count_positive_of_group_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NormOneSupportBridge.field_parameter_count_positive_and_two_to_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+===== RelativeTraceTransfer =====
+
+
+===== NamedNormTraceTransfer =====
+
+
+===== all-declaration axiom audit =====
+'PaperA.InverseSupportGrid.cover_inverse' does not depend on any axioms
+'PaperA.InverseSupportGrid.mixed_corners' does not depend on any axioms
+'PaperA.InverseSupportGrid.two_crosses_intersect_in_inverse_pair' does not depend on any axioms
+'PaperA.InverseSupportGrid.covered_inverse_support_is_pair' does not depend on any axioms
+'PaperA.InverseSupportGrid.third_point_excludes_cover' does not depend on any axioms
+'PaperA.InverseSupportGrid.inverse_pair_cover_iff' does not depend on any axioms
+'PaperA.InverseSupportGrid.inversePoint' does not depend on any axioms
+'PaperA.InverseSupportGrid.Cover' does not depend on any axioms
+'PaperA.SupportCoverBranches.empty_support_cover_one' does not depend on any axioms
+'PaperA.SupportCoverBranches.inverse_closed_one_cover_iff' does not depend on any axioms
+'PaperA.SupportCoverBranches.inverse_closed_pair_cover_iff' does not depend on any axioms
+'PaperA.SupportCoverBranches.axis_support_cover_iff' does not depend on any axioms
+'PaperA.SupportCoverBranches.CoverOne' does not depend on any axioms
+'PaperA.CyclicSupport.coprime_prime_support_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_quotient_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_iff_full_addOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.prime_support_prime_powers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.product_dvd_prime_powers' depends on axioms: [propext, Quot.sound]
+'PaperA.CyclicSupport.isUnit_mod513_iff_mod57' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_iff_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.isUnit_sub_two_iff_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.no_unit_iff_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.nonzero_ne_neg_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.third_witness_all_translates_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.third_witness_all_translates_full_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.CyclicSupport.isUnit_sub_two_mod513_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.full_order_sub_two_mod513_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.third_witness_mod513' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.quotient' depends on axioms: [propext, Quot.sound]
+'PaperA.CyclicSupport.coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.CyclicSupport.imageSupport' does not depend on any axioms
+'PaperA.CyclicSupport.coordinates513' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.square_add_one_coprime' depends on axioms: [propext, Quot.sound]
+'PaperA.ReciprocalTrace.orderOf_pow_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.pow_eq_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.norm_one_quadratic_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.exact_order_quartic_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.frobenius_reciprocalTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.transformed_trace_eq_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.inv_mem_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.inv_mem_support_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.inverse_image_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.binary_inverse_image_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.reciprocalTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTrace.support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_element' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.element_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_zpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_mul_inv_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent_orderOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.full_order_iff_exponent_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.element_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponentSupport_neg_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponentSupport_at_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exists_full_order_iff_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.groupCoordinates_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.third_witness_all_translates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponentEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.element' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.exponentSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.MultiplicativeSupport.groupCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.normalizedTrace_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.normalizedTrace_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.orderOf_inverse_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.nonzero_of_exact_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.not_self_inverse_of_exact_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitive_fiber_eq_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitive_fiber_card_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.support_fiber_card_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.mem_filteredSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.mem_filteredSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.filtered_fiber_eq_primitiveFiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.filtered_source_maps_to_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.filtered_source_card_eq_two_mul_support_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitive_order_filter_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.binary_filtered_source_card_eq_two_mul_support_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.ReciprocalTraceCounting.normalizedTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.primitiveFiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.filteredSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.ReciprocalTraceCounting.filteredSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.roots_card_of_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.plus_one_dvd_quartic_sub_one' depends on axioms: [propext, Quot.sound]
+'PaperA.NormOneSupportBridge.norm_group_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_injective' depends on axioms: [propext, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_orderOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.groupSupport_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue_mul_inv_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.finite_base_norm_group_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.field_support_all_translates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.group_support_count_eq_field_support_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NormOneSupportBridge.parameter_count_eq_two_mul_group_support_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NormOneSupportBridge.parameter_count_positive_of_group_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NormOneSupportBridge.field_parameter_count_positive_and_two_to_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NormOneSupportBridge.rootValue' depends on axioms: [propext, Quot.sound]
+'PaperA.NormOneSupportBridge.groupSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NormOneSupportBridge.filteredGroupSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.one_add_ne_zero' depends on axioms: [propext, Quot.sound]
+'PaperA.RelativeTraceTransfer.parameter_element' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.element_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.parameter_ne_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.weight_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.element_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.weight_element' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.t_pos' depends on axioms: [propext]
+'PaperA.RelativeTraceTransfer.t_two_le' depends on axioms: [propext, Quot.sound]
+'PaperA.RelativeTraceTransfer.square_minus_one' depends on axioms: [propext, Quot.sound]
+'PaperA.RelativeTraceTransfer.square_plus_one' depends on axioms: [propext, Quot.sound]
+'PaperA.RelativeTraceTransfer.coprime_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.coprime_B_t_minus_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.add_pow_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.root_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.parameter_nonidentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.element_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.power_minus_one_eq_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.element_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.element_nonzero_of_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.parameter_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.order_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.mem_primitiveElements' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.primitive_element_of_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.primitive_parameter_of_element' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.M_eq_parameter_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.M_eq_two_mul_support_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.weight_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.shifted_power_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.shifted_source_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.fixed_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.M_shifted_support_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.finite_base_M_shifted_support_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.RelativeTraceTransfer.M_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.t' depends on axioms: [propext]
+'PaperA.RelativeTraceTransfer.A' depends on axioms: [propext]
+'PaperA.RelativeTraceTransfer.B' depends on axioms: [propext]
+'PaperA.RelativeTraceTransfer.d' depends on axioms: [propext]
+'PaperA.RelativeTraceTransfer.toElement' depends on axioms: [propext, Quot.sound]
+'PaperA.RelativeTraceTransfer.toParameter' depends on axioms: [propext, Quot.sound]
+'PaperA.RelativeTraceTransfer.weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.traceEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.primitiveElements' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.RelativeTraceTransfer.M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.quadratic_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.quartic_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.norm_power_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.norm_power_quartic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.trace_power_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.norm_one_iff_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.trace_eq_iff_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.named_M_eq_power_M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.named_M_eq_two_mul_support_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NamedNormTraceTransfer.named_M_shifted_support_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.named_M_shifted_parameter_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NamedNormTraceTransfer.named_M_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.named_M_zero_iff_empty_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PaperA.NamedNormTraceTransfer.primitiveElements' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperA.NamedNormTraceTransfer.M' depends on axioms: [propext, Classical.choice, Quot.sound]

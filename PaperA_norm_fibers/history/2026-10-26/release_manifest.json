@@ -1,0 +1,56 @@
+{
+  "version": "paperA-v2026.10.26",
+  "title": "Norm-fiber densities and relative traces in characteristic two",
+  "author": "Baohua Li",
+  "date": "2026-10-26",
+  "main_pages": 40,
+  "supplement_pages": 36,
+  "overview_pages": 22,
+  "files": [
+    {
+      "name": "CITATION.cff",
+      "bytes": 834,
+      "sha256": "1e843c92f07ec9b2f4c5fe651c89ac34347f33fbfc614949368907a6be6a7186"
+    },
+    {
+      "name": "LICENSES.txt",
+      "bytes": 520,
+      "sha256": "5d48f39bba04aac6472da573c0d320cf13d38b0890d9eedae5ac3cceebe072ba"
+    },
+    {
+      "name": "main.pdf",
+      "bytes": 693685,
+      "sha256": "4ede7efaaaad492eb24c9c68a86fac48ace3a276832677436013822e113dfe4c"
+    },
+    {
+      "name": "overview_zh.pdf",
+      "bytes": 551261,
+      "sha256": "7f1fb169032b229125f40a4cfcdbc3270ad34cad9ac70ded95702c1d40cb1dad"
+    },
+    {
+      "name": "overview_zh.txt",
+      "bytes": 13666,
+      "sha256": "50e7f2d377bee57b8bcb260147acbd4d56643b1bfbf5fa5b0e29637f65c20264"
+    },
+    {
+      "name": "README.md",
+      "bytes": 3855,
+      "sha256": "19bea886f57bea78cd75da0e574ceccefd0a5b4afee819c1f169d136b03fc8f0"
+    },
+    {
+      "name": "source_and_verification.zip",
+      "bytes": 10465600,
+      "sha256": "27c393a4d524442dff5ed112c6b44e859f8e7daf547f311d9450c1aa6b0ad329"
+    },
+    {
+      "name": "supplement.pdf",
+      "bytes": 659762,
+      "sha256": "2f54f321406f027f5b898505acbb7193b8afa6201f432e9c1a1f2df07eb51a91"
+    },
+    {
+      "name": "TIMESTAMP.txt",
+      "bytes": 1305,
+      "sha256": "86c39c98a52d0a03558d19e20a959e86d07a3d9a3f0fad20a03d90a10ba34f89"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+Selective Lean rational, exact-order and named M_c transfer
+Revision v17, 28 October 2026
+
+ACTUAL FRESH BUILD
+Nine modules; 129 theorem/lemma declarations and 33 definitions/abbreviations.
+All 162 declarations were freshly compiled and individually audited. The seven
+v16 .lean sources are unchanged. The 47 new auxiliary proofs are formal proof
+decomposition and interface connections, not 47 new mathematical discoveries.
+
+NEW RATIONAL AND EXACT-ORDER INTERFACE
+RelativeTraceTransfer.lean: 34 proofs, 10 definitions/abbreviations.
+For t=2^s, A=t+1, B=t^2+1, d=A*B, s>=1 and a nonzero c fixed by the t^2-power
+Frobenius, the module defines actual field functions a=c/(1+gamma) and
+gamma=(a+c)/a. traceEquiv is an actual Equiv between the admissible root sets.
+Zero denominators are excluded from root/support membership, not assumed away.
+The two inverse identities, a^(t^2)=a+c, a^B=w^-1 and a^(t^2-1)=gamma are
+proved by characteristic-two field arithmetic. The coprimality relations
+Coprime(A,B) and Coprime(B,t-1) are derived from the binary parameter.
+
+order_components proves order(a)=d iff order(gamma)=B and order(w)=A under
+the proved root and power identities. The forward direction uses the exact
+order of powers and the t-1 coprimality; the reverse uses divisibility of
+order(a) by A and B and its divisibility into d. The finite-set cardinality
+bijection is explicit, not a supplied assumption. M_eq_parameter_count and
+M_eq_two_mul_support_count transfer the a population to the already proved
+two-preimage support count. Weight-shift and Frobenius identities give the
+M_(hu) formula. The zero slice is proved empty by order(a) dividing t^2-1.
+
+NAMED ALGEBRA.NORM / ALGEBRA.TRACE INTERFACE
+NamedNormTraceTransfer.lean: 13 proofs, 2 definitions.
+Works with actual finite fields K,E,L, compatible algebra maps and scalar
+tower, card K=2^s, [E:K]=[L:E]=2. The finite extension degrees and cardinality
+are the manuscript's structural hypotheses, not the desired counting result.
+The quartic degree, card E=t^2, norm powers and quadratic trace formula are
+derived using mathlib's finite-field norm/trace formulas. The count is defined
+by Algebra.norm K a=1, orderOf a=d, Algebra.trace E L a=c. It is proved equal
+to the power/root population, then to the parameter/support populations.
+
+In particular named_M_shifted_parameter_count and named_M_shifted_support_count
+prove, for h in K nonzero and u in E with Algebra.norm K u=1:
+  M_(h*u) = filtered gamma count
+          = 2 * #{z in T_h : order(z*u^(-2))=t+1},
+with all scalar embeddings explicit in the Lean statement. The right support
+is the same normalized reciprocal-trace support used by the earlier modules.
+The zero slice and zero-count iff empty-support criterion are also proved.
+These are structural cardinality identities; complete numerical evaluation
+or classification of those populations is not claimed.
+
+WHAT HAS CLOSED SINCE V16
+The original a/gamma bijection, exact-order component equivalence, named
+norm/trace identification, and M_c count transfer are now formalized. They
+must no longer be listed as remaining gaps for the stated finite-field tower.
+The code does not disguise an assumed population bijection as a count theorem.
+The local statements use s>=1 and therefore cover the paper's s>=2 domain.
+
+REMAINING LIMITS
+1. Concrete polynomial field models, original JSON arithmetic, chosen
+   certificate generators and the coordinate change to the arbitrary cyclic
+   generator have not been linked to Lean. Finite support and polynomial
+   certificates remain independently checked exact-computation inputs.
+2. The complete one-prime/prime-kernel structural branches and exact quotient
+   fiber/exceptional-zero counts are not all connected. The unique c=h*u
+   decomposition and the final C9/C11 case assembly are not formalized.
+3. The genus-one descent, Lang characters, conductor/weight arguments,
+   4*sqrt(t)/8*sqrt(t) bounds, prime sieve, integer tail and all-parameter
+   assembly are not part of this build. Neither full Theorem 5.1 nor full
+   Theorem 5.4, nor the entire manuscript, is claimed formally verified.
+4. The universal field-tower theorems assume the genuine finite fields and
+   their compatible degree-two extensions; this is not a checked construction
+   of each concrete binary polynomial representation used in the data logs.
+
+REPRODUCTION AND ASSURANCE
+No sorry, admit, native_decide, sorryAx or additional mathematical axiom.
+Dependencies are subsets of propext, Classical.choice and Quot.sound; the
+original Init grid/cover proofs retain empty axiom audits. Lean 4.31.0 and
+all nine dependency checkout commits were checked. Existing library caches
+were reused; a cache-free build is not claimed. The three older legacy modules
+were not rerun as part of this new build. No external peer review or global
+priority certification is claimed by these machine checks.

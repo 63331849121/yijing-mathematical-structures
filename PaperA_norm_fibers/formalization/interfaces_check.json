@@ -1,0 +1,1101 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-28T05:43:59.022001+00:00",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "compiler": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "sources": [
+    {
+      "module": "InverseSupportGrid",
+      "sha256": "5ff0bf27baf27d41845e61308d4296a0271c8307d4ef6ea4560efe95ad160c8d",
+      "proof_declarations": [
+        "cover_inverse",
+        "mixed_corners",
+        "two_crosses_intersect_in_inverse_pair",
+        "covered_inverse_support_is_pair",
+        "third_point_excludes_cover",
+        "inverse_pair_cover_iff"
+      ],
+      "definitions": [
+        "inversePoint",
+        "Cover"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "Init"
+      ]
+    },
+    {
+      "module": "SupportCoverBranches",
+      "sha256": "b059a4a300120a4c30a09456cf5b2f72a58f79c47965a0dc3828f651b5e512ad",
+      "proof_declarations": [
+        "empty_support_cover_one",
+        "inverse_closed_one_cover_iff",
+        "inverse_closed_pair_cover_iff",
+        "axis_support_cover_iff"
+      ],
+      "definitions": [
+        "CoverOne"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "InverseSupportGrid"
+      ]
+    },
+    {
+      "module": "CyclicSupport",
+      "sha256": "b2d4899bed8e9d1d59bfd800995f956c6151278fc1ba9dedd6f7c70b10a4de83",
+      "proof_declarations": [
+        "coprime_prime_support_reduction",
+        "isUnit_quotient_iff",
+        "isUnit_iff_full_addOrder",
+        "prime_support_prime_powers",
+        "product_dvd_prime_powers",
+        "isUnit_mod513_iff_mod57",
+        "isUnit_iff_coordinates",
+        "isUnit_sub_two_iff_coordinates",
+        "no_unit_iff_cover",
+        "nonzero_ne_neg_prime",
+        "third_witness_all_translates_unit",
+        "third_witness_all_translates_full_order",
+        "isUnit_sub_two_mod513_iff",
+        "full_order_sub_two_mod513_iff",
+        "third_witness_mod513"
+      ],
+      "definitions": [
+        "quotient",
+        "coordinates",
+        "imageSupport",
+        "coordinates513"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "Mathlib.Algebra.Field.ZMod",
+        "InverseSupportGrid"
+      ]
+    },
+    {
+      "module": "ReciprocalTraceSupport",
+      "sha256": "0186ed9ea2572a6f71595e9413558235dbf66c9f0b8b6a06faf9232a4233f6fd",
+      "proof_declarations": [
+        "square_add_one_coprime",
+        "orderOf_pow_preserved",
+        "pow_eq_inverse",
+        "norm_one_quadratic_fixed",
+        "exact_order_quartic_fixed",
+        "frobenius_reciprocalTrace",
+        "transformed_trace_eq_inverse",
+        "inv_mem_support",
+        "inv_mem_support_iff",
+        "inverse_image_support",
+        "binary_inverse_image_support"
+      ],
+      "definitions": [
+        "reciprocalTrace",
+        "support"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "Mathlib.FieldTheory.Finite.Basic",
+        "Mathlib.GroupTheory.OrderOfElement"
+      ]
+    },
+    {
+      "module": "MultiplicativeSupport",
+      "sha256": "651a5670aecbdf36a13b570d650a944516ea46848b6511231b0fee47b072c3ac",
+      "proof_declarations": [
+        "exponent_element",
+        "element_exponent",
+        "exponent_injective",
+        "exponent_surjective",
+        "exponent_one",
+        "exponent_mul",
+        "exponent_inv",
+        "exponent_zpow",
+        "exponent_mul_inv_sq",
+        "exponent_orderOf",
+        "full_order_iff_exponent_unit",
+        "element_neg",
+        "exponentSupport_neg_closed",
+        "exponentSupport_at_exponent",
+        "exists_full_order_iff_exponent",
+        "groupCoordinates_inv",
+        "third_witness_all_translates"
+      ],
+      "definitions": [
+        "exponentEquiv",
+        "exponent",
+        "element",
+        "exponentSupport",
+        "groupCoordinates"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "Mathlib.GroupTheory.SpecificGroups.Cyclic",
+        "CyclicSupport"
+      ]
+    },
+    {
+      "module": "ReciprocalTraceCounting",
+      "sha256": "4f34fa3802314b2e6028aa03b5dc5158895b1f57edb9b107d1ded8ca7e907894",
+      "proof_declarations": [
+        "normalizedTrace_inv",
+        "normalizedTrace_eq_iff",
+        "orderOf_inverse_field",
+        "nonzero_of_exact_order",
+        "not_self_inverse_of_exact_order",
+        "primitive_fiber_eq_pair",
+        "primitive_fiber_card_two",
+        "support_fiber_card_two",
+        "mem_filteredSource",
+        "mem_filteredSupport",
+        "filtered_fiber_eq_primitiveFiber",
+        "filtered_source_maps_to_support",
+        "filtered_source_card_eq_two_mul_support_card",
+        "primitive_order_filter_count",
+        "binary_filtered_source_card_eq_two_mul_support_card"
+      ],
+      "definitions": [
+        "normalizedTrace",
+        "primitiveFiber",
+        "filteredSource",
+        "filteredSupport"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "ReciprocalTraceSupport",
+        "Mathlib.Algebra.CharP.Two",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.LinearCombination",
+        "Lean.Elab.Tactic.Omega"
+      ]
+    },
+    {
+      "module": "NormOneSupportBridge",
+      "sha256": "5f74ce93cc9ab0e9c97e12f2576ee9248c76dbd3a207024a5289f463ff1720ad",
+      "proof_declarations": [
+        "roots_card_of_dvd",
+        "plus_one_dvd_quartic_sub_one",
+        "norm_group_card",
+        "rootValue_injective",
+        "rootValue_inv",
+        "rootValue_orderOf",
+        "groupSupport_inverse",
+        "rootValue_mul_inv_sq",
+        "finite_base_norm_group_card",
+        "field_support_all_translates",
+        "group_support_count_eq_field_support_count",
+        "parameter_count_eq_two_mul_group_support_count",
+        "parameter_count_positive_of_group_witness",
+        "field_parameter_count_positive_and_two_to_one"
+      ],
+      "definitions": [
+        "rootValue",
+        "groupSupport",
+        "filteredGroupSupport"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots",
+        "ReciprocalTraceSupport",
+        "MultiplicativeSupport",
+        "ReciprocalTraceCounting"
+      ]
+    },
+    {
+      "module": "RelativeTraceTransfer",
+      "sha256": "314c59b80a61dfd23e9cb353ecaa2d5f1bd65329b62845d03182ba955cbcf79f",
+      "proof_declarations": [
+        "one_add_ne_zero",
+        "parameter_element",
+        "element_parameter",
+        "parameter_ne_one",
+        "weight_parameter",
+        "element_add",
+        "weight_element",
+        "t_pos",
+        "t_two_le",
+        "square_minus_one",
+        "square_plus_one",
+        "coprime_components",
+        "coprime_B_t_minus_one",
+        "add_pow_square",
+        "root_nonzero",
+        "parameter_nonidentity",
+        "element_frobenius",
+        "power_minus_one_eq_parameter",
+        "element_data",
+        "element_nonzero_of_root",
+        "parameter_data",
+        "order_components",
+        "mem_primitiveElements",
+        "primitive_element_of_parameter",
+        "primitive_parameter_of_element",
+        "M_eq_parameter_count",
+        "M_eq_two_mul_support_count",
+        "weight_shift",
+        "shifted_power_one",
+        "shifted_source_eq",
+        "fixed_shift",
+        "M_shifted_support_count",
+        "finite_base_M_shifted_support_count",
+        "M_zero"
+      ],
+      "definitions": [
+        "t",
+        "A",
+        "B",
+        "d",
+        "toElement",
+        "toParameter",
+        "weight",
+        "traceEquiv",
+        "primitiveElements",
+        "M"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.LinearCombination",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Data.Nat.Prime.Basic",
+        "ReciprocalTraceCounting"
+      ]
+    },
+    {
+      "module": "NamedNormTraceTransfer",
+      "sha256": "a04b656308ba7f4673e1acd27807f527ea19434be197a8989741b1627b9950a0",
+      "proof_declarations": [
+        "quadratic_card",
+        "quartic_rank",
+        "norm_power_quadratic",
+        "norm_power_quartic",
+        "trace_power_quadratic",
+        "norm_one_iff_power",
+        "trace_eq_iff_power",
+        "named_M_eq_power_M",
+        "named_M_eq_two_mul_support_count",
+        "named_M_shifted_support_count",
+        "named_M_shifted_parameter_count",
+        "named_M_zero",
+        "named_M_zero_iff_empty_support"
+      ],
+      "definitions": [
+        "primitiveElements",
+        "M"
+      ],
+      "fresh_exit_code": 0,
+      "imports": [
+        "Mathlib.FieldTheory.Finite.Trace",
+        "RelativeTraceTransfer"
+      ]
+    }
+  ],
+  "declaration_count": 162,
+  "axiom_dependencies": {
+    "PaperA.InverseSupportGrid.cover_inverse": [],
+    "PaperA.InverseSupportGrid.mixed_corners": [],
+    "PaperA.InverseSupportGrid.two_crosses_intersect_in_inverse_pair": [],
+    "PaperA.InverseSupportGrid.covered_inverse_support_is_pair": [],
+    "PaperA.InverseSupportGrid.third_point_excludes_cover": [],
+    "PaperA.InverseSupportGrid.inverse_pair_cover_iff": [],
+    "PaperA.InverseSupportGrid.inversePoint": [],
+    "PaperA.InverseSupportGrid.Cover": [],
+    "PaperA.SupportCoverBranches.empty_support_cover_one": [],
+    "PaperA.SupportCoverBranches.inverse_closed_one_cover_iff": [],
+    "PaperA.SupportCoverBranches.inverse_closed_pair_cover_iff": [],
+    "PaperA.SupportCoverBranches.axis_support_cover_iff": [],
+    "PaperA.SupportCoverBranches.CoverOne": [],
+    "PaperA.CyclicSupport.coprime_prime_support_reduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.isUnit_quotient_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.isUnit_iff_full_addOrder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.prime_support_prime_powers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.product_dvd_prime_powers": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.isUnit_mod513_iff_mod57": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.isUnit_iff_coordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.isUnit_sub_two_iff_coordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.no_unit_iff_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.nonzero_ne_neg_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.third_witness_all_translates_unit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.third_witness_all_translates_full_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.isUnit_sub_two_mod513_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.full_order_sub_two_mod513_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.third_witness_mod513": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.quotient": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.coordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.CyclicSupport.imageSupport": [],
+    "PaperA.CyclicSupport.coordinates513": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.square_add_one_coprime": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.orderOf_pow_preserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.pow_eq_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.norm_one_quadratic_fixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.exact_order_quartic_fixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.frobenius_reciprocalTrace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.transformed_trace_eq_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.inv_mem_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.inv_mem_support_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.inverse_image_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.binary_inverse_image_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.reciprocalTrace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTrace.support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_element": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.element_exponent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_zpow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_mul_inv_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent_orderOf": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.full_order_iff_exponent_unit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.element_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponentSupport_neg_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponentSupport_at_exponent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exists_full_order_iff_exponent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.groupCoordinates_inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.third_witness_all_translates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponentEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.element": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.exponentSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.MultiplicativeSupport.groupCoordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.normalizedTrace_inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.normalizedTrace_eq_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.orderOf_inverse_field": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.nonzero_of_exact_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.not_self_inverse_of_exact_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.primitive_fiber_eq_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.primitive_fiber_card_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.support_fiber_card_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.mem_filteredSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.mem_filteredSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.filtered_fiber_eq_primitiveFiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.filtered_source_maps_to_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.filtered_source_card_eq_two_mul_support_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.primitive_order_filter_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.binary_filtered_source_card_eq_two_mul_support_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.normalizedTrace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.primitiveFiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.filteredSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.ReciprocalTraceCounting.filteredSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.roots_card_of_dvd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.plus_one_dvd_quartic_sub_one": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.norm_group_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.rootValue_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.rootValue_inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.rootValue_orderOf": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.groupSupport_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.rootValue_mul_inv_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.finite_base_norm_group_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.field_support_all_translates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.group_support_count_eq_field_support_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.parameter_count_eq_two_mul_group_support_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.parameter_count_positive_of_group_witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.field_parameter_count_positive_and_two_to_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.rootValue": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.groupSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NormOneSupportBridge.filteredGroupSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.one_add_ne_zero": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.parameter_element": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.element_parameter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.parameter_ne_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.weight_parameter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.element_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.weight_element": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.t_pos": [
+      "propext"
+    ],
+    "PaperA.RelativeTraceTransfer.t_two_le": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.square_minus_one": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.square_plus_one": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.coprime_components": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.coprime_B_t_minus_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.add_pow_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.root_nonzero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.parameter_nonidentity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.element_frobenius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.power_minus_one_eq_parameter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.element_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.element_nonzero_of_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.parameter_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.order_components": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.mem_primitiveElements": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.primitive_element_of_parameter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.primitive_parameter_of_element": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.M_eq_parameter_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.M_eq_two_mul_support_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.weight_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.shifted_power_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.shifted_source_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.fixed_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.M_shifted_support_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.finite_base_M_shifted_support_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.M_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.t": [
+      "propext"
+    ],
+    "PaperA.RelativeTraceTransfer.A": [
+      "propext"
+    ],
+    "PaperA.RelativeTraceTransfer.B": [
+      "propext"
+    ],
+    "PaperA.RelativeTraceTransfer.d": [
+      "propext"
+    ],
+    "PaperA.RelativeTraceTransfer.toElement": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.toParameter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.weight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.traceEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.primitiveElements": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.RelativeTraceTransfer.M": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.quadratic_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.quartic_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.norm_power_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.norm_power_quartic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.trace_power_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.norm_one_iff_power": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.trace_eq_iff_power": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.named_M_eq_power_M": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.named_M_eq_two_mul_support_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.named_M_shifted_support_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.named_M_shifted_parameter_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.named_M_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.named_M_zero_iff_empty_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.primitiveElements": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PaperA.NamedNormTraceTransfer.M": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "proof_declaration_count": 129,
+  "definition_count": 33,
+  "standard_foundational_axioms_only": true,
+  "proof_placeholders_or_new_axioms": false,
+  "dependency_commits": [
+    {
+      "name": "mathlib",
+      "commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "plausible",
+      "commit": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "importGraph",
+      "commit": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "aesop",
+      "commit": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "Qq",
+      "commit": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "batteries",
+      "commit": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "Cli",
+      "commit": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "tracked_checkout_clean": true
+    }
+  ],
+  "dependency_archive_cache_reused": true,
+  "cache_free_build_performed": false,
+  "legacy_three_modules_rerun": false,
+  "full_Theorem_54_formalized": false,
+  "geometric_character_estimates_formalized": false,
+  "finite_field_certificates_checked_inside_Lean": false,
+  "multiplicative_exponent_equivalence_constructed": true,
+  "finite_field_root_subgroup_cardinality_derived": true,
+  "two_preimages_and_filtered_parameter_count_proved": true,
+  "root_subgroup_support_and_parameter_count_connected": true,
+  "original_a_to_gamma_bijection_formalized": true,
+  "exact_order_component_equivalence_formalized": true,
+  "named_Algebra_norm_and_trace_interface_formalized": true,
+  "original_M_c_cardinality_transfer_formalized": true,
+  "original_M_c_shifted_support_identity_formalized": true,
+  "zero_relative_trace_population_formalized": true,
+  "count_scope": "Structural cardinality identities, including the named norm/trace population; no geometric estimate or complete evaluation/classification is claimed.",
+  "full_Theorem_51_formalized": false,
+  "fixed_certificate_generator_change_of_coordinates_formalized": false,
+  "scope_reference": "INTERFACE_SCOPE.txt"
+}

@@ -1,56 +1,200 @@
 {
-  "version": "paperA-v2026.10.26",
-  "title": "Norm-fiber densities and relative traces in characteristic two",
-  "author": "Baohua Li",
-  "date": "2026-10-26",
-  "main_pages": 40,
+  "version": "v17",
+  "tag": "paperA-v2026.10.28-v17",
+  "main_pages": 41,
   "supplement_pages": 36,
-  "overview_pages": 22,
+  "Lean_modules": 9,
+  "Lean_proof_declarations": 129,
+  "Lean_definitions": 33,
+  "original_M_c_cardinality_transfer_formalized": true,
+  "full_paper_formalization": false,
+  "historical_overview_date": "2026-10-26",
+  "new_external_timestamp_claimed": false,
   "files": [
     {
-      "name": "CITATION.cff",
-      "bytes": 834,
-      "sha256": "1e843c92f07ec9b2f4c5fe651c89ac34347f33fbfc614949368907a6be6a7186"
+      "path": ".gitattributes",
+      "bytes": 51,
+      "sha256": "fa1297928a9e57bb6072a1d69d46c6c1f92fd2e0b104c9de71846eea0599fcef"
     },
     {
-      "name": "LICENSES.txt",
-      "bytes": 520,
-      "sha256": "5d48f39bba04aac6472da573c0d320cf13d38b0890d9eedae5ac3cceebe072ba"
+      "path": ".gitignore",
+      "bytes": 138,
+      "sha256": "6a1051a359ad7a509b8422e4899603ba9de7922aa629144725ca1730f38ea8c2"
     },
     {
-      "name": "main.pdf",
-      "bytes": 693685,
-      "sha256": "4ede7efaaaad492eb24c9c68a86fac48ace3a276832677436013822e113dfe4c"
+      "path": "CITATION.cff",
+      "bytes": 867,
+      "sha256": "67bd97089720682f9d93c2345f890465fd1ddc76104027b51d57f69f911bef76"
     },
     {
-      "name": "overview_zh.pdf",
+      "path": "formalization/CyclicSupport.lean",
+      "bytes": 10012,
+      "sha256": "b2d4899bed8e9d1d59bfd800995f956c6151278fc1ba9dedd6f7c70b10a4de83"
+    },
+    {
+      "path": "formalization/INTERFACE_SCOPE.txt",
+      "bytes": 4961,
+      "sha256": "fe33b74b23bea5cc89ccb9f1c36edc0e7ce652b645b8fee09e12f0876421166a"
+    },
+    {
+      "path": "formalization/interfaces_check.json",
+      "bytes": 31398,
+      "sha256": "a3408d9bf6e80607a0d2abe9688ee5a956e6c5a43e05b671a4f19482c4bef510"
+    },
+    {
+      "path": "formalization/interfaces_check.log",
+      "bytes": 27583,
+      "sha256": "5eca3ec64904bb83b64caec0b62eb76582cb360ad3e20b78a7e494cc18ff2d94"
+    },
+    {
+      "path": "formalization/InverseSupportGrid.lean",
+      "bytes": 5126,
+      "sha256": "5ff0bf27baf27d41845e61308d4296a0271c8307d4ef6ea4560efe95ad160c8d"
+    },
+    {
+      "path": "formalization/lake-manifest.json",
+      "bytes": 3536,
+      "sha256": "efd94616e661386c4e7154130f0c331a6e7e3162c660b1248cf23da2a98764b7"
+    },
+    {
+      "path": "formalization/lakefile.lean",
+      "bytes": 476,
+      "sha256": "92fb6409217f028fa8101110fad404932ba35d9d87d3012dba35641b60c1cd72"
+    },
+    {
+      "path": "formalization/lean-toolchain",
+      "bytes": 25,
+      "sha256": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee"
+    },
+    {
+      "path": "formalization/lean_check.json",
+      "bytes": 2354,
+      "sha256": "82f9b44ae301130ebc7711fbb198d54c82011a3aee21cecde5b0525f35170eb5"
+    },
+    {
+      "path": "formalization/lean_check.log",
+      "bytes": 609,
+      "sha256": "05e776ac077956342a4e367aa4e137bd05a17508ed146e1a77db94bd860ad70d"
+    },
+    {
+      "path": "formalization/MultiplicativeSupport.lean",
+      "bytes": 7342,
+      "sha256": "651a5670aecbdf36a13b570d650a944516ea46848b6511231b0fee47b072c3ac"
+    },
+    {
+      "path": "formalization/NamedNormTraceTransfer.lean",
+      "bytes": 6536,
+      "sha256": "a04b656308ba7f4673e1acd27807f527ea19434be197a8989741b1627b9950a0"
+    },
+    {
+      "path": "formalization/NormOneSupportBridge.lean",
+      "bytes": 9586,
+      "sha256": "5f74ce93cc9ab0e9c97e12f2576ee9248c76dbd3a207024a5289f463ff1720ad"
+    },
+    {
+      "path": "formalization/README.txt",
+      "bytes": 2762,
+      "sha256": "5e1bbce51a2de6ec415174180a0b9769328d226082f8522751b81caed7ccc725"
+    },
+    {
+      "path": "formalization/ReciprocalTraceCounting.lean",
+      "bytes": 10257,
+      "sha256": "4f34fa3802314b2e6028aa03b5dc5158895b1f57edb9b107d1ded8ca7e907894"
+    },
+    {
+      "path": "formalization/ReciprocalTraceSupport.lean",
+      "bytes": 6512,
+      "sha256": "0186ed9ea2572a6f71595e9413558235dbf66c9f0b8b6a06faf9232a4233f6fd"
+    },
+    {
+      "path": "formalization/RelativeTraceTransfer.lean",
+      "bytes": 17975,
+      "sha256": "314c59b80a61dfd23e9cb353ecaa2d5f1bd65329b62845d03182ba955cbcf79f"
+    },
+    {
+      "path": "formalization/SupportCoverBranches.lean",
+      "bytes": 3001,
+      "sha256": "b059a4a300120a4c30a09456cf5b2f72a58f79c47965a0dc3828f651b5e512ad"
+    },
+    {
+      "path": "formalization/verify_interfaces.py",
+      "bytes": 9826,
+      "sha256": "37b5b9d95d3d37130281d6c7b7a9ee9e82c3c35a654dc15e16df39309746f4bc"
+    },
+    {
+      "path": "formalization/verify_lean.py",
+      "bytes": 4156,
+      "sha256": "9912c7660b65dd9900b2a21fd207e3d787d336d7d2caf5a2b2b3f22801671698"
+    },
+    {
+      "path": "history/2026-10-26/release_manifest.json",
+      "bytes": 1600,
+      "sha256": "23f47887172ee7b536958e9a85e9ea53f9634c5b632993bfa2a0e677aa3d2705"
+    },
+    {
+      "path": "history/2026-10-26/SHA256SUMS.txt",
+      "bytes": 816,
+      "sha256": "c32c4f413263126884afae0d2358b8e69bf09fa8307355cfd5016a712faffdd2"
+    },
+    {
+      "path": "history/2026-10-26/SHA256SUMS.txt.ots",
+      "bytes": 840,
+      "sha256": "225a77b22c71cac2a7fc095d3d2792e21f78c43ecb3c25f85275d1f4e909e4be"
+    },
+    {
+      "path": "history/2026-10-26/TIMESTAMP.txt",
+      "bytes": 1305,
+      "sha256": "86c39c98a52d0a03558d19e20a959e86d07a3d9a3f0fad20a03d90a10ba34f89"
+    },
+    {
+      "path": "LaTeX_sources.zip",
+      "bytes": 152230,
+      "sha256": "d3d28e61397006ea44131f58bd36664309d06a51889145fb016a8e6b15c689f5"
+    },
+    {
+      "path": "Lean_verification.zip",
+      "bytes": 41679,
+      "sha256": "cbd9e264c7ce42800c7379c48d439ad0882de0b6faa3bf2708abbd8842279e11"
+    },
+    {
+      "path": "LICENSES.txt",
+      "bytes": 473,
+      "sha256": "bdc2a08e3834c0c1f129717eef889a57c3f4c49513ddb7486f422863d4ee887e"
+    },
+    {
+      "path": "main.pdf",
+      "bytes": 700188,
+      "sha256": "ee1c85db06bb11594e4d0b767becebbbf3fcc745e193d5ba5375cdba46acbd4b"
+    },
+    {
+      "path": "overview_zh.pdf",
       "bytes": 551261,
       "sha256": "7f1fb169032b229125f40a4cfcdbc3270ad34cad9ac70ded95702c1d40cb1dad"
     },
     {
-      "name": "overview_zh.txt",
+      "path": "overview_zh.txt",
       "bytes": 13666,
       "sha256": "50e7f2d377bee57b8bcb260147acbd4d56643b1bfbf5fa5b0e29637f65c20264"
     },
     {
-      "name": "README.md",
-      "bytes": 3855,
-      "sha256": "19bea886f57bea78cd75da0e574ceccefd0a5b4afee819c1f169d136b03fc8f0"
+      "path": "README.md",
+      "bytes": 4259,
+      "sha256": "50b9eabe1bcd8387acc7ee5a85a59cd4d880db8ec1de373dc0e40aafd12a78ca"
     },
     {
-      "name": "source_and_verification.zip",
-      "bytes": 10465600,
-      "sha256": "27c393a4d524442dff5ed112c6b44e859f8e7daf547f311d9450c1aa6b0ad329"
+      "path": "source_and_verification.zip",
+      "bytes": 53519125,
+      "sha256": "8bff435551ea89534a980e1959ca92bdb275624cca2e24a0e4212364ceca33ff"
     },
     {
-      "name": "supplement.pdf",
-      "bytes": 659762,
-      "sha256": "2f54f321406f027f5b898505acbb7193b8afa6201f432e9c1a1f2df07eb51a91"
+      "path": "supplement.pdf",
+      "bytes": 663355,
+      "sha256": "dd8c2ede8eb4c2909fdd735e1b078cc677373ae6c77ed0261096b37ec0e8731e"
     },
     {
-      "name": "TIMESTAMP.txt",
-      "bytes": 1305,
-      "sha256": "86c39c98a52d0a03558d19e20a959e86d07a3d9a3f0fad20a03d90a10ba34f89"
+      "path": "TIMESTAMP.txt",
+      "bytes": 489,
+      "sha256": "ae4baf5cf0178982292ceed28c26d0640bd41a2d407b0636dafe2f4474e7f2c6"
     }
   ]
 }

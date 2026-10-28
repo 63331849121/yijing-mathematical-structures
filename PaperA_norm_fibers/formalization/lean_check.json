@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "compiler": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "module": "formalization/InverseSupportGrid.lean",
+  "source_sha256": "5ff0bf27baf27d41845e61308d4296a0271c8307d4ef6ea4560efe95ad160c8d",
+  "fresh_lean_exit_code": 0,
+  "new_declarations_checked": [
+    "cover_inverse",
+    "mixed_corners",
+    "two_crosses_intersect_in_inverse_pair",
+    "covered_inverse_support_is_pair",
+    "third_point_excludes_cover",
+    "inverse_pair_cover_iff"
+  ],
+  "all_six_declarations_have_no_axiom_dependencies": true,
+  "proof_placeholders_found": false,
+  "imports": [
+    "Init"
+  ],
+  "mathlib_dependency": false,
+  "full_cyclic_group_CRT_interface_formalized": false,
+  "finite_field_Frobenius_interface_formalized": false,
+  "finite_field_certificates_checked_inside_Lean": false,
+  "geometric_character_estimates_formalized": false,
+  "full_Theorem_54_formalized": false,
+  "original_three_files": {
+    "AGL.lean": {
+      "sha256": "35617bdc5d3bc956d3ab77e0e7a9c7483cd4309422562b7e17f6dc0e4c85e941",
+      "historical_record_sha256": "31aa639d8208aab236d5266ae3976f6dd27beff4b077ab7382ff7952103518c9",
+      "matches_archived_success_record": false,
+      "current_revision_fresh_rerun_record_matches": true,
+      "legacy_rerun_performed_by_this_script": false
+    },
+    "CohenEvenConditional.lean": {
+      "sha256": "8eb104ec859e1a19658a6b894a79ee51b34d7e5e32afda0f0850c4c4d18f8a7a",
+      "historical_record_sha256": "1549aee243ff6385e232bdb7c1afe55e73349c493c3aa5f0eb700771746ada1e",
+      "matches_archived_success_record": false,
+      "current_revision_fresh_rerun_record_matches": true,
+      "legacy_rerun_performed_by_this_script": false
+    },
+    "CompleteMappingTriality.lean": {
+      "sha256": "446f158ca02c5ab0c5f11897bdb9e30118768c72684349dce00af91bdf7d50a5",
+      "historical_record_sha256": "446f158ca02c5ab0c5f11897bdb9e30118768c72684349dce00af91bdf7d50a5",
+      "matches_archived_success_record": true,
+      "current_revision_fresh_rerun_record_matches": true,
+      "legacy_rerun_performed_by_this_script": false
+    }
+  },
+  "archived_mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "external_human_peer_review_claimed": false
+}

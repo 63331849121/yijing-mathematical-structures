@@ -1,12 +1,8 @@
 Copyright 2026 Baohua Li.
 
-Manuscripts, supplementary material and the Chinese overview: CC BY 4.0,
-consistent with the existing repository notice.
-https://creativecommons.org/licenses/by/4.0/
-
-Verification programs and the new combinatorial Lean module: MIT;
-see the repository's top-level LICENSE.
-
-The bundled unmodified Latin Modern font retains its GUST Font License;
-GUST-FONT-LICENSE.txt and LPPL.txt are supplied with the source project.
-No third-party research-article PDF is redistributed in this publication.
+Existing repository terms are retained: manuscript and supplementary PDFs and
+the historical overview are CC BY 4.0; verification code and Lean sources are
+MIT under the top-level LICENSE. No new dataset-specific license is assigned
+by this update. The unmodified Latin Modern font retains its separate GUST
+Font License and LPPL notices, supplied in the sources. No third-party research
+article PDF is redistributed in this publication.

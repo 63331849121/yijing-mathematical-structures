@@ -6,21 +6,22 @@ Independent research on finite-field, combinatorial, and affine structures inspi
 
 ### Paper A: norm-fiber densities and relative traces
 
-**Norm-fiber densities and relative traces in characteristic two** · Baohua Li · **2026-10-26**
+**Norm-fiber densities and relative traces in characteristic two** · Baohua Li · **v17, 2026-10-28**
 
-The current main paper develops effective norm-fiber densities, uniform
-relative traces over the whole intermediate field, the complete C9/C11
-exception classification, and their affine companion-group interpretation.
+Effective norm-fiber densities, uniform relative traces, the complete C9/C11
+exception classification, and affine companion groups. The v17 release adds
+checked rational/exact-order/M_c counting interfaces: nine Lean modules with
+129 theorem/lemma declarations and 33 definitions. Full geometry and the
+complete all-parameter classification remain outside the formal build.
 
-- [Main paper (40 pages)](PaperA_norm_fibers/main.pdf)
-- [Supplement (36 pages)](PaperA_norm_fibers/supplement.pdf)
-- [Chinese visual overview (22 pages)](PaperA_norm_fibers/overview_zh.pdf)
-- [Sources, exact certificates, Lean scope and reproduction guide](PaperA_norm_fibers/)
-- [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26)
+- [Main paper (41 pages)](PaperA_norm_fibers/main.pdf) / [supplement (36 pages)](PaperA_norm_fibers/supplement.pdf).
+- [Sources, raw data, exact certificates and Lean scope](PaperA_norm_fibers/).
+- [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17).
+- [Chinese visual overview (2026-10-26 snapshot)](PaperA_norm_fibers/overview_zh.pdf).
 
-The [preceding scalar-realization archive](PaperA_scalar_realizations/) is
-retained for provenance. The Singer-layer note's existing DOI below continues
-to refer only to that archived note, not to the new main paper.
+The [preceding scalar-realization archive](PaperA_scalar_realizations/) remains
+available. Its Singer-note DOI refers to that earlier note. The 2026-10-26
+Paper A release and timestamp are retained as historical version records.
 
 ### Earlier Paper A note: affine Singer layers and the (T,D,K) triple
 

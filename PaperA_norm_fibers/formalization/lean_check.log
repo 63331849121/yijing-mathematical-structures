@@ -1,0 +1,8 @@
+Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)
+
+'PaperA.InverseSupportGrid.cover_inverse' does not depend on any axioms
+'PaperA.InverseSupportGrid.mixed_corners' does not depend on any axioms
+'PaperA.InverseSupportGrid.two_crosses_intersect_in_inverse_pair' does not depend on any axioms
+'PaperA.InverseSupportGrid.covered_inverse_support_is_pair' does not depend on any axioms
+'PaperA.InverseSupportGrid.third_point_excludes_cover' does not depend on any axioms
+'PaperA.InverseSupportGrid.inverse_pair_cover_iff' does not depend on any axioms

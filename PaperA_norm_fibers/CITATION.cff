@@ -5,9 +5,9 @@ title: "Norm-fiber densities and relative traces in characteristic two: source a
 authors:
   - family-names: Li
     given-names: Baohua
-version: "2026.10.26"
-date-released: "2026-10-26"
-url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26"
+version: "2026.10.28-v17"
+date-released: "2026-10-28"
+url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17"
 repository-code: "https://github.com/63331849121/yijing-mathematical-structures"
 license: MIT
 preferred-citation:
@@ -17,5 +17,5 @@ preferred-citation:
     - family-names: Li
       given-names: Baohua
   year: 2026
-  date-published: "2026-10-26"
-  url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.26"
+  date-published: "2026-10-28"
+  url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17"
