@@ -39,8 +39,3 @@ are unchanged. Their previous independent rerun records remain separate; the
 current interface verifier does not rerun or relabel them as current new work.
 Machine checking, exact finite arithmetic and external peer review are separate
 forms of evidence. No external human review or full formalization is claimed.
-
-Standalone GitHub/Lean package note: verify_interfaces.py is the current
-nine-module entry point. The older verify_lean.py also checks historical
-provenance files outside this folder; extract the complete research archive
-before using that legacy six-lemma entry point. The archive supplies those files.

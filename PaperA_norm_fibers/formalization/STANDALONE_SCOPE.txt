@@ -1,0 +1,7 @@
+Standalone selective Lean package
+
+Use formalization/verify_interfaces.py for the current nine-module check.
+Read formalization/INTERFACE_SCOPE.txt and the pinned setup in README.txt.
+The older verify_lean.py also needs historical provenance files outside this
+standalone folder; extract source_and_verification.zip before using that driver.
+No complete-paper formalization or new Lean build is claimed for this release.

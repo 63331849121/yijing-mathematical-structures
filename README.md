@@ -6,23 +6,18 @@ Independent research on finite-field, combinatorial, and affine structures inspi
 
 ### Paper A: norm-fiber densities and relative traces
 
-**Norm-fiber densities and relative traces in characteristic two** · Baohua Li · **v17, 2026-10-28**
+**Norm-fiber densities and relative traces in characteristic two** · Baohua Li · **v21, 2026-10-29**
 
-Effective norm-fiber densities, uniform relative traces, the complete C9/C11
-exception classification, and affine companion groups. The v17 release adds
-checked rational/exact-order/M_c counting interfaces: nine Lean modules with
-129 theorem/lemma declarations and 33 definitions. Full geometry and the
-complete all-parameter classification remain outside the formal build.
+Effective norm-fiber estimates, uniform relative traces, complete C9/C11 exceptional
+classification and affine companion groups. The main paper has 37 pages and the
+supplement 40 pages. The nine-module selective Lean boundary is unchanged.
 
-- [Main paper (41 pages)](PaperA_norm_fibers/main.pdf) / [supplement (36 pages)](PaperA_norm_fibers/supplement.pdf).
-- [Sources, raw data, exact certificates and Lean scope](PaperA_norm_fibers/).
-- [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17).
-- [Zenodo archive and DOI](https://doi.org/10.5281/zenodo.23721670) / [deposit details](PaperA_v17_Zenodo.md).
-- [Chinese visual overview (2026-10-26 snapshot)](PaperA_norm_fibers/overview_zh.pdf).
+- [Main paper](PaperA_norm_fibers/main.pdf) / [supplement](PaperA_norm_fibers/supplement.pdf).
+- [Research data, code and precise scope](PaperA_norm_fibers/).
+- [Chinese reading guide](PaperA_norm_fibers/overview_zh.txt).
+- [Versioned GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.29-v21) / [Zenodo DOI](https://doi.org/10.5281/zenodo.23757428).
 
-The [preceding scalar-realization archive](PaperA_scalar_realizations/) remains
-available. Its Singer-note DOI refers to that earlier note. The 2026-10-26
-Paper A release and timestamp are retained as historical version records.
+Earlier Paper A releases and the [preceding scalar-realization archive](PaperA_scalar_realizations/) remain available.
 
 ### Earlier Paper A note: affine Singer layers and the (T,D,K) triple
 
@@ -103,7 +98,7 @@ inspired by the Yijing. The mathematical papers and programs are self-contained.
 
 ## Citation
 
-Current Paper A: Li, Baohua. (2026). *Norm-fiber densities and relative traces in characteristic two* (v17). Zenodo. [10.5281/zenodo.23721670](https://doi.org/10.5281/zenodo.23721670).
+Current Paper A: Li, Baohua. (2026). *Norm-fiber densities and relative traces in characteristic two* (v21). Zenodo. [10.5281/zenodo.23757428](https://doi.org/10.5281/zenodo.23757428).
 
 Earlier Singer-layer note: Li, Baohua. (2026). *An affine Singer layer on F2^6, its (T,D,K) triple,
 and <T,D> = AGL(1,64).* [Zenodo archive](https://doi.org/10.5281/zenodo.22731492).

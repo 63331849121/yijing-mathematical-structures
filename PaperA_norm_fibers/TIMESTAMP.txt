@@ -1,8 +1,4 @@
-v17 version evidence
-Release tag: paperA-v2026.10.28-v17
-Release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17
-
-The Git commit/tag and GitHub release identify this version. Verify the supplied
-files against SHA256SUMS.txt. No new Bitcoin-confirmed or detached OpenTimestamps
-receipt is claimed for v17. The receipt in history/2026-10-26/ commits the old
-checksum file stored beside it; it must not be used as a receipt for v17.
+Current release: paperA-v2026.10.29-v21
+Version DOI: 10.5281/zenodo.23757428
+Public version evidence: GitHub commit/tag/release and Zenodo record.
+Earlier detached receipts in history/ apply only to the checksums stored beside them.

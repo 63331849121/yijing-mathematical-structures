@@ -5,9 +5,9 @@ title: "Yijing Mathematical Structures: research preprints and verification code
 authors:
   - family-names: Li
     given-names: Baohua
-version: "2026.10.28-v17"
-date-released: "2026-10-28"
-url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17"
+version: "2026.10.29-v21"
+date-released: "2026-10-29"
+url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.29-v21"
 repository-code: "https://github.com/63331849121/yijing-mathematical-structures"
 license: MIT
 preferred-citation:
@@ -17,6 +17,6 @@ preferred-citation:
     - family-names: Li
       given-names: Baohua
   year: 2026
-  doi: "10.5281/zenodo.23721670"
-  date-published: "2026-10-28"
-  url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.28-v17"
+  doi: "10.5281/zenodo.23757428"
+  date-published: "2026-10-29"
+  url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.29-v21"
