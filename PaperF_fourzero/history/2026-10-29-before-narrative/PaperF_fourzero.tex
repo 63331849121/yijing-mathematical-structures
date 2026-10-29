@@ -1,0 +1,942 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdftitle={Four-zero tail-palindromic polynomials over F2},pdfauthor={Baohua Li}}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{corollary}[proposition]{Corollary}
+\theoremstyle{definition}
+\newtheorem{conjecture}[proposition]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Remark}
+\title{\Large Four-zero tail-palindromic polynomials over $\mathbb F_2$:\\
+reciprocal obstructions and quadratic-transform intersections}
+\author{Baohua Li}
+\date{29 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study monic polynomials of even degree over $\mathbb F_2$ whose nonleading coefficients form a palindrome with constant term one and exactly four zeros. We determine their reciprocal common divisor and count the position pairs passing this obstruction. We classify their intersections with full-degree quadratic rational transformations: the translated $Q$ branch comprises two infinite shape families and three degree-14 exceptions, while the translation-invariant branch comprises four reducible polynomials at degrees 14 and 30. More generally, a translation-invariant tail palindrome has $n+2$ a power of two and, for $n\ge6$, is reducible if its number of missing tail coefficients is divisible by four. The family-specific content is the compatibility of classical invariant representations and irreducibility criteria with the prescribed support, yielding restrictions on quadratic degree-doubling constructions. Independent arithmetic checks recover 2663 primitive polynomials at all even degrees from 6 to 200 and verify the first solutions through degree 300. General primitive existence remains unproved.
+\end{abstract}
+
+\section{The family and the question}\label{sec:intro}
+Put $n=2k\ge6$ and $S_n(x)=1+x+\cdots+x^n$. We consider
+\begin{equation}\label{eq:candidate}
+ f_{n,i,j}(x)=S_n(x)+x^i+x^j+x^{n-1-i}+x^{n-1-j},
+ \qquad 1\le i<j\le k-1,
+\end{equation}
+over $\mathbb F_2$. These are exactly the monic degree-$n$ polynomials
+with constant term one whose nonleading coefficient vector is a
+palindrome with four zero entries. The restrictions on $i,j$ exclude
+the constant position. There are $\binom{k-1}{2}$ candidates.
+Let $N_4(n)$ denote the number of primitive polynomials in this family.
+Here primitive means irreducible with a root of multiplicative order
+$2^n-1$; standard background is in \cite{LN}.
+
+\begin{conjecture}[$C_4$]\label{conj:C4}
+For every even $n\ge6$, one has $N_4(n)>0$.
+\end{conjecture}
+
+Primitive polynomials with prescribed coefficients form a classical
+subject; see Cohen \cite{Coh06}. In the present question the field
+is fixed and all but four tail coefficients are one, with the four
+exceptions coupled by reversal. Results prescribing a small number
+of coefficients do not directly settle this growing collection of
+constraints. A tail palindrome can also be encoded by the
+self-reciprocal polynomial $xf(x)+1$ of odd degree $n+1$.
+This change of polynomial preserves the coefficient description,
+but does not preserve irreducibility or primitivity.
+
+The main results are the reciprocal obstruction and surviving position
+count in Section~\ref{sec:reciprocal-screen}, and the complete
+quadratic support intersections in Section~\ref{sec:quadratic}.
+Their invariant representations and irreducibility criteria are classical;
+the additional arguments concern compatibility with the prescribed support.
+Section~\ref{sec:computations} records independently verified finite data.
+Appendix~\ref{sec:classical-descriptions} collects the auxiliary classical
+coefficient and field descriptions. No general irreducibility criterion
+or proof of Conjecture~\ref{conj:C4} is asserted.
+
+\section{The reciprocal obstruction}
+\label{sec:reciprocal-screen}
+
+This section isolates a part of the reducibility problem that admits
+an exact description. Its tools are classical: polynomial reciprocity,
+the binomial gcd identity \cite{LN}, and unit counts related to the
+Schemmel functions \cite{Def20}. The contribution here is their explicit
+specialization to the four-zero family, including a complete reciprocal
+common divisor and an exact count of the surviving position pairs.
+These are auxiliary necessary conditions; no new general irreducibility
+principle is asserted.
+
+\begin{lemma}[Reciprocity and multiplicities]
+\label{lem:reciprocal-multiplicity}
+Let \(f=x^n+\sum_{r=0}^{n-1}c_rx^r\), where \(n\) is even,
+\(c_0=1\), and \(c_r=c_{n-1-r}\). Write
+\(f^*(x)=x^nf(1/x)\). Then
+\[
+ f^*=xf+x^{n+1}+1,\qquad
+ \gcd(f,f^*)=\gcd(f,x^{n+1}+1).
+\]
+This gcd is squarefree. In particular, every self-reciprocal
+irreducible factor of \(f\) occurs with multiplicity one. If a
+non-self-reciprocal irreducible \(q\) and \(q^*\) both divide \(f\),
+the smaller of their multiplicities is one.
+\end{lemma}
+\begin{proof}
+The coefficient symmetry gives the displayed identity, hence the gcd
+identity by subtraction. The derivative of \(x^{n+1}+1\) is \(x^n\),
+which is coprime to it; thus its divisors are squarefree. A
+self-reciprocal factor has the same multiplicity in \(f\) and \(f^*\).
+For a reciprocal pair the two multiplicities are interchanged, so
+their minimum is the multiplicity in the gcd. This proves the claims.
+\end{proof}
+
+\begin{proposition}[Exact reciprocal common divisor]
+\label{prop:reciprocal-gcd}
+For \(f=f_{n,i,j}\) from \eqref{eq:candidate}, put
+\[
+ N=n+1,\quad \Delta=j-i,\quad R=n-1-i-j,\quad
+ a=\gcd(N,\Delta),\quad b=\gcd(N,R),\quad h=\gcd(a,b).
+\]
+Then, as an exact polynomial quotient in \(\mathbb F_2[x]\),
+\begin{equation}\label{eq:reciprocal-gcd}
+ \gcd(f,f^*)=
+ \frac{(x^a+1)(x^b+1)}{(x+1)(x^h+1)},\qquad
+ \deg\gcd(f,f^*)=a+b-h-1.
+\end{equation}
+Consequently, irreducibility of \(f\) requires \(a=b=1\).
+\end{proposition}
+\begin{proof}
+The nonleading terms of \(f\) occur in pairs, so \(f(1)=1\).
+By Lemma~\ref{lem:reciprocal-multiplicity}, with
+\(S_n=(x^N+1)/(x+1)\),
+\[
+ \gcd(f,f^*)=\gcd(f,S_n)=\gcd(S_n,P),\qquad
+ P=x^i(1+x^\Delta)(1+x^R).
+\]
+The oddness of \(N\) makes \(S_n\) squarefree. The classical binomial
+gcd formula gives
+\[
+ \gcd(S_n,1+x^\Delta)=\frac{x^a+1}{x+1},\qquad
+ \gcd(S_n,1+x^R)=\frac{x^b+1}{x+1}.
+\]
+Since \(S_n\) is squarefree, its gcd with their product is their
+least common multiple. Their intersection is
+\((x^h+1)/(x+1)\), proving \eqref{eq:reciprocal-gcd}.
+If this gcd were all of \(f\), monicity and equal degrees would give
+\(f=f^*\), hence \((x+1)f=x^N+1\) and \(f=S_n\), contrary to its
+four zero coefficients. Thus a nonconstant gcd is a proper divisor.
+The right side is constant exactly when \(a=b=1\).
+\end{proof}
+
+\begin{corollary}[An explicit infinite reducible family]
+\label{cor:infinite-reducible}
+For every odd \(m\ge3\), the valid position pair
+\((n,i,j)=(3m-1,m-2,m)\) satisfies
+\begin{equation}\label{eq:infinite-reducible}
+\begin{split}
+ f_{3m-1,m-2,m}(x)
+ ={}&(1+x+\cdots+x^{m-1})\\
+ &\quad\cdot(x^{2m}+x^{m+1}+x^{m-1}+x^{m-2}+1).
+\end{split}
+\end{equation}
+In particular it is reducible, and the displayed forced divisor
+has unbounded degree \(m-1\).
+\end{corollary}
+\begin{proof}
+The inequalities \(1\le m-2<m\le(3m-3)/2\) make the positions valid.
+Here \(N=3m\), \(\Delta=2\), and \(R=m\), so
+\(a=1\), \(b=m\) in Proposition~\ref{prop:reciprocal-gcd}.
+For the explicit quotient, group the geometric sum as
+\(S_{3m-1}=S_{m-1}(1+x^m+x^{2m})\). The four deleted terms sum to
+\[
+ x^{m-2}(1+x^2)(1+x^m)=S_{m-1}x^{m-2}(x+1)^3.
+\]
+Adding these expressions and cancelling the two \(x^m\) terms
+inside the second factor proves \eqref{eq:infinite-reducible}.
+\end{proof}
+
+\begin{proposition}[Number of positions surviving the screen]
+\label{prop:reciprocal-survivors}
+For odd \(N=n+1\), let \(\varphi\) be Euler's totient and put
+\[
+ \mathfrak S_2(N)=N\prod_{p\mid N}\left(1-\frac2p\right).
+\]
+The number of four-zero position pairs with \(\gcd(f,f^*)=1\) is
+\begin{equation}\label{eq:screen-survivors}
+ E_N=\binom{\varphi(N)/2}{2}-\frac{\mathfrak S_2(N)-1}{2}.
+\end{equation}
+Thus \(N_4(n)\le E_{n+1}\). This is only an upper bound;
+\(E_{n+1}>0\) does not imply \(N_4(n)>0\).
+\end{proposition}
+\begin{proof}
+Set \(u=i+1\), \(v=j+1\). The two coprimality conditions in
+Proposition~\ref{prop:reciprocal-gcd} are precisely that \(u-v\)
+and \(u+v\) be units modulo \(N\). Since \(2\) is invertible,
+the map \((u,v)\mapsto(u-v,u+v)\) is a bijection on
+\((\mathbb Z/N\mathbb Z)^2\), giving \(\varphi(N)^2\) ordered
+pairs before excluding zero coordinates. The cases \(u=0\) and
+\(v=0\) contribute \(\varphi(N)\) each and are disjoint.
+The independent sign changes of \(u,v\) and their interchange
+act freely on the remaining pairs: admissibility excludes
+\(u=\pm v\), and a nonzero coordinate cannot equal its negative.
+Dividing by eight gives
+\(\varphi(N)(\varphi(N)-2)/8\) unordered pairs of distinct
+nonzero sign classes.
+
+Choose representatives \(1,\ldots,k\) of those classes. The
+allowed positions use \(2,\ldots,k\), so the class represented
+by \(1\) must be removed. The Chinese remainder theorem counts
+\(\mathfrak S_2(N)\) residues \(v\) for which both \(v-1\) and
+\(v+1\) are units: modulo each prime \(p\mid N\) two residues
+are forbidden. One residue is \(v=0\); the others form pairs
+\(\{v,-v\}\). Hence the removed class has
+\((\mathfrak S_2(N)-1)/2\) neighbors. Subtraction proves
+\eqref{eq:screen-survivors}.
+\end{proof}
+
+\begin{remark}[Scope and classical predecessors]
+\label{rem:screen-scope}
+These results describe the reciprocal common part, not the complete
+factorization. For example,
+\[
+ f_{8,1,2}=(x^3+x^2+1)(x^5+x^2+1)
+\]
+has trivial reciprocal gcd but is reducible. Nor are candidates
+always squarefree:
+\[
+ f_{14,2,5}=(x^2+x+1)(x^6+x^4+x^3+x+1)^2.
+\]
+The squarefreeness hypothesis in the classical
+Stickelberger--Swan factor-parity criterion \cite{Swan62} must
+therefore be checked. An odd number of factors still need not mean
+irreducibility: \(f_{12,4,5}\) has three distinct factors of degrees
+\(3,4,5\).
+
+For fixed \(i,j\), one also has
+\[
+ (x+1)f_{n,i,j}=x^{n-1-j}A_{i,j}+B_{i,j},
+\]
+where \(A_{i,j}=x^{j+2}+(x+1)(x^{j-i}+1)\) and
+\(B_{i,j}=1+(x+1)(x^i+x^j)\) are fixed polynomials.
+This places fixed-position factor-parity questions in the
+classical framework of Fredricksen, Hales and Sweet \cite{FHS86}.
+Neither eventual periodicity in that framework nor the elementary
+formulas above are claimed as a new general factorization method.
+\end{remark}
+
+
+\section{Quadratic-transform intersections}
+\label{sec:quadratic}
+\subsection{The translated \texorpdfstring{$Q$}{Q} branch}
+For a degree-$m$ polynomial $h$, define
+\begin{equation}\label{eq:quadratic-transform}
+ \mathcal T(h)(x)=(x+1)^m h\!\left(\frac{x^2}{x+1}\right),\qquad
+ \mathcal M_n(f)(x)=(x+1)^n f\!\left(\frac{x}{x+1}\right).
+\end{equation}
+The first polynomial is the classical $Q$-transform of $h$, followed
+by $x\mapsto x+1$. The equivalence between
+$\mathcal M_{2m}(f)=f$ and $f=\mathcal T(h)$ is a special case of
+Mattarei and Pizzato \cite[Lemma 9]{MP17}: take $a=b=1,c=0$,
+numerator $x^2$ and denominator $x+1$ in their notation.
+The nondegeneracy conditions hold, and the representation is unique;
+indeed the summands $x^{2j}(x+1)^{m-j}$ have distinct degrees $m+j$.
+More general invariant representations are given by Reis
+\cite[Theorem 1.3]{Reis20}. These representations and the transform
+are classical. Our task here is to determine their intersection with
+the four-zero coefficient support, including reducible polynomials.
+
+Write $\Delta a=a(x+1)+a(x)$, and use reversal with respect to a
+specified formal degree when the leading coefficient may vanish.
+
+\begin{lemma}[A descent for tail palindromes]\label{lem:descent}
+Let $f=x^{2k}+\sum_{j=0}^{2k-1}c_jx^j$, with $c_0=1$ and
+$c_j=c_{2k-1-j}$. Set $d=k-1$ and
+\[
+ e=\sum_{a=0}^{k-1}c_{2a}x^a,\qquad o=x^d e(1/x).
+\]
+Then
+\begin{equation}\label{eq:descent}
+ \mathcal M_{2k}(f)=f
+ \quad\Longleftrightarrow\quad
+ \Delta e=0\ \hbox{and}\ e=\Delta(xo).
+\end{equation}
+If the tail of $f$ has $2s$ zeros, the formal coefficient vector of
+$e$ has $s$ zeros.
+\end{lemma}
+\begin{proof}
+Tail symmetry gives $f=x^{2k}+e^2+xo^2$. Put
+$p=xf+x^{2k+1}=xe^2+x^2o^2$, and homogenize $p$ to formal degree
+$2k+1$, obtaining $P(X,Y)$. The tail condition is exactly
+$P(X,Y)=P(Y,X)$. Moreover, $\mathcal M_{2k}(f)=f$ is equivalent
+to $P(X,X+Y)=P(X,Y)$. Conjugating this substitution by the
+interchange of $X,Y$ gives $(X,Y)\mapsto(X+Y,Y)$. Hence, for
+this symmetric $P$, the condition is equivalent to $\Delta p=0$.
+Direct expansion gives
+\[
+ \Delta p=x(\Delta e)^2+
+ \bigl(e(x+1)+\Delta(xo)\bigr)^2.
+\]
+The two summands have disjoint odd and even supports. Thus both
+vanish exactly under the conditions in \eqref{eq:descent}.
+Each tail mirror pair contains one even and one odd position,
+which proves the assertion about zeros.
+\end{proof}
+
+\begin{lemma}[Two missing coefficients and translation]
+\label{lem:two-zero-periodic}
+Let $d$ be positive and even, and $1\le a<b\le d-1$. Then
+$e=S_d+x^a+x^b$ satisfies $\Delta e=0$ exactly in the following cases:
+\begin{equation}\label{eq:two-zero-types}
+\begin{array}{c|c|c}
+ &d&\{a,b\}\\ \hline
+\mathrm{I}&2^r-2,\ r\ge3&\{2^u,2^v\},\quad0\le u<v\le r-1\\
+\mathrm{II}&2^r,\ r\ge2&\{2^r-1,2^t\},\quad0\le t\le r-1\\
+\mathrm{III}&2^r+2^s-2,\ r>s\ge2&\{2^r-1,2^s-1\}.
+\end{array}
+\end{equation}
+\end{lemma}
+\begin{proof}
+The binary expansion identity
+$(x+1)^v=\prod_{j:\,v_j=1}(x^{2^j}+1)$ shows that
+$\Delta x^v$, for $v>0$, consists of the proper binary submasks
+of $v$, and has $2^{\operatorname{wt}_2(v)}-1$ terms.
+Consequently $\Delta x^v=1$ exactly for powers of two.
+For distinct positive $v,w$, equality $\Delta x^v=\Delta x^w$
+also occurs exactly when both are powers of two: with at least
+two binary digits, the singleton submasks recover all set digits.
+We will also use
+\begin{equation}\label{eq:geometric-translation}
+ x(x+1)\Delta S_t=x^{t+2}+(x+1)^{t+2}+1.
+\end{equation}
+It follows that $\Delta S_t=0$ exactly when $t+2$ is a power of two.
+
+For $0\le b\le t$, the one-missing-coefficient polynomial
+$S_t+x^b$ is translation invariant exactly when
+\[
+ (t,b)=(2^s-2,0)\quad\hbox{or}\quad(2^s-1,2^s-1),\qquad s\ge1.
+\]
+Indeed equality of its values at $0,1$ forces $b=0$ if $t$ is even.
+If $t$ is odd, translation invariance forces its leading term to
+cancel, since a nonzero invariant polynomial has even degree, so
+$b=t$. Equation~\eqref{eq:geometric-translation} completes both cases,
+including the zero polynomial at $t=b=0$.
+
+Put $d=2u$ and write $e=E^2+xO^2$.
+Odd and even coefficient comparison gives
+$\Delta e=0\Longleftrightarrow\Delta O=0,\ \Delta E=O$.
+The useful residual is
+\[
+ B_u=S_{u-1}+\Delta S_u
+     =\frac{x^{u+1}+(x+1)^{u+1}+1}{x}.
+\]
+If $a,b$ are even, then $O=S_{u-1}$. Thus $u+1$ is a power
+of two and $B_u=0$. The remaining condition is
+$\Delta(x^{a/2}+x^{b/2})=0$, so $a/2,b/2$ are powers of two.
+These are precisely the even-even pairs in type I.
+
+If $a,b$ are odd, then $E=S_u$ and
+$B_u=x^{(a-1)/2}+x^{(b-1)/2}$. Its two terms force
+$\operatorname{wt}_2(u+1)=2$. Writing $u+1=2^v+2^w$, $v>w\ge0$,
+gives $B_u=x^{2^v-1}+x^{2^w-1}$. This yields type III when $w>0$;
+$w=0$ yields type II with $t=0$.
+
+Finally suppose the missing positions are $2A$ and $2B+1$.
+Then $O=S_{u-1}+x^B$ and $B_u=x^B+\Delta x^A$.
+The one-missing-coefficient classification gives either
+$u=2^s-1,B=0$, or $u=2^s,B=u-1$.
+In the first case $B_u=0$; in the second $B_u=x^{u-1}+1$.
+Both force $\Delta x^A=1$, so $A$ is a power of two.
+They give respectively type I with one missing position $1$,
+and type II with $t>0$. These cases exhaust the parities.
+All displayed pairs satisfy the required equations on substitution,
+so the classification is sufficient as well as necessary.
+\end{proof}
+
+\begin{theorem}[Complete four-zero intersection]\label{thm:quadratic}
+For the candidates \eqref{eq:candidate},
+$\mathcal M_n(f_{n,i,j})=f_{n,i,j}$ if and only if one of the
+following holds:
+\begin{align}
+ n&=2^R+2^S-2,\quad R>S\ge2,&
+ (i,j)&=(2^S-2,2^S-1);\label{eq:quadratic-A}\\
+ n&=2^R+2,\quad R\ge3,&
+ (i,j)&=(3,2^{R-1});\label{eq:quadratic-B}\\
+ n&=14,&&
+ (i,j)\in\{(2,4),(2,5),(4,5)\}.\label{eq:quadratic-C}
+\end{align}
+Equivalently, these are exactly the four-zero polynomials in the
+image of $\mathcal T$.
+\end{theorem}
+\begin{proof}
+Write $n=2k$. The coefficient of $x^{n-1}$ in
+$\mathcal M_n(f)$ is $f'(1)=k-2$ in $\mathbb F_2$, since the
+four missing tail positions include two odd positions.
+Its value in $f$ is $1$, so $k$ is odd. Comparison of the
+$x^2$ coefficients gives $[x]f=\binom{2k}{2}=k=1$.
+Thus positions $1,n-2$ are not missing. In Lemma~\ref{lem:descent},
+$e=S_d+x^a+x^b$ is therefore monic of even degree $d=k-1$,
+with $1\le a<b\le d-1$.
+
+By Lemma~\ref{lem:two-zero-periodic}, $e$ has one of the three types
+in \eqref{eq:two-zero-types}. The second descent condition is
+equivalent to
+\begin{equation}\label{eq:second-descent}
+\begin{split}
+ x^a+x^b+\Delta x^{d+1-a}+\Delta x^{d+1-b}
+ =\frac{x^{d+2}+(x+1)^{d+2}+1}{x}.
+\end{split}
+\end{equation}
+For type I the right side is zero. The binary masks $d+1-a$ and
+$d+1-b$ have all $r$ digits set except the distinct digits specified
+by $a,b$. Their proper-submask supports have symmetric difference
+of size $2^{r-1}-2$: among all submasks the difference has size
+$2^{r-1}$, and deleting the two top masks removes two terms.
+Equation~\eqref{eq:second-descent} requires that difference to be
+the two terms $x^a+x^b$, so $r=3$. For $r=3$ it is exactly that
+pair, giving $d=6$ and the three cases \eqref{eq:quadratic-C}.
+
+For type II put $\{a,b\}=\{d-1,2^t\}$. The equation becomes
+\[
+ \Delta x^{d+1-2^t}=x^{2^t}+x+1.
+\]
+For $t=0$ both sides are $1$. For $t\ge1$ the right side has
+three terms, while $d+1-2^t$ has $r-t+1$ set digits. Thus
+$2^{r-t+1}-1=3$, forcing $t=r-1$, which also suffices.
+The two choices yield respectively \eqref{eq:quadratic-A} with
+$S=2$, and \eqref{eq:quadratic-B}.
+
+For type III the two $\Delta$ terms are both $1$ and cancel.
+The right side is $x^a+x^b$, so every such pair satisfies the
+condition. Restoring the even zero positions $2a,2b$ and their
+tail mirrors gives \eqref{eq:quadratic-A} with $R=r+1,S=s+1\ge3$.
+All these steps are reversible, proving the assertion in every degree.
+The equivalent image statement follows from the classical
+representation preceding Lemma~\ref{lem:descent}.
+\end{proof}
+
+\begin{corollary}[Reducibility and failure of iteration]
+\label{cor:quadratic-limits}
+Every member of \eqref{eq:quadratic-A} is reducible.
+If $h$ is itself a four-zero polynomial of the form
+\eqref{eq:candidate}, then $\mathcal T(h)$ is never a member of
+that family. Among the three polynomials in
+\eqref{eq:quadratic-C}, only $f_{14,2,4}$ is irreducible.
+\end{corollary}
+\begin{proof}
+For $f=\mathcal T(h)$ let $m=n/2$; its constant term gives $h(0)=1$,
+and the $x^2$ coefficient gives
+\begin{equation}\label{eq:quadratic-trace}
+ [x]h=[x^2]f+\binom m2.
+\end{equation}
+In \eqref{eq:quadratic-A}, $S=2$ gives $m\equiv1\pmod4$ and
+$[x^2]f=0$, while $S\ge3$ gives $m\equiv3\pmod4$ and $[x^2]f=1$.
+Hence $[x]h=0$ in either case. If $h$ is reducible, multiplicativity
+of the transform makes $f$ reducible. If $h$ is irreducible, the
+classical binary $Q$ criterion \cite[Theorem 1.1]{Ugo13} says that
+$h^Q$, and hence $f=h^Q(x+1)$, is irreducible exactly when $[x]h=1$.
+This proves the first assertion.
+
+The theorem, or its coefficient proof, gives $n\equiv2\pmod4$
+for every four-zero output. A four-zero input has even degree,
+so its transformed degree is divisible by four. This proves the
+iteration obstruction for this particular transform.
+
+For the exceptional pairs $(2,4),(2,5),(4,5)$ the corresponding
+$h$ are, respectively,
+\[
+ x^7+x^6+x^3+x+1,\quad
+ x^7+x^6+x^3+x^2+x+1,\quad
+ x^7+x^6+x^4+x^2+1.
+\]
+The first satisfies $x^{128}\equiv x\pmod h$ and
+$\gcd(h,x^2+x)=1$, so is irreducible by the prime-degree Rabin test;
+its linear coefficient is $1$. The second has root $1$,
+and the third has zero linear coefficient. The same $Q$ criterion
+finishes the proof.
+\end{proof}
+
+\paragraph{Explicit descent for the remaining family.}
+For \eqref{eq:quadratic-B}, put $q=2^{R-1}$. The unique polynomial with
+$\mathcal T(h_R)=f_{2q+2,3,q}$ is
+\begin{equation}\label{eq:B-descent}
+ h_R(x)=1+x+x^2+(1+x)\left(x^q+
+       \sum_{t=2}^{R-2}x^{q-2^t+1}\right),\qquad R\ge3,
+\end{equation}
+where the sum is empty for $R=3$. To verify the formula uniformly, set
+$L(x)=\sum_{a=0}^{R-2}x^{2^a}$ and
+\[
+ F(x)=x^{q+2}h_R(1/x)
+     =(x^2+x+1)x^q+(x+1)(L(x)+x^2).
+\]
+For $s=X^{-1}$ and $w=s+s^2$, telescoping gives $L(w)=s+s^q$;
+substitution and collection of terms give
+\[
+ s^{-2q-4}F(w)=(X+1)f_{2q+2,3,q}(X).
+\]
+The left side is $(X+1)\mathcal T(h_R)(X)$ by definition, proving
+\eqref{eq:B-descent}. The distinct leading degrees of the transform
+basis give uniqueness. In particular, $\deg h_R=q+1$ and $[x]h_R=1$,
+so the classical $Q$ criterion makes its irreducibility equivalent to
+that of the output. An all-parameter irreducibility classification remains unresolved.
+
+
+\subsection{The translation branch}\label{sec:translation}
+We next impose $f(x+1)=f(x)$. The invariant representation
+$f=H(x^2+x)$ and its Artin--Schreier irreducibility criterion are
+classical \cite[Lemma 2.1 and Theorem 2.2]{Kap17}. The additional
+constraints below come from the tail palindrome and its missing
+coefficients.
+
+\begin{lemma}[Degree compatibility]\label{lem:translation-degree}
+If a monic tail-palindromic polynomial $f$ of even degree $n\ge6$
+satisfies $f(x+1)=f(x)$, then $n+2$ is a power of two.
+\end{lemma}
+\begin{proof}
+Let $F(X,Y)=Y^nf(X/Y)$ and $N=n+1$. Tail symmetry gives
+\[
+ XF(X,Y)+YF(Y,X)=X^N+Y^N.
+\]
+By translation invariance, put
+$A=F(X,Y)=F(X+Y,Y)$, $B=F(Y,X)=F(X+Y,X)$ and
+$C=F(X,X+Y)=F(Y,X+Y)$. Applying the displayed identity to
+three pairs of variables yields
+\[
+\begin{aligned}
+ XA+YB&=X^N+Y^N,\\
+ (X+Y)A+YC&=(X+Y)^N+Y^N,\\
+ XC+(X+Y)B&=X^N+(X+Y)^N.
+\end{aligned}
+\]
+Multiply these equations by $X+Y$, $X$ and $Y$, respectively,
+and add. All terms on the left cancel, leaving
+$(X+Y)^{n+2}=X^{n+2}+Y^{n+2}$. In characteristic two this
+forces $n+2$ to be a power of two: if its binary expansion has
+at least two nonzero digits, a singleton proper submask gives
+a nonzero mixed binomial term.
+\end{proof}
+
+\begin{proposition}[A missing-coefficient obstruction]
+\label{prop:translation-zero-obstruction}
+Let $f$ be monic of even degree $n=2k\ge6$, with constant term one
+and a tail palindrome containing $2s$ zeros. If $f(x+1)=f(x)$,
+write $f=H(x^2+x)$ with $H$ monic of degree $k$. Then
+\begin{equation}\label{eq:translation-zero-trace}
+ [x^{k-1}]H=s\pmod2.
+\end{equation}
+In particular, if the number of tail zeros is divisible by four,
+then $f$ is reducible.
+\end{proposition}
+\begin{proof}
+With $e,o$ as in Lemma~\ref{lem:descent}, tail symmetry gives
+$f=(x^k+e)^2+xo^2$. Odd and even coefficient comparison gives
+\begin{equation}\label{eq:translation-descent}
+ \Delta f=0\quad\Longleftrightarrow\quad
+ \Delta o=0,\qquad \Delta(x^k+e)=o.
+\end{equation}
+Indeed $\Delta f=x(\Delta o)^2+
+[\Delta(x^k+e)+o(x+1)]^2$.
+The formal coefficient vector of $o$ has length $k$ and $s$ zeros,
+so $[x^{n-2}]f=o(0)=o(1)=k-s$ in $\mathbb F_2$.
+Lemma~\ref{lem:translation-degree} gives
+$k=2^{R-1}-1\equiv3\pmod4$, where $R\ge3$.
+The classical coefficient comparison in $H(x^2+x)$ therefore gives
+\[
+ [x^{k-1}]H=[x^{2k-2}]f+\binom{k}{2}=s\pmod2.
+\]
+Now suppose that $s$ is even. If $H$ is reducible, so is its composition.
+Otherwise let $\beta$ be a root of the irreducible $H$ in
+$\mathbb F_{2^k}$. Its absolute trace is $[x^{k-1}]H=0$,
+so $z^2+z=\beta$ has a solution in that same field.
+Thus $f$ has a root of degree at most $k$ and is reducible.
+The last step is classical: specialize \cite[Theorem~2.2(2)]{Ago77}
+to $p=2$, $n=r=1$ and $a=1$ in Agou's notation, with irreducible
+outer polynomial $H$; see also \cite[Theorem~2.2]{Kap17}.
+The same binary specialization follows from Long
+\cite[Theorems~4.1--4.2, pp.~69 and 71]{Long73}; the basic
+Artin--Schreier trace criterion is classical, as noted in
+\cite[p.~63]{Long73}. The associated high-coefficient restriction appears in
+\cite[Theorem~2.8(3)]{Kap17}.
+\end{proof}
+
+The restriction $n\ge6$ is essential: $x^2+x+1$ is a
+translation-invariant irreducible tail palindrome with no zeros.
+For odd $s$, \eqref{eq:translation-zero-trace} only removes this
+trace obstruction; it does not establish irreducibility of $H$.
+
+\begin{theorem}[Complete translation intersection]
+\label{thm:translation-classification}
+The polynomial $f_{n,i,j}$ in \eqref{eq:candidate} satisfies
+$f_{n,i,j}(x+1)=f_{n,i,j}(x)$ if and only if
+\begin{equation}\label{eq:translation-four}
+ (n,i,j)\in\{(14,3,4),(30,5,9),(30,5,12),(30,9,12)\}.
+\end{equation}
+All four polynomials are reducible.
+\end{theorem}
+\begin{proof}
+In \eqref{eq:translation-descent}, put $d=k-1$. The polynomial
+$o$ is monic of degree $d$ and has two missing coefficients.
+Since $k$ is odd, $o(1)=k-2=1$; invariance gives $o(0)=1$.
+Thus $o=S_d+x^a+x^b$ with $1\le a<b\le d-1$, and
+$e=S_d+x^{d-a}+x^{d-b}$.
+By Lemma~\ref{lem:translation-degree}, $d=2^r-2$, $r\ge2$.
+The case $r=2$ has only one interior position and is impossible.
+For $r\ge3$, Equation~\eqref{eq:geometric-translation} gives
+$\Delta S_d=0$. Hence $\Delta x^a=\Delta x^b$, which, by the
+binary-support observation in the proof of
+Lemma~\ref{lem:two-zero-periodic}, forces $a,b$ to be distinct
+powers of two. The second condition in
+\eqref{eq:translation-descent}, using $\Delta x^{d+1}=S_d$, becomes
+\begin{equation}\label{eq:translation-support}
+ \Delta x^{d-a}+\Delta x^{d-b}=x^a+x^b.
+\end{equation}
+
+If $a,b$ are both even, take square roots in this equation.
+The two exponents on the left are $(r-1)$-digit all-one binary
+masks with different singleton digits removed. Their full
+submask supports have symmetric difference of size $2^{r-2}$;
+removing the two top masks leaves $2^{r-2}-2$ terms.
+The right side has two terms, so $r=4$.
+For three-digit masks the remaining difference is precisely the
+two removed singleton digits; thus all pairs from $\{2,4,8\}$
+satisfy \eqref{eq:translation-support}.
+
+Otherwise $a=1$ and $b$ is an even power of two. The term
+$\Delta x^{d-b}$ has only even exponents. The mask
+$d-1=2^r-3$ has all digits except digit one set, so
+$\Delta x^{d-1}$ has $2^{r-2}-1$ odd terms. The right side has
+only the odd term $x$, forcing $r=3$.
+Here $\Delta x^5=x^4+x+1$ and $\Delta x^4=\Delta x^2=1$;
+of $b=2,4$, exactly $b=4$ satisfies the equation.
+
+A missing position $a$ in $o$ corresponds to the two positions
+$2a+1$ and $n-2-2a$ in $f$. Thus $d=6$, $\{a,b\}=\{1,4\}$
+gives $(14,3,4)$; $d=14$ and the three pairs from $\{2,4,8\}$
+give the degree-$30$ cases in \eqref{eq:translation-four}.
+The substitutions above also prove sufficiency.
+Reducibility follows uniformly from
+Proposition~\ref{prop:translation-zero-obstruction} with $s=2$.
+\end{proof}
+
+\subsection{Scope of the quadratic construction}\label{sec:quadratic-scope}
+Here a full-degree quadratic pullback over $\mathbb F_2$ means
+\[
+ F=h^mP(g/h),\qquad \gcd(g,h)=1,\qquad
+ \max(\deg g,\deg h)=2,
+\]
+where $\deg P=m>1$ and $\deg F=2m$.
+The last condition is automatic for irreducible
+$P$; in general the degree drops exactly when $h_2\ne0$ and
+$P(g_2/h_2)=0$ \cite[Section 2]{MP17}.
+
+\begin{corollary}[Boundary for full-degree quadratic pullbacks]
+\label{cor:all-quadratic}
+If a full-degree quadratic pullback is a four-zero tail palindrome,
+then it belongs either to the lists in Theorem~\ref{thm:quadratic}
+or to \eqref{eq:translation-four}, and its degree is $2$ modulo $4$.
+If it is irreducible, it is either $f_{14,2,4}$ or a member of
+\eqref{eq:quadratic-B}. Consequently, no sequence of quadratic
+pullbacks, each doubling the degree, can reach a four-zero tail
+palindrome after starting at an even degree.
+\end{corollary}
+\begin{proof}
+Write $g=\sum_{j=0}^2g_jx^j$, $h=\sum_{j=0}^2h_jx^j$, and put
+\[
+ a=g_2h_1+g_1h_2,\quad b=g_0h_2+g_2h_0,\quad
+ c=g_1h_0+g_0h_1.
+\]
+The classical quadratic framework gives $b^2+ac=1$ and, in the
+separable case,
+\[
+ (ax+b)^{2m}F\!\left(\frac{bx+c}{ax+b}\right)=F(x)
+ \qquad\text{\cite[Section 4, Lemma 9]{MP17}}.
+\]
+In the separable case the possible triples are exactly $(1,0,1),(0,1,1),(1,1,0)$,
+corresponding to reciprocity, translation and $\mathcal M_{2m}$.
+There is no nontrivial scalar normalization over $\mathbb F_2$.
+In the inseparable case $g_1=h_1=0$, the output is a square;
+its odd coefficients vanish, whereas a four-zero candidate has
+$[x^{2m-1}]F=1$.
+
+The reciprocal branch contains no four-zero candidate: combining
+$f^*=f$ with Lemma~\ref{lem:reciprocal-multiplicity} forces
+$f=S_n$. The other two branches are classified by
+Theorems~\ref{thm:quadratic} and~\ref{thm:translation-classification}.
+The irreducible alternatives follow from their reducibility
+conclusions. All listed degrees are $2$ modulo $4$.
+Starting at an even degree, every subsequent doubled degree is
+divisible by four, proving the last assertion.
+\end{proof}
+
+The reduction to three involutions is classical; the complete support
+intersections impose the additional construction restrictions.
+Higher-degree maps, selected factors, degree drops and extension-field
+descent are outside this conclusion.
+
+
+\section{Independently verified finite data}\label{sec:computations}
+All $161700$ candidates at the $98$ even degrees $6\le n\le200$
+were independently retested. The total is
+\[
+ \sum_{\substack{6\le n\le200\\ n\text{ even}}}N_4(n)=2663,
+ \qquad N_4(n)>0\ \text{at every tested degree}.
+\]
+The audit reproduces every historical complete count and every
+lexicographically first pair. For $202\le n\le300$, it retests the
+lexicographic prefix through the recorded first solution, covering
+$5410$ additional candidates at $50$ degrees. This verifies the
+first pair at each such degree; it does not provide complete counts
+beyond degree $200$.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{rrrr}
+\toprule
+$n$ & candidates & $N_4(n)$ & first $(i,j)$\\
+\midrule
+6 & 1 & 1 & $(1,2)$\\
+8 & 3 & 1 & $(2,3)$\\
+10 & 6 & 2 & $(1,2)$\\
+12 & 10 & 3 & $(1,3)$\\
+20 & 36 & 1 & $(4,5)$\\
+40 & 171 & 11 & $(1,4)$\\
+62 & 435 & 16 & $(1,17)$\\
+100 & 1176 & 31 & $(1,23)$\\
+126 & 1891 & 55 & $(1,2)$\\
+154 & 2850 & 45 & $(1,23)$\\
+194 & 4560 & 20 & $(6,65)$\\
+200 & 4851 & 17 & $(1,71)$\\
+\bottomrule
+\end{tabular}
+\caption{Selected complete counts. All $98$ rows and all successful
+position pairs through degree $200$ are supplied with the verification data.}
+\label{tab:counts}
+\end{table}
+
+\paragraph{Arithmetic verification and reproducibility.}
+The independent code constructs coefficients directly and tests
+irreducibility, followed by the standard exact-order conditions
+\begin{equation}\label{eq:ordertest}
+ x^{2^n-1}\equiv1\pmod f,\qquad
+ x^{(2^n-1)/p}\not\equiv1\pmod f\quad(p\mid2^n-1\text{ prime}).
+\end{equation}
+It imports none of the historical polynomial routines and uses
+python-flint $0.9.0$ with FLINT $3.6.0$ \cite{Flint}.
+All $148$ integer order factorizations are checked by exact division
+with residual cofactor one. Their $484$ distinct factors, of at most
+$144$ bits, pass FLINT's rigorous \texttt{fmpz\_is\_prime} procedure.
+A standard-library implementation independently agrees on all $220$
+candidates through degree $24$.
+
+The folder \path{verification/primitivity/} supplies complete candidate
+verdicts, successful positions, exact order-test residues for the $148$
+first witnesses, recovered integer factorizations and input hashes.
+Historical inputs are preserved separately. Sixteen missing auxiliary
+entries for the first successful $j$ with $i=1$ were corrected; complete
+counts and first pairs are unchanged. Software primality decisions
+are not exported independent certificates; no Lean formalization is claimed.
+The data and source are available from the author.
+
+\paragraph{Structural checks.}
+The accompanying \path{verification/} folders record the following scopes:
+\begin{center}\small
+\begin{tabular}{p{0.22\textwidth}p{0.70\textwidth}}
+\toprule
+Audit & Finite verification range\\
+\midrule
+Reciprocal screen & $19600$ candidates, $n\le100$.\\
+Coefficient quotient & $341376$ candidates, $n\le256$; full character checks for $k\le20$.\\
+Translated $Q$ & $341376$ four-zero positions at output degrees $\le256$; $1389888$ two-zero positions at input degrees $\le256$.\\
+Independent $Q$ & Horner/Pascal: $4960$ four-zero positions at output degrees $\le64$; $72568$ two-zero positions at input degrees $\le96$; $1023$ general tail palindromes to $n=20$.\\
+Translation & $341376$ four-zero positions to $n=256$; $4960$ direct Horner checks to $n=64$; $1023$ general tail palindromes; $24$ quadratic maps; $508$ Artin--Schreier instances of input degrees $2$--$8$.\\
+Explicit B descent & Standard-library forward and inverse checks for $3\le R\le10$; no factorization search.\\
+\bottomrule
+\end{tabular}
+\end{center}
+The four translation outputs have independently certified factor degrees
+$2+12$, $12+18$, $6+24$ and $7+7+8+8$, with a repeated factor in the last.
+Earlier B-sequence factorization data cover only $3\le R\le10$:
+the first term is irreducible and the next seven reducible.
+The new descent checks and unchanged historical audits are distinguished
+in the supplied files. All-parameter results rest on the written proofs;
+these finite checks imply no assertion for later parameters.
+
+\section{Interpretation and remaining question}\label{sec:limits}
+The main results give family-specific support restrictions within
+classical quadratic-transform theory. The reciprocal screen is necessary,
+and the classifications concern complete outputs of full degree.
+Within this scope, any infinite irreducible output family would have to
+occur in \eqref{eq:quadratic-B}; its existence remains unproved.
+The auxiliary coefficient quotient does not control multiplicative order
+or give a primitive-count estimate. The finite data support
+Conjecture~\ref{conj:C4} only over the stated ranges. A further substantive
+step would require an effective existence argument or a construction
+with controlled root order.
+
+\appendix
+\section{Auxiliary classical descriptions}\label{sec:classical-descriptions}
+These descriptions record coefficient multiplicities and an exact
+field parametrization. Neither is used to prove the support classifications.
+
+\subsection{Coefficient quotient}\label{sec:quotient}
+Let $\rho$ reverse $\mathbb F_2^k$, and set
+\[
+ P=\{(A,\rho A):A\in\mathbb F_2^k\},\quad
+ K=\{(C,C):C=\rho C\},\quad U=P/K,\quad r=\lfloor k/2\rfloor.
+\]
+The map $[(A,\rho A)]\mapsto A+\rho A$ identifies $U$ with
+$\operatorname{im}(I+\rho)$, of dimension $r$.
+Prepending a zero to $x\in\mathbb F_2^{k-1}$ defines
+$\Phi(x)=[(\widetilde x,\rho\widetilde x)]$.
+The all-ones tail lies in $K$, so deleting positions $i,j$ gives
+class $\Phi(e_i+e_j)$. With zero-based coordinates and a suitable basis
+$z_1,\ldots,z_r$, the columns $u_i=\Phi(e_i)$ form the multiset
+\begin{equation}\label{eq:columns}
+ \{u_1,\ldots,u_{k-1}\}=
+ \begin{cases}
+ \{z_1,z_1,\ldots,z_{r-1},z_{r-1},z_r\},&k=2r,\\
+ \{z_1,z_1,\ldots,z_{r-1},z_{r-1},z_r,0\},&k=2r+1.
+ \end{cases}
+\end{equation}
+Indeed pair positions $i,k-1-i$; the boundary pair contributes the
+singleton $z_r$ and an unpaired middle position contributes zero.
+In particular $\Phi$ is onto.
+
+For $s=\sum s_a z_a$, write $h=\sum_{a<r}s_a$ as an integer and
+$\varepsilon=k\bmod2$. The ordinary coset weight enumerator is
+\begin{equation}\label{eq:enumerator}
+ A_s(z)=\sum_{\Phi(x)=s}z^{\operatorname{wt}(x)}
+       =(1+z)^\varepsilon z^{s_r}(2z)^h(1+z^2)^{r-1-h}.
+\end{equation}
+Each repeated column allows $00,11$ for zero syndrome and $01,10$
+for nonzero syndrome; the singleton and optional zero column give the
+remaining factors. Thus $\mu(s)=[z^2]A_s(z)$ counts four-zero candidates
+in class $s$, and the number of occupied classes is
+\begin{equation}\label{eq:Dk}
+ D(3)=1,\qquad D(k)=1+\binom{\lfloor(k+1)/2\rfloor}{2}\quad(k\ge4).
+\end{equation}
+This follows by counting the nonzero quadratic coefficients in
+\eqref{eq:enumerator}; at $k=3$ the zero class is unoccupied.
+For a character $\chi$ of $U$, put
+$t=\#\{i:\chi(u_i)=-1\}$ and $\ell=k-1$. Then
+\begin{equation}\label{eq:krawtchouk}
+ \widehat\mu(\chi)=\sum_{i<j}\chi(u_i)\chi(u_j)
+   =K_2(t;\ell)=\frac{(\ell-2t)^2-\ell}{2}.
+\end{equation}
+These are classical direct-product weight-enumerator and Krawtchouk
+identities \cite[Sections 3--4]{Forney11}\cite[Sections 1.1 and 2.1]{Brouwer18}.
+They do not decide irreducibility: at degree eight,
+$x^8+x^7+x^6+x+1$ is primitive, while
+$x^8+x^7+x^5+x^2+1=(x^2+x+1)(x^6+x^4+x^2+x+1)$ is reducible;
+their tail difference $0110\,0110$ belongs to $K$.
+
+\subsection{Finite-field parametrization}\label{sec:dickson}
+Put $q=2^k$, $\mathbb K=\mathbb F_q$, $\mathbb L=\mathbb F_{q^2}$ and
+$T=\{\gamma\in\mathbb L^*:\gamma^{q+1}=1\}$.
+The coprime orders $q-1,q+1$ give $\mathbb L^*=\mathbb K^*\times T$.
+A primitive element is uniquely $\beta=\nu\gamma$ with
+$\operatorname{ord}(\nu)=q-1$ and $\operatorname{ord}(\gamma)=q+1$.
+Writing $\tau=\gamma+\gamma^{-1}\in\mathbb K$, the standard Dickson
+identity $D_a(u+u^{-1})=u^a+u^{-a}$ and Frobenius pairing give
+\begin{equation}\label{eq:dickson}
+ F_{\nu,\gamma}(x)=\prod_{i=0}^{k-1}
+ \left(x^2+\nu^{2^i}D_{2^i}(\tau)x+\nu^{2^{i+1}}\right).
+\end{equation}
+Here $D_0=0,D_1=t,D_{a+1}=tD_a+D_{a-1}$ in characteristic two
+\cite{LN}. Conversely, the two order conditions make this product the
+minimal polynomial of a primitive element. Expanding the product and
+comparing with \eqref{eq:candidate} gives an exact coefficient-and-order
+system, without an existence conclusion.
+
+\begin{thebibliography}{99}
+\small
+\setlength{\itemsep}{3pt}
+\bibitem{Coh06}
+S. D. Cohen,
+\emph{Primitive polynomials with a prescribed coefficient},
+Finite Fields Appl. \textbf{12} (2006), 425--491.
+
+\bibitem{LN}
+R. Lidl and H. Niederreiter,
+\emph{Finite Fields},
+Encyclopedia of Mathematics and its Applications, vol.~20, 2nd ed., Cambridge University Press, 1997.
+
+\bibitem{Swan62}
+R. G. Swan,
+\emph{Factorization of polynomials over finite fields},
+Pacific J. Math. \textbf{12} (1962), 1099--1106.
+
+\bibitem{FHS86}
+H. M. Fredricksen, A. W. Hales, and M. M. Sweet,
+\emph{A generalization of Swan's theorem},
+Math. Comp. \textbf{46} (1986), 321--331.
+
+\bibitem{Def20}
+C. Defant,
+\emph{Enumerating cliques in direct product graphs},
+J. Combin. \textbf{11} (2020), 351--358.
+
+\bibitem{Brouwer18}
+A. E. Brouwer, S. M. Cioab\u{a}, F. Ihringer, and M. McGinnis,
+\emph{The smallest eigenvalues of Hamming graphs, Johnson graphs and
+other distance-regular graphs with classical parameters},
+J. Combin. Theory Ser. B \textbf{133} (2018), 88--121.
+\href{https://doi.org/10.1016/j.jctb.2018.04.005}{doi:10.1016/j.jctb.2018.04.005}.
+
+\bibitem{Forney11}
+G. D. Forney, Jr.,
+\emph{Codes on graphs: duality and MacWilliams identities},
+IEEE Trans. Inform. Theory \textbf{57} (2011), 1382--1397.
+\href{https://doi.org/10.1109/TIT.2011.2104994}{doi:10.1109/TIT.2011.2104994}.
+
+\bibitem{MP17}
+S. Mattarei and M. Pizzato,
+\emph{Generalizations of self-reciprocal polynomials},
+Finite Fields Appl. \textbf{48} (2017), 271--288.
+\href{https://doi.org/10.1016/j.ffa.2017.08.004}{doi:10.1016/j.ffa.2017.08.004}.
+
+\bibitem{Reis20}
+L. Reis,
+\emph{M\"obius-like maps on irreducible polynomials and rational transformations},
+J. Pure Appl. Algebra \textbf{224} (2020), 169--180.
+\href{https://doi.org/10.1016/j.jpaa.2019.05.001}{doi:10.1016/j.jpaa.2019.05.001}.
+
+\bibitem{Long73}
+A. F. Long, Jr.,
+\emph{Factorization of irreducible polynomials over a finite field with
+the substitution $x^{p^r}-x$ for $x$},
+Duke Math. J. \textbf{40} (1973), 63--76.
+\href{https://doi.org/10.1215/S0012-7094-73-04007-6}{doi:10.1215/S0012-7094-73-04007-6}.
+
+\bibitem{Ago77}
+S. Agou,
+\emph{Factorisation sur un corps fini $\mathbb F_{p^n}$ des
+polyn\^omes compos\'es $f(X^{p^r}-aX)$ lorsque $f(X)$ est un
+polyn\^ome irr\'eductible de $\mathbb F_{p^n}(X)$},
+J. Number Theory \textbf{9} (1977), 229--239.
+\href{https://www.sciencedirect.com/science/article/pii/0022314X77900270}{Publisher page}.
+
+\bibitem{Kap17}
+G. Kapetanakis,
+\emph{Prescribing coefficients of invariant irreducible polynomials},
+J. Number Theory \textbf{180} (2017), 615--628.
+\href{https://doi.org/10.1016/j.jnt.2017.05.003}{doi:10.1016/j.jnt.2017.05.003}.
+
+\bibitem{Ugo13}
+S. Ugolini,
+\emph{Sequences of binary irreducible polynomials},
+Discrete Math. \textbf{313} (2013), 2656--2662.
+\href{https://doi.org/10.1016/j.disc.2013.08.011}{doi:10.1016/j.disc.2013.08.011}.
+
+\bibitem{Flint}
+The python-flint and FLINT developers,
+\emph{python-flint}, version 0.9.0, with FLINT version 3.6.0.
+\href{https://python-flint.readthedocs.io/}{Documentation};
+\href{https://flintlib.org/doc/fmpz.html}{integer primality-testing documentation}.
+Accessed 27 October 2026.
+
+\end{thebibliography}
+\end{document}

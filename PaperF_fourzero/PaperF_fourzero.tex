@@ -18,10 +18,15 @@ reciprocal obstructions and quadratic-transform intersections}
 \begin{document}
 \maketitle
 \begin{abstract}
-We study monic polynomials of even degree over $\mathbb F_2$ whose nonleading coefficients form a palindrome with constant term one and exactly four zeros. We determine their reciprocal common divisor and count the position pairs passing this obstruction. We classify their intersections with full-degree quadratic rational transformations: the translated $Q$ branch comprises two infinite shape families and three degree-14 exceptions, while the translation-invariant branch comprises four reducible polynomials at degrees 14 and 30. More generally, a translation-invariant tail palindrome has $n+2$ a power of two and, for $n\ge6$, is reducible if its number of missing tail coefficients is divisible by four. The family-specific content is the compatibility of classical invariant representations and irreducibility criteria with the prescribed support, yielding restrictions on quadratic degree-doubling constructions. Independent arithmetic checks recover 2663 primitive polynomials at all even degrees from 6 to 200 and verify the first solutions through degree 300. General primitive existence remains unproved.
+We study monic even-degree polynomials over $\mathbb F_2$ whose nonleading coefficients form a palindrome with constant term one and exactly four zeros. We completely classify their intersections with full-degree quadratic rational transformations. The translated $Q$ branch consists of two infinite shape families and three degree-14 exceptions; the translation-invariant branch consists of four reducible polynomials at degrees 14 and 30. More generally, a translation-invariant tail palindrome of even degree $n\ge6$ has $n+2$ a power of two and is reducible whenever its number of missing tail coefficients is divisible by four. The classification determines the boundary of quadratic degree doubling: every four-zero output has degree $2$ modulo $4$, so iterated doubling from an even input degree cannot produce a member of the family. We also determine the exact reciprocal common divisor and count the position pairs surviving this obstruction. Reproducible arithmetic computations identify 2663 primitive polynomials at the 98 even degrees from 6 to 200 and verify the first solutions through degree 300. Conjecture $C_4$ on primitive existence at every even degree remains open.
 \end{abstract}
 
 \section{The family and the question}\label{sec:intro}
+Quadratic rational transformations are a standard tool for constructing
+irreducible polynomials of doubled degree \cite{MP17}. This paper asks
+which outputs can also satisfy a rigid coefficient constraint: a
+palindromic tail with exactly four zero coefficients.
+
 Put $n=2k\ge6$ and $S_n(x)=1+x+\cdots+x^n$. We consider
 \begin{equation}\label{eq:candidate}
  f_{n,i,j}(x)=S_n(x)+x^i+x^j+x^{n-1-i}+x^{n-1-j},
@@ -39,37 +44,43 @@ $2^n-1$; standard background is in \cite{LN}.
 For every even $n\ge6$, one has $N_4(n)>0$.
 \end{conjecture}
 
-Primitive polynomials with prescribed coefficients form a classical
-subject; see Cohen \cite{Coh06}. In the present question the field
-is fixed and all but four tail coefficients are one, with the four
-exceptions coupled by reversal. Results prescribing a small number
-of coefficients do not directly settle this growing collection of
-constraints. A tail palindrome can also be encoded by the
-self-reciprocal polynomial $xf(x)+1$ of odd degree $n+1$.
-This change of polynomial preserves the coefficient description,
-but does not preserve irreducibility or primitivity.
+Primitive polynomials with prescribed coefficients are studied systematically
+by Cohen \cite{Coh06}. In the present family the field is fixed, all but four
+tail coefficients are one, and the four missing positions are coupled by
+reversal. The number of coefficient constraints therefore grows with the
+degree. A tail palindrome can also be encoded by the self-reciprocal
+polynomial $xf(x)+1$ of odd degree $n+1$. This describes its support;
+irreducibility and primitivity refer throughout to $f$ itself.
 
-The main results are the reciprocal obstruction and surviving position
-count in Section~\ref{sec:reciprocal-screen}, and the complete
-quadratic support intersections in Section~\ref{sec:quadratic}.
-Their invariant representations and irreducibility criteria are classical;
-the additional arguments concern compatibility with the prescribed support.
-Section~\ref{sec:computations} records independently verified finite data.
-Appendix~\ref{sec:classical-descriptions} collects the auxiliary classical
-coefficient and field descriptions. No general irreducibility criterion
-or proof of Conjecture~\ref{conj:C4} is asserted.
+The main results completely classify the full-degree quadratic outputs.
+Theorems~\ref{thm:quadratic} and~\ref{thm:translation-classification}
+give the translated $Q$ and translation-invariant lists. A trace obstruction
+also yields uniform reducibility when the number of missing tail
+coefficients is divisible by four
+(Proposition~\ref{prop:translation-zero-obstruction}).
+Corollary~\ref{cor:all-quadratic} combines the branches and rules out
+iterated doubling from an even input degree. The proof converts the
+coefficient constraints into coupled translation identities, whose solutions
+are determined by binary submask arguments.
+
+Section~\ref{sec:reciprocal-screen} gives a complementary arithmetic
+screen: an exact reciprocal common divisor and a closed count of the
+surviving position pairs (Propositions~\ref{prop:reciprocal-gcd}
+and~\ref{prop:reciprocal-survivors}).
+
+Section~\ref{sec:computations} gives reproducible primitive counts and
+first witnesses. Section~\ref{sec:limits} develops the questions suggested
+by the classification, while Appendix~\ref{sec:classical-descriptions}
+describes coefficient multiplicities and finite-field root parameters.
 
 \section{The reciprocal obstruction}
 \label{sec:reciprocal-screen}
 
-This section isolates a part of the reducibility problem that admits
-an exact description. Its tools are classical: polynomial reciprocity,
-the binomial gcd identity \cite{LN}, and unit counts related to the
-Schemmel functions \cite{Def20}. The contribution here is their explicit
-specialization to the four-zero family, including a complete reciprocal
-common divisor and an exact count of the surviving position pairs.
-These are auxiliary necessary conditions; no new general irreducibility
-principle is asserted.
+Tail symmetry turns polynomial reciprocity into an explicit common-factor
+test. In the four-zero family, the forced factor is determined by two
+integer gcds, and the number of surviving position pairs has a closed
+formula. The calculation uses the binomial gcd identity \cite{LN} and
+unit counts expressed by the second Schemmel function \cite[Section~1]{Def20}.
 
 \begin{lemma}[Reciprocity and multiplicities]
 \label{lem:reciprocal-multiplicity}
@@ -82,7 +93,7 @@ Let \(f=x^n+\sum_{r=0}^{n-1}c_rx^r\), where \(n\) is even,
 \]
 This gcd is squarefree. In particular, every self-reciprocal
 irreducible factor of \(f\) occurs with multiplicity one. If a
-non-self-reciprocal irreducible \(q\) and \(q^*\) both divide \(f\),
+non-self-reciprocal irreducible \(g\) and \(g^*\) both divide \(f\),
 the smaller of their multiplicities is one.
 \end{lemma}
 \begin{proof}
@@ -117,8 +128,10 @@ By Lemma~\ref{lem:reciprocal-multiplicity}, with
  \gcd(f,f^*)=\gcd(f,S_n)=\gcd(S_n,P),\qquad
  P=x^i(1+x^\Delta)(1+x^R).
 \]
-The oddness of \(N\) makes \(S_n\) squarefree. The classical binomial
-gcd formula gives
+The oddness of \(N\) makes \(S_n\) squarefree. For positive $u,v$,
+the Euclidean algorithm on the exponents gives
+$\gcd(x^u+1,x^v+1)=x^{\gcd(u,v)}+1$ over $\mathbb F_2$.
+Applying this identity yields
 \[
  \gcd(S_n,1+x^\Delta)=\frac{x^a+1}{x+1},\qquad
  \gcd(S_n,1+x^R)=\frac{x^b+1}{x+1}.
@@ -198,15 +211,13 @@ are forbidden. One residue is \(v=0\); the others form pairs
 \eqref{eq:screen-survivors}.
 \end{proof}
 
-\begin{remark}[Scope and classical predecessors]
+\begin{remark}[Factorization examples and fixed positions]
 \label{rem:screen-scope}
-These results describe the reciprocal common part, not the complete
-factorization. For example,
+For example,
 \[
  f_{8,1,2}=(x^3+x^2+1)(x^5+x^2+1)
 \]
-has trivial reciprocal gcd but is reducible. Nor are candidates
-always squarefree:
+has trivial reciprocal gcd and is reducible. Repeated factors also occur:
 \[
  f_{14,2,5}=(x^2+x+1)(x^6+x^4+x^3+x+1)^2.
 \]
@@ -224,8 +235,6 @@ where \(A_{i,j}=x^{j+2}+(x+1)(x^{j-i}+1)\) and
 \(B_{i,j}=1+(x+1)(x^i+x^j)\) are fixed polynomials.
 This places fixed-position factor-parity questions in the
 classical framework of Fredricksen, Hales and Sweet \cite{FHS86}.
-Neither eventual periodicity in that framework nor the elementary
-formulas above are claimed as a new general factorization method.
 \end{remark}
 
 
@@ -237,17 +246,18 @@ For a degree-$m$ polynomial $h$, define
  \mathcal T(h)(x)=(x+1)^m h\!\left(\frac{x^2}{x+1}\right),\qquad
  \mathcal M_n(f)(x)=(x+1)^n f\!\left(\frac{x}{x+1}\right).
 \end{equation}
-The first polynomial is the classical $Q$-transform of $h$, followed
-by $x\mapsto x+1$. The equivalence between
+The map $\mathcal T$ is the classical $Q$-transform followed by the
+translation $x\mapsto x+1$; explicitly, $\mathcal T(h)(x)=h^Q(x+1)$.
+The equivalence between
 $\mathcal M_{2m}(f)=f$ and $f=\mathcal T(h)$ is a special case of
 Mattarei and Pizzato \cite[Lemma 9]{MP17}: take $a=b=1,c=0$,
 numerator $x^2$ and denominator $x+1$ in their notation.
 The nondegeneracy conditions hold, and the representation is unique;
 indeed the summands $x^{2j}(x+1)^{m-j}$ have distinct degrees $m+j$.
 More general invariant representations are given by Reis
-\cite[Theorem 1.3]{Reis20}. These representations and the transform
-are classical. Our task here is to determine their intersection with
-the four-zero coefficient support, including reducible polynomials.
+\cite[Theorem 1.3]{Reis20}. We combine these invariant representations
+with the four-zero coefficient condition to determine every compatible
+output, including reducible polynomials.
 
 Write $\Delta a=a(x+1)+a(x)$, and use reversal with respect to a
 specified formal degree when the leading coefficient may vanish.
@@ -300,6 +310,8 @@ $e=S_d+x^a+x^b$ satisfies $\Delta e=0$ exactly in the following cases:
 \end{equation}
 \end{lemma}
 \begin{proof}
+A binary submask of an integer is obtained by retaining any subset of
+its nonzero binary digits; it is proper when it differs from the integer.
 The binary expansion identity
 $(x+1)^v=\prod_{j:\,v_j=1}(x^{2^j}+1)$ shows that
 $\Delta x^v$, for $v>0$, consists of the proper binary submasks
@@ -372,9 +384,15 @@ Equivalently, these are exactly the four-zero polynomials in the
 image of $\mathcal T$.
 \end{theorem}
 \begin{proof}
+We first use coefficient comparison to reduce the four-zero condition to
+the two-zero polynomial in Lemma~\ref{lem:descent}. We then apply the
+three types in Lemma~\ref{lem:two-zero-periodic} and impose the second
+descent identity on each type.
+
 Write $n=2k$. The coefficient of $x^{n-1}$ in
 $\mathcal M_n(f)$ is $f'(1)=k-2$ in $\mathbb F_2$, since the
-four missing tail positions include two odd positions.
+four missing tail positions include two odd positions: each pair
+$\{r,n-1-r\}$ contains one odd position because $n-1$ is odd.
 Its value in $f$ is $1$, so $k$ is odd. Comparison of the
 $x^2$ coefficients gives $[x]f=\binom{2k}{2}=k=1$.
 Thus positions $1,n-2$ are not missing. In Lemma~\ref{lem:descent},
@@ -459,15 +477,18 @@ and the third has zero linear coefficient. The same $Q$ criterion
 finishes the proof.
 \end{proof}
 
-\paragraph{Explicit descent for the remaining family.}
-For \eqref{eq:quadratic-B}, put $q=2^{R-1}$. The unique polynomial with
+\begin{proposition}[Explicit descent for the B family]\label{prop:B-descent}
+For $R\ge3$, put $q=2^{R-1}$. The unique polynomial with
 $\mathcal T(h_R)=f_{2q+2,3,q}$ is
 \begin{equation}\label{eq:B-descent}
  h_R(x)=1+x+x^2+(1+x)\left(x^q+
-       \sum_{t=2}^{R-2}x^{q-2^t+1}\right),\qquad R\ge3,
+       \sum_{t=2}^{R-2}x^{q-2^t+1}\right),
 \end{equation}
-where the sum is empty for $R=3$. To verify the formula uniformly, set
-$L(x)=\sum_{a=0}^{R-2}x^{2^a}$ and
+where the sum is empty for $R=3$. Moreover, $\deg h_R=q+1$ and
+$[x]h_R=1$.
+\end{proposition}
+\begin{proof}
+Set $L(x)=\sum_{a=0}^{R-2}x^{2^a}$ and
 \[
  F(x)=x^{q+2}h_R(1/x)
      =(x^2+x+1)x^q+(x+1)(L(x)+x^2).
@@ -477,12 +498,13 @@ substitution and collection of terms give
 \[
  s^{-2q-4}F(w)=(X+1)f_{2q+2,3,q}(X).
 \]
-The left side is $(X+1)\mathcal T(h_R)(X)$ by definition, proving
-\eqref{eq:B-descent}. The distinct leading degrees of the transform
-basis give uniqueness. In particular, $\deg h_R=q+1$ and $[x]h_R=1$,
-so the classical $Q$ criterion makes its irreducibility equivalent to
-that of the output. An all-parameter irreducibility classification remains unresolved.
-
+The left side is $(X+1)\mathcal T(h_R)(X)$, proving the formula;
+the distinct leading degrees of the transform basis give uniqueness.
+The exponents in the sum lie between $q/2+1$ and $q-3$, so the
+degree and linear coefficient follow directly.
+\end{proof}
+The classical $Q$ criterion makes irreducibility of $h_R$ equivalent
+to that of its output.
 
 \subsection{The translation branch}\label{sec:translation}
 We next impose $f(x+1)=f(x)$. The invariant representation
@@ -621,7 +643,7 @@ Reducibility follows uniformly from
 Proposition~\ref{prop:translation-zero-obstruction} with $s=2$.
 \end{proof}
 
-\subsection{Scope of the quadratic construction}\label{sec:quadratic-scope}
+\subsection{Full-degree quadratic constructions}\label{sec:quadratic-scope}
 Here a full-degree quadratic pullback over $\mathbb F_2$ means
 \[
  F=h^mP(g/h),\qquad \gcd(g,h)=1,\qquad
@@ -662,8 +684,9 @@ its odd coefficients vanish, whereas a four-zero candidate has
 $[x^{2m-1}]F=1$.
 
 The reciprocal branch contains no four-zero candidate: combining
-$f^*=f$ with Lemma~\ref{lem:reciprocal-multiplicity} forces
-$f=S_n$. The other two branches are classified by
+$f^*=f$ with Lemma~\ref{lem:reciprocal-multiplicity} gives
+$(x+1)f=x^{n+1}+1=(x+1)S_n$, hence $f=S_n$.
+The other two branches are classified by
 Theorems~\ref{thm:quadratic} and~\ref{thm:translation-classification}.
 The irreducible alternatives follow from their reducibility
 conclusions. All listed degrees are $2$ modulo $4$.
@@ -671,25 +694,21 @@ Starting at an even degree, every subsequent doubled degree is
 divisible by four, proving the last assertion.
 \end{proof}
 
-The reduction to three involutions is classical; the complete support
-intersections impose the additional construction restrictions.
-Higher-degree maps, selected factors, degree drops and extension-field
-descent are outside this conclusion.
+The three involutions thus connect the support symmetries to an
+exhaustive list of full-degree quadratic outputs.
 
 
-\section{Independently verified finite data}\label{sec:computations}
-All $161700$ candidates at the $98$ even degrees $6\le n\le200$
-were independently retested. The total is
+\section{Primitive counts and reproducible computations}\label{sec:computations}
+Complete enumeration of the $161700$ candidates at the $98$ even degrees
+$6\le n\le200$ gives
 \[
  \sum_{\substack{6\le n\le200\\ n\text{ even}}}N_4(n)=2663,
  \qquad N_4(n)>0\ \text{at every tested degree}.
 \]
-The audit reproduces every historical complete count and every
-lexicographically first pair. For $202\le n\le300$, it retests the
-lexicographic prefix through the recorded first solution, covering
-$5410$ additional candidates at $50$ degrees. This verifies the
-first pair at each such degree; it does not provide complete counts
-beyond degree $200$.
+A separate implementation reproduces every complete count and first pair.
+At the $50$ even degrees $202\le n\le300$, checking the lexicographic
+prefixes covers $5410$ further candidates and verifies the first pair
+at each degree.
 
 \begin{table}[ht]
 \centering\small
@@ -717,69 +736,65 @@ position pairs through degree $200$ are supplied with the verification data.}
 \end{table}
 
 \paragraph{Arithmetic verification and reproducibility.}
-The independent code constructs coefficients directly and tests
+The verification code constructs coefficients directly and tests
 irreducibility, followed by the standard exact-order conditions
 \begin{equation}\label{eq:ordertest}
  x^{2^n-1}\equiv1\pmod f,\qquad
  x^{(2^n-1)/p}\not\equiv1\pmod f\quad(p\mid2^n-1\text{ prime}).
 \end{equation}
-It imports none of the historical polynomial routines and uses
-python-flint $0.9.0$ with FLINT $3.6.0$ \cite{Flint}.
-All $148$ integer order factorizations are checked by exact division
-with residual cofactor one. Their $484$ distinct factors, of at most
-$144$ bits, pass FLINT's rigorous \texttt{fmpz\_is\_prime} procedure.
+The arithmetic tests use python-flint $0.9.0$ with FLINT $3.6.0$
+\cite{Flint}.
+The $148$ order factorizations correspond to the $98$ complete-count
+degrees and the $50$ further first-witness degrees. Exact division leaves
+residual cofactor one; all $484$ distinct prime factors, of at most $144$
+bits, pass FLINT's rigorous \texttt{fmpz\_is\_prime} procedure.
 A standard-library implementation independently agrees on all $220$
 candidates through degree $24$.
 
 The folder \path{verification/primitivity/} supplies complete candidate
 verdicts, successful positions, exact order-test residues for the $148$
 first witnesses, recovered integer factorizations and input hashes.
-Historical inputs are preserved separately. Sixteen missing auxiliary
-entries for the first successful $j$ with $i=1$ were corrected; complete
-counts and first pairs are unchanged. Software primality decisions
-are not exported independent certificates; no Lean formalization is claimed.
-The data and source are available from the author.
+Historical inputs and correction records are preserved with the audit.
+The data and verification programs are publicly archived at
+\href{https://doi.org/10.5281/zenodo.23766722}{doi:10.5281/zenodo.23766722}
+and in the
+\href{https://github.com/63331849121/yijing-mathematical-structures/tree/paperF-v2026.10.29-r1/PaperF_fourzero}{fixed GitHub release}.
 
-\paragraph{Structural checks.}
-The accompanying \path{verification/} folders record the following scopes:
-\begin{center}\small
-\begin{tabular}{p{0.22\textwidth}p{0.70\textwidth}}
-\toprule
-Audit & Finite verification range\\
-\midrule
-Reciprocal screen & $19600$ candidates, $n\le100$.\\
-Coefficient quotient & $341376$ candidates, $n\le256$; full character checks for $k\le20$.\\
-Translated $Q$ & $341376$ four-zero positions at output degrees $\le256$; $1389888$ two-zero positions at input degrees $\le256$.\\
-Independent $Q$ & Horner/Pascal: $4960$ four-zero positions at output degrees $\le64$; $72568$ two-zero positions at input degrees $\le96$; $1023$ general tail palindromes to $n=20$.\\
-Translation & $341376$ four-zero positions to $n=256$; $4960$ direct Horner checks to $n=64$; $1023$ general tail palindromes; $24$ quadratic maps; $508$ Artin--Schreier instances of input degrees $2$--$8$.\\
-Explicit B descent & Standard-library forward and inverse checks for $3\le R\le10$; no factorization search.\\
-\bottomrule
-\end{tabular}
-\end{center}
+The companion programs also check the reciprocal filter, both quadratic
+classifications and the descent identities; detailed ranges accompany
+the archived outputs.
 The four translation outputs have independently certified factor degrees
 $2+12$, $12+18$, $6+24$ and $7+7+8+8$, with a repeated factor in the last.
-Earlier B-sequence factorization data cover only $3\le R\le10$:
+The B-sequence factorization data cover $3\le R\le10$:
 the first term is irreducible and the next seven reducible.
-The new descent checks and unchanged historical audits are distinguished
-in the supplied files. All-parameter results rest on the written proofs;
-these finite checks imply no assertion for later parameters.
 
-\section{Interpretation and remaining question}\label{sec:limits}
-The main results give family-specific support restrictions within
-classical quadratic-transform theory. The reciprocal screen is necessary,
-and the classifications concern complete outputs of full degree.
-Within this scope, any infinite irreducible output family would have to
-occur in \eqref{eq:quadratic-B}; its existence remains unproved.
-The auxiliary coefficient quotient does not control multiplicative order
-or give a primitive-count estimate. The finite data support
-Conjecture~\ref{conj:C4} only over the stated ranges. A further substantive
-step would require an effective existence argument or a construction
-with controlled root order.
+\section{Structural consequences and open questions}\label{sec:limits}
+The reciprocal screen counts positions compatible with reciprocal
+coprimality. The quadratic classifications determine every full-degree
+output and yield a uniform obstruction from translation symmetry.
+
+\paragraph{Irreducibility in the remaining branch.}
+Within full-degree quadratic constructions, the B family
+\eqref{eq:quadratic-B} is the remaining irreducibility question in
+Corollary~\ref{cor:all-quadratic}. Which polynomials $h_R$ of
+Proposition~\ref{prop:B-descent} are irreducible? The explicit descent and the
+binary $Q$ criterion make this equivalent to classifying the irreducible
+four-zero outputs in that branch.
+
+\paragraph{Primitive existence and further constructions.}
+Conjecture~\ref{conj:C4} asks for primitive members at every even degree,
+linking the prescribed support to the multiplicative order of roots.
+The complete counts and first witnesses give concrete instances; the
+quotient and finite-field descriptions in
+Appendix~\ref{sec:classical-descriptions} express the support condition
+and the order condition explicitly. Higher-degree maps, selected factors and degree-dropping
+substitutions provide further construction questions.
 
 \appendix
-\section{Auxiliary classical descriptions}\label{sec:classical-descriptions}
-These descriptions record coefficient multiplicities and an exact
-field parametrization. Neither is used to prove the support classifications.
+\section{Coefficient and finite-field descriptions}\label{sec:classical-descriptions}
+The coefficient quotient organizes position pairs into classes with explicit
+multiplicities; the finite-field parametrization encodes primitivity
+through coprime order components.
 
 \subsection{Coefficient quotient}\label{sec:quotient}
 Let $\rho$ reverse $\mathbb F_2^k$, and set
@@ -828,7 +843,8 @@ $t=\#\{i:\chi(u_i)=-1\}$ and $\ell=k-1$. Then
 \end{equation}
 These are classical direct-product weight-enumerator and Krawtchouk
 identities \cite[Sections 3--4]{Forney11}\cite[Sections 1.1 and 2.1]{Brouwer18}.
-They do not decide irreducibility: at degree eight,
+The different factorization behavior within a class is visible already
+at degree eight:
 $x^8+x^7+x^6+x+1$ is primitive, while
 $x^8+x^7+x^5+x^2+1=(x^2+x+1)(x^6+x^4+x^2+x+1)$ is reducible;
 their tail difference $0110\,0110$ belongs to $K$.
@@ -849,11 +865,14 @@ Here $D_0=0,D_1=t,D_{a+1}=tD_a+D_{a-1}$ in characteristic two
 \cite{LN}. Conversely, the two order conditions make this product the
 minimal polynomial of a primitive element. Expanding the product and
 comparing with \eqref{eq:candidate} gives an exact coefficient-and-order
-system, without an existence conclusion.
+system in which the support and the two exact-order conditions are
+imposed simultaneously.
 
 \begin{thebibliography}{99}
 \small
-\setlength{\itemsep}{3pt}
+\setlength{\itemsep}{1.5pt}
+\setlength{\parsep}{0pt}
+\setlength{\parskip}{0pt}
 \bibitem{Coh06}
 S. D. Cohen,
 \emph{Primitive polynomials with a prescribed coefficient},

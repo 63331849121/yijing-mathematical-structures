@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "Please cite the version DOI for this research note."
+message: "Please cite this research note using its version DOI."
 type: article
 title: "Four-zero tail-palindromic polynomials over F2: reciprocal obstructions and quadratic-transform intersections"
 authors:
   - family-names: Li
     given-names: Baohua
-version: "2.0"
+version: "2.1"
 date-released: 2026-10-29
-doi: 10.5281/zenodo.23764251
-url: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.10.29
+doi: "10.5281/zenodo.23766722"
+url: "https://doi.org/10.5281/zenodo.23766722"
 license: CC-BY-4.0

@@ -1,0 +1,3 @@
+Previously published Paper F directory before the narrative revision.
+Original public commit: 1f6d180cc3bba51d1ef42cc06e886fa8ccbb3f28
+Fixed prior release: paperF-v2026.10.29

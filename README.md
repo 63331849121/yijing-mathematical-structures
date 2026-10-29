@@ -53,16 +53,16 @@ list have also been clarified. See [revision notes](PaperA_revision_notes.md).
 **Four-zero tail-palindromic polynomials over F2: reciprocal obstructions
 and quadratic-transform intersections.** Baohua Li · Research note · 12 pages.
 
-Reciprocal obstruction and surviving-position count, complete quadratic
-support intersections and a translation-invariant reducibility obstruction.
-Classical invariant representations and irreducibility criteria are credited.
-The general primitive-existence conjecture remains open.
+Complete quadratic-transform support classifications, a uniform translation
+obstruction, an exact reciprocal screen, and an explicit B-family descent
+(Proposition 3.5). The general primitive-existence conjecture C4 remains open.
 
-- [Paper F manuscript and editable source](PaperF_fourzero/).
-- [Chinese reading guide](PaperF_fourzero/overview_zh.txt).
-- [Version DOI](https://doi.org/10.5281/zenodo.23764251).
-- [Fixed release and verification package](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.10.29).
-- [Earlier deposited version](https://doi.org/10.5281/zenodo.22745836), preserved.
+- [Manuscript and editable source](PaperF_fourzero/).
+- [Submission archive: PDF and TeX](PaperF_fourzero/PaperF_submission.zip).
+- [Optional mathematical data and verification programs](PaperF_fourzero/PaperF_data_and_code.zip).
+- [Version DOI](https://doi.org/10.5281/zenodo.23766722).
+- [Fixed GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.10.29-r1).
+- [Previous public version](https://doi.org/10.5281/zenodo.23764251), preserved.
 
 ## Reproduce Paper A's computations
 
