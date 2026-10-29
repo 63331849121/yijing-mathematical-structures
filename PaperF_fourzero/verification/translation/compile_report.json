@@ -1,0 +1,29 @@
+{
+  "pages": 13,
+  "engine": "MiKTeX pdflatex",
+  "compile_return_code": 0,
+  "passes": 2,
+  "diagnostics": [],
+  "text_characters_by_page": [
+    2847,
+    2884,
+    2493,
+    2215,
+    2616,
+    2983,
+    2511,
+    2877,
+    2887,
+    2721,
+    2397,
+    3943,
+    2813
+  ],
+  "new_results_pages": [
+    1,
+    7,
+    8,
+    9
+  ],
+  "render_directory": "C:\\Users\\master\\Documents\\Codex\\mywebsite\\tmp\\pdfs\\PaperF_Agou_checked_2026-10-29"
+}

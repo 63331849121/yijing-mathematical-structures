@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "method": "Horner/Pascal substitutions independent of prior Lucas/submask implementation",
+  "fourzero_degrees": [
+    6,
+    64
+  ],
+  "fourzero_candidates": 4960,
+  "twozero_degrees": [
+    2,
+    96
+  ],
+  "twozero_candidates": 72568,
+  "prime_degree_Rabin_certificates": [
+    {
+      "degree": 5,
+      "h": "0x37",
+      "x_2power_degree_mod_h": "0x2",
+      "gcd_x2_plus_x": "0x1"
+    },
+    {
+      "degree": 7,
+      "h": "0xcb",
+      "x_2power_degree_mod_h": "0x2",
+      "gcd_x2_plus_x": "0x1"
+    }
+  ],
+  "proof_review": "All-degree proof reviewed separately; finite checks are not its completeness justification"
+}

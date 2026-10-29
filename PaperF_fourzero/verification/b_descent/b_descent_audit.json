@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "range": "3 <= R <= 10",
+  "cases": 8,
+  "factorization_or_irreducibility_tests": 0,
+  "all_parameter_basis": "Written algebraic telescoping proof; finite checks are supplementary.",
+  "priority_claim": "None. Mathematical correctness is not global novelty certification.",
+  "historical_input": "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\pdf\\PaperF_quadratic_revision_2026-10-28\\verification\\rational_transform\\classification_audit.json",
+  "historical_sha256": "57fe90f9a8674db2bf378cc49d57b65117f59edf763e4135b3a3abe09320c082",
+  "script_sha256": "5610391f10d2b600e79f8c2002f2662038f4dd247630feaae94723e50b21a1bb",
+  "rows": [
+    {
+      "R": 3,
+      "q": 4,
+      "output_degree": 10,
+      "descent_degree": 5,
+      "h_hex": "0x37",
+      "empty_sum": true,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    },
+    {
+      "R": 4,
+      "q": 8,
+      "output_degree": 18,
+      "descent_degree": 9,
+      "h_hex": "0x367",
+      "empty_sum": false,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    },
+    {
+      "R": 5,
+      "q": 16,
+      "output_degree": 34,
+      "descent_degree": 17,
+      "h_hex": "0x36607",
+      "empty_sum": false,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    },
+    {
+      "R": 6,
+      "q": 32,
+      "output_degree": 66,
+      "descent_degree": 33,
+      "h_hex": "0x366060007",
+      "empty_sum": false,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    },
+    {
+      "R": 7,
+      "q": 64,
+      "output_degree": 130,
+      "descent_degree": 65,
+      "h_hex": "0x36606000600000007",
+      "empty_sum": false,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    },
+    {
+      "R": 8,
+      "q": 128,
+      "output_degree": 258,
+      "descent_degree": 129,
+      "h_hex": "0x366060006000000060000000000000007",
+      "empty_sum": false,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    },
+    {
+      "R": 9,
+      "q": 256,
+      "output_degree": 514,
+      "descent_degree": 257,
+      "h_hex": "0x36606000600000006000000000000000600000000000000000000000000000007",
+      "empty_sum": false,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    },
+    {
+      "R": 10,
+      "q": 512,
+      "output_degree": 1026,
+      "descent_degree": 513,
+      "h_hex": "0x366060006000000060000000000000006000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000007",
+      "empty_sum": false,
+      "checks": [
+        "homogeneous Horner transform",
+        "triangular inverse",
+        "historical descent equality",
+        "degree and low coefficients",
+        "reverse partial-trace identity",
+        "trace telescoping",
+        "cleared-denominator identity"
+      ]
+    }
+  ]
+}

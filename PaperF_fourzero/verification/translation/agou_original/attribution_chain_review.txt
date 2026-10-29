@@ -1,0 +1,43 @@
+Agou 1977 原稿及前驱链独立归属核查
+日期：2026-10-29；只读核查，不编辑论文正文。
+
+结论：此前经 Kapetanakis 归于 Agou 的依据准确。新取得的 Agou 原稿补齐了原始条件与来源核查，但也明确要求把 a=1 分支的更早历史归属追溯到 Long 1973。该修正强化经典来源说明；没有发现应当把本文的四零完整形状分类撤回的证据。
+
+一、权威原稿与页码
+用户桌面原稿的工作副本：Agou_1977_user_original.pdf。
+压缩包中对应扫描稿：Agou_1977_Factorisation.pdf；封装不同但内容由父任务核对一致。
+Simon Agou, Factorisation sur un corps fini F_(p^n) des polynômes composés f(X^(p^r)-aX) lorsque f(X) est un polynôme irréductible de F_(p^n)(X), Journal of Number Theory 9(2) (1977), 229–239，共11页。
+本核查目视了扫描原稿的第239页书目，防止OCR把页码或指数误读。
+
+二、Kapetanakis 2017 实际引用哪一篇 Agou
+核查了一手机构公开PDF：
+https://research.sabanciuniv.edu/32695/1/Kapetanakis_-_Prescribing_coefficients_of_invariant_irreducible_polynomials.pdf
+Theorem 2.2 前文明确写其为参考文献[1]的定理，并指向另一书的Theorem3.3.3。第12页的[1]确实是上述Agou1977 JNT9(2):229–239，不是Agou1976 Acta Arithmetica论文。
+Theorem2.2写出：P为F_q上的首一不可约n次多项式时，P(X^p-alpha^(p-1)X)不可约当且仅当Tr_(Fq/Fp)(p_(n-1)/alpha^p)非零。分母要求alpha非零；本文alpha=1不涉及边界歧义。
+因此，原稿“Agou criterion as attributed in Kapetanakis Theorem2.2”的归属是准确的。取得原稿后宜直接增加Agou1977 Theorem2.2(2)的引用，不必删除Kapetanakis这个读者较易使用的明确系数陈述。
+
+三、Long 1973 的更早 a=1 分支
+Agou原稿第229页明确说明a=1情形已由Long[5]处理。第239页参考[5]目视核对为：
+A. F. Long, Jr., Factorization of irreducible polynomials over a finite field with the substitution X^(p^r)-X for X, Duke Mathematical Journal 40 (1973), 63–76。
+这里页码为63–76，不是663–676。
+检索得到DOI候选：10.1215/S0012-7094-73-04007-6。
+对应原出版平台页面：
+https://projecteuclid.org/journals/duke-mathematical-journal/volume-40/issue-1/Factorization-of-irreducible-polynomials-over-a-finite-field-with-the/10.1215/S0012-7094-73-04007-6.full
+访问结果：页面返回Incapsula拦截；DOI解析页和Crossref API在当前网络工具不可访问。故本轮没有取得并阅读全文，也不能声称核对了Long的具体定理编号。DOI最初从检索结果定位；作者、题名、期刊、卷年页码的可靠一手依据是Agou原稿书目。
+另检索到Long在Acta Arithmetica25(1973):65–80发表的相近题名论文，使用X^(q^r)-X而非上述Duke文题的X^(p^r)-X。二者不能混为同一文献；本轮不以该相近题名文章代替Duke原稿。
+适宜写法：“Agou's general factorization theorem includes this binary case; Agou notes that the case a=1 had already been treated by Long.”
+不适宜写法：“the a=1 criterion was first proved by Agou in1977”或“Long全文已经核对”。
+
+四、与本稿新增内容的覆盖关系
+1. f(x+1)=f(x)等价于f=H(x²+x)：经典不变环表示。Kapetanakis Lemma2.1明确陈述；不是本稿新结果。
+2. H不可约时，H(x²+x)不可约等价于H次高系数为1：经典复合/迹判据。新原稿AgouTheorem2.2(2)的二元特例直接覆盖，并且a=1有Long更早前驱。
+3. f_(2k-2)=binom(k,2)+H_(k-1)：直接经典系数展开。KapetanakisTheorem2.8(3)也已描述对应不可约周期多项式的高系数限制。
+4. 尾回文兼容平移迫使n+2为二的幂：需要尾回文的齐次三恒等式消元，不是Agou把一般参数设为p=2便直接给出的结论。
+5. 尾零数2s迫使H次高系数=s模2：额外需要本稿尾回文和零位结构。不能把一般经典迹判据本身计为新颖性；专族系数识别与其推论可以作为实际增量。
+6. 四零平移交集只含(14,3,4)、(30,5,9)、(30,5,12)、(30,9,12)：需要额外二进制支持和两缺项下降的穷尽分析；Agou原稿没有对这种联合系数支持作该分类。
+7. 四项全可约：在已证明上述专族零数接口后，是经典判据的直接推论。价值在统一解释，不能称为新的一般可约性判据。
+
+五、本轮可闭合与仍保留的边界
+已经闭合：Kapetanakis真正引用Agou1977的书目链；Agou原稿可读性；a=1已有Long更早前驱的一手证据；本文二元特例有直接经典前驱这一归属判断。
+仍保留：Long1973 Duke原稿全文未取得；未做全球历史文献穷尽，不能证明四零分类全球首次；本轮的归属判断不等于期刊录用保证。
+该边界不造成当前数学证明悬空：Agou原稿提供所需一般定理，Kapetanakis给出明确系数形式，当前论文也保留二元特例自足证明。无需为完成本轮原稿核查无限追索经典Artin–Schreier理论的全部历史。

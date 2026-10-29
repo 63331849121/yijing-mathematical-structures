@@ -1,0 +1,76 @@
+{
+  "authoritative_input": "C:\\Users\\master\\Desktop\\1-s2.0-0022314X77900270-main.pdf",
+  "saved_copy": "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\research\\PaperF_Agou_original_audit_2026-10-29\\Agou_1977_user_original.pdf",
+  "sha256": "8d701d62dadb2215381118927a54426545c5b24c9e50cb7401d65582706b5f57",
+  "zip_pdf_sha256": "486dcf316b9e35e4ae80fe482e7b5b7ef72d225a589e83c801cdcfb174cc249a",
+  "same_page_content": true,
+  "pages": [
+    {
+      "pdf_page": 1,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 2,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 3,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 4,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 5,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 6,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 7,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 8,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 9,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 23
+    },
+    {
+      "pdf_page": 10,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    },
+    {
+      "pdf_page": 11,
+      "text_equal": true,
+      "page_images_equal": true,
+      "embedded_images": 22
+    }
+  ],
+  "note": "Different PDF binary hashes; all page text and embedded scan images match. The separately supplied PDF is authoritative."
+}

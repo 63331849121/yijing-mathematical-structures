@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "pages": 12,
+  "passes": 2,
+  "engine": "MiKTeX pdflatex",
+  "diagnostics": [],
+  "render_directory": "C:\\Users\\master\\Documents\\Codex\\mywebsite\\tmp\\pdfs\\PaperF_final_submission_2026-10-29",
+  "B_descent_pages": [
+    6
+  ],
+  "appendix_pages": [
+    10,
+    11,
+    12
+  ],
+  "characters_by_page": [
+    2941,
+    2606,
+    2602,
+    2275,
+    2664,
+    2796,
+    2261,
+    2992,
+    2761,
+    2408,
+    2291,
+    2774
+  ]
+}

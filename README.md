@@ -48,16 +48,21 @@ list have also been clarified. See [revision notes](PaperA_revision_notes.md).
 - [Earlier note LaTeX source](PaperA_singer_TDK.tex)
 - [English abstract](abstract_en.txt) / [Chinese abstract](abstract_zh.txt)
 
-### Paper F: four-zero tail-palindromic primitive polynomials
+### Paper F: four-zero tail-palindromic polynomials
 
-**Four-zero tail-palindromic primitive polynomials: coefficient geometry,
-Dickson reduction, and computational evidence.**
+**Four-zero tail-palindromic polynomials over F2: reciprocal obstructions
+and quadratic-transform intersections.** Baohua Li · Research note · 12 pages.
 
-This preprint studies four-zero tail-palindromic candidates over F2, their
-self-paired coefficient geometry, the uniform Dickson/tau reduction,
-finite-pair association statistics for n=2p, and computational evidence.
+Reciprocal obstruction and surviving-position count, complete quadratic
+support intersections and a translation-invariant reducibility obstruction.
+Classical invariant representations and irreducibility criteria are credited.
+The general primitive-existence conjecture remains open.
 
-[Paper F archive](https://doi.org/10.5281/zenodo.22745836) · [Files and data](PaperF_fourzero/)
+- [Paper F manuscript and editable source](PaperF_fourzero/).
+- [Chinese reading guide](PaperF_fourzero/overview_zh.txt).
+- [Version DOI](https://doi.org/10.5281/zenodo.23764251).
+- [Fixed release and verification package](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.10.29).
+- [Earlier deposited version](https://doi.org/10.5281/zenodo.22745836), preserved.
 
 ## Reproduce Paper A's computations
 

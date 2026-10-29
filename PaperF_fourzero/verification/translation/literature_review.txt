@@ -1,0 +1,87 @@
+Paper F 平移分支并稿前：前驱归属复核
+日期：2026-10-29
+审查范围：公开一手全文的有限定向核对；本记录不构成全球优先权证明。
+
+结论
+
+可以并入，但应定位为专族分类的结构补全，而不是新的二次变换理论或一般不可约性判据。
+经典部分必须明示：三对合穷尽、平移不变环 F2[x²+x]、Artin–Schreier/Agou 迹判据、复合后的高系数关系。
+当前推导实际增加的是：尾回文与平移同时成立时的次数兼容性，尾部缺零数与下降迹系数的联系，以及四零交集的四项穷尽分类。
+统一可约性是上述专族联系建立后得到的经典迹判据推论；其价值主要在于不必逐个分解四个实例，并且覆盖任意为四倍数的尾部零数。
+
+一、Mattarei–Pizzato 的直接覆盖范围
+
+S. Mattarei and M. Pizzato, Generalizations of self-reciprocal polynomials,
+Finite Fields and Their Applications 48 (2017), 271–288.
+公开作者稿：https://arxiv.org/html/1609.07677
+出版 DOI：https://doi.org/10.1016/j.ffa.2017.08.004
+核对位置：§2 Theorem 2 及次数讨论；§4 Theorem 8 后的说明和 Lemma 9。
+
+该文给出一般二次有理变换的归约及其对合不变表示。对底域 F2 代入，其可分非平凡对合恰为互反、平移、x/(x+1)；剩余不可分情形是平方。故这部分属于经典框架的直接特化，不能作为 Paper F 独立新定理宣传。
+同文已讨论输出掉次数的来源：无穷远处的有理函数值是输入多项式的根。输入不可约且次数大于一时，不发生该类掉次数；一般输入则必须保留完整倍增的假设。
+Lemma 9 的范围是一般不变多项式，并没有同时施加本文“除首项外回文且恰有四个尾部零系数”的联合约束。其结论本身不直接列出 n+2 为二幂，也不直接列出四项平移交集。
+该文 §5 还指向 Stichtenoth–Topuzoğlu (2012) 的相关不变不可约因子结果。因此宜写“classical quadratic-transformation framework”，不宜把 2017 年两位作者称为该一般思想的最早提出者。
+
+二、Kapetanakis 与 Agou 的直接覆盖范围
+
+G. Kapetanakis, Prescribing coefficients of invariant irreducible polynomials,
+Journal of Number Theory 180 (2017), 615–628.
+公开机构全文：
+https://research.sabanciuniv.edu/32695/1/Kapetanakis_-_Prescribing_coefficients_of_invariant_irreducible_polynomials.pdf
+出版 DOI：https://doi.org/10.1016/j.jnt.2017.05.003
+核对位置：机构 PDF 第4页 Lemma 2.1、Theorem 2.2 及随后系数展开；第9页 Theorem 2.8，尤其第(3)项；第12页参考文献[1]。
+
+Lemma 2.1 给出平移不变多项式作为 X^p−α^(p−1)X 的复合。Theorem 2.2 明确归于 Agou：在输入不可约的条件下，复合不可约性由输入次高系数的有限域迹判定。其后展开式直接包含本文使用的最高数项系数关系。
+特别地，q=p=2、α=1、f=H(x²+x)、deg H=k 时，比较 x^(2k−2) 得
+  f_(2k−2)=binom(k,2)+H_(k−1)。
+这不是新的系数公式。Theorem 2.8(3) 的 μ=1 情形也已涵盖对应不可约周期多项式的系数限制：
+  f 不可约 ⇒ f_(2k−2)=binom(k,2)+1。
+因此，在已证明 k≡3(mod4) 且 f_(2k−2)=1 后得到矛盾，是经典系数/迹限制的应用。
+该文讨论一般不变不可约多项式及给定系数，并没有在已核对的结论中处理本文的尾回文联合约束和精确四零支持。一般给定单个系数的存在性不能替代本文全部系数关系的证明。
+
+Agou 原始文献信息（从 Kapetanakis 的参考文献核对）：
+S. Agou, Factorisation sur un corps fini F_(p^n) des polynômes composés
+f(X^(p^r)−aX) lorsque f(X) est un polynôme irréductible de F_(p^n)(X),
+Journal of Number Theory 9(2) (1977), 229–239.
+出版页面：https://www.sciencedirect.com/science/article/pii/0022314X77900270
+访问状态：尝试原出版全文，未能取得并阅读全文。不能写成“已核对 Agou 1977 原稿”。本轮所需特例由 Kapetanakis 明确陈述并归属，同时在本文保留根的迹与塔式次数的自足证明，数学依赖不因此悬空。
+
+三、逐项归属判断
+
+1. 三个可分二次不变分支穷尽：直接经典特化。作为范围说明/预备命题，可给出短证明，必须引用 Mattarei–Pizzato。
+2. f(x+1)=f(x) 当且仅当 f=H(x²+x)：直接经典结论。引用 Kapetanakis Lemma 2.1 或相应不变环来源。
+3. H 不可约时，H(x²+x) 不可约当且仅当 H_(k−1)=1：直接经典判据。引用 Agou 经 Kapetanakis Theorem 2.2；本文给出二元特例证明。
+4. H_(k−1)=f_(2k−2)+binom(k,2)：直接系数展开，是已有一般公式的特例。
+5. 尾回文兼容平移 ⇒ n+2 是二幂：当前专族推导。需要由三条齐次尾回文恒等式消元得到，不是前三项代入一个参数即可读出的结论。所用 Frobenius/二进制二项式性质本身经典。
+6. 尾部恰 2s 个零 ⇒ H_(k−1)=s mod 2（n≥6）：当前专族系数识别。其关键额外步骤是平移不变下 o(0)=o(1)=k−s，再结合第5项的 k≡3(mod4)。不应称为一般新迹公式。
+7. 尾部零数为四倍数 ⇒ 可约：第6项加经典 Artin–Schreier 的直接推论。可称统一障碍，但应立即说明经典来源；零数为 2(mod4) 只移除这一障碍，绝不保证 H 或 f 不可约。
+8. 四零平移形状恰为 (14,3,4)、(30,5,9)、(30,5,12)、(30,9,12)：当前完整的专族交集分类。已核对来源没有直接给出这张表或其等价联合约束分类。其证明仍需对二进制支持和两零下降条件进行额外穷尽论证。
+9. 合并旧 M 分支得到二次倍增路径的边界：上述分类与旧结果的推论。必须限定 F2、二次分子分母互素、完整输出、次数真正倍增；不能扩写成排除了任意构造或证明一般不存在。
+
+四、建议用于论文的归属措辞
+
+The reduction to the three involutions and the Artin--Schreier
+irreducibility criterion are classical. The family-specific content is
+the compatibility restriction imposed by the tail-palindromic
+coefficients, the resulting complete four-zero intersection, and its
+consequences for degree-doubling constructions.
+
+The reducibility assertion follows from the classical trace criterion
+after identifying the descending trace coefficient with the parity of
+half the number of missing tail coefficients.
+
+建议将一般尾回文次数/零数结论放在四项清单之前，以显出结构原因；四项逐个分解只作为复核资料。不要把已经完成的排除性结果包装成无穷不可约族、原猜想的解决或期刊档次的充分保证。
+
+五、查新边界与访问记录
+
+公开定向检索包括 tail-palindromic、palindromic tail、translation-invariant/periodic、almost self-reciprocal、binary、nonleading 等词的交叉组合，并核对上述两篇最接近的一手全文。未找到直接包含本文四项清单或尾回文零数公式的公开来源。
+这是有限检索的负结果，不是不存在前驱的证明。没有完成需登录的 MathSciNet 全覆盖核查，也没有完成 zbMATH/全部历史文献的穷尽审查。词汇不同的等价表述仍可能存在。
+主要全文内容在本轮先前调用中已读取；末次复开两篇链接时网络工具返回访问错误，不把失败的复开称为新的全文阅读。Agou 1977 原稿的全文缺口明确保留。
+在此边界内，可以诚实写“we classify”及“we prove”；不建议写“first ever”“completely new criterion”或全球首创。
+
+最终建议：并入一组紧凑的结构命题、完整分类与有明确来源的可约性推论。文章价值提升在完整性、解释力和清晰的构造边界，提升幅度有限但实质存在。
+
+
+同日补记：用户后续提供Agou1977原稿，已直接读核11页，尤其pp229、236–238及239。先前“未取得原稿”的访问缺口已补齐。
+Theorem2.2(2)直接给出本文所用二元不可约/迹条件；原稿pp229、239明确承认a=1情形的Long1973前驱。该经典判据不构成本文增量；尾回文兼容条件、零数识别和精确支持分类仍需要额外论证。
+完整参数、条件、直接覆盖边界及独立复审见agou_original/；本记录先前段落作为首轮历史核查保留，具体访问状态以本补记为准。

@@ -1,0 +1,108 @@
+B 序列显式下降式：投稿前独立复核
+2026-10-29
+范围：仅复核拟补入的一条下降式备注；不研究新因子族，不增加曲线结论，不修改主稿或命题台账。
+
+结论：数学复核通过。下式对每个整数 R>=3 成立，而非从 R=3,...,10 的历史数据外推。它给出现有唯一下降多项式的显式表达，不解决剩余序列的不可约性，也不构成全球首创认证。
+
+一、对象、次数与边界
+
+令 q=2^(R-1)、m=q+1、n=2q+2，并记 S_n=1+X+...+X^n。
+现有 B 族为
+  f_R=S_n+X^3+X^q+X^(q+1)+X^(2q-2)。
+它等于当前稿式(eq:quadratic-B)中的 f_(2^R+2,3,2^(R-1))。
+四个缺项指数对于所有 R>=3 都互异，包括 R=3 的 3、4、5、6。
+
+设
+  h_R(x)=1+x+x^2+(1+x)[x^q+sum_(t=2)^(R-2) x^(q-2^t+1)]。
+R=3 时和为空，h_3=x^5+x^4+x^2+x+1（十六进制0x37）。
+当求和非空时，最小括号指数为 q/2+1>=5；相邻括号指数间隔至少3，故乘(1+x)后彼此不抵消，也不涉及0、1、2次项。
+R=3 的单一括号项为x^4，同样满足要求。因此 h_R 首一，次数 q+1，常数项、一次项及二次项系数均为1。正文只需次数与一次系数，不必引入额外重量陈述。
+
+二、所有参数的纸面验证
+
+令 k=R-1、L_k(x)=sum_(i=0)^(k-1)x^(2^i)、A(x)=x^2+x+1，
+  h_R^*(x)=x^(q+1)h_R(1/x)，F_R(x)=x h_R^*(x)。
+直接反序给
+  F_R(x)=A(x)x^q+(x+1)(L_k(x)+x^2)。                  (1)
+这个反序在 R=3 的空和情形也成立：L_2+x^2=x。
+
+在 Laurent 多项式环 F_2[s,s^(-1)] 中取 s=X^(-1)、w=s+s^2。
+Frobenius 望远镜相消给
+  L_k(w)=sum_(i=0)^(k-1)(s^(2^i)+s^(2^(i+1)))=s+s^q。
+还具有 A(w)=s^4+s+1，w+1=s^2+s+1。代入(1)并展开：
+  F_R(w)=(s^4+s+1)s^(2q)+(s^4+s^2)s^q+s^6+s^5+s。
+故
+  s^(-2q-4)F_R(w)
+  =X^(2q+3)+1+X^4+X^3+X^q+X^(q+2)+X^(2q-2)+X^(2q-1)
+  =(X+1)f_R(X)。                                      (2)
+所有加法均在 F_2 上；在 q=4 时，(2)中 X^4 与 X^q、X^(q+2) 与 X^(2q-2) 分别抵消。这些重合不影响恒等式，不能误写成“八个互异单项式”。
+
+又 w=(X+1)/X^2，按 F_R 定义可直接计算
+  X^(2q+4)F_R(w)
+  =(X+1)^(q+2)h_R(X^2/(X+1))
+  =(X+1)T(h_R)(X)，
+其中 T(h)=(X+1)^(q+1)h(X^2/(X+1))。
+与(2)比较，并在整环 F_2[X] 中消去 X+1，得到
+  T(h_R)=f_R。
+
+三、唯一性与经典不可约性接口
+
+对固定 m=q+1，T(x^j)=X^(2j)(X+1)^(m-j) 的最高次数为 m+j，系数为1；这些次数彼此不同。因此这些像线性无关，下降多项式唯一。
+
+当前稿已有经典 Q 判据及输出与下降多项式的等价论证；新备注只把现有 h_R 写明。[x]h_R=1 不意味着 h_R 已不可约。不可约性的结论仍是：h_R 不可约当且仅当 f_R 不可约（常数1与经典二元 Q 判据的既有接口）。不能把八个已算参数的分解结论延伸到其余 R。
+
+主稿相关权威状态已按 D:/project/codex/Yishu01/_证明台账.md 的 P-fourzero-quadratic-classification、P-fourzero-quadratic-reducibility、P-fourzero-full-quadratic-scope 核对；本复核不改变它们的范围，不登记新的不可约性或存在性状态。
+
+四、独立有限计算
+
+verify_b_descent.py 仅使用 Python 标准库，在 R=3,...,10 的八个历史参数上检查：
+1. 用齐次 Horner 算法直接计算 T(h_R)，与四个缺项直接构造的 f_R 比较；
+2. 利用不同最高次数的变换基，从 f_R 逐项消元反求 h，并与显式下降式比较；
+3. 与既有 classification_audit.json 的八个 h 十六进制值逐一比较；
+4. 次数、低次系数、反序部分迹式、望远镜式及清除分母恒等式。
+全部通过。无不可约性检验、无新增因子分解、无历史计数重跑。输出 b_descent_audit.json 保存输入和脚本哈希。
+有限检查仅辅助支持上面的全参数证明，不替代该证明。
+
+五、可直接用于正文的紧凑英文版本
+
+\begin{remark}[Explicit descent for the remaining family]
+\label{rem:B-descent}
+Put $q=2^{R-1}$ for $R\ge3$. The unique descent of
+$f_R=f_{2q+2,3,q}$ in \eqref{eq:quadratic-B} is
+\[
+ h_R(x)=1+x+x^2+(1+x)\left(x^q+
+ \sum_{t=2}^{R-2}x^{q-2^t+1}\right),
+\]
+where the sum is empty for $R=3$.
+To verify the formula, write $L(x)=\sum_{i=0}^{R-2}x^{2^i}$
+and $F(x)=x^{q+2}h_R(1/x)$. Reversal gives
+$F=(x^2+x+1)x^q+(x+1)(L+x^2)$.
+For $s=X^{-1}$ and $w=s+s^2$, the identity $L(w)=s+s^q$
+yields $s^{-2q-4}F(w)=(X+1)f_R(X)$.
+The left side is $(X+1)\mathcal T(h_R)(X)$ by definition,
+which proves the claim. In particular, $\deg h_R=q+1$ and
+$[x]h_R=1$; the classical $Q$ criterion therefore makes its
+irreducibility equivalent to that of $f_R$.
+This explicit expression does not settle irreducibility for
+the remaining parameters.
+\end{remark}
+
+编辑建议：若现有正文的紧接段落已经说明不可约性等价与未解决范围，可删去本英文版本最后两句的重复部分。无需在摘要中提高创新主张；不加入部分迹的曲线解释或极点障碍。
+
+六、实际主稿核读（最终精简稿）
+
+已再次直接读取实际保存的
+  output/pdf/PaperF_quadratic_revision_2026-10-28/PaperF_fourzero.tex
+第462–484行的无编号 paragraph“Explicit descent for the remaining family”。
+源码 SHA256：40dbcf30da5d8b4a6a2672f7d1b29c7c44b3a55c484714a5a229c0a0170bc718。
+
+逐项核对结果：
+* eq:B-descent 的 q、R 下界、求和上下限与指数准确；R=3 的空和已明确。
+* F=x^(q+2)h_R(1/x) 的反序指数准确，F 的两个右侧项准确。
+* L 的求和 a=0,...,R-2 给最高项 x^q，恰满足 L(s+s^2)=s+s^q；未混淆为多一项或少一项的域迹。
+* w=s+s^2=(X+1)/X^2，与 T 的有理参数互为倒数；清分母幂 s^(-2q-4) 准确，其结果为 (X+1)f_(2q+2,3,q)。
+* 同一清分母表达按定义等于 (X+1)T(h_R)，从而在整环中消去 X+1。正文的“substitution and collection of terms”只是可直接展开的代数运算，没有调用未陈述定理；R=3 的重合项也按特征2抵消，证明仍成立。
+* 变换基的不同最高次数与先前正文一致，唯一性成立；次数 q+1、常数项1、一次系数1均由显示式可直接读出。经典 Q 判据只用于不可约性等价，没有将一次系数1误写成不可约性的充分条件。
+* 末句保留其余参数的未解决范围；没有加入曲线结果、统一因子新结论或新颖性升级。
+
+结论：实际主稿 B 简短下降段的全部公式准确，证明自足，未发现需要修复的数学或范围问题。此项核读不等于新增首创性判断，也没有修改实际主稿。

@@ -1,0 +1,3 @@
+Previous GitHub Paper F directory, retained before the 29 October 2026 research-note release.
+Its manuscript and data belong to the earlier version; start at the parent README for current files.
+Original Git commit: ec95dce466bf12153c4164b0a70a0f724195b3d0

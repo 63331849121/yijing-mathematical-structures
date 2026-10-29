@@ -1,0 +1,221 @@
+{
+  "status": "PASS",
+  "scope": "Bounded computational checks; all-degree proofs are separate.",
+  "software": {
+    "python": "3.12.14",
+    "python_flint": "0.9.0"
+  },
+  "counts": {
+    "fourzero_candidates_6_to_256": 341376,
+    "direct_horner_candidates_6_to_64": 4960,
+    "general_tail_palindromes_2_to_20": 1023,
+    "general_translation_invariant": 7,
+    "zero_parity_bridge_checks": 6,
+    "zero_multiple_of_four_reducibility_checks": 3,
+    "quadratic_map_input_checks": 672,
+    "full_degree_invariance_checks": 448,
+    "AS_criterion_degrees_2_to_8": 508
+  },
+  "quadratic_maps_by_branch": {
+    "inseparable": 6,
+    "(0, 1, 1)": 6,
+    "(1, 0, 1)": 6,
+    "(1, 1, 0)": 6
+  },
+  "four_translation_shapes": [
+    {
+      "n": 14,
+      "i": 3,
+      "j": 4,
+      "f_hex": "0x79e7",
+      "h_hex": "0xa3",
+      "h_exponents": [
+        7,
+        5,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0x7",
+          "degree": 2,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x1321",
+          "degree": 12,
+          "multiplicity": 1
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0x3",
+          "degree": 1,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x61",
+          "degree": 6,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "i": 5,
+      "j": 9,
+      "f_hex": "0x7eeffddf",
+      "h_hex": "0x91eb",
+      "h_exponents": [
+        15,
+        12,
+        8,
+        7,
+        6,
+        5,
+        3,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0x1333",
+          "degree": 12,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x77fe5",
+          "degree": 18,
+          "multiplicity": 1
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0x67",
+          "degree": 6,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x3b5",
+          "degree": 9,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "i": 5,
+      "j": 12,
+      "f_hex": "0x7efdefdf",
+      "h_hex": "0x97eb",
+      "h_exponents": [
+        15,
+        12,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        3,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0x6d",
+          "degree": 6,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x17b7c0b",
+          "degree": 24,
+          "multiplicity": 1
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0xd",
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x1e2f",
+          "degree": 12,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "i": 9,
+      "j": 12,
+      "f_hex": "0x7fededff",
+      "h_hex": "0x868b",
+      "h_exponents": [
+        15,
+        10,
+        9,
+        7,
+        3,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0xd5",
+          "degree": 7,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0xbf",
+          "degree": 7,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x17b",
+          "degree": 8,
+          "multiplicity": 2
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0x1f",
+          "degree": 4,
+          "multiplicity": 2
+        },
+        {
+          "hex": "0xa7",
+          "degree": 7,
+          "multiplicity": 1
+        }
+      ]
+    }
+  ],
+  "protected_file_hashes_before": {
+    "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\pdf\\PaperF_quadratic_revision_2026-10-28\\PaperF_fourzero.tex": "a2dae8b0c4b8bfa197b716298a862abb2fd5d4f6e00d7db4259a9f62b5453a8e",
+    "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\pdf\\PaperF_quadratic_revision_2026-10-28\\PaperF_fourzero.pdf": "7635c9c3fdb83dd9b28dee2770772b87cdf2e6463066f216802978b7b0cb11c8",
+    "D:\\project\\codex\\Yishu01\\_papers\\PaperF_fourzero\\PaperF_fourzero.tex": "a2dae8b0c4b8bfa197b716298a862abb2fd5d4f6e00d7db4259a9f62b5453a8e",
+    "D:\\project\\codex\\Yishu01\\_papers\\PaperF_fourzero\\PaperF_fourzero.pdf": "7635c9c3fdb83dd9b28dee2770772b87cdf2e6463066f216802978b7b0cb11c8",
+    "D:\\project\\codex\\Yishu01\\_证明台账.md": "50d62b13b11ea5931339f0f763f439479ecda6153670534960c4fdd06015bc76",
+    "D:\\project\\codex\\Yishu01\\_证明_核心定理.md": "cf2fce02efc19b842744e4a4cb8a84d5e0092b35a2fc109308a9389e5c46435a"
+  },
+  "protected_file_hashes_after": {
+    "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\pdf\\PaperF_quadratic_revision_2026-10-28\\PaperF_fourzero.tex": "a2dae8b0c4b8bfa197b716298a862abb2fd5d4f6e00d7db4259a9f62b5453a8e",
+    "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\pdf\\PaperF_quadratic_revision_2026-10-28\\PaperF_fourzero.pdf": "7635c9c3fdb83dd9b28dee2770772b87cdf2e6463066f216802978b7b0cb11c8",
+    "D:\\project\\codex\\Yishu01\\_papers\\PaperF_fourzero\\PaperF_fourzero.tex": "a2dae8b0c4b8bfa197b716298a862abb2fd5d4f6e00d7db4259a9f62b5453a8e",
+    "D:\\project\\codex\\Yishu01\\_papers\\PaperF_fourzero\\PaperF_fourzero.pdf": "7635c9c3fdb83dd9b28dee2770772b87cdf2e6463066f216802978b7b0cb11c8",
+    "D:\\project\\codex\\Yishu01\\_证明台账.md": "50d62b13b11ea5931339f0f763f439479ecda6153670534960c4fdd06015bc76",
+    "D:\\project\\codex\\Yishu01\\_证明_核心定理.md": "cf2fce02efc19b842744e4a4cb8a84d5e0092b35a2fc109308a9389e5c46435a"
+  },
+  "protected_files_unchanged": true,
+  "formalization": "No Lean verification claimed."
+}

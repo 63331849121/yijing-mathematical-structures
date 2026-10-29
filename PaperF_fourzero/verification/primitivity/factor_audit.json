@@ -1,0 +1,9178 @@
+{
+  "python_flint": "0.9.0",
+  "flint": "3.6.0",
+  "test": "fmpz_is_prime (rigorous)",
+  "unique_proven_primes": 484,
+  "prime_records": [
+    {
+      "p": "3",
+      "bits": 2,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5",
+      "bits": 3,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7",
+      "bits": 3,
+      "flint_is_prime": true
+    },
+    {
+      "p": "11",
+      "bits": 4,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13",
+      "bits": 4,
+      "flint_is_prime": true
+    },
+    {
+      "p": "17",
+      "bits": 5,
+      "flint_is_prime": true
+    },
+    {
+      "p": "19",
+      "bits": 5,
+      "flint_is_prime": true
+    },
+    {
+      "p": "23",
+      "bits": 5,
+      "flint_is_prime": true
+    },
+    {
+      "p": "29",
+      "bits": 5,
+      "flint_is_prime": true
+    },
+    {
+      "p": "31",
+      "bits": 5,
+      "flint_is_prime": true
+    },
+    {
+      "p": "37",
+      "bits": 6,
+      "flint_is_prime": true
+    },
+    {
+      "p": "41",
+      "bits": 6,
+      "flint_is_prime": true
+    },
+    {
+      "p": "43",
+      "bits": 6,
+      "flint_is_prime": true
+    },
+    {
+      "p": "47",
+      "bits": 6,
+      "flint_is_prime": true
+    },
+    {
+      "p": "53",
+      "bits": 6,
+      "flint_is_prime": true
+    },
+    {
+      "p": "59",
+      "bits": 6,
+      "flint_is_prime": true
+    },
+    {
+      "p": "61",
+      "bits": 6,
+      "flint_is_prime": true
+    },
+    {
+      "p": "67",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "71",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "73",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "79",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "83",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "89",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "97",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "101",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "103",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "107",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "109",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "113",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "127",
+      "bits": 7,
+      "flint_is_prime": true
+    },
+    {
+      "p": "131",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "137",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "139",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "149",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "151",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "157",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "163",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "167",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "173",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "179",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "181",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "191",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "193",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "197",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "199",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "211",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "223",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "227",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "229",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "233",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "239",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "241",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "251",
+      "bits": 8,
+      "flint_is_prime": true
+    },
+    {
+      "p": "257",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "263",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "269",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "271",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "277",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "281",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "283",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "293",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "307",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "313",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "331",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "337",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "353",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "397",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "401",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "409",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "431",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "433",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "439",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "449",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "457",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "499",
+      "bits": 9,
+      "flint_is_prime": true
+    },
+    {
+      "p": "521",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "569",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "571",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "577",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "593",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "601",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "617",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "631",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "641",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "643",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "673",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "683",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "691",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "727",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "733",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "739",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "811",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "881",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "911",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "937",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "953",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "971",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1013",
+      "bits": 10,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1033",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1049",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1097",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1103",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1153",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1163",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1181",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1193",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1201",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1217",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1249",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1321",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1429",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1553",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1613",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1657",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1709",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1753",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1777",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1801",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2003",
+      "bits": 11,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2089",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2113",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2143",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2281",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2351",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2593",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2657",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2687",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2689",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2731",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2833",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2857",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2971",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3061",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3121",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3191",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3331",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3361",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3391",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3541",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3761",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4051",
+      "bits": 12,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4177",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4513",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4523",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5153",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5347",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5419",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5581",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "6337",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "6361",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "6529",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "6553",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7393",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "8101",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "8191",
+      "bits": 13,
+      "flint_is_prime": true
+    },
+    {
+      "p": "8681",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "9719",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "9929",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "10169",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "11119",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "11447",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13367",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13669",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "14449",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "14951",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "15121",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "15619",
+      "bits": 14,
+      "flint_is_prime": true
+    },
+    {
+      "p": "17539",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "20231",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "20857",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "21841",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "23279",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "23311",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "26317",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "29191",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "30269",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "31817",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "32377",
+      "bits": 15,
+      "flint_is_prime": true
+    },
+    {
+      "p": "37171",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "38737",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "43691",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "48817",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "49477",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "51481",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "54001",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "59393",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "61681",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "63901",
+      "bits": 16,
+      "flint_is_prime": true
+    },
+    {
+      "p": "65537",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "65993",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "69431",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "71119",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "78233",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "86113",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "86171",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "87211",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "92737",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "100801",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "101653",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "106681",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "117371",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "121369",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "122921",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "131071",
+      "bits": 17,
+      "flint_is_prime": true
+    },
+    {
+      "p": "131101",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "135433",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "148961",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "152041",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "153649",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "155377",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "157649",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "160969",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "165313",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "174763",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "174877",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "178481",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "179951",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "181549",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "201961",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "224771",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "228479",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "229153",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "246241",
+      "bits": 18,
+      "flint_is_prime": true
+    },
+    {
+      "p": "262657",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "268501",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "274177",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "279073",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "290657",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "312709",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "321679",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "340801",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "348031",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "354689",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "383521",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "384773",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "409891",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "414721",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "500177",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "524287",
+      "bits": 19,
+      "flint_is_prime": true
+    },
+    {
+      "p": "525313",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "599479",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "649657",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "650833",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "664441",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "724153",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "748819",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "858001",
+      "bits": 20,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1210483",
+      "bits": 21,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1212847",
+      "bits": 21,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1564921",
+      "bits": 21,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1681003",
+      "bits": 21,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1868569",
+      "bits": 21,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2099863",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2298041",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2787601",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2796203",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3033169",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3456749",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3887047",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4036961",
+      "bits": 22,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4327489",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4506937",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4744297",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5521693",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "6700417",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7327657",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7416361",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7553921",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7623851",
+      "bits": 23,
+      "flint_is_prime": true
+    },
+    {
+      "p": "10567201",
+      "bits": 24,
+      "flint_is_prime": true
+    },
+    {
+      "p": "12112549",
+      "bits": 24,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13264529",
+      "bits": 24,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13334701",
+      "bits": 24,
+      "flint_is_prime": true
+    },
+    {
+      "p": "15152453",
+      "bits": 24,
+      "flint_is_prime": true
+    },
+    {
+      "p": "15358129",
+      "bits": 24,
+      "flint_is_prime": true
+    },
+    {
+      "p": "15790321",
+      "bits": 24,
+      "flint_is_prime": true
+    },
+    {
+      "p": "18837001",
+      "bits": 25,
+      "flint_is_prime": true
+    },
+    {
+      "p": "20394401",
+      "bits": 25,
+      "flint_is_prime": true
+    },
+    {
+      "p": "22253377",
+      "bits": 25,
+      "flint_is_prime": true
+    },
+    {
+      "p": "22366891",
+      "bits": 25,
+      "flint_is_prime": true
+    },
+    {
+      "p": "25781083",
+      "bits": 25,
+      "flint_is_prime": true
+    },
+    {
+      "p": "26295457",
+      "bits": 25,
+      "flint_is_prime": true
+    },
+    {
+      "p": "29247661",
+      "bits": 25,
+      "flint_is_prime": true
+    },
+    {
+      "p": "33975937",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "34110701",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "38369587",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "42875177",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "43249589",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "47392381",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "48544121",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "48912491",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "56409643",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "62020897",
+      "bits": 26,
+      "flint_is_prime": true
+    },
+    {
+      "p": "97685839",
+      "bits": 27,
+      "flint_is_prime": true
+    },
+    {
+      "p": "104124649",
+      "bits": 27,
+      "flint_is_prime": true
+    },
+    {
+      "p": "107367629",
+      "bits": 27,
+      "flint_is_prime": true
+    },
+    {
+      "p": "112901153",
+      "bits": 27,
+      "flint_is_prime": true
+    },
+    {
+      "p": "119782433",
+      "bits": 27,
+      "flint_is_prime": true
+    },
+    {
+      "p": "148587949",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "160465489",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "164511353",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "183076097",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "184481113",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "193707721",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "202029703",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "212885833",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "229668251",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "231769777",
+      "bits": 28,
+      "flint_is_prime": true
+    },
+    {
+      "p": "272010961",
+      "bits": 29,
+      "flint_is_prime": true
+    },
+    {
+      "p": "308761441",
+      "bits": 29,
+      "flint_is_prime": true
+    },
+    {
+      "p": "319020217",
+      "bits": 29,
+      "flint_is_prime": true
+    },
+    {
+      "p": "394783681",
+      "bits": 29,
+      "flint_is_prime": true
+    },
+    {
+      "p": "420778751",
+      "bits": 29,
+      "flint_is_prime": true
+    },
+    {
+      "p": "529510939",
+      "bits": 29,
+      "flint_is_prime": true
+    },
+    {
+      "p": "536903681",
+      "bits": 30,
+      "flint_is_prime": true
+    },
+    {
+      "p": "586477649",
+      "bits": 30,
+      "flint_is_prime": true
+    },
+    {
+      "p": "616318177",
+      "bits": 30,
+      "flint_is_prime": true
+    },
+    {
+      "p": "636190001",
+      "bits": 30,
+      "flint_is_prime": true
+    },
+    {
+      "p": "715827883",
+      "bits": 30,
+      "flint_is_prime": true
+    },
+    {
+      "p": "745988807",
+      "bits": 30,
+      "flint_is_prime": true
+    },
+    {
+      "p": "823679683",
+      "bits": 30,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1182468601",
+      "bits": 31,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1326700741",
+      "bits": 31,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1591582393",
+      "bits": 31,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1761345169",
+      "bits": 31,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1824726041",
+      "bits": 31,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1884103651",
+      "bits": 31,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2147483647",
+      "bits": 31,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2550183799",
+      "bits": 32,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2559066073",
+      "bits": 32,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2903110321",
+      "bits": 32,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2931542417",
+      "bits": 32,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3173389601",
+      "bits": 32,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3770202641",
+      "bits": 32,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4278255361",
+      "bits": 32,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4375578271",
+      "bits": 33,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4562284561",
+      "bits": 33,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4999465853",
+      "bits": 33,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5585522857",
+      "bits": 33,
+      "flint_is_prime": true
+    },
+    {
+      "p": "6156182033",
+      "bits": 33,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7484047069",
+      "bits": 33,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7830118297",
+      "bits": 33,
+      "flint_is_prime": true
+    },
+    {
+      "p": "8831418697",
+      "bits": 34,
+      "flint_is_prime": true
+    },
+    {
+      "p": "10425285443",
+      "bits": 34,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13455809771",
+      "bits": 34,
+      "flint_is_prime": true
+    },
+    {
+      "p": "19707683773",
+      "bits": 35,
+      "flint_is_prime": true
+    },
+    {
+      "p": "23140471537",
+      "bits": 35,
+      "flint_is_prime": true
+    },
+    {
+      "p": "25829691707",
+      "bits": 35,
+      "flint_is_prime": true
+    },
+    {
+      "p": "30327152671",
+      "bits": 35,
+      "flint_is_prime": true
+    },
+    {
+      "p": "33057806959",
+      "bits": 35,
+      "flint_is_prime": true
+    },
+    {
+      "p": "35273039401",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "35532364099",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "38941695937",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "40388473189",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "43872038849",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "46908728641",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "54410972897",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "62983048367",
+      "bits": 36,
+      "flint_is_prime": true
+    },
+    {
+      "p": "77158673929",
+      "bits": 37,
+      "flint_is_prime": true
+    },
+    {
+      "p": "88959882481",
+      "bits": 37,
+      "flint_is_prime": true
+    },
+    {
+      "p": "98618273953",
+      "bits": 37,
+      "flint_is_prime": true
+    },
+    {
+      "p": "104399276341",
+      "bits": 37,
+      "flint_is_prime": true
+    },
+    {
+      "p": "111349165273",
+      "bits": 37,
+      "flint_is_prime": true
+    },
+    {
+      "p": "118750098349",
+      "bits": 37,
+      "flint_is_prime": true
+    },
+    {
+      "p": "131105292137",
+      "bits": 37,
+      "flint_is_prime": true
+    },
+    {
+      "p": "158822951431",
+      "bits": 38,
+      "flint_is_prime": true
+    },
+    {
+      "p": "165768537521",
+      "bits": 38,
+      "flint_is_prime": true
+    },
+    {
+      "p": "168749965921",
+      "bits": 38,
+      "flint_is_prime": true
+    },
+    {
+      "p": "269089806001",
+      "bits": 38,
+      "flint_is_prime": true
+    },
+    {
+      "p": "275415303169",
+      "bits": 39,
+      "flint_is_prime": true
+    },
+    {
+      "p": "278452876033",
+      "bits": 39,
+      "flint_is_prime": true
+    },
+    {
+      "p": "368140581013",
+      "bits": 39,
+      "flint_is_prime": true
+    },
+    {
+      "p": "415141630193",
+      "bits": 39,
+      "flint_is_prime": true
+    },
+    {
+      "p": "415878438361",
+      "bits": 39,
+      "flint_is_prime": true
+    },
+    {
+      "p": "472287102421",
+      "bits": 39,
+      "flint_is_prime": true
+    },
+    {
+      "p": "487824887233",
+      "bits": 39,
+      "flint_is_prime": true
+    },
+    {
+      "p": "667055378149",
+      "bits": 40,
+      "flint_is_prime": true
+    },
+    {
+      "p": "761838257287",
+      "bits": 40,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1113491139767",
+      "bits": 41,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1133836730401",
+      "bits": 41,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1759217765581",
+      "bits": 41,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2368179743873",
+      "bits": 42,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2879347902817",
+      "bits": 42,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2932031007403",
+      "bits": 42,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3203431780337",
+      "bits": 42,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3630105520141",
+      "bits": 42,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4363953127297",
+      "bits": 42,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4432676798593",
+      "bits": 43,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4981857697937",
+      "bits": 43,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5415624023749",
+      "bits": 43,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5625767248687",
+      "bits": 43,
+      "flint_is_prime": true
+    },
+    {
+      "p": "6713103182899",
+      "bits": 43,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7432339208719",
+      "bits": 43,
+      "flint_is_prime": true
+    },
+    {
+      "p": "9361973132609",
+      "bits": 44,
+      "flint_is_prime": true
+    },
+    {
+      "p": "9739278030221",
+      "bits": 44,
+      "flint_is_prime": true
+    },
+    {
+      "p": "9857737155463",
+      "bits": 44,
+      "flint_is_prime": true
+    },
+    {
+      "p": "10052678938039",
+      "bits": 44,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13952598148481",
+      "bits": 44,
+      "flint_is_prime": true
+    },
+    {
+      "p": "15500487753323",
+      "bits": 44,
+      "flint_is_prime": true
+    },
+    {
+      "p": "15686603697451",
+      "bits": 44,
+      "flint_is_prime": true
+    },
+    {
+      "p": "24517014940753",
+      "bits": 45,
+      "flint_is_prime": true
+    },
+    {
+      "p": "28059810762433",
+      "bits": 45,
+      "flint_is_prime": true
+    },
+    {
+      "p": "44479210368001",
+      "bits": 46,
+      "flint_is_prime": true
+    },
+    {
+      "p": "49971617830801",
+      "bits": 46,
+      "flint_is_prime": true
+    },
+    {
+      "p": "67280421310721",
+      "bits": 46,
+      "flint_is_prime": true
+    },
+    {
+      "p": "70334392823809",
+      "bits": 46,
+      "flint_is_prime": true
+    },
+    {
+      "p": "107775231312019",
+      "bits": 47,
+      "flint_is_prime": true
+    },
+    {
+      "p": "108140989558681",
+      "bits": 47,
+      "flint_is_prime": true
+    },
+    {
+      "p": "138991501037953",
+      "bits": 47,
+      "flint_is_prime": true
+    },
+    {
+      "p": "140737471578113",
+      "bits": 47,
+      "flint_is_prime": true
+    },
+    {
+      "p": "145295143558111",
+      "bits": 48,
+      "flint_is_prime": true
+    },
+    {
+      "p": "242099935645987",
+      "bits": 48,
+      "flint_is_prime": true
+    },
+    {
+      "p": "345767385170491",
+      "bits": 49,
+      "flint_is_prime": true
+    },
+    {
+      "p": "358429848460993",
+      "bits": 49,
+      "flint_is_prime": true
+    },
+    {
+      "p": "385838642647891",
+      "bits": 49,
+      "flint_is_prime": true
+    },
+    {
+      "p": "649301712182209",
+      "bits": 50,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1066818132868207",
+      "bits": 50,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1801439824104653",
+      "bits": 51,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2646507710984041",
+      "bits": 52,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13194317913029593",
+      "bits": 54,
+      "flint_is_prime": true
+    },
+    {
+      "p": "18584774046020617",
+      "bits": 55,
+      "flint_is_prime": true
+    },
+    {
+      "p": "32127963626435681",
+      "bits": 55,
+      "flint_is_prime": true
+    },
+    {
+      "p": "59649589127497217",
+      "bits": 56,
+      "flint_is_prime": true
+    },
+    {
+      "p": "96076791871613611",
+      "bits": 57,
+      "flint_is_prime": true
+    },
+    {
+      "p": "105498212027592977",
+      "bits": 57,
+      "flint_is_prime": true
+    },
+    {
+      "p": "177722253954175633",
+      "bits": 58,
+      "flint_is_prime": true
+    },
+    {
+      "p": "341117531003194129",
+      "bits": 59,
+      "flint_is_prime": true
+    },
+    {
+      "p": "491003369344660409",
+      "bits": 59,
+      "flint_is_prime": true
+    },
+    {
+      "p": "581283643249112959",
+      "bits": 60,
+      "flint_is_prime": true
+    },
+    {
+      "p": "646675035253258729",
+      "bits": 60,
+      "flint_is_prime": true
+    },
+    {
+      "p": "658812288653553079",
+      "bits": 60,
+      "flint_is_prime": true
+    },
+    {
+      "p": "768614336404564651",
+      "bits": 60,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1100876018364883721",
+      "bits": 60,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1795918038741070627",
+      "bits": 61,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2305843009213693951",
+      "bits": 61,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3011347479614249131",
+      "bits": 62,
+      "flint_is_prime": true
+    },
+    {
+      "p": "4710883168879506001",
+      "bits": 63,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5782172113400990737",
+      "bits": 63,
+      "flint_is_prime": true
+    },
+    {
+      "p": "8142767081771726171",
+      "bits": 63,
+      "flint_is_prime": true
+    },
+    {
+      "p": "9520972806333758431",
+      "bits": 64,
+      "flint_is_prime": true
+    },
+    {
+      "p": "18446744069414584321",
+      "bits": 64,
+      "flint_is_prime": true
+    },
+    {
+      "p": "26032885845392093851",
+      "bits": 65,
+      "flint_is_prime": true
+    },
+    {
+      "p": "26831423036065352611",
+      "bits": 65,
+      "flint_is_prime": true
+    },
+    {
+      "p": "32032215596496435569",
+      "bits": 65,
+      "flint_is_prime": true
+    },
+    {
+      "p": "86656268566282183151",
+      "bits": 67,
+      "flint_is_prime": true
+    },
+    {
+      "p": "143162553165560959297",
+      "bits": 67,
+      "flint_is_prime": true
+    },
+    {
+      "p": "373200722470799764577",
+      "bits": 69,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1141629180401976895873",
+      "bits": 70,
+      "flint_is_prime": true
+    },
+    {
+      "p": "3976656429941438590393",
+      "bits": 72,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5302306226370307681801",
+      "bits": 73,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5439042183600204290159",
+      "bits": 73,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5519485418336288303251",
+      "bits": 73,
+      "flint_is_prime": true
+    },
+    {
+      "p": "5704689200685129054721",
+      "bits": 73,
+      "flint_is_prime": true
+    },
+    {
+      "p": "9444732965601851473921",
+      "bits": 73,
+      "flint_is_prime": true
+    },
+    {
+      "p": "57912614113275649087721",
+      "bits": 76,
+      "flint_is_prime": true
+    },
+    {
+      "p": "201487636602438195784363",
+      "bits": 78,
+      "flint_is_prime": true
+    },
+    {
+      "p": "870035986098720987332873",
+      "bits": 80,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2077756847362348863128179",
+      "bits": 81,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2741672362528725535068727",
+      "bits": 82,
+      "flint_is_prime": true
+    },
+    {
+      "p": "8235109336690846723986161",
+      "bits": 83,
+      "flint_is_prime": true
+    },
+    {
+      "p": "11053036065049294753459639",
+      "bits": 84,
+      "flint_is_prime": true
+    },
+    {
+      "p": "13842607235828485645766393",
+      "bits": 84,
+      "flint_is_prime": true
+    },
+    {
+      "p": "291280009243618888211558641",
+      "bits": 88,
+      "flint_is_prime": true
+    },
+    {
+      "p": "618970019642690137449562111",
+      "bits": 89,
+      "flint_is_prime": true
+    },
+    {
+      "p": "999802854724715300883845411",
+      "bits": 90,
+      "flint_is_prime": true
+    },
+    {
+      "p": "7984559573504259856359124657",
+      "bits": 93,
+      "flint_is_prime": true
+    },
+    {
+      "p": "11054184582797800455736061107",
+      "bits": 94,
+      "flint_is_prime": true
+    },
+    {
+      "p": "78919881726271091143763623681",
+      "bits": 96,
+      "flint_is_prime": true
+    },
+    {
+      "p": "82280195167144119832390568177",
+      "bits": 97,
+      "flint_is_prime": true
+    },
+    {
+      "p": "84115747449047881488635567801",
+      "bits": 97,
+      "flint_is_prime": true
+    },
+    {
+      "p": "84179842077657862011867889681",
+      "bits": 97,
+      "flint_is_prime": true
+    },
+    {
+      "p": "106788290443848295284382097033",
+      "bits": 97,
+      "flint_is_prime": true
+    },
+    {
+      "p": "123876132205208335762278423601",
+      "bits": 97,
+      "flint_is_prime": true
+    },
+    {
+      "p": "182331128681207781784391813611",
+      "bits": 98,
+      "flint_is_prime": true
+    },
+    {
+      "p": "845100400152152934331135470251",
+      "bits": 100,
+      "flint_is_prime": true
+    },
+    {
+      "p": "1786393878363164227858270210279",
+      "bits": 101,
+      "flint_is_prime": true
+    },
+    {
+      "p": "162259276829213363391578010288127",
+      "bits": 107,
+      "flint_is_prime": true
+    },
+    {
+      "p": "163537220852725398851434325720959",
+      "bits": 108,
+      "flint_is_prime": true
+    },
+    {
+      "p": "2679895157783862814690027494144991",
+      "bits": 112,
+      "flint_is_prime": true
+    },
+    {
+      "p": "51542639524661795300074174250365699",
+      "bits": 116,
+      "flint_is_prime": true
+    },
+    {
+      "p": "10350794431055162386718619237468234569",
+      "bits": 123,
+      "flint_is_prime": true
+    },
+    {
+      "p": "56713727820156410577229101238628035243",
+      "bits": 126,
+      "flint_is_prime": true
+    },
+    {
+      "p": "170141183460469231731687303715884105727",
+      "bits": 127,
+      "flint_is_prime": true
+    },
+    {
+      "p": "20988936657440586486151264256610222593863921",
+      "bits": 144,
+      "flint_is_prime": true
+    }
+  ],
+  "factorizations": [
+    {
+      "n": 6,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 8,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 10,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 12,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 14,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 16,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 18,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 20,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 22,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 24,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 26,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 28,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 30,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 32,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 34,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 36,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 38,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "174763",
+          "e": 1
+        },
+        {
+          "p": "524287",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 40,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "61681",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 42,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 2
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "337",
+          "e": 1
+        },
+        {
+          "p": "5419",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 44,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "397",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "2113",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 46,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "47",
+          "e": 1
+        },
+        {
+          "p": "178481",
+          "e": 1
+        },
+        {
+          "p": "2796203",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 48,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "97",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "673",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 50,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "251",
+          "e": 1
+        },
+        {
+          "p": "601",
+          "e": 1
+        },
+        {
+          "p": "1801",
+          "e": 1
+        },
+        {
+          "p": "4051",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 52,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "53",
+          "e": 1
+        },
+        {
+          "p": "157",
+          "e": 1
+        },
+        {
+          "p": "1613",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 54,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 4
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "87211",
+          "e": 1
+        },
+        {
+          "p": "262657",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 56,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "15790321",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 58,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "59",
+          "e": 1
+        },
+        {
+          "p": "233",
+          "e": 1
+        },
+        {
+          "p": "1103",
+          "e": 1
+        },
+        {
+          "p": "2089",
+          "e": 1
+        },
+        {
+          "p": "3033169",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 60,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "61",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "1321",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 62,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "715827883",
+          "e": 1
+        },
+        {
+          "p": "2147483647",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 64,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "641",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "6700417",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 66,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "67",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "20857",
+          "e": 1
+        },
+        {
+          "p": "599479",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 68,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "137",
+          "e": 1
+        },
+        {
+          "p": "953",
+          "e": 1
+        },
+        {
+          "p": "26317",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 70,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "71",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "281",
+          "e": 1
+        },
+        {
+          "p": "86171",
+          "e": 1
+        },
+        {
+          "p": "122921",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 72,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "433",
+          "e": 1
+        },
+        {
+          "p": "38737",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 74,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "223",
+          "e": 1
+        },
+        {
+          "p": "1777",
+          "e": 1
+        },
+        {
+          "p": "25781083",
+          "e": 1
+        },
+        {
+          "p": "616318177",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 76,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "229",
+          "e": 1
+        },
+        {
+          "p": "457",
+          "e": 1
+        },
+        {
+          "p": "174763",
+          "e": 1
+        },
+        {
+          "p": "524287",
+          "e": 1
+        },
+        {
+          "p": "525313",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 78,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "79",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "121369",
+          "e": 1
+        },
+        {
+          "p": "22366891",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 80,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "61681",
+          "e": 1
+        },
+        {
+          "p": "4278255361",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 82,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "83",
+          "e": 1
+        },
+        {
+          "p": "13367",
+          "e": 1
+        },
+        {
+          "p": "164511353",
+          "e": 1
+        },
+        {
+          "p": "8831418697",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 84,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 2
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "337",
+          "e": 1
+        },
+        {
+          "p": "1429",
+          "e": 1
+        },
+        {
+          "p": "5419",
+          "e": 1
+        },
+        {
+          "p": "14449",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 86,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "431",
+          "e": 1
+        },
+        {
+          "p": "9719",
+          "e": 1
+        },
+        {
+          "p": "2099863",
+          "e": 1
+        },
+        {
+          "p": "2932031007403",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 88,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "353",
+          "e": 1
+        },
+        {
+          "p": "397",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "2113",
+          "e": 1
+        },
+        {
+          "p": "2931542417",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 90,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "631",
+          "e": 1
+        },
+        {
+          "p": "23311",
+          "e": 1
+        },
+        {
+          "p": "18837001",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 92,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "47",
+          "e": 1
+        },
+        {
+          "p": "277",
+          "e": 1
+        },
+        {
+          "p": "1013",
+          "e": 1
+        },
+        {
+          "p": "1657",
+          "e": 1
+        },
+        {
+          "p": "30269",
+          "e": 1
+        },
+        {
+          "p": "178481",
+          "e": 1
+        },
+        {
+          "p": "2796203",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 94,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "283",
+          "e": 1
+        },
+        {
+          "p": "2351",
+          "e": 1
+        },
+        {
+          "p": "4513",
+          "e": 1
+        },
+        {
+          "p": "13264529",
+          "e": 1
+        },
+        {
+          "p": "165768537521",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 96,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "97",
+          "e": 1
+        },
+        {
+          "p": "193",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "673",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "22253377",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 98,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "4363953127297",
+          "e": 1
+        },
+        {
+          "p": "4432676798593",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 100,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 3
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "101",
+          "e": 1
+        },
+        {
+          "p": "251",
+          "e": 1
+        },
+        {
+          "p": "601",
+          "e": 1
+        },
+        {
+          "p": "1801",
+          "e": 1
+        },
+        {
+          "p": "4051",
+          "e": 1
+        },
+        {
+          "p": "8101",
+          "e": 1
+        },
+        {
+          "p": "268501",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 102,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "103",
+          "e": 1
+        },
+        {
+          "p": "307",
+          "e": 1
+        },
+        {
+          "p": "2143",
+          "e": 1
+        },
+        {
+          "p": "2857",
+          "e": 1
+        },
+        {
+          "p": "6529",
+          "e": 1
+        },
+        {
+          "p": "11119",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 104,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "53",
+          "e": 1
+        },
+        {
+          "p": "157",
+          "e": 1
+        },
+        {
+          "p": "1613",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "858001",
+          "e": 1
+        },
+        {
+          "p": "308761441",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 106,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "107",
+          "e": 1
+        },
+        {
+          "p": "6361",
+          "e": 1
+        },
+        {
+          "p": "69431",
+          "e": 1
+        },
+        {
+          "p": "20394401",
+          "e": 1
+        },
+        {
+          "p": "28059810762433",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 108,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 4
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        },
+        {
+          "p": "87211",
+          "e": 1
+        },
+        {
+          "p": "246241",
+          "e": 1
+        },
+        {
+          "p": "262657",
+          "e": 1
+        },
+        {
+          "p": "279073",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 110,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 2
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "881",
+          "e": 1
+        },
+        {
+          "p": "2971",
+          "e": 1
+        },
+        {
+          "p": "3191",
+          "e": 1
+        },
+        {
+          "p": "201961",
+          "e": 1
+        },
+        {
+          "p": "48912491",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 112,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "5153",
+          "e": 1
+        },
+        {
+          "p": "15790321",
+          "e": 1
+        },
+        {
+          "p": "54410972897",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 114,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "571",
+          "e": 1
+        },
+        {
+          "p": "32377",
+          "e": 1
+        },
+        {
+          "p": "174763",
+          "e": 1
+        },
+        {
+          "p": "524287",
+          "e": 1
+        },
+        {
+          "p": "1212847",
+          "e": 1
+        },
+        {
+          "p": "160465489",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 116,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "59",
+          "e": 1
+        },
+        {
+          "p": "233",
+          "e": 1
+        },
+        {
+          "p": "1103",
+          "e": 1
+        },
+        {
+          "p": "2089",
+          "e": 1
+        },
+        {
+          "p": "3033169",
+          "e": 1
+        },
+        {
+          "p": "107367629",
+          "e": 1
+        },
+        {
+          "p": "536903681",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 118,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "2833",
+          "e": 1
+        },
+        {
+          "p": "37171",
+          "e": 1
+        },
+        {
+          "p": "179951",
+          "e": 1
+        },
+        {
+          "p": "1824726041",
+          "e": 1
+        },
+        {
+          "p": "3203431780337",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 120,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "61",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "1321",
+          "e": 1
+        },
+        {
+          "p": "61681",
+          "e": 1
+        },
+        {
+          "p": "4562284561",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 122,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "768614336404564651",
+          "e": 1
+        },
+        {
+          "p": "2305843009213693951",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 124,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "5581",
+          "e": 1
+        },
+        {
+          "p": "8681",
+          "e": 1
+        },
+        {
+          "p": "49477",
+          "e": 1
+        },
+        {
+          "p": "384773",
+          "e": 1
+        },
+        {
+          "p": "715827883",
+          "e": 1
+        },
+        {
+          "p": "2147483647",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 126,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "7",
+          "e": 2
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "337",
+          "e": 1
+        },
+        {
+          "p": "5419",
+          "e": 1
+        },
+        {
+          "p": "92737",
+          "e": 1
+        },
+        {
+          "p": "649657",
+          "e": 1
+        },
+        {
+          "p": "77158673929",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 128,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "641",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "274177",
+          "e": 1
+        },
+        {
+          "p": "6700417",
+          "e": 1
+        },
+        {
+          "p": "67280421310721",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 130,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "131",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "409891",
+          "e": 1
+        },
+        {
+          "p": "7623851",
+          "e": 1
+        },
+        {
+          "p": "145295143558111",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 132,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "67",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "397",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "2113",
+          "e": 1
+        },
+        {
+          "p": "20857",
+          "e": 1
+        },
+        {
+          "p": "312709",
+          "e": 1
+        },
+        {
+          "p": "599479",
+          "e": 1
+        },
+        {
+          "p": "4327489",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 134,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "7327657",
+          "e": 1
+        },
+        {
+          "p": "193707721",
+          "e": 1
+        },
+        {
+          "p": "761838257287",
+          "e": 1
+        },
+        {
+          "p": "6713103182899",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 136,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 2
+        },
+        {
+          "p": "137",
+          "e": 1
+        },
+        {
+          "p": "953",
+          "e": 1
+        },
+        {
+          "p": "26317",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        },
+        {
+          "p": "354689",
+          "e": 1
+        },
+        {
+          "p": "2879347902817",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 138,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "47",
+          "e": 1
+        },
+        {
+          "p": "139",
+          "e": 1
+        },
+        {
+          "p": "178481",
+          "e": 1
+        },
+        {
+          "p": "2796203",
+          "e": 1
+        },
+        {
+          "p": "168749965921",
+          "e": 1
+        },
+        {
+          "p": "10052678938039",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 140,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "71",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "281",
+          "e": 1
+        },
+        {
+          "p": "86171",
+          "e": 1
+        },
+        {
+          "p": "122921",
+          "e": 1
+        },
+        {
+          "p": "7416361",
+          "e": 1
+        },
+        {
+          "p": "47392381",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 142,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "228479",
+          "e": 1
+        },
+        {
+          "p": "48544121",
+          "e": 1
+        },
+        {
+          "p": "56409643",
+          "e": 1
+        },
+        {
+          "p": "212885833",
+          "e": 1
+        },
+        {
+          "p": "13952598148481",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 144,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "97",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "433",
+          "e": 1
+        },
+        {
+          "p": "577",
+          "e": 1
+        },
+        {
+          "p": "673",
+          "e": 1
+        },
+        {
+          "p": "38737",
+          "e": 1
+        },
+        {
+          "p": "487824887233",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 146,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "439",
+          "e": 1
+        },
+        {
+          "p": "1753",
+          "e": 1
+        },
+        {
+          "p": "2298041",
+          "e": 1
+        },
+        {
+          "p": "9361973132609",
+          "e": 1
+        },
+        {
+          "p": "1795918038741070627",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 148,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "149",
+          "e": 1
+        },
+        {
+          "p": "223",
+          "e": 1
+        },
+        {
+          "p": "593",
+          "e": 1
+        },
+        {
+          "p": "1777",
+          "e": 1
+        },
+        {
+          "p": "25781083",
+          "e": 1
+        },
+        {
+          "p": "184481113",
+          "e": 1
+        },
+        {
+          "p": "231769777",
+          "e": 1
+        },
+        {
+          "p": "616318177",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 150,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "251",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "601",
+          "e": 1
+        },
+        {
+          "p": "1801",
+          "e": 1
+        },
+        {
+          "p": "4051",
+          "e": 1
+        },
+        {
+          "p": "100801",
+          "e": 1
+        },
+        {
+          "p": "10567201",
+          "e": 1
+        },
+        {
+          "p": "1133836730401",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 152,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "229",
+          "e": 1
+        },
+        {
+          "p": "457",
+          "e": 1
+        },
+        {
+          "p": "1217",
+          "e": 1
+        },
+        {
+          "p": "148961",
+          "e": 1
+        },
+        {
+          "p": "174763",
+          "e": 1
+        },
+        {
+          "p": "524287",
+          "e": 1
+        },
+        {
+          "p": "525313",
+          "e": 1
+        },
+        {
+          "p": "24517014940753",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 154,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "617",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "78233",
+          "e": 1
+        },
+        {
+          "p": "35532364099",
+          "e": 1
+        },
+        {
+          "p": "581283643249112959",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 156,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 2
+        },
+        {
+          "p": "53",
+          "e": 1
+        },
+        {
+          "p": "79",
+          "e": 1
+        },
+        {
+          "p": "157",
+          "e": 1
+        },
+        {
+          "p": "313",
+          "e": 1
+        },
+        {
+          "p": "1249",
+          "e": 1
+        },
+        {
+          "p": "1613",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "3121",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "21841",
+          "e": 1
+        },
+        {
+          "p": "121369",
+          "e": 1
+        },
+        {
+          "p": "22366891",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 158,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "2687",
+          "e": 1
+        },
+        {
+          "p": "202029703",
+          "e": 1
+        },
+        {
+          "p": "1113491139767",
+          "e": 1
+        },
+        {
+          "p": "201487636602438195784363",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 160,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "61681",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "414721",
+          "e": 1
+        },
+        {
+          "p": "4278255361",
+          "e": 1
+        },
+        {
+          "p": "44479210368001",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 162,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 5
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "163",
+          "e": 1
+        },
+        {
+          "p": "2593",
+          "e": 1
+        },
+        {
+          "p": "71119",
+          "e": 1
+        },
+        {
+          "p": "87211",
+          "e": 1
+        },
+        {
+          "p": "135433",
+          "e": 1
+        },
+        {
+          "p": "262657",
+          "e": 1
+        },
+        {
+          "p": "97685839",
+          "e": 1
+        },
+        {
+          "p": "272010961",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 164,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "83",
+          "e": 1
+        },
+        {
+          "p": "10169",
+          "e": 1
+        },
+        {
+          "p": "13367",
+          "e": 1
+        },
+        {
+          "p": "181549",
+          "e": 1
+        },
+        {
+          "p": "12112549",
+          "e": 1
+        },
+        {
+          "p": "43249589",
+          "e": 1
+        },
+        {
+          "p": "164511353",
+          "e": 1
+        },
+        {
+          "p": "8831418697",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 166,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "167",
+          "e": 1
+        },
+        {
+          "p": "499",
+          "e": 1
+        },
+        {
+          "p": "1163",
+          "e": 1
+        },
+        {
+          "p": "2657",
+          "e": 1
+        },
+        {
+          "p": "155377",
+          "e": 1
+        },
+        {
+          "p": "13455809771",
+          "e": 1
+        },
+        {
+          "p": "57912614113275649087721",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 168,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 2
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "337",
+          "e": 1
+        },
+        {
+          "p": "1429",
+          "e": 1
+        },
+        {
+          "p": "3361",
+          "e": 1
+        },
+        {
+          "p": "5419",
+          "e": 1
+        },
+        {
+          "p": "14449",
+          "e": 1
+        },
+        {
+          "p": "15790321",
+          "e": 1
+        },
+        {
+          "p": "88959882481",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 170,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        },
+        {
+          "p": "9520972806333758431",
+          "e": 1
+        },
+        {
+          "p": "26831423036065352611",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 172,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "173",
+          "e": 1
+        },
+        {
+          "p": "431",
+          "e": 1
+        },
+        {
+          "p": "9719",
+          "e": 1
+        },
+        {
+          "p": "101653",
+          "e": 1
+        },
+        {
+          "p": "500177",
+          "e": 1
+        },
+        {
+          "p": "2099863",
+          "e": 1
+        },
+        {
+          "p": "1759217765581",
+          "e": 1
+        },
+        {
+          "p": "2932031007403",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 174,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "59",
+          "e": 1
+        },
+        {
+          "p": "233",
+          "e": 1
+        },
+        {
+          "p": "1103",
+          "e": 1
+        },
+        {
+          "p": "2089",
+          "e": 1
+        },
+        {
+          "p": "4177",
+          "e": 1
+        },
+        {
+          "p": "3033169",
+          "e": 1
+        },
+        {
+          "p": "9857737155463",
+          "e": 1
+        },
+        {
+          "p": "96076791871613611",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 176,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "353",
+          "e": 1
+        },
+        {
+          "p": "397",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "2113",
+          "e": 1
+        },
+        {
+          "p": "229153",
+          "e": 1
+        },
+        {
+          "p": "119782433",
+          "e": 1
+        },
+        {
+          "p": "2931542417",
+          "e": 1
+        },
+        {
+          "p": "43872038849",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 178,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "179",
+          "e": 1
+        },
+        {
+          "p": "62020897",
+          "e": 1
+        },
+        {
+          "p": "18584774046020617",
+          "e": 1
+        },
+        {
+          "p": "618970019642690137449562111",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 180,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "61",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "181",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "631",
+          "e": 1
+        },
+        {
+          "p": "1321",
+          "e": 1
+        },
+        {
+          "p": "23311",
+          "e": 1
+        },
+        {
+          "p": "54001",
+          "e": 1
+        },
+        {
+          "p": "18837001",
+          "e": 1
+        },
+        {
+          "p": "29247661",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 182,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "911",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "224771",
+          "e": 1
+        },
+        {
+          "p": "1210483",
+          "e": 1
+        },
+        {
+          "p": "112901153",
+          "e": 1
+        },
+        {
+          "p": "23140471537",
+          "e": 1
+        },
+        {
+          "p": "25829691707",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 184,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "47",
+          "e": 1
+        },
+        {
+          "p": "277",
+          "e": 1
+        },
+        {
+          "p": "1013",
+          "e": 1
+        },
+        {
+          "p": "1657",
+          "e": 1
+        },
+        {
+          "p": "30269",
+          "e": 1
+        },
+        {
+          "p": "178481",
+          "e": 1
+        },
+        {
+          "p": "2796203",
+          "e": 1
+        },
+        {
+          "p": "291280009243618888211558641",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 186,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "529510939",
+          "e": 1
+        },
+        {
+          "p": "715827883",
+          "e": 1
+        },
+        {
+          "p": "2147483647",
+          "e": 1
+        },
+        {
+          "p": "2903110321",
+          "e": 1
+        },
+        {
+          "p": "658812288653553079",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 188,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "283",
+          "e": 1
+        },
+        {
+          "p": "2351",
+          "e": 1
+        },
+        {
+          "p": "3761",
+          "e": 1
+        },
+        {
+          "p": "4513",
+          "e": 1
+        },
+        {
+          "p": "13264529",
+          "e": 1
+        },
+        {
+          "p": "7484047069",
+          "e": 1
+        },
+        {
+          "p": "165768537521",
+          "e": 1
+        },
+        {
+          "p": "140737471578113",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 190,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "191",
+          "e": 1
+        },
+        {
+          "p": "2281",
+          "e": 1
+        },
+        {
+          "p": "174763",
+          "e": 1
+        },
+        {
+          "p": "524287",
+          "e": 1
+        },
+        {
+          "p": "420778751",
+          "e": 1
+        },
+        {
+          "p": "30327152671",
+          "e": 1
+        },
+        {
+          "p": "3011347479614249131",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 192,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "97",
+          "e": 1
+        },
+        {
+          "p": "193",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "641",
+          "e": 1
+        },
+        {
+          "p": "673",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "6700417",
+          "e": 1
+        },
+        {
+          "p": "22253377",
+          "e": 1
+        },
+        {
+          "p": "18446744069414584321",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 194,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "971",
+          "e": 1
+        },
+        {
+          "p": "1553",
+          "e": 1
+        },
+        {
+          "p": "11447",
+          "e": 1
+        },
+        {
+          "p": "31817",
+          "e": 1
+        },
+        {
+          "p": "1100876018364883721",
+          "e": 1
+        },
+        {
+          "p": "13842607235828485645766393",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 196,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "197",
+          "e": 1
+        },
+        {
+          "p": "19707683773",
+          "e": 1
+        },
+        {
+          "p": "4363953127297",
+          "e": 1
+        },
+        {
+          "p": "4432676798593",
+          "e": 1
+        },
+        {
+          "p": "4981857697937",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 198,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "67",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "199",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "5347",
+          "e": 1
+        },
+        {
+          "p": "20857",
+          "e": 1
+        },
+        {
+          "p": "153649",
+          "e": 1
+        },
+        {
+          "p": "599479",
+          "e": 1
+        },
+        {
+          "p": "33057806959",
+          "e": 1
+        },
+        {
+          "p": "242099935645987",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 200,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 3
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "101",
+          "e": 1
+        },
+        {
+          "p": "251",
+          "e": 1
+        },
+        {
+          "p": "401",
+          "e": 1
+        },
+        {
+          "p": "601",
+          "e": 1
+        },
+        {
+          "p": "1801",
+          "e": 1
+        },
+        {
+          "p": "4051",
+          "e": 1
+        },
+        {
+          "p": "8101",
+          "e": 1
+        },
+        {
+          "p": "61681",
+          "e": 1
+        },
+        {
+          "p": "268501",
+          "e": 1
+        },
+        {
+          "p": "340801",
+          "e": 1
+        },
+        {
+          "p": "2787601",
+          "e": 1
+        },
+        {
+          "p": "3173389601",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 202,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "7432339208719",
+          "e": 1
+        },
+        {
+          "p": "341117531003194129",
+          "e": 1
+        },
+        {
+          "p": "845100400152152934331135470251",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 204,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "103",
+          "e": 1
+        },
+        {
+          "p": "137",
+          "e": 1
+        },
+        {
+          "p": "307",
+          "e": 1
+        },
+        {
+          "p": "409",
+          "e": 1
+        },
+        {
+          "p": "953",
+          "e": 1
+        },
+        {
+          "p": "2143",
+          "e": 1
+        },
+        {
+          "p": "2857",
+          "e": 1
+        },
+        {
+          "p": "3061",
+          "e": 1
+        },
+        {
+          "p": "6529",
+          "e": 1
+        },
+        {
+          "p": "11119",
+          "e": 1
+        },
+        {
+          "p": "13669",
+          "e": 1
+        },
+        {
+          "p": "26317",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        },
+        {
+          "p": "1326700741",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 206,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "2550183799",
+          "e": 1
+        },
+        {
+          "p": "415141630193",
+          "e": 1
+        },
+        {
+          "p": "8142767081771726171",
+          "e": 1
+        },
+        {
+          "p": "3976656429941438590393",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 208,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "53",
+          "e": 1
+        },
+        {
+          "p": "157",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "1613",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "858001",
+          "e": 1
+        },
+        {
+          "p": "308761441",
+          "e": 1
+        },
+        {
+          "p": "78919881726271091143763623681",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 210,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "71",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "211",
+          "e": 1
+        },
+        {
+          "p": "281",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "337",
+          "e": 1
+        },
+        {
+          "p": "5419",
+          "e": 1
+        },
+        {
+          "p": "29191",
+          "e": 1
+        },
+        {
+          "p": "86171",
+          "e": 1
+        },
+        {
+          "p": "106681",
+          "e": 1
+        },
+        {
+          "p": "122921",
+          "e": 1
+        },
+        {
+          "p": "152041",
+          "e": 1
+        },
+        {
+          "p": "664441",
+          "e": 1
+        },
+        {
+          "p": "1564921",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 212,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "107",
+          "e": 1
+        },
+        {
+          "p": "6361",
+          "e": 1
+        },
+        {
+          "p": "69431",
+          "e": 1
+        },
+        {
+          "p": "15358129",
+          "e": 1
+        },
+        {
+          "p": "20394401",
+          "e": 1
+        },
+        {
+          "p": "586477649",
+          "e": 1
+        },
+        {
+          "p": "28059810762433",
+          "e": 1
+        },
+        {
+          "p": "1801439824104653",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 214,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "643",
+          "e": 1
+        },
+        {
+          "p": "84115747449047881488635567801",
+          "e": 1
+        },
+        {
+          "p": "162259276829213363391578010288127",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 216,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 4
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "433",
+          "e": 1
+        },
+        {
+          "p": "38737",
+          "e": 1
+        },
+        {
+          "p": "87211",
+          "e": 1
+        },
+        {
+          "p": "246241",
+          "e": 1
+        },
+        {
+          "p": "262657",
+          "e": 1
+        },
+        {
+          "p": "279073",
+          "e": 1
+        },
+        {
+          "p": "33975937",
+          "e": 1
+        },
+        {
+          "p": "138991501037953",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 218,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "104124649",
+          "e": 1
+        },
+        {
+          "p": "745988807",
+          "e": 1
+        },
+        {
+          "p": "870035986098720987332873",
+          "e": 1
+        },
+        {
+          "p": "2077756847362348863128179",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 220,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 2
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "397",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "881",
+          "e": 1
+        },
+        {
+          "p": "2113",
+          "e": 1
+        },
+        {
+          "p": "2971",
+          "e": 1
+        },
+        {
+          "p": "3191",
+          "e": 1
+        },
+        {
+          "p": "201961",
+          "e": 1
+        },
+        {
+          "p": "48912491",
+          "e": 1
+        },
+        {
+          "p": "415878438361",
+          "e": 1
+        },
+        {
+          "p": "3630105520141",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 222,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "223",
+          "e": 1
+        },
+        {
+          "p": "1777",
+          "e": 1
+        },
+        {
+          "p": "3331",
+          "e": 1
+        },
+        {
+          "p": "17539",
+          "e": 1
+        },
+        {
+          "p": "321679",
+          "e": 1
+        },
+        {
+          "p": "25781083",
+          "e": 1
+        },
+        {
+          "p": "26295457",
+          "e": 1
+        },
+        {
+          "p": "319020217",
+          "e": 1
+        },
+        {
+          "p": "616318177",
+          "e": 1
+        },
+        {
+          "p": "107775231312019",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 224,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "449",
+          "e": 1
+        },
+        {
+          "p": "2689",
+          "e": 1
+        },
+        {
+          "p": "5153",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "15790321",
+          "e": 1
+        },
+        {
+          "p": "183076097",
+          "e": 1
+        },
+        {
+          "p": "54410972897",
+          "e": 1
+        },
+        {
+          "p": "358429848460993",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 226,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "227",
+          "e": 1
+        },
+        {
+          "p": "3391",
+          "e": 1
+        },
+        {
+          "p": "23279",
+          "e": 1
+        },
+        {
+          "p": "48817",
+          "e": 1
+        },
+        {
+          "p": "65993",
+          "e": 1
+        },
+        {
+          "p": "1868569",
+          "e": 1
+        },
+        {
+          "p": "636190001",
+          "e": 1
+        },
+        {
+          "p": "1066818132868207",
+          "e": 1
+        },
+        {
+          "p": "491003369344660409",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 228,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "229",
+          "e": 1
+        },
+        {
+          "p": "457",
+          "e": 1
+        },
+        {
+          "p": "571",
+          "e": 1
+        },
+        {
+          "p": "32377",
+          "e": 1
+        },
+        {
+          "p": "131101",
+          "e": 1
+        },
+        {
+          "p": "160969",
+          "e": 1
+        },
+        {
+          "p": "174763",
+          "e": 1
+        },
+        {
+          "p": "524287",
+          "e": 1
+        },
+        {
+          "p": "525313",
+          "e": 1
+        },
+        {
+          "p": "1212847",
+          "e": 1
+        },
+        {
+          "p": "160465489",
+          "e": 1
+        },
+        {
+          "p": "275415303169",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 230,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "47",
+          "e": 1
+        },
+        {
+          "p": "691",
+          "e": 1
+        },
+        {
+          "p": "14951",
+          "e": 1
+        },
+        {
+          "p": "178481",
+          "e": 1
+        },
+        {
+          "p": "2796203",
+          "e": 1
+        },
+        {
+          "p": "4036961",
+          "e": 1
+        },
+        {
+          "p": "1884103651",
+          "e": 1
+        },
+        {
+          "p": "345767385170491",
+          "e": 1
+        },
+        {
+          "p": "2646507710984041",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 232,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "59",
+          "e": 1
+        },
+        {
+          "p": "233",
+          "e": 1
+        },
+        {
+          "p": "1103",
+          "e": 1
+        },
+        {
+          "p": "2089",
+          "e": 1
+        },
+        {
+          "p": "59393",
+          "e": 1
+        },
+        {
+          "p": "3033169",
+          "e": 1
+        },
+        {
+          "p": "107367629",
+          "e": 1
+        },
+        {
+          "p": "536903681",
+          "e": 1
+        },
+        {
+          "p": "82280195167144119832390568177",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 234,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "79",
+          "e": 1
+        },
+        {
+          "p": "937",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "6553",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "86113",
+          "e": 1
+        },
+        {
+          "p": "121369",
+          "e": 1
+        },
+        {
+          "p": "22366891",
+          "e": 1
+        },
+        {
+          "p": "7830118297",
+          "e": 1
+        },
+        {
+          "p": "5302306226370307681801",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 236,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "1181",
+          "e": 1
+        },
+        {
+          "p": "2833",
+          "e": 1
+        },
+        {
+          "p": "3541",
+          "e": 1
+        },
+        {
+          "p": "37171",
+          "e": 1
+        },
+        {
+          "p": "157649",
+          "e": 1
+        },
+        {
+          "p": "174877",
+          "e": 1
+        },
+        {
+          "p": "179951",
+          "e": 1
+        },
+        {
+          "p": "5521693",
+          "e": 1
+        },
+        {
+          "p": "1824726041",
+          "e": 1
+        },
+        {
+          "p": "104399276341",
+          "e": 1
+        },
+        {
+          "p": "3203431780337",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 238,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "239",
+          "e": 1
+        },
+        {
+          "p": "20231",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        },
+        {
+          "p": "823679683",
+          "e": 1
+        },
+        {
+          "p": "62983048367",
+          "e": 1
+        },
+        {
+          "p": "131105292137",
+          "e": 1
+        },
+        {
+          "p": "143162553165560959297",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 240,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "61",
+          "e": 1
+        },
+        {
+          "p": "97",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "673",
+          "e": 1
+        },
+        {
+          "p": "1321",
+          "e": 1
+        },
+        {
+          "p": "61681",
+          "e": 1
+        },
+        {
+          "p": "394783681",
+          "e": 1
+        },
+        {
+          "p": "4278255361",
+          "e": 1
+        },
+        {
+          "p": "4562284561",
+          "e": 1
+        },
+        {
+          "p": "46908728641",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 242,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "727",
+          "e": 1
+        },
+        {
+          "p": "117371",
+          "e": 1
+        },
+        {
+          "p": "11054184582797800455736061107",
+          "e": 1
+        },
+        {
+          "p": "1786393878363164227858270210279",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 244,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "733",
+          "e": 1
+        },
+        {
+          "p": "1709",
+          "e": 1
+        },
+        {
+          "p": "3456749",
+          "e": 1
+        },
+        {
+          "p": "368140581013",
+          "e": 1
+        },
+        {
+          "p": "667055378149",
+          "e": 1
+        },
+        {
+          "p": "768614336404564651",
+          "e": 1
+        },
+        {
+          "p": "2305843009213693951",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 246,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "83",
+          "e": 1
+        },
+        {
+          "p": "739",
+          "e": 1
+        },
+        {
+          "p": "13367",
+          "e": 1
+        },
+        {
+          "p": "165313",
+          "e": 1
+        },
+        {
+          "p": "3887047",
+          "e": 1
+        },
+        {
+          "p": "164511353",
+          "e": 1
+        },
+        {
+          "p": "8831418697",
+          "e": 1
+        },
+        {
+          "p": "13194317913029593",
+          "e": 1
+        },
+        {
+          "p": "177722253954175633",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 248,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "5581",
+          "e": 1
+        },
+        {
+          "p": "8681",
+          "e": 1
+        },
+        {
+          "p": "49477",
+          "e": 1
+        },
+        {
+          "p": "290657",
+          "e": 1
+        },
+        {
+          "p": "384773",
+          "e": 1
+        },
+        {
+          "p": "715827883",
+          "e": 1
+        },
+        {
+          "p": "2147483647",
+          "e": 1
+        },
+        {
+          "p": "3770202641",
+          "e": 1
+        },
+        {
+          "p": "1141629180401976895873",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 250,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "251",
+          "e": 1
+        },
+        {
+          "p": "601",
+          "e": 1
+        },
+        {
+          "p": "1801",
+          "e": 1
+        },
+        {
+          "p": "4051",
+          "e": 1
+        },
+        {
+          "p": "229668251",
+          "e": 1
+        },
+        {
+          "p": "269089806001",
+          "e": 1
+        },
+        {
+          "p": "4710883168879506001",
+          "e": 1
+        },
+        {
+          "p": "5519485418336288303251",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 252,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 2
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "337",
+          "e": 1
+        },
+        {
+          "p": "1429",
+          "e": 1
+        },
+        {
+          "p": "5419",
+          "e": 1
+        },
+        {
+          "p": "14449",
+          "e": 1
+        },
+        {
+          "p": "92737",
+          "e": 1
+        },
+        {
+          "p": "649657",
+          "e": 1
+        },
+        {
+          "p": "40388473189",
+          "e": 1
+        },
+        {
+          "p": "77158673929",
+          "e": 1
+        },
+        {
+          "p": "118750098349",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 254,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "56713727820156410577229101238628035243",
+          "e": 1
+        },
+        {
+          "p": "170141183460469231731687303715884105727",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 256,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "641",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "274177",
+          "e": 1
+        },
+        {
+          "p": "6700417",
+          "e": 1
+        },
+        {
+          "p": "67280421310721",
+          "e": 1
+        },
+        {
+          "p": "59649589127497217",
+          "e": 1
+        },
+        {
+          "p": "5704689200685129054721",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 258,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "431",
+          "e": 1
+        },
+        {
+          "p": "1033",
+          "e": 1
+        },
+        {
+          "p": "9719",
+          "e": 1
+        },
+        {
+          "p": "2099863",
+          "e": 1
+        },
+        {
+          "p": "1591582393",
+          "e": 1
+        },
+        {
+          "p": "2932031007403",
+          "e": 1
+        },
+        {
+          "p": "15686603697451",
+          "e": 1
+        },
+        {
+          "p": "11053036065049294753459639",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 260,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "53",
+          "e": 1
+        },
+        {
+          "p": "131",
+          "e": 1
+        },
+        {
+          "p": "157",
+          "e": 1
+        },
+        {
+          "p": "521",
+          "e": 1
+        },
+        {
+          "p": "1613",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "51481",
+          "e": 1
+        },
+        {
+          "p": "409891",
+          "e": 1
+        },
+        {
+          "p": "7623851",
+          "e": 1
+        },
+        {
+          "p": "34110701",
+          "e": 1
+        },
+        {
+          "p": "108140989558681",
+          "e": 1
+        },
+        {
+          "p": "145295143558111",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 262,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "263",
+          "e": 1
+        },
+        {
+          "p": "1049",
+          "e": 1
+        },
+        {
+          "p": "4744297",
+          "e": 1
+        },
+        {
+          "p": "182331128681207781784391813611",
+          "e": 1
+        },
+        {
+          "p": "10350794431055162386718619237468234569",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 264,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "67",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "353",
+          "e": 1
+        },
+        {
+          "p": "397",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "2113",
+          "e": 1
+        },
+        {
+          "p": "7393",
+          "e": 1
+        },
+        {
+          "p": "20857",
+          "e": 1
+        },
+        {
+          "p": "312709",
+          "e": 1
+        },
+        {
+          "p": "599479",
+          "e": 1
+        },
+        {
+          "p": "4327489",
+          "e": 1
+        },
+        {
+          "p": "1761345169",
+          "e": 1
+        },
+        {
+          "p": "2931542417",
+          "e": 1
+        },
+        {
+          "p": "98618273953",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 266,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "4523",
+          "e": 1
+        },
+        {
+          "p": "174763",
+          "e": 1
+        },
+        {
+          "p": "524287",
+          "e": 1
+        },
+        {
+          "p": "106788290443848295284382097033",
+          "e": 1
+        },
+        {
+          "p": "163537220852725398851434325720959",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 268,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "269",
+          "e": 1
+        },
+        {
+          "p": "7327657",
+          "e": 1
+        },
+        {
+          "p": "15152453",
+          "e": 1
+        },
+        {
+          "p": "42875177",
+          "e": 1
+        },
+        {
+          "p": "193707721",
+          "e": 1
+        },
+        {
+          "p": "2559066073",
+          "e": 1
+        },
+        {
+          "p": "761838257287",
+          "e": 1
+        },
+        {
+          "p": "6713103182899",
+          "e": 1
+        },
+        {
+          "p": "9739278030221",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 270,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 4
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "271",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "631",
+          "e": 1
+        },
+        {
+          "p": "811",
+          "e": 1
+        },
+        {
+          "p": "15121",
+          "e": 1
+        },
+        {
+          "p": "23311",
+          "e": 1
+        },
+        {
+          "p": "87211",
+          "e": 1
+        },
+        {
+          "p": "262657",
+          "e": 1
+        },
+        {
+          "p": "348031",
+          "e": 1
+        },
+        {
+          "p": "18837001",
+          "e": 1
+        },
+        {
+          "p": "49971617830801",
+          "e": 1
+        },
+        {
+          "p": "385838642647891",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 272,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 2
+        },
+        {
+          "p": "137",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "953",
+          "e": 1
+        },
+        {
+          "p": "26317",
+          "e": 1
+        },
+        {
+          "p": "43691",
+          "e": 1
+        },
+        {
+          "p": "131071",
+          "e": 1
+        },
+        {
+          "p": "354689",
+          "e": 1
+        },
+        {
+          "p": "383521",
+          "e": 1
+        },
+        {
+          "p": "2368179743873",
+          "e": 1
+        },
+        {
+          "p": "2879347902817",
+          "e": 1
+        },
+        {
+          "p": "373200722470799764577",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 274,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "1097",
+          "e": 1
+        },
+        {
+          "p": "15619",
+          "e": 1
+        },
+        {
+          "p": "32127963626435681",
+          "e": 1
+        },
+        {
+          "p": "105498212027592977",
+          "e": 1
+        },
+        {
+          "p": "32032215596496435569",
+          "e": 1
+        },
+        {
+          "p": "5439042183600204290159",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 276,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "47",
+          "e": 1
+        },
+        {
+          "p": "139",
+          "e": 1
+        },
+        {
+          "p": "277",
+          "e": 1
+        },
+        {
+          "p": "1013",
+          "e": 1
+        },
+        {
+          "p": "1657",
+          "e": 1
+        },
+        {
+          "p": "30269",
+          "e": 1
+        },
+        {
+          "p": "178481",
+          "e": 1
+        },
+        {
+          "p": "2796203",
+          "e": 1
+        },
+        {
+          "p": "168749965921",
+          "e": 1
+        },
+        {
+          "p": "5415624023749",
+          "e": 1
+        },
+        {
+          "p": "10052678938039",
+          "e": 1
+        },
+        {
+          "p": "70334392823809",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 278,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "4506937",
+          "e": 1
+        },
+        {
+          "p": "5625767248687",
+          "e": 1
+        },
+        {
+          "p": "123876132205208335762278423601",
+          "e": 1
+        },
+        {
+          "p": "51542639524661795300074174250365699",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 280,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 2
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "29",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "71",
+          "e": 1
+        },
+        {
+          "p": "113",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "281",
+          "e": 1
+        },
+        {
+          "p": "61681",
+          "e": 1
+        },
+        {
+          "p": "86171",
+          "e": 1
+        },
+        {
+          "p": "122921",
+          "e": 1
+        },
+        {
+          "p": "7416361",
+          "e": 1
+        },
+        {
+          "p": "15790321",
+          "e": 1
+        },
+        {
+          "p": "47392381",
+          "e": 1
+        },
+        {
+          "p": "84179842077657862011867889681",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 282,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "283",
+          "e": 1
+        },
+        {
+          "p": "2351",
+          "e": 1
+        },
+        {
+          "p": "4513",
+          "e": 1
+        },
+        {
+          "p": "1681003",
+          "e": 1
+        },
+        {
+          "p": "13264529",
+          "e": 1
+        },
+        {
+          "p": "4375578271",
+          "e": 1
+        },
+        {
+          "p": "35273039401",
+          "e": 1
+        },
+        {
+          "p": "111349165273",
+          "e": 1
+        },
+        {
+          "p": "165768537521",
+          "e": 1
+        },
+        {
+          "p": "646675035253258729",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 284,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "569",
+          "e": 1
+        },
+        {
+          "p": "228479",
+          "e": 1
+        },
+        {
+          "p": "48544121",
+          "e": 1
+        },
+        {
+          "p": "56409643",
+          "e": 1
+        },
+        {
+          "p": "148587949",
+          "e": 1
+        },
+        {
+          "p": "212885833",
+          "e": 1
+        },
+        {
+          "p": "4999465853",
+          "e": 1
+        },
+        {
+          "p": "5585522857",
+          "e": 1
+        },
+        {
+          "p": "472287102421",
+          "e": 1
+        },
+        {
+          "p": "13952598148481",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 286,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "23",
+          "e": 1
+        },
+        {
+          "p": "89",
+          "e": 1
+        },
+        {
+          "p": "683",
+          "e": 1
+        },
+        {
+          "p": "2003",
+          "e": 1
+        },
+        {
+          "p": "2731",
+          "e": 1
+        },
+        {
+          "p": "8191",
+          "e": 1
+        },
+        {
+          "p": "724153",
+          "e": 1
+        },
+        {
+          "p": "6156182033",
+          "e": 1
+        },
+        {
+          "p": "10425285443",
+          "e": 1
+        },
+        {
+          "p": "158822951431",
+          "e": 1
+        },
+        {
+          "p": "15500487753323",
+          "e": 1
+        },
+        {
+          "p": "5782172113400990737",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 288,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 3
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "19",
+          "e": 1
+        },
+        {
+          "p": "37",
+          "e": 1
+        },
+        {
+          "p": "73",
+          "e": 1
+        },
+        {
+          "p": "97",
+          "e": 1
+        },
+        {
+          "p": "109",
+          "e": 1
+        },
+        {
+          "p": "193",
+          "e": 1
+        },
+        {
+          "p": "241",
+          "e": 1
+        },
+        {
+          "p": "257",
+          "e": 1
+        },
+        {
+          "p": "433",
+          "e": 1
+        },
+        {
+          "p": "577",
+          "e": 1
+        },
+        {
+          "p": "673",
+          "e": 1
+        },
+        {
+          "p": "1153",
+          "e": 1
+        },
+        {
+          "p": "6337",
+          "e": 1
+        },
+        {
+          "p": "38737",
+          "e": 1
+        },
+        {
+          "p": "65537",
+          "e": 1
+        },
+        {
+          "p": "22253377",
+          "e": 1
+        },
+        {
+          "p": "38941695937",
+          "e": 1
+        },
+        {
+          "p": "278452876033",
+          "e": 1
+        },
+        {
+          "p": "487824887233",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 290,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "59",
+          "e": 1
+        },
+        {
+          "p": "233",
+          "e": 1
+        },
+        {
+          "p": "1103",
+          "e": 1
+        },
+        {
+          "p": "2089",
+          "e": 1
+        },
+        {
+          "p": "3033169",
+          "e": 1
+        },
+        {
+          "p": "7553921",
+          "e": 1
+        },
+        {
+          "p": "999802854724715300883845411",
+          "e": 1
+        },
+        {
+          "p": "2679895157783862814690027494144991",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 292,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "293",
+          "e": 1
+        },
+        {
+          "p": "439",
+          "e": 1
+        },
+        {
+          "p": "1753",
+          "e": 1
+        },
+        {
+          "p": "9929",
+          "e": 1
+        },
+        {
+          "p": "2298041",
+          "e": 1
+        },
+        {
+          "p": "9361973132609",
+          "e": 1
+        },
+        {
+          "p": "649301712182209",
+          "e": 1
+        },
+        {
+          "p": "1795918038741070627",
+          "e": 1
+        },
+        {
+          "p": "9444732965601851473921",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 294,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "7",
+          "e": 3
+        },
+        {
+          "p": "43",
+          "e": 1
+        },
+        {
+          "p": "127",
+          "e": 1
+        },
+        {
+          "p": "337",
+          "e": 1
+        },
+        {
+          "p": "5419",
+          "e": 1
+        },
+        {
+          "p": "748819",
+          "e": 1
+        },
+        {
+          "p": "4363953127297",
+          "e": 1
+        },
+        {
+          "p": "4432676798593",
+          "e": 1
+        },
+        {
+          "p": "26032885845392093851",
+          "e": 1
+        },
+        {
+          "p": "2741672362528725535068727",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 296,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "5",
+          "e": 1
+        },
+        {
+          "p": "17",
+          "e": 1
+        },
+        {
+          "p": "149",
+          "e": 1
+        },
+        {
+          "p": "223",
+          "e": 1
+        },
+        {
+          "p": "593",
+          "e": 1
+        },
+        {
+          "p": "1777",
+          "e": 1
+        },
+        {
+          "p": "25781083",
+          "e": 1
+        },
+        {
+          "p": "184481113",
+          "e": 1
+        },
+        {
+          "p": "231769777",
+          "e": 1
+        },
+        {
+          "p": "616318177",
+          "e": 1
+        },
+        {
+          "p": "20988936657440586486151264256610222593863921",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 298,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 1
+        },
+        {
+          "p": "1193",
+          "e": 1
+        },
+        {
+          "p": "650833",
+          "e": 1
+        },
+        {
+          "p": "38369587",
+          "e": 1
+        },
+        {
+          "p": "86656268566282183151",
+          "e": 1
+        },
+        {
+          "p": "8235109336690846723986161",
+          "e": 1
+        },
+        {
+          "p": "7984559573504259856359124657",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    },
+    {
+      "n": 300,
+      "prime_powers": [
+        {
+          "p": "3",
+          "e": 2
+        },
+        {
+          "p": "5",
+          "e": 3
+        },
+        {
+          "p": "7",
+          "e": 1
+        },
+        {
+          "p": "11",
+          "e": 1
+        },
+        {
+          "p": "13",
+          "e": 1
+        },
+        {
+          "p": "31",
+          "e": 1
+        },
+        {
+          "p": "41",
+          "e": 1
+        },
+        {
+          "p": "61",
+          "e": 1
+        },
+        {
+          "p": "101",
+          "e": 1
+        },
+        {
+          "p": "151",
+          "e": 1
+        },
+        {
+          "p": "251",
+          "e": 1
+        },
+        {
+          "p": "331",
+          "e": 1
+        },
+        {
+          "p": "601",
+          "e": 1
+        },
+        {
+          "p": "1201",
+          "e": 1
+        },
+        {
+          "p": "1321",
+          "e": 1
+        },
+        {
+          "p": "1801",
+          "e": 1
+        },
+        {
+          "p": "4051",
+          "e": 1
+        },
+        {
+          "p": "8101",
+          "e": 1
+        },
+        {
+          "p": "63901",
+          "e": 1
+        },
+        {
+          "p": "100801",
+          "e": 1
+        },
+        {
+          "p": "268501",
+          "e": 1
+        },
+        {
+          "p": "10567201",
+          "e": 1
+        },
+        {
+          "p": "13334701",
+          "e": 1
+        },
+        {
+          "p": "1182468601",
+          "e": 1
+        },
+        {
+          "p": "1133836730401",
+          "e": 1
+        }
+      ],
+      "residual": "1"
+    }
+  ]
+}

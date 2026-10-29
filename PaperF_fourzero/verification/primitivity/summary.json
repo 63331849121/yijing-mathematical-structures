@@ -1,0 +1,159 @@
+{
+  "status": "PASS",
+  "python_flint": "0.9.0",
+  "flint": "3.6.0",
+  "factor_degrees": 148,
+  "unique_proven_prime_factors": 484,
+  "largest_prime_bits": 144,
+  "complete_count_degrees": 98,
+  "complete_candidates": 161700,
+  "primitive_total_6_200": 2663,
+  "pure_python_crosscheck_candidates_n_le_24": 220,
+  "extended_first_degrees": 50,
+  "extended_tested_candidates": 5410,
+  "witness_certificates": 148,
+  "metadata_corrections": [
+    {
+      "n": 154,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 23,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 156,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 22,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 158,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 74,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 160,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 19,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 166,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 55,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 168,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 47,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 172,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 6,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 174,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 20,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 176,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 20,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 178,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 31,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 180,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 77,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 186,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 29,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 188,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 83,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 190,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 14,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 192,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 12,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    },
+    {
+      "n": 200,
+      "field": "first_j_i1",
+      "old": null,
+      "corrected": 71,
+      "count_unchanged": true,
+      "first_pair_unchanged": true
+    }
+  ],
+  "seconds": 106.589,
+  "input_sha256": {
+    "_fourzero_factors_6_300.txt": "ad687b92ac5551daf1c3702546e71e5cf514939680884cc1708992c343c46831",
+    "_factordb_2n_minus_1_cache.json": "19feada9e3fe2a91eca1aacc5bc9beddf2e9cbc03a4eedbe0578a5192a6c2304",
+    "_\u56db\u96f6\u56de\u6587\u672c\u539f\u8ba1\u6570_6\u5230200.json": "7d00d97ec70ce386c482f64203b6cafaf9bf3030d5eb1a57ad205530d279dd73",
+    "_\u56db\u96f6\u9996\u89e3_202\u5230250.json": "7835a57246191320706d4645402f7c64f7c19c6f499eac273905c6c4c65fb14e",
+    "_\u56db\u96f6\u9996\u89e3_252\u5230300.json": "146f1ce53d828989e4c3cc0b6bb23ebca32d7d30af8a3481ab266d8b95d86cfa"
+  },
+  "script_sha256": "970fca7f8872116fa1b703ee82d38cb70456d6af1bd43f4bc519899114225e84",
+  "limitations": [
+    "Finite computations do not prove existence in all even degrees.",
+    "FLINT proof decisions are software results, not exported primality certificates or Lean proofs.",
+    "No claim of a new primitivity test or search-complexity improvement."
+  ]
+}

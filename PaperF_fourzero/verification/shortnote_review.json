@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "abstracts_and_submission_forms": true,
+    "references_and_citations": true,
+    "compile_and_page_counts": true,
+    "complete_old_version_and_old_deposit_unchanged": true,
+    "complete_counts_table_and_16_scoped_metadata_corrections": true,
+    "all_148_first_witness_records": true,
+    "retained_frequency_data_consistency": true,
+    "classical_attribution_and_evidence_limits": true
+  },
+  "source_sha256": "044354d73dafab416045c81609f1f700ebe48562981ba767e5b37a1444c4b214",
+  "pdf_sha256": "64d735246198f61b20a831da8a8fd5d71f9fce2a8bc26a47e231582751f7c27c",
+  "pages": 7,
+  "preserved_old_pages": 17,
+  "preserved_old_files": 38,
+  "visual_review": "All seven rendered pages inspected; final amended page 4 inspected again.",
+  "scope": "Artifact consistency and supplied records; full arithmetic run is documented separately."
+}

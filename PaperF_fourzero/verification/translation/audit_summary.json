@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "scope": "Bounded computational checks; all-degree statements rely on the separate paper proofs.",
+  "software": {
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "dependencies": "Python standard library only"
+  },
+  "script_sha256": "7dd9bbc0d4b7265dcc3a60a27aeba3c045e108ad04d9377607d60d87d43580c9",
+  "factor_certificate_provenance": {
+    "origin": "Stored FLINT factorization records from the translation exploration audit dated 2026-10-29.",
+    "operation_in_this_run": "Independent bit-arithmetic Rabin checks and exact product reconstruction; no factorization software was run.",
+    "embedded_certificates": true
+  },
+  "counts": {
+    "fourzero_candidates_6_to_256": 341376,
+    "direct_horner_candidates_6_to_64": 4960,
+    "general_tail_palindromes_2_to_20": 1023,
+    "general_translation_invariant": 7,
+    "zero_parity_bridge_checks": 6,
+    "zero_multiple_of_four_reducibility_checks": 3,
+    "quadratic_map_input_checks": 672,
+    "full_degree_invariance_checks": 448,
+    "AS_criterion_degrees_2_to_8": 508,
+    "irreducible_factor_certificates": 17,
+    "factor_products_verified": 8
+  },
+  "quadratic_maps_total": 24,
+  "quadratic_maps_by_branch": {
+    "inseparable": 6,
+    "(0, 1, 1)": 6,
+    "(1, 0, 1)": 6,
+    "(1, 1, 0)": 6
+  },
+  "four_translation_shapes": [
+    {
+      "n": 14,
+      "i": 3,
+      "j": 4,
+      "f_hex": "0x79e7",
+      "h_hex": "0xa3",
+      "h_exponents": [
+        7,
+        5,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0x7",
+          "degree": 2,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x1321",
+          "degree": 12,
+          "multiplicity": 1
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0x3",
+          "degree": 1,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x61",
+          "degree": 6,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "i": 5,
+      "j": 9,
+      "f_hex": "0x7eeffddf",
+      "h_hex": "0x91eb",
+      "h_exponents": [
+        15,
+        12,
+        8,
+        7,
+        6,
+        5,
+        3,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0x1333",
+          "degree": 12,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x77fe5",
+          "degree": 18,
+          "multiplicity": 1
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0x67",
+          "degree": 6,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x3b5",
+          "degree": 9,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "i": 5,
+      "j": 12,
+      "f_hex": "0x7efdefdf",
+      "h_hex": "0x97eb",
+      "h_exponents": [
+        15,
+        12,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        3,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0x6d",
+          "degree": 6,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x17b7c0b",
+          "degree": 24,
+          "multiplicity": 1
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0xd",
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x1e2f",
+          "degree": 12,
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "i": 9,
+      "j": 12,
+      "f_hex": "0x7fededff",
+      "h_hex": "0x868b",
+      "h_exponents": [
+        15,
+        10,
+        9,
+        7,
+        3,
+        1,
+        0
+      ],
+      "h_subleading": 0,
+      "f_irreducible": false,
+      "f_factors": [
+        {
+          "hex": "0xd5",
+          "degree": 7,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0xbf",
+          "degree": 7,
+          "multiplicity": 1
+        },
+        {
+          "hex": "0x17b",
+          "degree": 8,
+          "multiplicity": 2
+        }
+      ],
+      "h_factors": [
+        {
+          "hex": "0x1f",
+          "degree": 4,
+          "multiplicity": 2
+        },
+        {
+          "hex": "0xa7",
+          "degree": 7,
+          "multiplicity": 1
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Finite checks do not prove the all-degree classification.",
+    "No new primitive-existence search is performed.",
+    "No Lean verification or global-priority claim."
+  ]
+}

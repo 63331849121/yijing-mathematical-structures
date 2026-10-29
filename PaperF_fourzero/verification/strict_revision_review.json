@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "sylvester_rank_checks": 1140,
+  "integer_gcd_full_multiplicity_checks": 11174,
+  "finite_population_fraction_checks": 20298,
+  "sample_nontrivial_integer_gcds": [
+    {
+      "n": 6,
+      "i": 1,
+      "gcd": 9
+    },
+    {
+      "n": 10,
+      "i": 2,
+      "gcd": 33
+    },
+    {
+      "n": 12,
+      "i": 1,
+      "gcd": 9
+    },
+    {
+      "n": 12,
+      "i": 4,
+      "gcd": 9
+    },
+    {
+      "n": 14,
+      "i": 3,
+      "gcd": 129
+    }
+  ],
+  "retained_count_table_rows_checked": 11,
+  "old_count_total": 2663,
+  "all_labels_and_citations_resolve_in_source": true,
+  "abstract_and_submission_form_consistency": true,
+  "reviewed_tex_sha256": "0cfd2316e6bdd177b9134faff1558e5c12cc1b9690a49a45876b3c65a15cff9b",
+  "proof_review": [
+    "Reciprocity: constant term one and even-degree tail symmetry explicit.",
+    "Binomial gcd: odd N makes S_n squarefree; use lcm, not a product with duplicate roots.",
+    "Infinite family: m odd, m>=3; both factors nonconstant and legal positions.",
+    "Position count: zero coordinates removed before a free action of order eight.",
+    "Endpoint class 1 removed with (Schemmel_2(N)-1)/2 neighbors.",
+    "Finite-population identity is universal and supplies no arithmetic dependence.",
+    "Integer gcd proof works modulo the whole gcd, preserving prime-power multiplicities."
+  ]
+}
