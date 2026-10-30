@@ -1,0 +1,72 @@
+[
+  {
+    "n": 4,
+    "unknowns": 20,
+    "rank": 14,
+    "kernel_binary_dimension": 6,
+    "coboundary_binary_dimension": 4,
+    "quotient_F4_dimension": 1,
+    "file": "n4_rank_certificate.json",
+    "sha256": "e07948ba93ea9b0b20c0294e84a290d4c0477e6a9a90b8384990151df2e3dbbb"
+  },
+  {
+    "n": 6,
+    "unknowns": 42,
+    "rank": 30,
+    "kernel_binary_dimension": 12,
+    "coboundary_binary_dimension": 8,
+    "quotient_F4_dimension": 2,
+    "file": "n6_rank_certificate.json",
+    "sha256": "ee9b1979bcaa372de40b63bc0f7fad507503e5c64f4e479c5e869d7c3eb677d2"
+  },
+  {
+    "n": 8,
+    "unknowns": 72,
+    "rank": 58,
+    "kernel_binary_dimension": 14,
+    "coboundary_binary_dimension": 12,
+    "quotient_F4_dimension": 1,
+    "file": "n8_rank_certificate.json",
+    "sha256": "84cb895ef655c5509d0a4489e3f2f5755a860db158ccb7d8bfadbc7617abf609"
+  },
+  {
+    "n": 10,
+    "unknowns": 110,
+    "rank": 92,
+    "kernel_binary_dimension": 18,
+    "coboundary_binary_dimension": 16,
+    "quotient_F4_dimension": 1,
+    "file": "n10_rank_certificate.json",
+    "sha256": "60189cd20e950aa5c36bc24905a99506fd8ec476a207a7de6f8f591301163c83"
+  },
+  {
+    "n": 12,
+    "unknowns": 156,
+    "rank": 132,
+    "kernel_binary_dimension": 24,
+    "coboundary_binary_dimension": 20,
+    "quotient_F4_dimension": 2,
+    "file": "n12_rank_certificate.json",
+    "sha256": "c995e089739fff7b91352567269629f2b10b2036f2381222ac2bacc36fcf130c"
+  },
+  {
+    "n": 14,
+    "unknowns": 210,
+    "rank": 184,
+    "kernel_binary_dimension": 26,
+    "coboundary_binary_dimension": 24,
+    "quotient_F4_dimension": 1,
+    "file": "n14_rank_certificate.json",
+    "sha256": "c9a65f70810b5842c55401ca4d0fb369616707c41752834da5ffc760b230a83c"
+  },
+  {
+    "n": 16,
+    "unknowns": 272,
+    "rank": 244,
+    "kernel_binary_dimension": 28,
+    "coboundary_binary_dimension": 28,
+    "quotient_F4_dimension": 0,
+    "file": "n16_rank_certificate.json",
+    "sha256": "2a84ec2d1653f7effe52964f9fa2433fa42c921d09590967167d9978ffd1d967"
+  }
+]

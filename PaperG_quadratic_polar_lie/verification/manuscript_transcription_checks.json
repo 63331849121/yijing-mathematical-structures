@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "chain_records": [
+    {
+      "n": 4,
+      "status": "PASS",
+      "center_dimension": 4,
+      "lower_central_dimensions": [
+        4,
+        0
+      ],
+      "second_derived_dimension": 0,
+      "formula_matches_certificate": true
+    },
+    {
+      "n": 6,
+      "status": "PASS",
+      "center_dimension": 2,
+      "lower_central_dimensions": [
+        6,
+        2,
+        0
+      ],
+      "second_derived_dimension": 0,
+      "formula_matches_certificate": true
+    },
+    {
+      "n": 8,
+      "status": "PASS",
+      "center_dimension": 2,
+      "lower_central_dimensions": [
+        8,
+        4,
+        2,
+        0
+      ],
+      "second_derived_dimension": 0,
+      "formula_matches_certificate": true
+    },
+    {
+      "n": 10,
+      "status": "PASS",
+      "center_dimension": 4,
+      "lower_central_dimensions": [
+        10,
+        6,
+        4,
+        0
+      ],
+      "second_derived_dimension": 0,
+      "formula_matches_certificate": true
+    },
+    {
+      "n": 12,
+      "status": "PASS",
+      "center_dimension": 2,
+      "lower_central_dimensions": [
+        12,
+        8,
+        6,
+        2,
+        0
+      ],
+      "second_derived_dimension": 0,
+      "formula_matches_certificate": true
+    },
+    {
+      "n": 14,
+      "status": "PASS",
+      "center_dimension": 2,
+      "lower_central_dimensions": [
+        14,
+        10,
+        8,
+        4,
+        2,
+        0
+      ],
+      "second_derived_dimension": 2,
+      "formula_matches_certificate": true
+    },
+    {
+      "n": 16,
+      "status": "PASS",
+      "center_dimension": 4,
+      "lower_central_dimensions": [
+        16,
+        12,
+        10,
+        6,
+        4,
+        0
+      ],
+      "second_derived_dimension": 4,
+      "formula_matches_certificate": true
+    }
+  ],
+  "projective_orbit_records": [
+    {
+      "n": 6,
+      "automorphism": "swap",
+      "status": "PASS"
+    },
+    {
+      "n": 6,
+      "automorphism": "shear",
+      "status": "PASS"
+    },
+    {
+      "n": 6,
+      "automorphism": "diagonal2",
+      "status": "PASS"
+    },
+    {
+      "n": 6,
+      "automorphism": "diagonal3",
+      "status": "PASS"
+    },
+    {
+      "n": 12,
+      "automorphism": "swap",
+      "status": "PASS"
+    },
+    {
+      "n": 12,
+      "automorphism": "shear",
+      "status": "PASS"
+    },
+    {
+      "n": 12,
+      "automorphism": "diagonal2",
+      "status": "PASS"
+    },
+    {
+      "n": 12,
+      "automorphism": "diagonal3",
+      "status": "PASS"
+    }
+  ],
+  "method": "Exact degree-two or degree-four Boolean coefficient recovery",
+  "not_Lean_formalization": true
+}

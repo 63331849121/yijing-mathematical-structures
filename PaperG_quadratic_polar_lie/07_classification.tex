@@ -1,0 +1,315 @@
+\section{Two closed classification ranges}
+\label{sec:classification}
+
+The polar framework supports two complementary classification questions:
+fix the ambient dimension, or fix the abelianization while allowing the
+ambient dimension to grow. The first application combines simple-algebra
+obstructions with the metabelian correspondence to close dimension eight.
+The second uses central descent and exact extension spaces to close the
+entire solvable abelianization-four stratum. Its last two members are
+nonmetabelian, so the extension method also reaches beyond the
+correspondence of Section~\ref{sec:metabelian}.
+
+\subsection{Obstructions to simple polar algebras}
+
+The simple reduction in Corollary~\ref{cor:simple-reduction} can be
+combined with two explicit obstructions.
+
+\begin{proposition}\label{prop:matrix-obstruction}
+No polar algebra has a Lie subquotient isomorphic to the underlying
+binary Lie algebra of \(\mathfrak{sl}_3(K)\), for a finite field \(K\)
+of characteristic two. In particular it cannot be
+\(\mathfrak{sl}_m(K)\) or \(\mathfrak{psl}_m(K)\), \(m\ge3\).
+\end{proposition}
+\begin{proof}
+In \(\mathfrak{sl}_3(K)\), take
+\(a=E_{12},b=E_{23},c=E_{31},d=E_{11}+E_{22}\).
+The three terms in \eqref{eq:four-variable} are
+\(E_{11}+E_{33},E_{22}+E_{33},0\), whose sum is nonzero.
+A polynomial identity passes to subalgebras and quotients.
+The upper \(3\times3\) block gives the required subalgebra in
+\(\mathfrak{sl}_m(K)\). For \(m\ge4\) it also embeds in the quotient
+by scalar matrices, since the block intersects that center trivially.
+For \(m=3\) the center is zero.
+\end{proof}
+
+\begin{lemma}[Two centralizers]\label{lem:two-centralizers}
+Let \(L\) be a Lie algebra over a characteristic-two field \(K\).
+If \(x,y\in L\) satisfy
+\[
+ C_L(x)=Kx,\qquad C_L(x+y)=K(x+y),\qquad
+ [y,[x,y]]\notin K[x,y],
+\]
+then there is no zero-constant binary-quadratic map with polar bracket
+\([\ ,\ ]\) satisfying \([v,f(v)]=0\) for all \(v\).
+\end{lemma}
+\begin{proof}
+The commuting condition forces
+\(f(x)=\alpha x\), \(f(x+y)=\beta(x+y)\), for some \(\alpha,\beta\in K\).
+Polarization then gives
+\(f(y)=(\alpha+\beta)x+\beta y+[x,y]\).
+Commuting this value with \(y\) contradicts the third hypothesis.
+No \(K\)-linearity of \(f\) is used.
+\end{proof}
+
+\begin{proposition}\label{prop:Witt-obstruction}
+For every finite characteristic-two field \(K\) and \(r\ge2\), the
+derived divided-power Witt algebra \(W(1;r)'\) over \(K\), viewed over
+\(\F_2\), is not a polar algebra of a quadratic solution.
+\end{proposition}
+\begin{proof}
+Use the classical divided-power algebra \(A=O(1;r)\), with basis
+\(x^{(a)}\), \(0\le a<2^r\), and multiplication
+\[
+ x^{(a)}x^{(b)}=\binom{a+b}{a}x^{(a+b)}
+\]
+when \(a+b<2^r\), and zero otherwise. Let
+\(D(x^{(a)})=x^{(a-1)}\), with \(D(1)=0\).
+Then \(\ker D=K\), and
+\(W(1;r)'=\Span_K\{x^{(a)}D:0\le a\le2^r-2\}\);
+see~\cite[Section~4.5]{LopatkinZusmanovich2019}.
+
+If \(u\) is a unit of \(A\), a commuting vector \(vD\) satisfies
+\(u^2D(v/u)=0\), so \(C_{AD}(uD)=KuD\).
+Choose \(x=D,y=x^{(2)}D\). Both \(1\) and \(1+x^{(2)}\) are units,
+so the first two hypotheses of Lemma~\ref{lem:two-centralizers} hold
+also inside \(W(1;r)'\). Finally
+\[
+ [x,y]=x^{(1)}D,\qquad [y,[x,y]]=x^{(2)}D,
+\]
+because \((x^{(1)})^2=0\). These are \(K\)-independent.
+\end{proof}
+
+\subsection{All eight-dimensional solutions}
+
+\begin{theorem}\label{thm:dimension-eight}
+In binary dimension eight there are exactly three linear-conjugacy
+classes of quadratic solutions. Representatives on \(\F_4^4\) are
+\begin{align*}
+ L(a,b,c,d)&=(\omega a,\omega b,\omega c,\omega d),\\
+ C(a,b,c,d)&=(\omega a,\omega b,\omega c,\omega d+ab),\\
+ N(a,b,y,z)&=(\omega a,\omega b,\omega y+az+a^2b,\omega z+ab).
+\end{align*}
+Their polar-image dimensions are \(0,2,4\), their center dimensions
+are \(8,4,2\), and their classes are \(1,2,3\), respectively.
+\end{theorem}
+\begin{proof}
+We first exclude nonsolvable polar algebras in every binary dimension
+at most eight. Corollary~\ref{cor:simple-reduction} would give an
+even-dimensional nonabelian simple polar algebra of dimension at most
+eight. The classical lists of Strade~\cite{Strade2006} and
+Vaughan-Lee~\cite[Theorem~1]{VaughanLee2006} leave the six-dimensional
+algebra obtained from \(W(1;2)'\) over \(\F_4\), and the two
+eight-dimensional simple types over \(\F_2\).
+The first is excluded by Proposition~\ref{prop:Witt-obstruction}.
+
+For the other two, use the published bases \(b_1,\ldots,b_8\) in
+the two tables of~\cite[Section~3.6]{LieAlgDB}.
+The three terms of \eqref{eq:four-variable}, at
+\((b_1,b_2,b_3,b_4)\), are as follows:
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Type&\([[b_1,b_2],[b_3,b_4]]\)&
+\([[b_1,b_3],[b_2,b_4]]\)&\([[b_1,b_4],[b_2,b_3]]\)\\
+\midrule
+First&\(0\)&\(0\)&\(b_8\)\\
+Second&\(b_2+b_3+b_4\)&\(b_2+b_3\)&\(b_2+b_4\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+Both sums are nonzero. The list is an external classification input;
+these short evaluations supply the equation-specific exclusions.
+
+Thus all polar algebras in the stated dimensions are nilpotent by
+Theorem~\ref{thm:solvable-nilpotent}. A nonabelian nilpotent polar
+algebra has dimension at least six, by
+Lemma~\ref{lem:two-generators} and parity of its nonzero derived ideal.
+In dimension eight its derived ideal has dimension at most four and
+is therefore abelian. The metabelian correspondence applies.
+
+If \(W=0\), there is the single linear class.
+If \(\dim_{\F_4}W=1\), all square-zero actions vanish; the cocycle
+is an alternating scalar form on \(\F_4^3\). Its nonzero rank is two,
+giving \(C\).
+If \(\dim_{\F_4}W=2\), the quotient has dimension two.
+A zero action could not generate \(W\) from its single alternating
+coefficient. For a nonzero square-zero action \(P_1\), its commuting
+square-zero partners are scalar multiples of it. Change quotient basis
+so \(P_2=0\), and normalize
+\(a_{12}=z,P_1z=y,P_1y=0\). This gives \(N\).
+The displayed intrinsic dimensions distinguish the three classes.
+\end{proof}
+
+\subsection{Central descent with the smallest nontrivial abelianization}
+
+We now assume solvability and fix \(\dim_{\F_2}(V/W)=4\).
+This fixes the smallest abelianization dimension of a nonabelian
+nilpotent polar algebra. The following theorem closes the stratum in
+all ambient dimensions.
+
+\begin{theorem}[A closed seven-class chain]\label{thm:seven-chain}
+Among solvable polar solutions with binary abelianization dimension four,
+there is exactly one conjugacy class in each of dimensions
+\(4,6,8,10,12,14,16\), and no class in any other dimension.
+Their polar classes are \(1,2,3,3,4,5,5\).
+The extension-space ranks in the proof are exact finite computations,
+certified as described in Appendix~\ref{app:verification}.
+\end{theorem}
+
+The representatives are the successive prefixes of the following map,
+with coordinates ordered as \((a,b,c,d,e,h,r,s)\):
+\begin{equation}\label{eq:seven-coordinates}
+\begin{aligned}
+ a'&=\omega a, &b'&=\omega b,\\
+ c'&=\omega c+ab,\\
+ d'&=\omega d+ac+a^2b,\\
+ e'&=\omega e+bc+ab^2,\\
+ h'&=\omega h+ae+bd,\\
+ r'&=\omega r+A,& A&=ac^2+a^2e+ah+cd,\\
+ s'&=\omega s+B,& B&=bc^2+b^2d+bh+ce.
+\end{aligned}
+\end{equation}
+Each prefix is binary-quadratic. Every new cocycle \(q\) satisfies
+\(q(g(x))=\omega^2q(x)\) for the preceding prefix \(g\), proving
+\eqref{eq:functional} recursively. For the last two expressions this
+follows by substitution; the extra terms cancel in pairs or have
+coefficient \(1+\omega+\omega^2=0\).
+
+\begin{table}[ht]
+\centering
+\caption{Intrinsic invariants of the seven prefixes. All dimensions are binary.}
+\label{tab:chain-invariants}
+\begin{tabular}{@{}rrrrl@{}}
+\toprule
+\(n\)&\(\dim W\)&\(\dim Z\)&Class&Lower central dimensions\\
+\midrule
+4&0&4&1&\((4,0)\)\\
+6&2&2&2&\((6,2,0)\)\\
+8&4&2&3&\((8,4,2,0)\)\\
+10&6&4&3&\((10,6,4,0)\)\\
+12&8&2&4&\((12,8,6,2,0)\)\\
+14&10&2&5&\((14,10,8,4,2,0)\)\\
+16&12&4&5&\((16,12,10,6,4,0)\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{proof}[Proof of Theorem~\ref{thm:seven-chain}]
+The proof proceeds from descent to extensions and then to closure.
+Every member descends to the abelian four-dimensional solution.
+At each prefix we compute the complete quadratic extension quotient;
+kernel scalings and quotient automorphisms put all its nonzero vectors
+into a single orbit. This gives a unique next class until the final
+extension quotient vanishes. Descent then turns that last calculation
+into a bound on every ambient dimension.
+
+\emph{Descent.}
+Solvability implies nilpotency. In a nonabelian member of this stratum,
+\(Z(L)\subseteq W\). Otherwise the linear scalar action on \(Z(L)\)
+would give a central invariant \(\F_4\)-line disjoint from \(W\).
+Its quotient would be a nonabelian nilpotent polar algebra with
+binary abelianization dimension two, contradicting
+Lemma~\ref{lem:two-generators}.
+Quotient by any central \(\F_4\)-line in \(W\). The dimension drops
+by two, the abelianization dimension stays four, and a quadratic
+solution is inherited. Repetition ends at the unique abelian
+four-dimensional solution. Every member is therefore reached by
+successive central \(\F_4\)-extensions.
+
+\emph{The complete extension space.}
+For a fixed quotient solution \(g\), every such extension has the form
+\[
+ F(x,z)=(g(x),\omega z+q(x)),\qquad
+ q(g(x))=\omega^2q(x),\quad q(0)=0,
+\]
+where \(q\) is binary-quadratic.
+Let \(E_g\) be this \(\F_4\)-vector space and define
+\begin{equation}\label{eq:extension-quotient}
+ H_g=E_g/\delta\Hom_{\F_2}(V,\F_4),\qquad
+ \delta(t)=t\circ g+\omega t.
+\end{equation}
+This quotient accounts for every binary-linear change of splitting.
+Kernel scalings and quotient automorphisms act by scaling and pullback.
+The zero class splits off a central scalar line and increases the
+binary abelianization dimension to six.
+Conversely, if an extension has its new line disjoint from its derived
+ideal, choose an \(\F_4\)-complement to that line in the abelianization
+and take its inverse image. It is an invariant complement containing
+the derived ideal, so the extension splits and its class in \(H_g\)
+is zero. Thus exactly the nonzero classes remain in our stratum.
+
+\emph{Ranks and representatives.}
+The complete results are in Table~\ref{tab:extension-ranks}.
+The equation for \(q\) has binary degree at most four, so values at
+inputs of binary weight at most four recover every coefficient by
+Boolean M\"obius inversion. The certificates verify the ranks and
+the spanning of each displayed quotient. The splitting-image dimension
+also follows directly: \(\delta(t)=0\) precisely for the linear
+maps \(t\) that annihilate \(W\) and intertwine the intrinsic
+\(\omega\)-actions. This kernel has binary dimension four, so
+\(\dim\im\delta=2n-4\).
+
+\begin{table}[ht]
+\centering
+\caption{Exact central-extension spaces. Here \(n\) is the dimension of \(g\).}
+\label{tab:extension-ranks}
+\begin{tabular}{@{}rrrrrrl@{}}
+\toprule
+\(n\)&Unknowns&Rank&\(\dim_{\F_2}E_g\)&\(\dim_{\F_2}\im\delta\)&
+\(\dim_{\F_4}H_g\)&Basis of \(H_g\)\\
+\midrule
+4&20&14&6&4&1&\(ab\)\\
+6&42&30&12&8&2&\(ac+a^2b,\ bc+ab^2\)\\
+8&72&58&14&12&1&\(bc+ab^2\)\\
+10&110&92&18&16&1&\(ae+bd\)\\
+12&156&132&24&20&2&\(A,B\)\\
+14&210&184&26&24&1&\(B\)\\
+16&272&244&28&28&0&--\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\emph{Projective orbits.}
+When \(H_g\) is one-dimensional, kernel scalings identify all its
+nonzero classes. There are two two-dimensional cases.
+For \(n=6\), put \(u=ac+a^2b,v=bc+ab^2\).
+The following automorphisms of \(g\) act on their classes by a swap,
+a nontrivial diagonal scaling, and a shear:
+\begin{align*}
+ &(a,b,c)\mapsto(b,a,c),\\
+ &(a,b,c)\mapsto(\lambda a,b,\lambda c),
+       \qquad\lambda\in\F_4^*,\\
+ &(a,b,c)\mapsto(a+b,b,c+b^2).
+\end{align*}
+Their actions are \((u,v)\mapsto(v,u)\),
+\((\lambda^2u,\lambda v)\), and \((u+v,v)\).
+They are transitive on the five projective points of \(\F_4^2\).
+
+For \(n=12\), the corresponding automorphisms are
+\begin{align*}
+ &(a,b,c,d,e,h)\mapsto(b,a,c,e,d,h),\\
+ &(a,b,c,d,e,h)\mapsto
+       (\lambda a,b,\lambda c,\lambda^2d,\lambda e,\lambda^2h),\\
+ &(a,b,c,d,e,h)\mapsto(a+b,b,c+b^2,d+e,e,h).
+\end{align*}
+They send \((A,B)\) to \((B,A)\), \((A,\lambda^2B)\), and
+\((A+B+ab+b^2,B+b^2)\). The extra terms are splitting changes:
+\(ab=\delta(c)\), \(b^2=\delta(b^2)\).
+The projective action is again transitive.
+
+\emph{Closure.}
+Starting with the abelian four-dimensional map, every nonzero extension
+class therefore yields the unique next prefix, through dimension sixteen.
+At that point \(H_g=0\), so no next member exists. Descent rules out
+every higher dimension as well.
+The coordinate brackets give Table~\ref{tab:chain-invariants}.
+Their second derived dimensions in dimensions fourteen and sixteen are
+two and four; these are the two nonmetabelian members.
+\end{proof}
+
+The six-dimensional prefix is the central example already present in
+\cite[Lemma~10.3(1)]{Zhang1998}. General central recursion also appears
+there. The quadratic eigenspaces, linear-conjugacy orbits, and the
+vanishing of the final extension quotient are the ingredients that
+close the present seven-class range.

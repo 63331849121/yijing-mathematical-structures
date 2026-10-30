@@ -1,0 +1,245 @@
+{
+  "n": 6,
+  "field": "F2 with F4 coded omega=2, omega^2=3",
+  "quadratic_input_masks": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    3,
+    5,
+    9,
+    17,
+    33,
+    6,
+    10,
+    18,
+    34,
+    12,
+    20,
+    36,
+    24,
+    40,
+    48
+  ],
+  "quadratic_map_coefficients": [
+    2,
+    3,
+    8,
+    12,
+    32,
+    48,
+    0,
+    16,
+    32,
+    0,
+    0,
+    32,
+    48,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "unknown_count": 42,
+  "degree4_test_points": 56,
+  "claimed_rank": 30,
+  "independent_equations": [
+    {
+      "point": 1,
+      "output_bit": 0,
+      "row_hex": "0x200003"
+    },
+    {
+      "point": 1,
+      "output_bit": 1,
+      "row_hex": "0x400001"
+    },
+    {
+      "point": 2,
+      "output_bit": 0,
+      "row_hex": "0x400041"
+    },
+    {
+      "point": 2,
+      "output_bit": 1,
+      "row_hex": "0x8600002"
+    },
+    {
+      "point": 4,
+      "output_bit": 0,
+      "row_hex": "0x80000c"
+    },
+    {
+      "point": 4,
+      "output_bit": 1,
+      "row_hex": "0x1000004"
+    },
+    {
+      "point": 8,
+      "output_bit": 0,
+      "row_hex": "0x1008004"
+    },
+    {
+      "point": 8,
+      "output_bit": 1,
+      "row_hex": "0x1001800008"
+    },
+    {
+      "point": 16,
+      "output_bit": 0,
+      "row_hex": "0x2000030"
+    },
+    {
+      "point": 16,
+      "output_bit": 1,
+      "row_hex": "0x4000010"
+    },
+    {
+      "point": 32,
+      "output_bit": 0,
+      "row_hex": "0x4100010"
+    },
+    {
+      "point": 32,
+      "output_bit": 1,
+      "row_hex": "0x20006000020"
+    },
+    {
+      "point": 5,
+      "output_bit": 0,
+      "row_hex": "0x10a4309f"
+    },
+    {
+      "point": 5,
+      "output_bit": 1,
+      "row_hex": "0x8603400085"
+    },
+    {
+      "point": 9,
+      "output_bit": 0,
+      "row_hex": "0x212ad927"
+    },
+    {
+      "point": 9,
+      "output_bit": 1,
+      "row_hex": "0x15b05c00109"
+    },
+    {
+      "point": 17,
+      "output_bit": 0,
+      "row_hex": "0x42204233"
+    },
+    {
+      "point": 17,
+      "output_bit": 1,
+      "row_hex": "0x804400211"
+    },
+    {
+      "point": 33,
+      "output_bit": 0,
+      "row_hex": "0x84306413"
+    },
+    {
+      "point": 33,
+      "output_bit": 1,
+      "row_hex": "0x20c06400421"
+    },
+    {
+      "point": 6,
+      "output_bit": 0,
+      "row_hex": "0x100c85d6d"
+    },
+    {
+      "point": 6,
+      "output_bit": 1,
+      "row_hex": "0x10aad600806"
+    },
+    {
+      "point": 10,
+      "output_bit": 0,
+      "row_hex": "0x2015feff5"
+    },
+    {
+      "point": 10,
+      "output_bit": 1,
+      "row_hex": "0x3ffffe0100a"
+    },
+    {
+      "point": 18,
+      "output_bit": 0,
+      "row_hex": "0x402406471"
+    },
+    {
+      "point": 18,
+      "output_bit": 1,
+      "row_hex": "0x88c602012"
+    },
+    {
+      "point": 20,
+      "output_bit": 0,
+      "row_hex": "0x200289003c"
+    },
+    {
+      "point": 20,
+      "output_bit": 1,
+      "row_hex": "0x10005010014"
+    },
+    {
+      "point": 24,
+      "output_bit": 0,
+      "row_hex": "0x80030e8034"
+    },
+    {
+      "point": 24,
+      "output_bit": 1,
+      "row_hex": "0x15005840018"
+    }
+  ],
+  "kernel_basis_hex": [
+    "0x200002",
+    "0x400003",
+    "0x800008",
+    "0x100000c",
+    "0x20010a0",
+    "0x4001930",
+    "0x130001900",
+    "0x210000980",
+    "0x4e0006480",
+    "0x870002700",
+    "0xe0300e1980",
+    "0x12020071100"
+  ],
+  "coboundary_vectors_hex": [
+    "0x200002",
+    "0x600001",
+    "0x400003",
+    "0x200002",
+    "0x800008",
+    "0x1800004",
+    "0x100000c",
+    "0x800008",
+    "0x20010a0",
+    "0x216000010",
+    "0x4001930",
+    "0x322000020"
+  ],
+  "coboundary_rank": 8,
+  "named_quotient_basis": [
+    {
+      "name": "early_a",
+      "vector_hex": "0xda0005a80"
+    },
+    {
+      "name": "early_b",
+      "vector_hex": "0x1c120091180"
+    }
+  ],
+  "quadratic_extension_quotient_F4_dimension": 2
+}

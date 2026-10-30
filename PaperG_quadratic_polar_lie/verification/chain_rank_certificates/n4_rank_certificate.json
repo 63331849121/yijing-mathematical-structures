@@ -1,0 +1,129 @@
+{
+  "n": 4,
+  "field": "F2 with F4 coded omega=2, omega^2=3",
+  "quadratic_input_masks": [
+    1,
+    2,
+    4,
+    8,
+    3,
+    5,
+    9,
+    6,
+    10,
+    12
+  ],
+  "quadratic_map_coefficients": [
+    2,
+    3,
+    8,
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "unknown_count": 20,
+  "degree4_test_points": 15,
+  "claimed_rank": 14,
+  "independent_equations": [
+    {
+      "point": 1,
+      "output_bit": 0,
+      "row_hex": "0x403"
+    },
+    {
+      "point": 1,
+      "output_bit": 1,
+      "row_hex": "0x801"
+    },
+    {
+      "point": 2,
+      "output_bit": 0,
+      "row_hex": "0x811"
+    },
+    {
+      "point": 2,
+      "output_bit": 1,
+      "row_hex": "0x4c02"
+    },
+    {
+      "point": 4,
+      "output_bit": 0,
+      "row_hex": "0x100c"
+    },
+    {
+      "point": 4,
+      "output_bit": 1,
+      "row_hex": "0x2004"
+    },
+    {
+      "point": 8,
+      "output_bit": 0,
+      "row_hex": "0x2204"
+    },
+    {
+      "point": 8,
+      "output_bit": 1,
+      "row_hex": "0x83008"
+    },
+    {
+      "point": 5,
+      "output_bit": 0,
+      "row_hex": "0x952f"
+    },
+    {
+      "point": 5,
+      "output_bit": 1,
+      "row_hex": "0x42825"
+    },
+    {
+      "point": 9,
+      "output_bit": 0,
+      "row_hex": "0x127c7"
+    },
+    {
+      "point": 9,
+      "output_bit": 1,
+      "row_hex": "0xe3849"
+    },
+    {
+      "point": 6,
+      "output_bit": 0,
+      "row_hex": "0x219dd"
+    },
+    {
+      "point": 6,
+      "output_bit": 1,
+      "row_hex": "0x56c86"
+    }
+  ],
+  "kernel_basis_hex": [
+    "0x402",
+    "0x803",
+    "0x1008",
+    "0x200c",
+    "0x381c0",
+    "0x480e0"
+  ],
+  "coboundary_vectors_hex": [
+    "0x402",
+    "0xc01",
+    "0x803",
+    "0x402",
+    "0x1008",
+    "0x3004",
+    "0x200c",
+    "0x1008"
+  ],
+  "coboundary_rank": 4,
+  "named_quotient_basis": [
+    {
+      "name": "ab",
+      "vector_hex": "0x70120"
+    }
+  ],
+  "quadratic_extension_quotient_F4_dimension": 1
+}

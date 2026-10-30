@@ -1,0 +1,71 @@
+\section{Exact certificates for the central-extension ranks}
+\label{app:verification}
+
+This appendix specifies the finite rank proof in
+Theorem~\ref{thm:seven-chain}. The general correspondence and both
+all-class extremal bounds are proved independently in the main text.
+
+\subsection{Encoding and equations}
+
+Use the binary basis \(1,\omega\) of \(\F_4\), with
+\(\omega^2=\omega+1\). For an \(n\)-dimensional binary domain,
+the nonconstant ANF monomials of degree at most two are
+\(x_i\) and \(x_ix_j\), \(i<j\).
+A candidate \(\F_4\)-valued \(q\) therefore has
+\(2(n+\binom n2)=n(n+1)\) binary unknowns.
+The map \(g\) is stored by the binary output vector of each such
+monomial, with the scalar-coordinate order of
+\eqref{eq:seven-coordinates}.
+
+For each binary point \(x\), evaluating
+\(q(g(x))+\omega^2q(x)\) gives two binary rows in these unknowns.
+Their degree is at most four. Requiring all rows at inputs of weights
+one through four is equivalent to requiring the entire function to
+vanish: the value at zero is already zero, and triangular Boolean
+M\"obius inversion recovers every coefficient of degree at most four.
+
+\subsection{What each certificate proves}
+
+For each \(n\in\{4,6,8,10,12,14,16\}\), the supplied certificate contains:
+\begin{enumerate}
+\item the quadratic coefficients of the quotient map and the monomial order;
+\item a stated number of independent rows, each with its originating
+      input point and output bit;
+\item a kernel basis annihilated by every weight-at-most-four row;
+\item the actual vectors \(\delta(t)\) for a basis of binary-linear
+      changes of splitting;
+\item the named representatives of \(H_g\) in
+      Table~\ref{tab:extension-ranks}.
+\end{enumerate}
+The independent checker reconstructs the rows from the stored map,
+checks row independence over \(\F_2\), checks the entire kernel on all
+required inputs, and verifies that row rank plus kernel dimension is
+the number of unknowns. It then reconstructs the splitting-change
+vectors and verifies that their span together with the stated quotient
+representatives is exactly the kernel.
+Thus both the upper and lower rank bounds are certified.
+
+These are exact, reproducible algebraic checks; they are not
+proof-assistant formalizations.
+
+\subsection{Files and replay}
+
+The \path{verification} directory contains the seven certificates,
+their SHA-256 manifest, and three checkers. From the source-project
+directory, run:
+\begin{verbatim}
+cd verification
+python check_chain_rank_certificates.py
+python audit_metabelian_symbolic_interfaces.py
+python manuscript_transcription_checks.py
+\end{verbatim}
+Use Python 3 and, for the first program, SymPy. The rank checker
+authenticates each record, rebuilds the equations from the stored map,
+and uses exact \(\F_2\) linear algebra in SymPy's domain-matrix
+implementation; it imports no generator code. The other programs use
+the standard library: the second checks scalar weights, binary degree,
+and morphism interfaces; the third checks coordinate transcription,
+intrinsic dimensions, and projective actions. Each prints JSON results
+with status \texttt{PASS} and writes reports under \path{verification}.
+Expected ranks and quotient dimensions are in
+Table~\ref{tab:extension-ranks}.

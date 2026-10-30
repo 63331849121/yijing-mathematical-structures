@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Quadratic maps satisfying f composed with f = f + id: polar Lie structure and sharp dimension bounds},pdfauthor={}}
+\renewcommand{\labelenumi}{\textup{(\roman{enumi})}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F}
+\newcommand{\kfour}{\F_4}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\ad}{\operatorname{ad}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ann}{\operatorname{Ann}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\rad}{\operatorname{rad}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\m}{\mathfrak m}
+\DeclareMathOperator{\supp}{supp}
+\title{Quadratic maps satisfying \(f\circ f=f+\id\):\\
+polar Lie structure and sharp dimension bounds}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+The equation \(f\circ f=f+\id\) couples three-cycles to vector addition:
+each nonzero orbit consists of the three nonzero points of a binary plane.
+We study its solutions of binary algebraic degree at most two through their
+polar Lie algebras. The equation forces both the Jacobi identity and an
+additional degree-four identity, and every solvable polar algebra is nilpotent.
+In the metabelian case we obtain a complete normal form and an equivalence,
+including isomorphisms and automorphism groups, with metabelian
+\(\F_4\)-Lie algebras whose quotient actions on the derived ideal have square zero.
+The correspondence gives the exact minimum binary dimension at every polar
+nilpotency class \(c\ge2\): \(6,8,12\) in classes two, three, and four,
+and \(2^c+2c-6\) for \(c\ge5\).
+We characterize when the original polar bracket admits an \(\F_4\)-bilinear
+structure extending its intrinsic scalar actions. In this compatible subclass
+the minimum is \(2^c+2c-2\) for every \(c\ge2\), with at least \(c-2\)
+inequivalent extremizers for every \(c\ge4\).
+Two closed classifications illustrate the structure theory: all
+eight-dimensional solutions form three linear-conjugacy classes, and the
+solvable solutions with four-dimensional binary abelianization form an
+exhaustive chain of seven classes ending in dimension sixteen. Exact central-extension
+certificates make the finite rank calculations in the latter classification
+independently reproducible.
+\end{abstract}
+\noindent\textbf{Keywords.}
+Quadratic map; complete permutation; polar Lie algebra; metabelian Lie algebra;
+restricted Lie algebra; nilpotency class; finite field.
+
+\input{01_introduction}
+\input{02_polar_structure}
+\input{03_metabelian_correspondence}
+\input{04_universal_module}
+\input{05_compatible_structures}
+\input{06_sharp_compatible_bounds}
+\input{07_classification}
+\input{08_questions}
+\clearpage
+\appendix
+\input{09_verification}
+\clearpage
+\input{references}
+\end{document}

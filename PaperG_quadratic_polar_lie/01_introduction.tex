@@ -1,0 +1,224 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Let \(V\) be a finite-dimensional vector space over \(\F_2\). We consider
+the functional equation
+\begin{equation}\label{eq:functional}
+ f(f(x))=f(x)+x\qquad(x\in V)
+\end{equation}
+under the assumption that \(f\) has binary algebraic degree at most two.
+Every nonzero orbit is the triple \(\{x,f(x),x+f(x)\}\), the nonzero
+points of a binary plane. The equation therefore ties a local cycle
+condition to the additive geometry of the whole space. We ask how a
+quadratic degree bound organizes these orbits into an algebraic structure
+that can be classified and measured.
+
+The linear case identifies the relevant scalar field. A linear solution
+has minimal polynomial \(X^2+X+1\) on every nonzero space, so it defines
+an intrinsic \(\F_4\)-structure in which \(f\) is multiplication by
+\(\omega\), where \(\omega^2+\omega=1\). Up to binary-linear conjugacy,
+there is one such solution in each positive even dimension.
+Degree two is the first level at which the polar form can be nonzero.
+It introduces interactions between the orbit planes, and these
+interactions are the subject of the paper.
+
+The first structural object is the polar form
+\[
+ [x,y]=f(x+y)+f(x)+f(y).
+\]
+For a general zero-constant quadratic map this form is alternating and
+bilinear. Here the functional equation also forces Jacobi, making it a
+Lie bracket. The derived space, the center, and the lower central series
+therefore become intrinsic invariants of the map. The equation imposes
+further rigidity: solvability implies nilpotency, and fourth polarization
+gives a degree-four polynomial identity. This polar structure is the
+bridge from the permutation equation to both classification and sharp
+dimension bounds.
+
+\subsection{The main correspondence}
+
+Write \(W=[V,V]\) for the binary span of all polar values.
+The principal classification theorem concerns the metabelian case
+\([W,W]=0\). The maps induced by \(f\) on \(W\) and \(V/W\) are linear
+operators satisfying \(T^2+T=\id\); they therefore define intrinsic
+\(\F_4\)-vector space structures. Fix
+\(\omega\in\F_4\) with \(\omega^2+\omega=1\).
+
+In suitable binary-linear coordinates, every metabelian solution has the form
+\begin{equation}\label{eq:intro-normal}
+ f(x,z)=\bigl(\omega x,\,
+       \omega z+P(x)z+Q(x)+P(x)Q(x)\bigr),
+\end{equation}
+where
+\[
+ P(x)=\sum_{i=1}^d x_iP_i,
+ \qquad Q(x)=\sum_{i<j}x_ix_ja_{ij}.
+\]
+The \(\F_4\)-linear operators \(P_i\) commute, satisfy \(P_i^2=0\), and obey
+\[
+ P_i a_{jk}+P_j a_{ik}+P_k a_{ij}=0.
+\]
+The coefficients \(a_{ij}\) generate \(W\) under the operators \(P_i\).
+Conversely, all such data give solutions.
+
+The key necessity statement is that binary degree two forces the
+square-zero actions on the intrinsic polar image \(W\). Thus the normal
+form describes every metabelian solution as well as constructing them.
+Moreover, the correspondence includes morphisms. Binary-linear conjugacy
+of these maps is equivalent to \(\F_4\)-Lie isomorphism of the associated
+metabelian algebras with \((\ad u)^2|_{W}=0\).
+In particular it identifies the linear centralizer of \(f\) with the
+automorphism group of the associated \(\F_4\)-Lie algebra
+(Theorem~\ref{thm:correspondence}).
+
+\subsection{Sharp dimension costs}
+
+The normal form gives an exact measure of the dimension required for a
+given polar Lie nilpotency class. Let \(\mu(c)\) be the minimum binary
+dimension among metabelian solutions of class \(c\ge2\). We prove
+\begin{equation}\label{eq:intro-minimum}
+ \mu(2)=6,\qquad\mu(3)=8,\qquad\mu(4)=12,\qquad
+ \mu(c)=2^c+2c-6\quad(c\ge5).
+\end{equation}
+The proof uses a universal commutator module over a square-zero polynomial
+ring. Its multigrading determines the possible terminal commutators, and a
+dual contraction argument determines the smallest quotient that retains
+one of them. Both the lower bound and its attainment are uniform in \(c\)
+(Theorem~\ref{thm:unrestricted-minimum}).
+
+The \(\F_4\)-Lie algebra in this correspondence is auxiliary: the original
+binary polar bracket need not itself be \(\F_4\)-bilinear. We give an exact
+linear criterion for when it admits such a structure with the prescribed
+intrinsic scalar actions on \(W\) and \(V/W\).
+This condition is equivalent to the existence of a restricted square on
+the auxiliary algebra that vanishes on \(W\) and takes values in \(W\)
+(Theorem~\ref{thm:compatibility}).
+
+Let \(\nu(c)\) denote the minimum dimension in this compatible subclass.
+We obtain the single formula
+\begin{equation}\label{eq:intro-compatible-minimum}
+ \nu(c)=2^c+2c-2\qquad(c\ge2).
+\end{equation}
+One part of its lower bound counts independent preimages of the nonempty
+faces of a square-zero operator cube. This gives
+\(\dim_{\F_4}W\ge2^{c-1}-1\), independently of the unrestricted extremal
+argument. The other part proves \(\dim_{\F_4}(V/W)\ge c\).
+The elementary augmentation-module construction attains both bounds
+(Theorem~\ref{thm:compatible-minimum}).
+
+\begin{table}[ht]
+\centering
+\caption{Minimum binary dimensions in the two metabelian subclasses.}
+\label{tab:minima}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Polar class \(c\)&2&3&4&5&6&7\\
+\midrule
+\(\mu(c)\)&6&8&12&36&70&136\\
+\(\nu(c)\)&6&12&22&40&74&140\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Compatibility therefore has an exact additional cost of four binary
+dimensions in every class \(c\ge5\). Equality still allows growing
+structural diversity: for each \(c\ge4\) we construct at least \(c-2\)
+pairwise inequivalent compatible extremizers
+(Theorem~\ref{thm:extremizers}).
+
+\subsection{Closed classification ranges}
+
+Two applications illustrate the reach and the boundaries of the theory.
+There are exactly three binary-linear conjugacy classes in dimension eight
+(Theorem~\ref{thm:dimension-eight}). The proof combines the correspondence
+with the classical small-dimensional simple Lie algebra lists and short
+explicit obstructions to the polar identities.
+
+There is also a closed classification in an all-dimensional stratum:
+if the polar algebra is solvable and
+\(\dim_{\F_2}(V/W)=4\), exactly one class occurs in each of dimensions
+\(4,6,8,10,12,14,16\), and none occurs thereafter
+(Theorem~\ref{thm:seven-chain}). Its final two members are nonmetabelian.
+Completeness is proved by a lossless central descent, exact extension-space
+calculations, and explicit projective orbit actions. The finite rank portion
+is supplied with independently replayable certificates.
+
+\subsection{Context and related work}
+
+There is an operator viewpoint on \eqref{eq:functional}. On complete
+mappings, \(\mathcal F(g)=(\id+g)^{-1}\) satisfies
+\(\mathcal F^3(g)=g\), and its fixed objects are exactly the solutions
+of \eqref{eq:functional}. The arithmetic study of norm fibers and affine
+companion groups in~\cite{Li2026} also describes these fixed objects by
+oriented binary line spreads. The present paper studies their quadratic
+structure through the polar Lie algebra.
+
+Equation~\eqref{eq:functional} implies that both \(f\) and \(f+\id\) are
+permutations. Triple-cycle and regular complete permutation polynomials
+have been studied by Liu--Chen--Xu--Sun~\cite{Liu2019},
+Xu--Zeng--Zhang~\cite{Xu2022}, and Lu--Wu--Wang--Cao~\cite{Lu2023}.
+Quadratic complete mappings also occur in the constructions of
+Samardjiska--Gligoroski~\cite{Samardjiska2017}.
+Here the orbit-sum identity, binary degree, and binary-linear conjugacy
+are considered together. In particular, simultaneous three-cycle behavior
+of \(f\) and \(f+\id\) does not imply \eqref{eq:functional};
+Example~\ref{ex:regular-cpp} gives a quadratic instance from the
+affine-switching construction of~\cite{Xu2022}.
+
+There is a parallel quasigroup interpretation. The operation
+\(x*y=x+f(x+y)\) is a quaternary Mendelsohn quasigroup.
+Zhang's thesis~\cite[Chapter~3]{Zhang1998} develops central representations
+and recursions in that setting. Its Lemma~10.3(1) already contains the
+central six-dimensional example used below. Throughout this paper,
+equivalence means binary-linear conjugacy, and nilpotency class means
+the class of the polar Lie algebra. These specifications retain the
+addition and the degree filtration that enter the necessity proofs.
+
+The commutator-module presentation is the classical Koszul presentation
+of the free metabelian derived module; see
+Papadima--Suciu~\cite[Theorem~6.2]{PapadimaSuciu2004} and the
+characteristic-two module methods of Kov\'acs--St\"ohr~\cite{KovacsStohr2013}.
+Restricted squares and quadratic maps have a broader established
+connection; see, for example, Pakianathan--Yal\c{c}{\i}n~\cite{Pakianathan2007}.
+We use these tools to prove the degree-forced correspondence and the exact
+extremal formulas for \eqref{eq:functional}. The four-variable polar identity
+is the classical degree-four standard polynomial in Lie form
+\cite[Theorem~9]{Drensky2021}; its forced occurrence here provides the
+obstructions used in the low-dimensional application.
+
+\subsection{Conventions}
+
+We use \(f^j\) only for composition powers. All dimensions without a
+specified field are binary dimensions. A map is called quadratic when its
+binary algebraic degree is at most two, so the linear cases are included.
+Two solutions are equivalent if \(Sf=f'S\) for a binary-linear isomorphism
+\(S\). Lie brackets are alternating; in characteristic two they are
+symmetric as bilinear maps. We put
+\(\gamma_1(L)=L\), \(\gamma_{i+1}(L)=[L,\gamma_i(L)]\), and
+\(L^{(0)}=L\), \(L^{(i+1)}=[L^{(i)},L^{(i)}]\).
+The class of a nonzero abelian algebra is one.
+
+\medskip
+\noindent\textbf{Notation at a glance.}
+The \(\F_4\)-dimensions below are used in the metabelian correspondence.
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}p{.25\textwidth}p{.71\textwidth}@{}}
+\toprule
+Symbol & Meaning\\
+\midrule
+\(L=(V,[\ ,\ ])\) & The binary polar Lie algebra of \(f\).\\
+\(W=L',\ U=V/W\) & The intrinsic derived ideal and abelianization.\\
+\(d,\ w\) & \(\dim_{\F_4}U\) and \(\dim_{\F_4}W\).\\
+\(\omega\) & A root of \(X^2+X+1\) in \(\F_4\).\\
+\(\m\) & The augmentation ideal \((t_1,\ldots,t_d)\) of \(R_d\),
+or its image under the operator action.\\
+\(\gamma_i(L),\ L^{(i)}\) & The lower central and derived series.\\
+\(\mu(c),\ \nu(c)\) & Minimum binary dimensions at class \(c\):
+metabelian and compatible metabelian, respectively.\\
+\(\mathcal A_k\) & Filtered action spaces used to distinguish extremizers
+in Theorem~\ref{thm:extremizers}.\\
+\bottomrule
+\end{tabular}
+\end{center}

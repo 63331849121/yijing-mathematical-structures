@@ -1,0 +1,103 @@
+\section{When the original polar bracket is \texorpdfstring{\(\F_4\)}{F4}-bilinear}
+\label{sec:compatible}
+
+Return to the normal form \eqref{eq:normal-form} and keep the intrinsic
+scalar actions on \(U=V/W\) and \(W\). Its auxiliary bracket
+\eqref{eq:auxiliary-bracket} is always \(\F_4\)-bilinear.
+The following definition concerns the original polar bracket of \(f\).
+
+\begin{definition}\label{def:compatible}
+A metabelian solution is \emph{compatible} if \(V\) admits an
+\(\F_4\)-vector space structure that restricts to the intrinsic structure
+on \(W\), induces the intrinsic structure on \(U\), and makes the
+original polar bracket \(\F_4\)-bilinear.
+\end{definition}
+
+\begin{theorem}\label{thm:compatibility}
+For a normal form with data \(P_i,a_{ij}\), the following are equivalent:
+\begin{enumerate}
+\item the solution is compatible;
+\item there are \(b_1,\ldots,b_d\in W\) satisfying
+\begin{equation}\label{eq:compatibility-system}
+ P_ib_i=0,\qquad P_ib_j=P_ja_{ij}\quad(i\ne j);
+\end{equation}
+\item the auxiliary \(\F_4\)-Lie algebra has a restricted square \(r\)
+with \(r(W)=0\) and \(r(\mathfrak l)\subseteq W\).
+\end{enumerate}
+If a compatible scalar lift exists, the number of such scalar actions
+on the fixed binary space, with the prescribed actions on \(U,W\), is
+\(4^{dk}\), where \(k=\dim_{\F_4}\bigcap_i\ker P_i\).
+\end{theorem}
+\begin{proof}
+Every binary-linear lift of multiplication by \(\omega\) has the form
+\[
+ T(x,z)=(\omega x,\omega z+t(x)).
+\]
+The relation \(T^2+T=\id\) is exactly
+\(t(\omega x)=\omega^2t(x)\). Thus
+\(t(x)=b(x)=\sum_i x_i^2b_i\).
+The involutory binary shear \(S(x,z)=(x,z+b(x))\) conjugates \(T\)
+to standard scalar multiplication. It changes the cocycle of \(f\) to
+\[
+ Q+b+P(Q+b).
+\]
+The first two terms have \(\F_4\)-bilinear polars. The last term has
+scalar weight zero. Its polar could be \(\F_4\)-bilinear only if that
+polar were zero, since an \(\F_4\)-bilinear polar has weight two.
+An additive zero-constant function of weight zero is zero: additivity
+and invariance under \(\omega\) give its value at \(\omega^2x=x+\omega x\)
+equal to zero, and then invariance gives its value at \(x\) equal to zero.
+Compatibility is therefore equivalent to
+\begin{equation}\label{eq:compatibility-polynomial}
+ P(x)(Q(x)+b(x))=0.
+\end{equation}
+After the triangle cancellations, comparison of \(x_i^3\) and
+\(x_ix_j^2\) gives precisely \eqref{eq:compatibility-system}.
+
+We recall explicitly the restricted-square axioms in characteristic two:
+\(r(\alpha u)=\alpha^2r(u)\),
+\(r(u+v)=r(u)+r(v)+[u,v]_0\), and
+\(\ad r(u)=(\ad u)^2\).
+Any square with the range and vanishing conditions in (iii) must have
+the form
+\begin{equation}\label{eq:restricted-square}
+ r(x,z)=(0,P(x)z+q(x)),\qquad q(x)=Q(x)+b(x).
+\end{equation}
+Its first two axioms are automatic. For \(u=(x,z),v=(y,t)\), the two
+adjoint expressions have final coordinates
+\[
+ P(x)P(y)z+P(x)\beta(x,y),\qquad
+ P(x)P(y)z+P(y)q(x),
+\]
+respectively. Condition~\eqref{eq:compatibility-polynomial} implies
+\(P(x)\beta(x,y)=P(y)q(x)\): take the coefficient of \(s\) in
+\(P(x+sy)q(x+sy)=0\). Its degree in \(s\) is at most three, below
+\(|\F_4|\), so the comparison is valid for functions over \(\F_4\).
+This proves the third restricted axiom. Conversely that axiom, applied
+to \(u\), gives \([u,r(u)]_0=0\), hence
+\eqref{eq:compatibility-polynomial}.
+
+Finally two solutions of \eqref{eq:compatibility-system} differ by
+independent choices of \(d\) vectors in \(\bigcap_i\ker P_i\).
+The displayed count follows. It counts scalar actions, not their
+conjugacy classes.
+\end{proof}
+
+\begin{example}\label{ex:incompatible-eight}
+The eight-dimensional class-three model has
+\(P_1z=y\), \(P_1y=0\), \(P_2=0\), and \(a_{12}=z\).
+Condition~\eqref{eq:compatibility-system} would require
+\(0=P_2b_1=P_1a_{12}=y\). Hence it has no compatible scalar action.
+This gives a concrete distinction between the auxiliary algebra and
+the original polar algebra.
+\end{example}
+
+\begin{remark}
+The restricted square in Theorem~\ref{thm:compatibility} is a square on
+the auxiliary algebra. The theorem imposes both its range and its
+restriction to the derived ideal. General correspondences between
+quadratic maps and restricted Lie structures, such as
+\cite[Section~9]{Pakianathan2007}, carry their own additional identities.
+Here the exact additional condition is the solvable linear system
+\eqref{eq:compatibility-system}.
+\end{remark}

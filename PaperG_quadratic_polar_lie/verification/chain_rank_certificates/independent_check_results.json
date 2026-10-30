@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "not_Lean_formalization": true,
+  "records": [
+    {
+      "n": 4,
+      "status": "PASS",
+      "independent_engine": "SymPy DomainMatrix over GF(2)",
+      "equations_reconstructed_and_checked": 30,
+      "rank": 14,
+      "kernel_dimension": 6,
+      "extension_quotient_F4_dimension": 1
+    },
+    {
+      "n": 6,
+      "status": "PASS",
+      "independent_engine": "SymPy DomainMatrix over GF(2)",
+      "equations_reconstructed_and_checked": 112,
+      "rank": 30,
+      "kernel_dimension": 12,
+      "extension_quotient_F4_dimension": 2
+    },
+    {
+      "n": 8,
+      "status": "PASS",
+      "independent_engine": "SymPy DomainMatrix over GF(2)",
+      "equations_reconstructed_and_checked": 324,
+      "rank": 58,
+      "kernel_dimension": 14,
+      "extension_quotient_F4_dimension": 1
+    },
+    {
+      "n": 10,
+      "status": "PASS",
+      "independent_engine": "SymPy DomainMatrix over GF(2)",
+      "equations_reconstructed_and_checked": 770,
+      "rank": 92,
+      "kernel_dimension": 18,
+      "extension_quotient_F4_dimension": 1
+    },
+    {
+      "n": 12,
+      "status": "PASS",
+      "independent_engine": "SymPy DomainMatrix over GF(2)",
+      "equations_reconstructed_and_checked": 1586,
+      "rank": 132,
+      "kernel_dimension": 24,
+      "extension_quotient_F4_dimension": 2
+    },
+    {
+      "n": 14,
+      "status": "PASS",
+      "independent_engine": "SymPy DomainMatrix over GF(2)",
+      "equations_reconstructed_and_checked": 2940,
+      "rank": 184,
+      "kernel_dimension": 26,
+      "extension_quotient_F4_dimension": 1
+    },
+    {
+      "n": 16,
+      "status": "PASS",
+      "independent_engine": "SymPy DomainMatrix over GF(2)",
+      "equations_reconstructed_and_checked": 5032,
+      "rank": 244,
+      "kernel_dimension": 28,
+      "extension_quotient_F4_dimension": 0
+    }
+  ]
+}

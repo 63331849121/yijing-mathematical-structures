@@ -1,0 +1,5 @@
+Copyright 2026 Baohua Li.
+Manuscript, original mathematical data and reports: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+Original verification programs: MIT. See LICENSE-code-MIT.txt.
+Third-party dependencies and publisher full texts are not redistributed.

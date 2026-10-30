@@ -120,3 +120,10 @@ change the archived record.
 ## Contact
 
 Baohua Li · Independent Researcher · 707952331@qq.com
+
+## Paper G: quadratic maps and polar Lie structure
+
+[23-page preprint and reproducible verification](PaperG_quadratic_polar_lie/) on quadratic solutions of `f composed with f = f + id`: a complete metabelian correspondence, all-class sharp dimension bounds, and two closed classifications.
+
+DOI: https://doi.org/10.5281/zenodo.23788043  
+Fixed release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperG-v2026.10.30

@@ -1,0 +1,417 @@
+{
+  "n": 8,
+  "field": "F2 with F4 coded omega=2, omega^2=3",
+  "quadratic_input_masks": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    3,
+    5,
+    9,
+    17,
+    33,
+    65,
+    129,
+    6,
+    10,
+    18,
+    34,
+    66,
+    130,
+    12,
+    20,
+    36,
+    68,
+    132,
+    24,
+    40,
+    72,
+    136,
+    48,
+    80,
+    144,
+    96,
+    160,
+    192
+  ],
+  "quadratic_map_coefficients": [
+    2,
+    3,
+    8,
+    12,
+    32,
+    48,
+    128,
+    192,
+    0,
+    80,
+    160,
+    64,
+    128,
+    0,
+    0,
+    224,
+    112,
+    128,
+    192,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "unknown_count": 72,
+  "degree4_test_points": 162,
+  "claimed_rank": 58,
+  "independent_equations": [
+    {
+      "point": 1,
+      "output_bit": 0,
+      "row_hex": "0x1000000003"
+    },
+    {
+      "point": 1,
+      "output_bit": 1,
+      "row_hex": "0x2000000001"
+    },
+    {
+      "point": 2,
+      "output_bit": 0,
+      "row_hex": "0x2000000101"
+    },
+    {
+      "point": 2,
+      "output_bit": 1,
+      "row_hex": "0x103000000002"
+    },
+    {
+      "point": 4,
+      "output_bit": 0,
+      "row_hex": "0x400000000c"
+    },
+    {
+      "point": 4,
+      "output_bit": 1,
+      "row_hex": "0x8000000004"
+    },
+    {
+      "point": 8,
+      "output_bit": 0,
+      "row_hex": "0x8000200004"
+    },
+    {
+      "point": 8,
+      "output_bit": 1,
+      "row_hex": "0x20000c000000008"
+    },
+    {
+      "point": 16,
+      "output_bit": 0,
+      "row_hex": "0x10000000030"
+    },
+    {
+      "point": 16,
+      "output_bit": 1,
+      "row_hex": "0x20000000010"
+    },
+    {
+      "point": 32,
+      "output_bit": 0,
+      "row_hex": "0x20040000010"
+    },
+    {
+      "point": 32,
+      "output_bit": 1,
+      "row_hex": "0x40000030000000020"
+    },
+    {
+      "point": 64,
+      "output_bit": 0,
+      "row_hex": "0x400000000c0"
+    },
+    {
+      "point": 64,
+      "output_bit": 1,
+      "row_hex": "0x80000000040"
+    },
+    {
+      "point": 128,
+      "output_bit": 0,
+      "row_hex": "0x80800000040"
+    },
+    {
+      "point": 128,
+      "output_bit": 1,
+      "row_hex": "0x8000000c0000000080"
+    },
+    {
+      "point": 5,
+      "output_bit": 0,
+      "row_hex": "0x2050940b025f"
+    },
+    {
+      "point": 5,
+      "output_bit": 1,
+      "row_hex": "0x940b005a000000205"
+    },
+    {
+      "point": 9,
+      "output_bit": 0,
+      "row_hex": "0x40942ab584a7"
+    },
+    {
+      "point": 9,
+      "output_bit": 1,
+      "row_hex": "0x42ab580ae000000409"
+    },
+    {
+      "point": 17,
+      "output_bit": 0,
+      "row_hex": "0x8112000c0873"
+    },
+    {
+      "point": 17,
+      "output_bit": 1,
+      "row_hex": "0x2000c0062000000811"
+    },
+    {
+      "point": 33,
+      "output_bit": 0,
+      "row_hex": "0x1021540161093"
+    },
+    {
+      "point": 33,
+      "output_bit": 1,
+      "row_hex": "0x5401600b2000001021"
+    },
+    {
+      "point": 65,
+      "output_bit": 0,
+      "row_hex": "0x20410001020c3"
+    },
+    {
+      "point": 65,
+      "output_bit": 1,
+      "row_hex": "0x100082000002041"
+    },
+    {
+      "point": 129,
+      "output_bit": 0,
+      "row_hex": "0x4081800184043"
+    },
+    {
+      "point": 129,
+      "output_bit": 1,
+      "row_hex": "0x8001800c2000004081"
+    },
+    {
+      "point": 6,
+      "output_bit": 0,
+      "row_hex": "0x8006e381df5ed"
+    },
+    {
+      "point": 6,
+      "output_bit": 1,
+      "row_hex": "0xe381d75eb000008006"
+    },
+    {
+      "point": 10,
+      "output_bit": 0,
+      "row_hex": "0x1000a2ddeebf75"
+    },
+    {
+      "point": 10,
+      "output_bit": 1,
+      "row_hex": "0x2ddefbf7f00001000a"
+    },
+    {
+      "point": 18,
+      "output_bit": 0,
+      "row_hex": "0x200124001651b1"
+    },
+    {
+      "point": 18,
+      "output_bit": 1,
+      "row_hex": "0x4001451a3000020012"
+    },
+    {
+      "point": 34,
+      "output_bit": 0,
+      "row_hex": "0x40022fc01a79d1"
+    },
+    {
+      "point": 34,
+      "output_bit": 1,
+      "row_hex": "0xfc01e79f3000040022"
+    },
+    {
+      "point": 66,
+      "output_bit": 0,
+      "row_hex": "0x800420001841c1"
+    },
+    {
+      "point": 66,
+      "output_bit": 1,
+      "row_hex": "0x104183000080042"
+    },
+    {
+      "point": 20,
+      "output_bit": 0,
+      "row_hex": "0x40001400840003c"
+    },
+    {
+      "point": 20,
+      "output_bit": 1,
+      "row_hex": "0x8000028000400014"
+    },
+    {
+      "point": 36,
+      "output_bit": 0,
+      "row_hex": "0x80002404c80001c"
+    },
+    {
+      "point": 36,
+      "output_bit": 1,
+      "row_hex": "0x4c000038000800024"
+    },
+    {
+      "point": 68,
+      "output_bit": 0,
+      "row_hex": "0x10000440210000cc"
+    },
+    {
+      "point": 68,
+      "output_bit": 1,
+      "row_hex": "0x20000088001000044"
+    },
+    {
+      "point": 132,
+      "output_bit": 0,
+      "row_hex": "0x200008483200004c"
+    },
+    {
+      "point": 132,
+      "output_bit": 1,
+      "row_hex": "0x8300000c8002000084"
+    },
+    {
+      "point": 24,
+      "output_bit": 0,
+      "row_hex": "0x400001800ca00034"
+    },
+    {
+      "point": 24,
+      "output_bit": 1,
+      "row_hex": "0x8a0002c004000018"
+    },
+    {
+      "point": 72,
+      "output_bit": 0,
+      "row_hex": "0x100000480322000c4"
+    },
+    {
+      "point": 72,
+      "output_bit": 1,
+      "row_hex": "0x2220008c010000048"
+    },
+    {
+      "point": 80,
+      "output_bit": 0,
+      "row_hex": "0x800000504800000f0"
+    },
+    {
+      "point": 80,
+      "output_bit": 1,
+      "row_hex": "0x4000000a0080000050"
+    },
+    {
+      "point": 96,
+      "output_bit": 0,
+      "row_hex": "0x2000000607400000d0"
+    },
+    {
+      "point": 96,
+      "output_bit": 1,
+      "row_hex": "0x5400000b0200000060"
+    },
+    {
+      "point": 7,
+      "output_bit": 0,
+      "row_hex": "0x830756c00dfbe"
+    },
+    {
+      "point": 7,
+      "output_bit": 1,
+      "row_hex": "0x56c005cb9000008307"
+    },
+    {
+      "point": 21,
+      "output_bit": 0,
+      "row_hex": "0x400a1504c470a2f"
+    },
+    {
+      "point": 21,
+      "output_bit": 1,
+      "row_hex": "0x4c07003a000400a15"
+    }
+  ],
+  "kernel_basis_hex": [
+    "0x1000000002",
+    "0x2000000003",
+    "0x4000000008",
+    "0x800000000c",
+    "0x10000010220",
+    "0x20000018430",
+    "0x40000058a80",
+    "0x800000694c0",
+    "0x8600000018400",
+    "0x10200000008600",
+    "0x21c00000061200",
+    "0x40e00000021c00",
+    "0x4c0060000c818600",
+    "0x8400400004c10400"
+  ],
+  "coboundary_vectors_hex": [
+    "0x1000000002",
+    "0x3000000001",
+    "0x2000000003",
+    "0x1000000002",
+    "0x4000000008",
+    "0xc000000004",
+    "0x800000000c",
+    "0x4000000008",
+    "0x10000010220",
+    "0x10230000000010",
+    "0x20000018430",
+    "0x18410000000020",
+    "0x40000058a80",
+    "0x58ac0000000040",
+    "0x800000694c0",
+    "0x69440000000080"
+  ],
+  "coboundary_rank": 12,
+  "named_quotient_basis": [
+    {
+      "name": "early_b",
+      "vector_hex": "0xc808400008410600"
+    }
+  ],
+  "quadratic_extension_quotient_F4_dimension": 1
+}

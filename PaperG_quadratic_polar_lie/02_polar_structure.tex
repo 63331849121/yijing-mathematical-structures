@@ -1,0 +1,170 @@
+\section{The polar Lie algebra}
+\label{sec:polar}
+
+\begin{proposition}\label{prop:cycles}
+Every solution of \eqref{eq:functional} satisfies
+\[
+ f^3=\id,\qquad f(0)=0,\qquad
+ f(x+f(x))=x.
+\]
+Its only fixed point is zero. Every nonzero orbit spans a binary plane,
+and these planes partition \(V\setminus\{0\}\). In particular \(\dim V\)
+is even.
+\end{proposition}
+\begin{proof}
+Evaluate \eqref{eq:functional} at \(f(x)\). It gives
+\(f^3(x)=f^2(x)+f(x)=x\), so \(f\) is bijective.
+If \(a=f(0)\), then \(f(a)=a\); applying \(f^3\) at zero gives \(a=0\).
+A fixed point in \eqref{eq:functional} must be zero.
+The remaining identity follows from
+\(x+f(x)=f^2(x)\). The nonzero orbits have length three and sum zero,
+and \(3\mid 2^{\dim V}-1\) implies the parity assertion.
+\end{proof}
+
+\begin{theorem}\label{thm:polar}
+Let \(f\) be a quadratic solution. Its polar form
+\([x,y]=f(x+y)+f(x)+f(y)\) is a Lie bracket. It satisfies
+\begin{align}
+ [x,f(x)]&=0,\label{eq:commuting}\\
+ f([x,y])&=[f(x),f(y)]+[x,y]
+                  +[f(x)+f(y),[x,y]],\label{eq:bracket-image}\\
+ [[a,b],[c,d]]+[[a,c],[b,d]]+[[a,d],[b,c]]&=0.
+ \label{eq:four-variable}
+\end{align}
+\end{theorem}
+\begin{proof}
+The polar is alternating and bilinear because \(f\) is quadratic and
+\(f(0)=0\). Expand \(f(x+f(x))=x\) by polarization. The terms
+\(f(x)+f^2(x)\) sum to \(x\), leaving \eqref{eq:commuting}.
+Take the third additive difference at zero of \(x\mapsto[x,f(x)]\).
+The terms involving individual values of \(f\) cancel, leaving
+\[
+ [x,[y,z]]+[y,[z,x]]+[z,[x,y]]=0.
+\]
+This is Jacobi.
+
+Next polarize \(f^2=f+\id\). Since
+\(f(x+y)=f(x)+f(y)+[x,y]\), the expansion of the left side gives
+\eqref{eq:bracket-image}.
+
+For \eqref{eq:four-variable}, introduce Boolean variables
+\(t_1,\ldots,t_4\) and vectors \(x_1,\ldots,x_4\). The exact expansion is
+\[
+ f\Bigl(\sum_i t_ix_i\Bigr)
+   =\sum_i t_if(x_i)+\sum_{i<j}t_it_j[x_i,x_j].
+\]
+In applying \(f\) again, the coefficient of \(t_1t_2t_3t_4\) can only
+come from a polar cross term between two disjoint pair summands.
+There are three such pairings, giving the left side of
+\eqref{eq:four-variable}. The composition has degree at most two,
+so this coefficient vanishes. All coefficient comparisons take place in
+the Boolean function algebra, with \(t_i^2=t_i\).
+\end{proof}
+
+The two polarization steps have distinct roles. Binary degree two gives
+an alternating bilinear form; the commuting identity
+\eqref{eq:commuting} forces its Jacobi identity. The fourth polarization
+then supplies \eqref{eq:four-variable}, an additional restriction on the
+resulting Lie algebra.
+The polynomial in \eqref{eq:four-variable} is the associative standard
+polynomial of degree four expressed as a Lie element in characteristic
+two~\cite[Theorem~9]{Drensky2021}. Its forced occurrence here gives the
+explicit exclusions in Section~\ref{sec:classification}.
+
+\begin{proposition}\label{prop:invariant-series}
+All terms of the derived, lower central, and upper central series of the
+polar Lie algebra \(L=(V,[\ ,\ ])\) are \(f\)-invariant.
+The center is \(f\)-invariant and \(f\) is linear on it.
+Every nonzero factor of any of these series has even binary dimension.
+\end{proposition}
+\begin{proof}
+Let \(I\) be an \(f\)-invariant ideal. In
+\eqref{eq:bracket-image}, take \(x\in I\). Each term on the right belongs
+to \([I,L]\), which is an ideal. Quadratic expansion extends invariance
+from bracket generators to their span: the extra polar terms also lie in
+that ideal. The same argument with \(x,y\in I\) proves invariance of
+\([I,I]\), using that it is an ideal of \(L\).
+Induction starts with \(I=L\).
+
+Polarization of \eqref{eq:commuting} gives
+\begin{equation}\label{eq:commuting-polarized}
+ [x,f(y)]+[y,f(x)]+[x,[x,y]]+[y,[x,y]]=0.
+\end{equation}
+If \(x\in Z(L)\), this says \([y,f(x)]=0\) for every \(y\).
+Thus \(Z(L)\) is invariant; its polar is zero, so \(f\) is linear there.
+Pass successively to quotients by invariant central ideals to obtain
+the upper central assertion. Every series factor inherits a solution of
+\eqref{eq:functional}, so Proposition~\ref{prop:cycles} proves its parity.
+\end{proof}
+
+\begin{lemma}[Ideal descent]\label{lem:ideal-descent}
+For every Lie ideal \(I\) of \(L\),
+\[
+ \{f(x)+I:x\in I\}\subseteq Z(L/I).
+\]
+Every perfect ideal is \(f\)-invariant. Every ideal \(I\) for which
+\(Z(L/I)=0\) is also \(f\)-invariant.
+\end{lemma}
+\begin{proof}
+For \(x\in I\), all terms in \eqref{eq:commuting-polarized} except
+\([y,f(x)]\) belong to \(I\). This proves the inclusion.
+The map \(\phi:I\to L/I\), \(x\mapsto f(x)+I\), is binary-linear
+because its polar takes values in \(I\).
+Equation~\eqref{eq:bracket-image} gives
+\(\phi([x,y])=[\phi(x),\phi(y)]\) for \(x,y\in I\).
+Its image is central, so \(\phi([I,I])=0\). This proves the perfect-ideal
+assertion. The centerless-quotient assertion follows immediately from
+the inclusion. Bijectivity and finiteness turn each invariant inclusion
+into equality.
+\end{proof}
+
+\begin{corollary}\label{cor:simple-reduction}
+If a quadratic solution has a nonsolvable polar algebra, then there is a
+quadratic solution whose polar algebra is nonabelian simple, of even
+binary dimension no larger than the original dimension.
+\end{corollary}
+\begin{proof}
+The stabilized derived ideal \(P\) is nonzero and perfect, hence invariant.
+Choose a maximal proper Lie ideal \(M\) of \(P\). The quotient \(P/M\)
+is nonabelian simple and centerless. Apply Lemma~\ref{lem:ideal-descent}
+inside \(P\) to see that \(M\) is invariant. Restriction and quotient
+therefore give the required quadratic solution.
+\end{proof}
+
+\begin{lemma}\label{lem:two-generators}
+A nonabelian nilpotent polar Lie algebra has binary abelianization
+dimension at least four.
+\end{lemma}
+\begin{proof}
+The abelianization is a nonzero even-dimensional space with the linear
+action induced by \(f\). If its dimension were two, any nonzero coset
+\(x+L'\) and its image \(f(x)+L'\) would form a binary basis.
+The subalgebra \(H\) generated by \(x,f(x)\) is abelian by
+\eqref{eq:commuting}. Moreover \(L=H+L'\).
+Inductively, \(L=H+\gamma_j(L)\) implies
+\(L=H+\gamma_{j+1}(L)\), because
+\([H+\gamma_j,H+\gamma_j]\subseteq H+\gamma_{j+1}\).
+Nilpotency then gives \(L=H\), a contradiction.
+\end{proof}
+
+\begin{example}\label{ex:regular-cpp}
+Let \(\F_{16}\) contain \(\F_4\), let \(\eta\in\F_4\setminus\F_2\),
+and write \(\chi(x)=1\) off \(\F_4\) and \(\chi(x)=0\) on \(\F_4\).
+The affine-switching construction of
+\cite[Corollary~6]{Xu2022} includes
+\[
+ G(x)=\eta x+\chi(x)
+      =\eta x+\operatorname{Tr}_{\F_{16}/\F_4}(x)^3.
+\]
+The trace is binary-linear, and its cube is binary-quadratic.
+Both \(\F_4\) and its complement are invariant under multiplication
+by \(\eta\) and under translation by one. Hence \(G\) is a permutation
+with \(G^3=\id\) and only zero fixed. The same holds for \(G+\id\).
+Nevertheless
+\[
+ G^2(x)+G(x)+x=\eta\chi(x),
+\]
+so \(G\) does not satisfy \eqref{eq:functional}.
+This separates the equation studied here from simultaneous triple-cycle
+complete permutation behavior even within binary degree two.
+\end{example}

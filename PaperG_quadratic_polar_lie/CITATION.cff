@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this preprint using its DOI."
+type: article
+title: "Quadratic maps satisfying f ∘ f = f + id: polar Lie structure and sharp dimension bounds"
+authors:
+  - family-names: Li
+    given-names: Baohua
+version: "1.0"
+date-released: 2026-10-30
+doi: "10.5281/zenodo.23788043"
+url: "https://doi.org/10.5281/zenodo.23788043"
+license: CC-BY-4.0

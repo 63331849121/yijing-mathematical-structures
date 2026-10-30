@@ -1,0 +1,225 @@
+\section{Sharp compatible bounds and extremizers}
+\label{sec:compatible-bounds}
+
+\subsection{The abelianization bound}
+
+\begin{lemma}\label{lem:compatible-d}
+A nonabelian compatible solution of class \(c\), with
+\(d=\dim_{\F_4}(V/W)\), satisfies \(c\le d\).
+\end{lemma}
+\begin{proof}
+Use a restricted square from Theorem~\ref{thm:compatibility}.
+The identity
+\(P(x)\beta(x,y)=P(y)r(x)\), with a lift of \(x\) understood,
+implies
+\begin{equation}\label{eq:double-endpoint}
+ P(x)P(y)\beta(x,y)=0.
+\end{equation}
+In the universal module this kills the submodule \(K\) spanned by
+\(t_it_jv_{ij}\), \(i<j\).
+It has dimension \(\binom d2\) and lies in coefficient degree two.
+Every multiplication by an endpoint kills it by a square, and
+multiplication by a third index kills it by a triangle relation.
+
+This relation space is invariant under \(\GL(U)\).
+Indeed the universal expression
+\(P(x)P(y)\beta(x,y)\) is additive in each input and scales
+quadratically in each. For example its additive cross term in \(x\)
+is
+\[
+ P(y)\bigl(P(x)\beta(z,y)+P(z)\beta(x,y)\bigr)
+       =P(y)^2\beta(x,z)=0
+\]
+by Jacobi. Its basis values therefore span precisely \(K\).
+
+Put \(\overline W_d=W_d/K\). The multigrading in
+Proposition~\ref{prop:Hilbert} shows that its highest coefficient degree
+is \(d-1\), for every \(d\ge2\), and that its top has the basis
+\(T_j\) of \eqref{eq:terminal-basis}.
+This top is \(\det(U)\otimes U\) also for \(d=2,3\): the same
+diagonal and transvection calculations apply, with any additional
+double-endpoint term now in \(K\). For \(d=2\) this is immediate
+from \(T_1=t_1v_{12},T_2=t_2v_{12}\).
+
+Every compatible derived module \(M\) is a quotient of \(\overline W_d\),
+so \(c\le d+1\). Suppose \(c=d+1\). Choose a functional on \(M\)
+nonzero on its terminal component. A change of quotient basis normalizes
+its top pullback to \(\lambda(T_j)=1\), \(\lambda(T_k)=0\) for
+\(k\ne j\).
+Using \(P_j a_{ij}=P_i b_j\), we have, for \(i\ne j\),
+\begin{equation}\label{eq:terminal-square-value}
+ \im(T_j)=\Bigl(\prod_{h\ne j}P_h\Bigr)b_j.
+\end{equation}
+Write \(b_j=\sum c_{kl}a_{kl}\pmod{\m M}\), using intrinsic
+generation. The product on the right kills \(\m M\).
+If \(j\) is an endpoint of \(v_{kl}\), then
+\((\prod_{h\ne j}t_h)v_{kl}\) is a top vector whose doubled
+endpoint is different from \(j\). If \(j\) is not an endpoint,
+the vector has both endpoints doubled and is in \(K\).
+Thus the normalized top functional is zero on the right side of
+\eqref{eq:terminal-square-value}, but one on the left.
+This contradiction proves \(c\le d\).
+\end{proof}
+
+\subsection{Counting preimages of an operator cube}
+
+\begin{lemma}\label{lem:compatible-w}
+A compatible solution of class \(c\ge2\) satisfies
+\[
+ \dim_{\F_4}W\ge2^{c-1}-1.
+\]
+\end{lemma}
+\begin{proof}
+The case \(c=2\) says \(W\ne0\). Let \(c\ge3\).
+By Lemma~\ref{lem:terminal-repeat}, choose a nonzero terminal value
+\[
+ P(x)P(z_1)\cdots P(z_{c-3})\beta(x,y).
+\]
+Restrictedness gives \(P(x)\beta(x,y)=P(y)b\), where
+\(b=r(x)\in W\). Put \(m=c-2\),
+\(u_1=y,u_2=z_1,\ldots,u_m=z_{c-3}\).
+Then \(P(u_1)\cdots P(u_m)b\ne0\).
+The \(2^m\) vectors
+\[
+ b_S=\Bigl(\prod_{i\in S}P(u_i)\Bigr)b
+ \qquad(S\subseteq\{1,\ldots,m\})
+\]
+are independent by the complementary-operator argument used in
+Theorem~\ref{thm:unrestricted-minimum}. Let \(C\) be their span.
+Since \([x,r(x)]_0=0\), \(P(x)\) kills \(b\), hence all of \(C\).
+
+For each nonempty \(S\), choose \(i\in S\) and set
+\[
+ v_S=\Bigl(\prod_{j\in S\setminus\{i\}}P(u_j)\Bigr)\beta(x,u_i).
+\]
+These vectors lie in the intrinsic derived ideal, and restrictedness gives
+\(P(x)v_S=b_S\). Thus
+\[
+ \dim\ker(P(x)|_W)\ge2^m,\qquad
+ \rank(P(x)|_W)\ge2^m-1.
+\]
+Rank-nullity yields \(\dim W\ge2^{m+1}-1=2^{c-1}-1\).
+\end{proof}
+
+\begin{theorem}\label{thm:compatible-minimum}
+For every \(c\ge2\), the minimum binary dimension among compatible
+solutions of polar class \(c\) is
+\[
+ \nu(c)=2^c+2c-2.
+\]
+\end{theorem}
+\begin{proof}
+Lemmas~\ref{lem:compatible-d} and \ref{lem:compatible-w} give the
+lower bound by addition.
+For attainment put \(s=c-1\),
+\(R_s=\F_4[t_1,\ldots,t_s]/(t_i^2)\), and use
+\begin{equation}\label{eq:semidirect-benchmark}
+ f(x,z)=\left(\omega x,\omega z+\Bigl(\sum_i x_it_i\Bigr)z\right)
+       \quad\text{on }\F_4^s\oplus R_s.
+\end{equation}
+The square of \(\sum x_it_i\) is zero, so direct substitution gives
+\eqref{eq:functional}. The polar bracket is \(\F_4\)-bilinear and
+has intrinsic derived ideal \(\m R_s\).
+The scalar actions induced by \(f\) on that ideal and on the
+abelianization are the displayed ones, so the map is compatible.
+Its lower central ideals are
+\(\gamma_k=\m^{k-1}R_s\) for \(k\ge2\), giving class \(s+1=c\).
+The derived and quotient dimensions are \(2^s-1\) and \(s+1\).
+The binary dimension is therefore \(2(s+2^s)=2^c+2c-2\).
+\end{proof}
+
+For \(c\ge5\), the extra four binary dimensions have an exact structural
+meaning. The sharp bounds in the two subclasses are
+\[
+\begin{array}{c|cc}
+ & d & w\\ \hline
+\text{metabelian} & c-1 & 2^{c-1}-2\\
+\text{compatible metabelian} & c & 2^{c-1}-1
+\end{array}
+\]
+where each entry is the corresponding lower bound, attained
+simultaneously. Compatibility therefore requires one additional
+\(\F_4\)-dimension in the quotient and one in the derived ideal,
+giving four additional binary dimensions. The restricted square
+explains the strengthened bounds: it constrains terminal commutators
+and supplies independent preimages for the nonempty faces of the
+operator cube. The elementary semidirect construction attains this cost.
+
+\subsection{Several extremizers in every class}
+
+\begin{theorem}\label{thm:extremizers}
+For every \(c\ge4\), at least \(c-2\) binary-linear conjugacy classes
+attain \(\nu(c)\).
+\end{theorem}
+\begin{proof}
+Set \(s=c-1\ge3\) and
+\[
+ R=\F_4[t_0,\ldots,t_{s-1}]/(t_i^2),\qquad W=\m R.
+\]
+Let \(U\) have basis \(x,u_1,\ldots,u_{s-1},v\).
+Choose either \(h=0\), or \(h=t_1\cdots t_r\) with
+\(1\le r\le s-2\), and put \(p=t_0h\).
+Define the action on \(W\) by multiplication:
+\[
+ P_x=t_0,\qquad P_{u_i}=t_i,\qquad P_v=p.
+\]
+Define the alternating cocycle by
+\[
+ \beta(x,u_i)=t_i,\quad\beta(x,v)=t_0,\quad
+ \beta(v,u_i)=(1+h)t_i,\quad\beta(u_i,u_j)=0.
+\]
+The only Jacobi triple types to check are \((x,u_i,u_j)\),
+\((v,u_i,u_j)\), and \((x,v,u_i)\). Their sums are, respectively,
+\[
+ t_it_j+t_jt_i,\quad
+ t_i(1+h)t_j+t_j(1+h)t_i,\quad
+ t_0(1+h)t_i+pt_i+t_it_0,
+\]
+all zero. The cocycle values generate \(W\) under the action.
+
+Take square values \(b_x=t_0,b_{u_i}=0,b_v=p\). They satisfy
+\eqref{eq:compatibility-system}; the nontrivial relation involving \(p\)
+uses \(p(1+h)=p\), since \(h^2=0\).
+In scalar coordinates \(a=(X,Y_1,\ldots,Y_{s-1},V)\), the resulting
+restricted square has the form
+\begin{align}
+ r(a,w)&=(0,P(a)w+q(a)),\label{eq:deformation-square}\\
+ q(a)&=t_0(X^2+XV+hV^2)
+       +\sum_i t_iY_i\bigl(X+(1+h)V\bigr).
+       \label{eq:deformation-q}
+\end{align}
+All ring elements in these formulas are fixed coefficients. Consequently
+\(f=\omega\id+r\) has binary degree at most two.
+The square vanishes on \(W\), takes values in \(W\), and
+\([a,r(a)]_0=0\). Expanding \(r(\omega a+r(a))\) proves
+\(f^2=f+\id\). Its original polar is the displayed \(\F_4\)-bracket,
+so it is compatible with the intrinsic scalar actions.
+
+The lower central ideals are \(\gamma_k=\m^{k-1}R\) for \(k\ge2\),
+since the action includes every \(t_i\). Each map has class \(c\)
+and dimension \(\nu(c)\).
+
+To distinguish them, use only intrinsic binary invariants. Let
+\[
+ \mathcal A=\im\bigl(L\longrightarrow\End_{\F_2}(W),\
+                   a\longmapsto\ad a|_W\bigr),\qquad
+ \mathcal A_k=\{D\in\mathcal A:D(W)\subseteq\gamma_{k+2}(L)\}.
+\]
+For \(h=0\), \(\dim_{\F_4}\mathcal A=s\) and
+\(\mathcal A_k=0\) for \(k\ge2\).
+For \(h=t_1\cdots t_r\), multiplication by \(p\) is independent of
+the linear multiplications and is nonzero on \(W\), as \(r\le s-2\).
+Thus \(\dim_{\F_4}\mathcal A=s+1\), and
+\[
+ \dim_{\F_4}\mathcal A_k=
+ \begin{cases}1,&2\le k\le r+1,\\0,&k\ge r+2.\end{cases}
+\]
+Indeed any nonzero linear multiplication has a nonzero degree-two
+output on \(W\), whereas \(pW\) has minimum nonzero degree \(r+2\).
+The binary dimensions are twice these dimensions and are preserved by
+every binary-linear conjugacy, independently of a choice of scalar lift.
+They separate \(h=0\) and the \(s-2\) possible values of \(r\).
+\end{proof}
+
+The theorem gives an explicit collection of extremizers. It leaves open
+the classification of all equality cases and their automorphism groups.

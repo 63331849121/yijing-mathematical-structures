@@ -1,0 +1,274 @@
+\section{A complete metabelian correspondence}
+\label{sec:metabelian}
+
+Assume in this section that the polar Lie algebra is metabelian.
+Then \(W=L'\) is abelian, \(f|_W\) is linear, and the induced map on
+\(U=V/W\) is linear. Both operators satisfy \(T^2+T=\id\).
+We give \(U\) and \(W\) the \(\F_4\)-structures in which these operators
+are multiplication by \(\omega\).
+
+\begin{lemma}[The operator pencil]\label{lem:operator-pencil}
+In any binary-linear splitting of \(V\to U\), write
+\begin{equation}\label{eq:preliminary-form}
+ f(x,z)=(\omega x,\omega z+L_xz+q(x)).
+\end{equation}
+The binary-linear pencil \(x\mapsto L_x\) satisfies
+\[
+ L_x\omega=\omega L_x,\quad L_x^3=0,\quad
+ L_{\omega x}=\omega L_x+L_x^2,\quad
+ L_xL_y=L_yL_x,\quad L_x^2L_y=0.
+\]
+\end{lemma}
+\begin{proof}
+Put \(J=\omega\id_W\) and \(M_x=J+L_x\).
+Both \(M_x\) and \(\id+M_x\) are invertible: they are the restrictions
+on coset differences of the permutations \(f\) and \(f+\id=f^2\).
+Substitution in \eqref{eq:functional} gives
+\[
+ M_{\omega x}M_x=\id+M_x.
+\]
+For \(A=M_x\), the three matrices along the \(\omega\)-orbit are
+\(A,\id+A^{-1},(\id+A)^{-1}\). Their sum is \(J\), because the
+three \(L\)-terms sum to zero. Thus \(J\) is a rational function of
+\(A\), and in particular commutes with it. Clearing the denominators gives
+\[
+ JA(\id+A)=A^3+A+\id.
+\]
+Since \(J^2+J=\id\) and \(J^3=\id\), this is
+\((A+J)^3=0\). It follows that \(L_x\) commutes with \(J\) and is
+cube zero. Expanding \((J+L_x)^{-1}\) now gives
+\(L_{\omega x}=JL_x+L_x^2\).
+The additivity of the left side forces the \(L_x\)'s to commute.
+
+For \(P=L_x,Q=L_y\), the identity \((P+Q)^3=0\) yields
+\(P^2Q=PQ^2=:T\). Apply the same identity to
+\(P'=JP+P^2=L_{\omega x}\) and \(Q\). It gives
+\((J^2+J)T=P^2Q^2\), hence \(T=P^2Q^2=PT\).
+As \(P\) is nilpotent, this implies \(T=0\).
+\end{proof}
+
+\begin{theorem}[Normal form and equivalence]\label{thm:correspondence}
+Every metabelian quadratic solution is binary-linearly conjugate to
+\begin{equation}\label{eq:normal-form}
+ f(x,z)=\bigl(\omega x,\omega z+P(x)z+Q(x)+P(x)Q(x)\bigr)
+       \quad\text{on }\F_4^d\oplus W,
+\end{equation}
+where
+\begin{align}
+ P(x)&=\sum_i x_iP_i,& Q(x)&=\sum_{i<j}x_ix_ja_{ij},\label{eq:PQ}\\
+ P_iP_j&=P_jP_i,&P_i^2&=0,\label{eq:square-zero}\\
+ P_i a_{jk}+P_j a_{ik}+P_k a_{ij}&=0\quad(i<j<k),
+ \label{eq:triangle}\\
+ W&=\sum_iP_iW+\Span_{\F_4}\{a_{ij}:i<j\}.
+ \label{eq:intrinsic-generation}
+\end{align}
+Conversely these conditions define a quadratic solution with intrinsic
+polar image \(W\).
+
+The binary-linear conjugacy groupoid of these maps is equivalent to the
+isomorphism groupoid of finite-dimensional metabelian \(\F_4\)-Lie
+algebras \(\mathfrak l\) satisfying
+\begin{equation}\label{eq:Lie-action-square}
+ (\ad u)^2|_{\mathfrak l'}=0\qquad(u\in\mathfrak l).
+\end{equation}
+For corresponding objects,
+\(C_{\GL(V,2)}(f)\cong\Aut_{\F_4}(\mathfrak l)\).
+Their lower central dimensions agree after multiplication by two.
+\end{theorem}
+
+\begin{proof}
+Lemma~\ref{lem:operator-pencil} provides the preliminary actions.
+We first normalize a section and separate the scalar weights of the
+cocycle (Steps 1--2). The decisive step is to combine binary degree two
+with intrinsic generation to force square zero (Step 3).
+We then verify sufficiency, construct the auxiliary Lie algebra and
+compare lower central series (Steps 4--5). Finally, tracking changes of
+coordinates upgrades the normal form to an equivalence on morphisms
+(Step 6).
+
+\emph{Step 1: a normalized section.}
+Choose an \(\F_4\)-basis \(e_i\) of \(U\), with arbitrary lifts \(v_i\)
+in \(V\). Define a binary-linear section by
+\(e_i\mapsto v_i\), \(\omega e_i\mapsto f(v_i)\).
+The images form a basis modulo \(W\).
+Since \(f(v_i+f(v_i))=v_i\), the cocycle \(q\) in
+\eqref{eq:preliminary-form} vanishes on each coordinate \(\F_4\)-line.
+
+\emph{Step 2: scalar weights.}
+Initially put \(P_i=L_{e_i}\), without yet asserting \(P_i^2=0\).
+Lemma~\ref{lem:operator-pencil} gives
+\[
+ L_{\alpha e_i}=\alpha P_i+(\alpha+\alpha^2)P_i^2
+       \quad(\alpha\in\F_4).
+\]
+Set \(N(x)=\sum_i x_i(P_i+P_i^2)\).
+Then \(L_x=N+N^2\), \(N^3=0\), and
+\(L_{\omega x}=\omega N+\omega^2N^2\).
+Decompose \(q=q_0+q_1+q_2\) into the three scalar weights
+\(q_j(\omega x)=\omega^jq_j(x)\). Projection to each weight is a linear
+combination of \(q(x),q(\omega x),q(\omega^2x)\), so preserves binary
+degree and the vanishing on coordinate lines.
+
+The cocycle equation is
+\[
+ q(\omega x)=\omega^2q(x)+(\omega N+\omega^2N^2)q(x).
+\]
+Its weight components give
+\[
+ q_0=Nq_2+\omega N^2q_1,\qquad
+ q_1=\omega Nq_0+\omega^2N^2q_2.
+\]
+Using \(N^3=0\) yields
+\begin{equation}\label{eq:weight-solution}
+ q_0=Nq_2,\qquad q_1=N^2q_2.
+\end{equation}
+
+\emph{Step 3: binary degree forces square zero.}
+The reduced \(\F_4\)-polynomial of a weight-two binary-quadratic map has
+the form \(\sum_i b_ix_i^2+\sum_{i<j}a_{ij}x_ix_j\).
+Line normalization removes the first sum, so \(q_2=Q\).
+Consequently
+\[
+ q_1=N^2Q=\sum_{k,i<j}x_k^2x_ix_jP_k^2a_{ij}.
+\]
+This is where the degree bound becomes decisive. For \(k=i\) or \(j\),
+the exponent pattern is \((3,1)\); otherwise it is \((2,1,1)\).
+Both patterns have binary degree three, whereas the weight projection
+\(q_1\) has degree at most two. The cubed or squared coordinate
+identifies \(k\), and the remaining coordinates identify \(\{i,j\}\).
+Thus each displayed term has its own reduced monomial, forcing
+\begin{equation}\label{eq:squares-kill-coefficients}
+ P_k^2a_{ij}=0\qquad\text{for all }k,i,j.
+\end{equation}
+For completeness, the one-coordinate function basis
+\(1,x,x^2,x^3\) has binary degrees \(0,1,1,2\).
+Its leading classes form a basis in the associated graded degree
+filtration. Tensoring over the coordinates proves that distinct reduced
+monomials of the displayed degree three cannot cancel to degree two.
+This justifies the comparison in the binary degree filtration.
+
+We now extend this vanishing from the cocycle coefficients to the whole
+intrinsic derived ideal. Let \(\m W=\sum_iP_iW\). By the preliminary identities,
+every \(P_k^2\) annihilates \(\m W\).
+Modulo \(\m W\), the polar values in
+\eqref{eq:preliminary-form} are exactly the values of the polar of \(Q\).
+Since \(W\) is the span of all polar values, this proves
+\eqref{eq:intrinsic-generation}.
+Together with \eqref{eq:squares-kill-coefficients}, it gives \(P_k^2=0\)
+on all of \(W\). Now \(L_x=P(x)\) and \(q=Q+PQ\).
+The degree-three terms of \(PQ\) with three distinct indices vanish
+precisely when \eqref{eq:triangle} holds. The other terms have exponent
+patterns \((2,1)\), of binary degree two. This proves necessity.
+
+\emph{Step 4: sufficiency.}
+Conditions \eqref{eq:square-zero} and \eqref{eq:triangle} make
+\(P(x)^2=0\) and make \(PQ\) binary-quadratic.
+Under \(x\mapsto\omega x\), the functions \(Q\) and \(PQ\) have weights
+two and zero. Thus
+\[
+ (Q+PQ)(\omega x)=\omega^2Q+PQ
+   =\omega^2(Q+PQ)+\omega P(Q+PQ).
+\]
+Together with
+\((\omega\id+\omega P)(\omega\id+P)=\omega^2\id+P\),
+this verifies \(f^2=f+\id\) by substitution.
+Mixed polar values generate \(\m W\); modulo that space, the values
+of the polar of \(Q\) generate the \(a_{ij}\)'s over \(\F_4\).
+Equation~\eqref{eq:intrinsic-generation} therefore makes the polar
+image exactly \(W\).
+
+\emph{Step 5: the associated Lie algebra.}
+Put \(\beta(x,y)=Q(x+y)+Q(x)+Q(y)\) and define
+\begin{equation}\label{eq:auxiliary-bracket}
+ [(x,z),(y,t)]_0=(0,P(x)t+P(y)z+\beta(x,y)).
+\end{equation}
+Jacobi follows from commuting operators and \eqref{eq:triangle}.
+This is a metabelian \(\F_4\)-Lie algebra with derived ideal \(W\),
+and it satisfies \eqref{eq:Lie-action-square}.
+Conversely, splitting the abelianization of any algebra with these
+properties gives exactly such operators and an alternating cocycle.
+Choose its cross-term refinement \(Q\) to recover
+\eqref{eq:normal-form}.
+
+For both the original polar bracket and \eqref{eq:auxiliary-bracket},
+the action on \(W\) is \(P(x)\). Hence, with \(\m\) the ideal generated
+by these actions,
+\begin{equation}\label{eq:lower-central-module}
+ \gamma_2=W,\qquad\gamma_k=\m^{k-2}W\quad(k\ge3).
+\end{equation}
+This proves the lower central comparison.
+
+\emph{Step 6: morphisms.}
+A binary-linear conjugacy preserves the intrinsic space \(W\).
+Its diagonal blocks \(A:U\to U'\) and \(C:W\to W'\) commute with
+the intrinsic scalar actions, hence are \(\F_4\)-linear.
+Write its off-diagonal block as \(t_s+t_a\), where
+\(t_s(\omega x)=\omega t_s(x)\) and
+\(t_a(\omega x)=\omega^2t_a(x)\).
+Direct substitution in \(Sf=f'S\) gives the two conditions
+\begin{align}
+ CP(x)&=P'(Ax)C,\label{eq:morphism-action}\\
+ Q'(Ax)&=CQ(x)+t_a(x)+P'(Ax)t_s(x).
+ \label{eq:morphism-cocycle}
+\end{align}
+Indeed the unseparated cocycle equation reduces to the second one by
+multiplication with \(\id+P'(Ax)\), whose inverse is itself.
+Polarization over \(\F_4\) eliminates \(t_a\) and gives
+\begin{equation}\label{eq:morphism-Lie}
+ \beta'(Ax,Ay)=C\beta(x,y)
+              +P'(Ax)t_s(y)+P'(Ay)t_s(x).
+\end{equation}
+Equations~\eqref{eq:morphism-action} and \eqref{eq:morphism-Lie}
+say exactly that \((x,z)\mapsto(Ax,Cz+t_s(x))\) is an
+\(\F_4\)-Lie isomorphism.
+
+Conversely, for any such Lie isomorphism the function
+\(Q'(Ax)+CQ(x)+P'(Ax)t_s(x)\) has zero polar and is an ordinary
+homogeneous quadratic. It is therefore a unique sum of squares
+\(\sum b_ix_i^2\). Taking this as \(t_a\) gives a unique conjugacy.
+Scalar parts respect composition because \(A\) and \(C\) are
+\(\F_4\)-linear. Thus the correspondence is an equivalence on both
+objects and morphisms, proving also the centralizer assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:metabelian-nilpotent}
+Every metabelian polar algebra is nilpotent and satisfies
+\((\ad v)^3=0\) for every \(v\). If \(w=\dim_{\F_4}W\), its class is
+at most \(w+1\).
+\end{corollary}
+\begin{proof}
+The commuting square-zero operators generate a nilpotent associative ideal.
+They have a common nonzero kernel whenever \(W\ne0\); repeating on the
+quotient gives a strictly triangular flag, so all products of \(w\)
+operators vanish. Apply \eqref{eq:lower-central-module}.
+Finally \(\ad v\) maps \(V\) into \(W\), and its square on \(W\) is zero.
+\end{proof}
+
+\begin{theorem}\label{thm:solvable-nilpotent}
+A polar Lie algebra is solvable if and only if it is nilpotent.
+Its solvable radical is invariant under \(f\) and is nilpotent.
+\end{theorem}
+\begin{proof}
+Induct on derived length. The abelian case is immediate.
+Put \(W=L'\), \(W'=L''\). The restricted solution on \(W\) has
+nilpotent polar algebra by induction. The quotient \(L/W'\) is
+metabelian, hence nilpotent by Corollary~\ref{cor:metabelian-nilpotent}.
+For fixed \(x\in L\), the derivation \(D=\ad x|_W\) is therefore
+nilpotent on \(W/W'\).
+
+We use the following elementary derivation fact. If \(N\) is nilpotent
+and \(D\) is nilpotent on \(N/N'\), then it is nilpotent on \(N\).
+Each factor \(\gamma_i(N)/\gamma_{i+1}(N)\) is a quotient of
+\((N/N')^{\otimes i}\). The induced derivation is the sum of the \(i\)
+commuting operators acting in individual tensor positions.
+If \(D^s=0\) on \(N/N'\), the sum has power
+\(i(s-1)+1\) equal to zero, by the pigeonhole principle on its expanded
+products. The finite lower central filtration proves the assertion on
+\(N\), in every characteristic.
+
+Apply this fact to \(N=W\). Since \(\ad x\) maps \(L\) into \(W\),
+it is nilpotent on \(L\). Engel's theorem now gives nilpotency of \(L\).
+The converse is immediate. If \(R\) is the solvable radical,
+\(L/R\) has zero center. Lemma~\ref{lem:ideal-descent} makes \(R\)
+invariant, and the result just proved applies to the restricted solution.
+\end{proof}
