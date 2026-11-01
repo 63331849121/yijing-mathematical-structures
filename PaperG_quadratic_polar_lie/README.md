@@ -1,3 +1,7 @@
+**Current edition: [186-page manuscript, source and verification](revisions/2026-11-01/), 1 November 2026.**
+
+The files below document the preserved first edition.
+
 # Quadratic maps satisfying f ∘ f = f + id: polar Lie structure and sharp dimension bounds
 
 Baohua Li · Preprint · 23 pages · 30 October 2026
