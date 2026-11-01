@@ -135,3 +135,5 @@ Fixed release: https://github.com/63331849121/yijing-mathematical-structures/rel
 - [Paper S: 34-page manuscript and source](PaperS_ideal_growth/)
 
 These are connected independent papers; previous tagged editions remain available.
+
+Zenodo current editions: [Paper G](https://doi.org/10.5281/zenodo.23852642) · [Paper S](https://doi.org/10.5281/zenodo.23852662).

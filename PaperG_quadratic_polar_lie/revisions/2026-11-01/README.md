@@ -8,3 +8,5 @@ Editable LaTeX and exact verification: [PaperG_source_and_verification.zip](Pape
 Global polar nilpotence, functorial restricted structure, central reconstruction, exact metabelian dimensions and populations, and sharp ordinary three-Engel central-depth bounds. The source archive distinguishes symbolic proofs from computer-assisted finite starting systems.
 
 The companion paper is independently developed: G retains the structural interfaces and a summary of S; S supplies the full ideal-growth and probability proofs.
+
+DOI: https://doi.org/10.5281/zenodo.23852642

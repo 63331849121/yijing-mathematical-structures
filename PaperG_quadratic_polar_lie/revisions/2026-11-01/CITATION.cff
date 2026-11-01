@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript using its DOI."
+type: article
+title: "Quadratic maps satisfying f composed with f = f + id: nilpotence, Lie reconstruction, and growth"
+authors:
+  - family-names: Li
+    given-names: Baohua
+year: 2026
+date-released: 2026-11-01
+doi: 10.5281/zenodo.23852642
+url: https://zenodo.org/records/23852642

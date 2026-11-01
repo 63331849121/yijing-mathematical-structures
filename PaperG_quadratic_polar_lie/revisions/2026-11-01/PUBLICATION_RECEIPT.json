@@ -1,0 +1,23 @@
+{
+  "paper": "G",
+  "doi": "10.5281/zenodo.23852642",
+  "record_url": "https://zenodo.org/records/23852642",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperG-v2026.11.01",
+  "files": [
+    {
+      "file": "PaperG.pdf",
+      "bytes": 1183185,
+      "sha256": "78fa865111da1be31003a368f5ae6ffe513d2cd44f6e2ae11962c45114e6a875",
+      "published_server_md5_matches_local": true,
+      "public_download_url": "https://zenodo.org/api/records/23852642/files/PaperG.pdf/content"
+    },
+    {
+      "file": "PaperG_source_and_verification.zip",
+      "bytes": 7300828,
+      "sha256": "a5913d0b4f953b42b9c448ae4a8b897e4764dfb4b5d0164a39781d9b9563cf02",
+      "published_server_md5_matches_local": true,
+      "public_download_url": "https://zenodo.org/api/records/23852642/files/PaperG_source_and_verification.zip/content"
+    }
+  ],
+  "status": "PUBLISHED_AND_SERVER_FILE_CHECKSUMS_VERIFIED"
+}

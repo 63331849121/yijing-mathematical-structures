@@ -1,0 +1,23 @@
+{
+  "paper": "S",
+  "doi": "10.5281/zenodo.23852662",
+  "record_url": "https://zenodo.org/records/23852662",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperS-v2026.11.01",
+  "files": [
+    {
+      "file": "PaperS.pdf",
+      "bytes": 285618,
+      "sha256": "ee6295a8f02e54092b4292b2af93b4f880b8b419a83bc2e6a162517e4cf65f8f",
+      "published_server_md5_matches_local": true,
+      "public_download_url": "https://zenodo.org/api/records/23852662/files/PaperS.pdf/content"
+    },
+    {
+      "file": "PaperS_draft_and_source.zip",
+      "bytes": 565804,
+      "sha256": "1fd58597c5e52ca7b58d81d65d936f48a0fb80ed68e73df8a85c009c3b3b8fa1",
+      "published_server_md5_matches_local": true,
+      "public_download_url": "https://zenodo.org/api/records/23852662/files/PaperS_draft_and_source.zip/content"
+    }
+  ],
+  "status": "PUBLISHED_AND_SERVER_FILE_CHECKSUMS_VERIFIED"
+}
