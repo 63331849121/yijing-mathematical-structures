@@ -1,0 +1,34 @@
+{
+  "paper_code": "PaperG",
+  "title": "Quadratic maps satisfying f composed with f = f + id: nilpotence, Lie reconstruction, and growth",
+  "author": "Baohua Li",
+  "version": "2026-11-02",
+  "pages": 209,
+  "status": "PUBLIC_RELEASE_SNAPSHOT",
+  "doi": "10.5281/zenodo.23874173",
+  "record_url": "https://zenodo.org/records/23874173",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperG-v2026.11.02",
+  "github_path": "PaperG_quadratic_polar_lie/revisions/2026-11-02",
+  "source_entry": "main.tex",
+  "pdf_entry": "PaperG.pdf",
+  "pdf_sha256": "8e8c605b5a7c6972284bd4fb847e7b6ba396f97aac697e6c3594fa7292ae3e31",
+  "related_manuscripts": {
+    "Q": {
+      "title": "Quadratic orbit maps and three-Engel Lie algebras in characteristic two",
+      "doi": "10.5281/zenodo.23874202"
+    },
+    "E": {
+      "title": "Extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras",
+      "doi": "10.5281/zenodo.23874228"
+    },
+    "C": {
+      "title": "Central-depth stability and optimal central realizations of three-Engel Lie algebras",
+      "doi": "10.5281/zenodo.23874234"
+    }
+  },
+  "tex_and_pdf_unchanged_from_checked_snapshot": true,
+  "verification_scope": "See verification/README.txt and supplied replay reports; finite controls and general proofs have distinct roles.",
+  "conceptdoi": "10.5281/zenodo.23788042",
+  "previous_version_doi": "10.5281/zenodo.23852642",
+  "frozen_unified_collection": true
+}

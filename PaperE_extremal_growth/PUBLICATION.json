@@ -1,0 +1,33 @@
+{
+  "paper_code": "PaperE",
+  "title": "Extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras",
+  "author": "Baohua Li",
+  "version": "2026-11-02",
+  "pages": 80,
+  "status": "PUBLIC_RELEASE_SNAPSHOT",
+  "doi": "10.5281/zenodo.23874228",
+  "record_url": "https://zenodo.org/records/23874228",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperE-v2026.11.02",
+  "github_path": "PaperE_extremal_growth",
+  "source_entry": "PaperG_extremal_growth.tex",
+  "pdf_entry": "PaperG_extremal_growth.pdf",
+  "pdf_sha256": "2c05acd82859a32be2a3bc3ef36b6530bad5355cd3b921739c6f4012dab71993",
+  "related_manuscripts": {
+    "G": {
+      "title": "Quadratic maps satisfying f composed with f = f + id: nilpotence, Lie reconstruction, and growth",
+      "doi": "10.5281/zenodo.23874173"
+    },
+    "Q": {
+      "title": "Quadratic orbit maps and three-Engel Lie algebras in characteristic two",
+      "doi": "10.5281/zenodo.23874202"
+    },
+    "C": {
+      "title": "Central-depth stability and optimal central realizations of three-Engel Lie algebras",
+      "doi": "10.5281/zenodo.23874234"
+    }
+  },
+  "tex_and_pdf_unchanged_from_checked_snapshot": true,
+  "verification_scope": "See verification/README.txt and supplied replay reports; finite controls and general proofs have distinct roles.",
+  "derived_from_doi": "10.5281/zenodo.23874173",
+  "previous_working_code": "PaperG-II"
+}

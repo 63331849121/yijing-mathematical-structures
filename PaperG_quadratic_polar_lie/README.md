@@ -1,3 +1,7 @@
+**Frozen unified edition: [209-page manuscript, source and exact verification](revisions/2026-11-02/), 2 November 2026. DOI: https://doi.org/10.5281/zenodo.23874173.**
+
+Independent developments: [Paper Q](../PaperQ_quadratic_orbit_maps/), [Paper E](../PaperE_extremal_growth/), and [Paper C](../PaperC_central_depth/). Earlier editions below remain preserved.
+
 **Current edition: [186-page manuscript, source and verification](revisions/2026-11-01/), 1 November 2026.**
 
 The files below document the preserved first edition.

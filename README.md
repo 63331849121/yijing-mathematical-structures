@@ -137,3 +137,12 @@ Fixed release: https://github.com/63331849121/yijing-mathematical-structures/rel
 These are connected independent papers; previous tagged editions remain available.
 
 Zenodo current editions: [Paper G](https://doi.org/10.5281/zenodo.23852642) · [Paper S](https://doi.org/10.5281/zenodo.23873752).
+
+## Frozen Paper G and independent Papers Q, E and C — 2 November 2026
+
+- [Paper G: 209-page manuscript, source and verification](PaperG_quadratic_polar_lie/revisions/2026-11-02/) — [DOI](https://doi.org/10.5281/zenodo.23874173)
+- [Paper Q: 65-page manuscript, source and verification](PaperQ_quadratic_orbit_maps/) — [DOI](https://doi.org/10.5281/zenodo.23874202)
+- [Paper E: 80-page manuscript, source and verification](PaperE_extremal_growth/) — [DOI](https://doi.org/10.5281/zenodo.23874228)
+- [Paper C: 28-page manuscript, source and verification](PaperC_central_depth/) — [DOI](https://doi.org/10.5281/zenodo.23874234)
+
+G is the frozen unified collection. Q, E and C are independently readable manuscripts with separate questions and explicitly attributed shared foundations. [Version and contribution index](PaperG_research_collection_index.md). Paper S continues independently.
