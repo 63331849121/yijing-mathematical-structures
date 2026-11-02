@@ -1,0 +1,28 @@
+{
+  "paper": "Q",
+  "version": "2026-11-02.2",
+  "pages": 73,
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "doi": "10.5281/zenodo.23882876",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperQ-v2026.11.02.2",
+  "source_entry_sha256": "776e5573e2d68962f1ddfad27a166bebc86becdcafa1a89f7660c521823eab4f",
+  "assets": [
+    {
+      "name": "PaperQ.pdf",
+      "bytes": 500900,
+      "sha256": "3bec143274959a82c56b6925b2c1881fc84f9cfba31a3de2afcdf610569d72b2",
+      "md5": "db571bbaa84756682e451818cb9ac3f9"
+    },
+    {
+      "name": "PaperQ_source_and_verification.zip",
+      "bytes": 1018634,
+      "sha256": "da8fa66ef2902613b37e92ef27abfcdab0094ea16faec67a0acbb93cae3de746",
+      "md5": "e275cba9a5b8967fcbf12b4f8714511d"
+    }
+  ],
+  "third_round": "Local research only; not included in article or deposit.",
+  "old_version_authorship_preserved": true
+}
