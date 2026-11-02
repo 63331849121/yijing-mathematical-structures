@@ -1,0 +1,8 @@
+Copyright 2026 Wencong Huang and Baohua Li.
+
+Existing repository terms are retained: manuscript and supplementary PDFs and
+the historical overview are CC BY 4.0; verification code and Lean sources are
+MIT under the top-level LICENSE. No new dataset-specific license is assigned
+by this update. The unmodified Latin Modern font retains its separate GUST
+Font License and LPPL notices, supplied in the sources. No third-party research
+article PDF is redistributed in this publication.

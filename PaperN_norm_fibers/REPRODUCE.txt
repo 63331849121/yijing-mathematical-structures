@@ -1,0 +1,50 @@
+Paper N general version, 2 November 2026
+Authors: Wencong Huang; Baohua Li.
+The title contains no internal version label. The release metadata identifies v22.
+The previous public version DOI is 10.5281/zenodo.23757428; its files are preserved.
+
+Run from this project directory with Python 3.10+; do not use -O.
+1. Compile and resolve both PDFs:
+   python -B build.py
+   Requires an installed pdflatex. The two documents are built alternately
+   until their reference state is stable. Current report:
+   verification/general_revision_2026-11-02/compilation.json
+
+2. Complete primitive-inner-norm support and all finite witnesses:
+   python -B verification/primitive_norm_2026-11-02/verify_closure_independent.py
+   python -B verification/primitive_norm_2026-11-02/replay_independent.py
+   python -B verification/primitive_norm_2026-11-02/check_sieve_integer.py
+   All use the standard library. The proof handles s>=1924 with an infinite
+   tail bound; exact witnesses cover every remaining primitive norm orbit.
+
+3. Unsieved moment formula and archived full-order distributions, s=2,...,9:
+   python -B verification/distribution_2026-11-02/moments/replay_distribution.py
+
+4. Cubic w coordinate and genus-two traces, s=3,5,7,9,11:
+   python -B verification/distribution_2026-11-02/cubic/probe_cubic_mixed_moment.py
+   python -B verification/distribution_2026-11-02/cubic/check_cubic_genus2_reduction.py
+   python -B verification/distribution_2026-11-02/cubic/replay_cubic_raw_arithmetic.py
+   Two arithmetic implementations cover 1798 primitive norms / 89 orbits.
+   Archived full-order D comparisons cover only s=3,5,7,9 (434 norms).
+   No new B-order enumeration is claimed at s=11.
+
+5. Exact projective spectrum and all roots-of-unity exclusions:
+   python -B verification/distribution_2026-11-02/spectral/verify_projective_spectrum_independent.py
+   This standard-library verifier recounts the F8/F64 points and Kloosterman
+   sums, rebuilds both Sylvester resultants, and checks all 18 orders / 54 gcds.
+   No floating-point spectral test or computer-algebra irreducibility flag
+   is used. The general geometric implication is proved in the supplement.
+
+6. Independent exact primitive-indicator coefficient and scope checks:
+   python -B verification/distribution_2026-11-02/coefficients/verify_sieve_coefficients_and_scope.py
+
+7. Retained original field certificates:
+   python -B verification/author_runtime/verify_inner_double_all.py
+
+All commands write results only in this extracted project. Historical records
+are dated provenance; only reports explicitly marked fresh in the current
+verification manifest are claimed as rerun. Internal independent proof reviews
+are not external journal peer review. The old selective Lean scope is retained;
+no new Lean formalization of support, genus-two or mixed-moment arguments is claimed.
+The mixed constant C0 is a fixed conductor integer, not numerically evaluated.
+The full-order variance retains W(A)^2; no full variance main term is asserted.

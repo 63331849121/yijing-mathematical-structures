@@ -1,0 +1,19 @@
+Paper A / Paper N identity and authorship, 2 November 2026
+
+Paper A: An affine Singer layer on F2^6, its (T,D,K) triple, and
+<T,D> = AGL(1,64). Sole author: Baohua Li.
+DOI: 10.5281/zenodo.22731492. This focused earlier note remains unchanged.
+
+Paper N: Norm-fiber densities and relative traces in characteristic two.
+Authors, in order: Wencong Huang; Baohua Li.
+Concept DOI: 10.5281/zenodo.23721669.
+Wencong Huang joined the development of this later norm-fiber article.
+The v17 and v21 norm-fiber records belong to Paper N, although their older
+repository paths and tags used paperA. Their creator metadata is corrected
+to the two authors; this correction does not apply to the original Singer note.
+
+The current canonical repository directory is PaperN_norm_fibers/.
+PaperA_norm_fibers/ is a compatibility path for the norm-fiber article,
+not the original Singer note. Historical DOI files, dates, checksums and
+tags keep their published bytes and identifiers. The new tag uses paperN.
+The formal titles of both works are retained and their DOI chains stay distinct.
