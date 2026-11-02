@@ -26,3 +26,13 @@ interpretive or cultural notes.
 ## Identity and personal data
 
 No identity documents or personal data are included in this repository.
+
+## Paper A authorship correction, 2 November 2026
+
+The current norm-fiber paper is by Wencong Huang and Baohua Li, in that order.
+Wencong Huang contributed to earlier versions and was omitted from their
+bylines. The v17 and v21 creator metadata is corrected; historical deposited
+files and Git tags remain preserved. The new general revision carries the
+correct byline throughout. See PaperA_norm_fibers/AUTHORS_CORRECTION.txt.
+This correction concerns that Paper A version chain, not the distinct Singer
+note or other papers in this repository.
