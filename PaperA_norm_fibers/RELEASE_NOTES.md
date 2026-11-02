@@ -1,4 +1,4 @@
-# Paper A general revision, 2 November 2026
+# Paper N general revision, 2 November 2026
 
 Authors: Wencong Huang and Baohua Li.
 Title: Norm-fiber densities and relative traces in characteristic two
@@ -12,13 +12,13 @@ Lang-twisted mixed second moment. The refined pointwise coefficient is
 and the supplement. The fixed conductor constant is not numerically
 evaluated; the full-order variance retains W(A)^2 and has no asserted main term.
 
-The main paper has 44 pages and the supplement 45 pages. Both compile with
+The main paper has 45 pages and the supplement 45 pages. Both compile with
 resolved cross references. Exact support, arithmetic, spectral and coefficient
 replays pass. The retained selective Lean record is historical and does not
 cover the new support or mixed-moment proofs. No external peer review is claimed.
 
-Wencong Huang contributed to the earlier Paper A versions and was omitted.
-Their author metadata is corrected to Huang, Wencong; Li, Baohua. Historical
+Wencong Huang joined the norm-fiber article, now designated Paper N. The original focused Paper A Singer note remains solely by Baohua Li.
+Only the v17/v21 norm-fiber records have corrected two-author metadata. Historical
 PDFs, source assets, checksums and Git tags remain unchanged. This new release
 supplies revised documents with the corrected byline. The formal title omits
 v22, which is used only for archive management. The previous public baseline

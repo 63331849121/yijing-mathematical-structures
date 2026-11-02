@@ -1,4 +1,4 @@
-Paper A general version, 2 November 2026
+Paper N general version, 2 November 2026
 Authors: Wencong Huang; Baohua Li.
 The title contains no internal version label. The release metadata identifies v22.
 The previous public version DOI is 10.5281/zenodo.23757428; its files are preserved.

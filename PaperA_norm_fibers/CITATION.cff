@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this version of the Paper A preprint."
+message: "Please cite this version of the Paper N preprint."
 type: article
 title: "Norm-fiber densities and relative traces in characteristic two"
 authors:
@@ -10,6 +10,6 @@ authors:
 version: "v22"
 date-released: "2026-11-02"
 doi: "10.5281/zenodo.23880175"
-url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.11.02-v22"
+url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperN-v2026.11.02-v22"
 repository-code: "https://github.com/63331849121/yijing-mathematical-structures"
 license: CC-BY-4.0

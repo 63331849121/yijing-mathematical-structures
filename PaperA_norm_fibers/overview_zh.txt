@@ -1,11 +1,11 @@
-论文A：特征二中的范数纤维密度与相对迹
+论文N：特征二中的范数纤维密度与相对迹
 英文题名：Norm-fiber densities and relative traces in characteristic two
 作者：Wencong Huang, Baohua Li
 日期：2026-11-02；v22仅为档案编号，不进入正式题名。
-主稿44页；补充稿45页。
+主稿45页；补充稿45页。
 本版DOI：https://doi.org/10.5281/zenodo.23880175
 全版本DOI：https://doi.org/10.5281/zenodo.23721669
-GitHub：https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.11.02-v22
+GitHub：https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperN-v2026.11.02-v22
 
 一、核心内容
 在t=2^s、s>=2的四次域塔中研究范数一群里的联动乘法阶。
@@ -41,7 +41,9 @@ REPRODUCE.txt给出可移植命令。新鲜重放涵盖全部支撑证书、有�
 将源码与验证包、原始数据包解压到同一目录即可取得完整重放目录。
 
 五、署名更正与历史
-Wencong Huang已参与旧版但此前被遗漏。同一论文DOI版本链的v17、
+Wencong Huang在后来以Norm开头的论文N阶段加入。早期约10页的
+An affine Singer独著短文才是论文A，作者仅Baohua Li，DOI为
+10.5281/zenodo.22731492。论文N的DOI版本链中，v17、
 v21作者元数据更正为上述两位作者；旧PDF、旧源码包、散列和标签
-保留原状。新稿正文和PDF元数据均采用正确署名。独立Singer旧文
-不在本次同一版本链更正范围内。
+保留原状。新稿正文和PDF元数据均采用正确署名。论文A的独著署名保持。历史PaperA_norm_fibers路径属于后来的
+论文N，现以PaperN_norm_fibers作为明确入口。旧标签保留，新标签用paperN。

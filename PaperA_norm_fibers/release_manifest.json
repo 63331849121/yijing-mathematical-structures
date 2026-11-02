@@ -1,5 +1,5 @@
 {
-  "paper": "A",
+  "paper": "N",
   "title": "Norm-fiber densities and relative traces in characteristic two",
   "authors": [
     "Wencong Huang",
@@ -7,31 +7,31 @@
   ],
   "version": "v22",
   "doi": "10.5281/zenodo.23880175",
-  "github_tag": "paperA-v2026.11.02-v22",
+  "github_tag": "paperN-v2026.11.02-v22",
   "pages": {
-    "main": 44,
+    "main": 45,
     "supplement": 45
   },
   "artifacts": {
     "AUTHORS_CORRECTION.txt": {
-      "bytes": 693,
-      "sha256": "28792dba442f921f46809722c1fbcaa4229c8614d083fd41f0baf890f7e6adb5",
-      "md5": "940b682e333d02d94ca92dfc5d874f22"
+      "bytes": 1088,
+      "sha256": "06cd0af8d625aba7fcd05e6110255f8f2ca8b5ebae9c9da9dfc759d445d2bfe3",
+      "md5": "8375ae50f373095d7def43da3597b981"
     },
     "CITATION.cff": {
       "bytes": 563,
-      "sha256": "cdce084698505af09654d9bd431c893bcafd4b4f6aed8f5de99c17d0b06f73aa",
-      "md5": "d50b7ee1c2667713834342e9029b72c8"
+      "sha256": "9ba509fffbc432a6ccfbac857f1868da98e52aaad8936d5bb4cd0388dba7b5f4",
+      "md5": "e060b4f4f4cdd964316760b48b3733fc"
     },
     "LaTeX_sources.zip": {
-      "bytes": 189337,
-      "sha256": "9d38e2a061e14a9e02b521a6834adfc9ef6a8e95cbacc80c0e468956fc311736",
-      "md5": "e7eccdf6a8359a3f137aac821f9dd3db"
+      "bytes": 190607,
+      "sha256": "7dc57186419ea8214d7d5f3f703d631f909c5faf910d2ae04f1a412df1d4f610",
+      "md5": "73d706dff64e28041f0e2c96bbdac1c4"
     },
     "Lean_verification.zip": {
-      "bytes": 41198,
-      "sha256": "c1576a57ecd470d1bac1befd898af7956c267aedb0745bda037ab7ae346790e1",
-      "md5": "031d245c52c313330f22dcd13c15d8b6"
+      "bytes": 41405,
+      "sha256": "012c14d26eb938a3c1de498415e266f41b1d7a5e2c4d9a693310e656d1611d0f",
+      "md5": "40dfa51f1e73b01914105ea82ae611fb"
     },
     "LICENSES.txt": {
       "bytes": 491,
@@ -39,34 +39,34 @@
       "md5": "e68978726785260e5da34bdd507696ce"
     },
     "main.pdf": {
-      "bytes": 738118,
-      "sha256": "0f6b77a450dd70558d9605e863556b967dbc73c007ff2df16fa03678aa674d3b",
-      "md5": "8d550345dbcb542124f40d673f7d01ae"
+      "bytes": 742511,
+      "sha256": "e44b26afee059680b2b399a94d9d226655389206b81b7ddd3f0d89f1da5f84e6",
+      "md5": "a16c0d9dea4b25c6056d8cc1e32220f0"
     },
     "overview_zh.txt": {
-      "bytes": 3016,
-      "sha256": "db1e1e5f78b582c0d556274449e3847351bf05a974e145f95e80d3617c99933e",
-      "md5": "0703559db9264035cbbd0b7581a725ad"
+      "bytes": 3253,
+      "sha256": "e4271d18ce24cdbfe7ad8fc961c540046fcb99c2678e1865fbd8beda947ee43e",
+      "md5": "db672e27e9b804addd1c5c839a7d508c"
     },
     "PUBLICATION.json": {
-      "bytes": 1329,
-      "sha256": "a06f520cf94e0f4511c4ece53a7539337ec966f28cef20222134c36190dd5761",
-      "md5": "81c4835257bcaa1dfc3e77afe20713ee"
+      "bytes": 1541,
+      "sha256": "f8ad5a0f0bf9597c41b24871048ae37bd73995768da634257b9eaba4063b84f0",
+      "md5": "6fde3afcfc2b31bfd18ee6af8e112ae2"
     },
     "README.md": {
-      "bytes": 2477,
-      "sha256": "b23874cb9f646f788ba566f74c87bd63a94100fc8929080ace82bbd745a81d48",
-      "md5": "e653ce2f19413882e4eb21d332b928dc"
+      "bytes": 2814,
+      "sha256": "728b1d8dd237e788b63f17711eed5585f3a211b25d6e346cbf59954475dd63e4",
+      "md5": "485c5b8952b4d0f9ebd95a6dcf206ee8"
     },
     "RELEASE_NOTES.md": {
-      "bytes": 1718,
-      "sha256": "5d20f6845f84714ea0fd9d1c4b1f4f27ba1b9e56dbdd307525776fecf29bf340",
-      "md5": "7365c9261dc512193618c6cb749cadb0"
+      "bytes": 1788,
+      "sha256": "461878e9713068d08b68613e6d237ff2f9fa2eb6b06b7b31783da06c5a2393a2",
+      "md5": "3f25a75a1bb492330440c6d360c8bd73"
     },
     "REPRODUCE.txt": {
       "bytes": 3048,
-      "sha256": "451b036e547f66a8d58b0d50c6ac9948422863e8dc3e83a53b08abd1388af5b6",
-      "md5": "379b7280d8262c4f7dfb7af316c62a90"
+      "sha256": "abf6588a986387f367351752e344c45203264694023f25b2dc1673ee8baeb700",
+      "md5": "a88122a52208e74c7a3afe6e5ad1f290"
     },
     "research_data.zip": {
       "bytes": 52704931,
@@ -74,14 +74,14 @@
       "md5": "9f943b4a40559bb96258b0ba8da9533f"
     },
     "source_and_verification.zip": {
-      "bytes": 3943682,
-      "sha256": "f75adb627c907609501035286f2e49c0eb54eafa6b81423504ef0b2511b2053d",
-      "md5": "519c60a12faf97c337ec0b7546125e9c"
+      "bytes": 3944800,
+      "sha256": "eedcd3d962639481905ce95395ff17126d34aa5c100cf71cbd45280b035ed20d",
+      "md5": "a4ae2307f64666667f6ea5027a34a42b"
     },
     "supplement.pdf": {
-      "bytes": 728247,
-      "sha256": "ae7da6b524309f04f04c3addf20da1c35397a83ec5e2db877377faff923ca086",
-      "md5": "8fbee04c9ecd0b8edad9f321259e8503"
+      "bytes": 728927,
+      "sha256": "635b6900b5328ae3290db1b74ca65a4432812a2eb9ae4c23fef1291dbb2d73a7",
+      "md5": "2d6d3bd1ccea4faea1a5be430e7cc939"
     }
   }
 }

@@ -1,11 +1,19 @@
-Authorship correction, 2 November 2026
+Paper A / Paper N identity and authorship, 2 November 2026
 
-Correct author order for this paper: Wencong Huang; Baohua Li.
-Wencong Huang contributed to the work reported in earlier Paper A versions
-and was omitted from their bylines. The creators metadata of the v17 and v21
-records in the same concept-DOI chain is corrected accordingly.
-Historical deposited PDFs, source archives, file hashes, dates and Git tags
-are preserved. Their original bylines are part of the version history.
-The current revision carries the corrected byline throughout the active
-manuscripts, PDF metadata, release description and citation files.
-The separate earlier Singer note is a distinct record and is not relabelled.
+Paper A: An affine Singer layer on F2^6, its (T,D,K) triple, and
+<T,D> = AGL(1,64). Sole author: Baohua Li.
+DOI: 10.5281/zenodo.22731492. This focused earlier note remains unchanged.
+
+Paper N: Norm-fiber densities and relative traces in characteristic two.
+Authors, in order: Wencong Huang; Baohua Li.
+Concept DOI: 10.5281/zenodo.23721669.
+Wencong Huang joined the development of this later norm-fiber article.
+The v17 and v21 norm-fiber records belong to Paper N, although their older
+repository paths and tags used paperA. Their creator metadata is corrected
+to the two authors; this correction does not apply to the original Singer note.
+
+The current canonical repository directory is PaperN_norm_fibers/.
+PaperA_norm_fibers/ is a compatibility path for the norm-fiber article,
+not the original Singer note. Historical DOI files, dates, checksums and
+tags keep their published bytes and identifiers. The new tag uses paperN.
+The formal titles of both works are retained and their DOI chains stay distinct.

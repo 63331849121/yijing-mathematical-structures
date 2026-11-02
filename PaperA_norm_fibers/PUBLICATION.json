@@ -1,6 +1,6 @@
 {
   "status": "RELEASE_PAYLOAD",
-  "paper": "A",
+  "paper": "N",
   "title": "Norm-fiber densities and relative traces in characteristic two",
   "authors": [
     "Wencong Huang",
@@ -13,18 +13,24 @@
   "concept_doi": "10.5281/zenodo.23721669",
   "previous_version_doi": "10.5281/zenodo.23757428",
   "github_repository": "https://github.com/63331849121/yijing-mathematical-structures",
-  "github_tag": "paperA-v2026.11.02-v22",
-  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.11.02-v22",
+  "github_tag": "paperN-v2026.11.02-v22",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperN-v2026.11.02-v22",
   "pages": {
-    "main": 44,
+    "main": 45,
     "supplement": 45
   },
-  "authorship_correction": "Wencong Huang contributed to earlier versions and was omitted. Correct metadata; preserve historical files.",
+  "authorship_correction": "Huang joined the norm-fiber article (Paper N); correct its v17/v21 metadata. Original Singer Paper A is solely by Li; preserve both distinct DOI chains.",
   "fresh_checks": "verification/general_revision_2026-11-02/fresh_replay_results.json",
   "formalization_scope": "Retained historical selective scope. New support and mixed-moment arguments not Lean-formalized.",
   "limitations": [
     "Fixed conductor constant not numerically evaluated",
     "Full-order variance retains W(A)^2"
   ],
+  "canonical_directory": "PaperN_norm_fibers",
+  "original_note": {
+    "designation": "A",
+    "author": "Baohua Li",
+    "doi": "10.5281/zenodo.22731492"
+  },
   "receipt_location": "Publication verification receipts are saved separately after platform publication."
 }
