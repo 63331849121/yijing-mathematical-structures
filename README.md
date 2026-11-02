@@ -129,11 +129,11 @@ DOI: https://doi.org/10.5281/zenodo.23788043
 Fixed release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperG-v2026.10.30
 
 
-## Current Paper G and Paper S — 1 November 2026
+## Current Paper G and Paper S
 
 - [Paper G: 186-page manuscript and source](PaperG_quadratic_polar_lie/revisions/2026-11-01/)
-- [Paper S: 34-page manuscript and source](PaperS_ideal_growth/)
+- [Paper S: 56-page manuscript and source, updated 2 November 2026](PaperS_ideal_growth/)
 
 These are connected independent papers; previous tagged editions remain available.
 
-Zenodo current editions: [Paper G](https://doi.org/10.5281/zenodo.23852642) · [Paper S](https://doi.org/10.5281/zenodo.23852662).
+Zenodo current editions: [Paper G](https://doi.org/10.5281/zenodo.23852642) · [Paper S](https://doi.org/10.5281/zenodo.23873752).

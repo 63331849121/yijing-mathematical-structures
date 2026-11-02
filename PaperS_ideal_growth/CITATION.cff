@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-message: "Please cite the manuscript using its DOI."
+message: "Please cite the manuscript using its version DOI."
 type: article
 title: "Sharp ideal growth of metabelian restricted Lie algebras"
 authors:
   - family-names: Li
     given-names: Baohua
 year: 2026
-date-released: 2026-11-01
-doi: 10.5281/zenodo.23852662
-url: https://zenodo.org/records/23852662
+date-released: 2026-11-02
+version: "2026-11-02"
+doi: 10.5281/zenodo.23873752
+url: https://zenodo.org/records/23873752

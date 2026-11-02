@@ -1,23 +1,30 @@
 {
   "paper": "S",
-  "doi": "10.5281/zenodo.23852662",
-  "record_url": "https://zenodo.org/records/23852662",
-  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperS-v2026.11.01",
+  "version": "2026-11-02",
+  "pages": 56,
+  "doi": "10.5281/zenodo.23873752",
+  "conceptdoi": "10.5281/zenodo.23852660",
+  "record_url": "https://zenodo.org/records/23873752",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperS-v2026.11.02",
   "files": [
     {
-      "file": "PaperS.pdf",
-      "bytes": 285618,
-      "sha256": "ee6295a8f02e54092b4292b2af93b4f880b8b419a83bc2e6a162517e4cf65f8f",
-      "published_server_md5_matches_local": true,
-      "public_download_url": "https://zenodo.org/api/records/23852662/files/PaperS.pdf/content"
+      "name": "PaperS.pdf",
+      "bytes": 424775,
+      "sha256": "d315c5afaf0ab54f02329e0142811e78a7bd831b886734aeb4fb57259cdc04a1",
+      "md5": "73886cff480c7f4227652006ce0d25f3",
+      "public_download_url": "https://zenodo.org/api/records/23873752/files/PaperS.pdf/content",
+      "server_md5_matches": true,
+      "public_sha256_matches": true
     },
     {
-      "file": "PaperS_draft_and_source.zip",
-      "bytes": 565804,
-      "sha256": "1fd58597c5e52ca7b58d81d65d936f48a0fb80ed68e73df8a85c009c3b3b8fa1",
-      "published_server_md5_matches_local": true,
-      "public_download_url": "https://zenodo.org/api/records/23852662/files/PaperS_draft_and_source.zip/content"
+      "name": "PaperS_draft_and_source.zip",
+      "bytes": 961750,
+      "sha256": "ce414aa052c4207c4b5e7202fdad6bba2ce3a5d9a6272f61b2eef822be79c932",
+      "md5": "fbf94f940d504e9f65dc2b6e6b75b640",
+      "public_download_url": "https://zenodo.org/api/records/23873752/files/PaperS_draft_and_source.zip/content",
+      "server_md5_matches": true,
+      "public_sha256_matches": true
     }
   ],
-  "status": "PUBLISHED_AND_SERVER_FILE_CHECKSUMS_VERIFIED"
+  "status": "ZENODO_PUBLISHED_AND_PUBLIC_DOWNLOADS_VERIFIED"
 }
