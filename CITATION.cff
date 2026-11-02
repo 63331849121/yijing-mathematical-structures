@@ -1,24 +1,24 @@
-cff-version: 1.2.0
-message: "For the current Paper A preprint, use the preferred citation below."
-type: software
-title: "Yijing Mathematical Structures: research preprints and verification code"
-authors:
-  - family-names: Li
-    given-names: Baohua
-version: "2026.11.02-v22"
-date-released: "2026-11-02"
-url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.11.02-v22"
-repository-code: "https://github.com/63331849121/yijing-mathematical-structures"
-license: MIT
-preferred-citation:
-  type: article
-  title: "Norm-fiber densities and relative traces in characteristic two"
-  authors:
-    - family-names: Huang
-      given-names: Wencong
-    - family-names: Li
-      given-names: Baohua
-  year: 2026
-  doi: "10.5281/zenodo.23880175"
-  date-published: "2026-11-02"
-  url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.11.02-v22"
+cff-version: 1.2.0
+message: "For the current Paper N preprint, use the preferred citation below."
+type: software
+title: "Yijing Mathematical Structures: research preprints and verification code"
+authors:
+  - family-names: Li
+    given-names: Baohua
+version: "2026.11.02-v22"
+date-released: "2026-11-02"
+url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperN-v2026.11.02-v22"
+repository-code: "https://github.com/63331849121/yijing-mathematical-structures"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Norm-fiber densities and relative traces in characteristic two"
+  authors:
+    - family-names: Huang
+      given-names: Wencong
+    - family-names: Li
+      given-names: Baohua
+  year: 2026
+  doi: "10.5281/zenodo.23880175"
+  date-published: "2026-11-02"
+  url: "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperN-v2026.11.02-v22"

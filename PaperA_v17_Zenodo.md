@@ -1,3 +1,10 @@
+> Naming clarification, 2 November 2026: this v17 record has the Norm-fiber
+> title and belongs to **Paper N**, jointly by Wencong Huang and Baohua Li.
+> The `PaperA` filename and old tag are preserved historical identifiers.
+> The earlier approximately ten-page Singer note is **Paper A**, solely by
+> Baohua Li, with separate DOI 10.5281/zenodo.22731492.
+> See [the identity record](PAPER_IDENTITIES.md).
+
 # Paper A v17: Zenodo deposit
 
 **Norm-fiber densities and relative traces in characteristic two** — Baohua Li.
