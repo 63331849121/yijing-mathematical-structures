@@ -1,27 +1,42 @@
-# Quadratic orbit maps and three-Engel Lie algebras in characteristic two
+# Paper Q: structure and quadratic realization
 
-Baohua Li. Preprint, **65 pages**, version **2026-11-02**.
+Paper Q / version 2026-11-02.2 / 73 pages
+Wencong Huang, Baohua Li
+============================================================
+Entry: PaperG_structure.tex. Read PaperG_structure.pdf.
+Version DOI: https://doi.org/10.5281/zenodo.23882876
+Fixed release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperQ-v2026.11.02.2
+The 65-page baseline DOI 10.5281/zenodo.23874202 retains its original
+authorship (Baohua Li) and files. The pre-publication 73-page local version
+is also preserved separately. This release adds no mathematical change
+to the reviewed 73-page integration; its title-page author/date and PDF
+author metadata are updated.
 
-- [PDF](PaperQ.pdf)
-- [Editable LaTeX and necessary exact verification](PaperQ_source_and_verification.zip)
-- Version DOI: https://doi.org/10.5281/zenodo.23874202
-- Fixed GitHub release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperQ-v2026.11.02
+Sections 11 and 13 and Appendix J contain exact central repair, half-weight
+constraints, the arbitrary-tower sharp first-ascent cost over S_r, the full
+F4 rank-four exception and optimal preparation. The cost is relative to the
+specified bottom, not a global value of m(5). Equality uniqueness means an
+extension isomorphism class over a fixed bottom, not a canonical map.
 
-## Mathematical scope
+Build with a standard XeLaTeX distribution (two runs), or build.ps1. All
+used TeX, fonts and verification inputs are local. No other paper or the
+frozen 209-page collection is required. The author-specific offline cache
+and build_offline.ps1 are excluded from the portable ZIP.
 
-We study finite binary quadratic maps satisfying f composed with f = f + id. Their polar Lie algebras are nilpotent. Explicit changes of operations identify all such solutions with ordinary F4 three-Engel Lie algebras satisfying a sextic identity R = 0, retaining all linear intertwiners and actual automorphism groups. Every quadratic solution admits conjugating coordinates whose forward and inverse binary degrees are at most two, uniformly in dimension and class. The full ordinary three-Engel class has a sharp cubic orbit encoding, with R as its exact third additive difference. A natural homological map identifies the central scalar obstruction and yields all-even-rank compact cover applications. This independently readable 65-page preprint develops the structural part of the frozen research collection Paper G.
+python -m pip install -r verification/requirements.txt
+python -B -X utf8 verification/run_replay.py --group merge-review --output-dir replay_new
+Use a new output directory. Add --temp-root with a short writable absolute
+path if the system temporary directory is restricted. The targeted group
+contains six invocations; all contains seven inherited plus five new tasks.
+Exact scope, proof/certificate map and earlier fresh reports are in
+verification/README.txt, central_repair/README.txt and INTEGRATION_REPORT.zh-CN.txt.
+Finite computations complement the general written proofs.
 
-## Source and verification
+Third-round class-six notes are deferred local research, outside the
+article and this deposit. They do not enter the abstract or prove the
+manuscript's main assertions. C/E are background comparisons, not new proof
+inputs. e(d)-1 <= kappa(d) <= e(d) is retained.
 
-The archive root is `PaperQ/`; its TeX entry is `PaperG_structure.tex`. The original checked TeX and PDF bytes are preserved. Use a standard XeLaTeX installation. Read `verification/README.txt` for exact dependencies, finite proof inputs and replay scope. Existing supplied certificates and replay reports are retained.
-
-Manuscript and original mathematical data: CC BY 4.0; original verification code: MIT. Bundled third-party assets retain their own licenses.
-
-## Related manuscripts
-
-- Paper G: Quadratic maps satisfying f composed with f = f + id: nilpotence, Lie reconstruction, and growth — https://doi.org/10.5281/zenodo.23874173
-- Paper Q: Quadratic orbit maps and three-Engel Lie algebras in characteristic two — https://doi.org/10.5281/zenodo.23874202
-- Paper E: Extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras — https://doi.org/10.5281/zenodo.23874228
-- Paper C: Central-depth stability and optimal central realizations of three-Engel Lie algebras — https://doi.org/10.5281/zenodo.23874234
-
-Paper S is independent: https://doi.org/10.5281/zenodo.23873752 .
+Manuscript and original mathematical data: CC BY 4.0. Original verification
+code: MIT. Bundled third-party assets retain their own licenses.
+manifest.json fingerprints all portable files except itself.

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this manuscript using its version DOI."
+type: article
+title: "Quadratic orbit maps and three-Engel Lie algebras in characteristic two"
+authors:
+  - family-names: Li
+    given-names: Baohua
+year: 2026
+date-released: 2026-11-02
+version: "2026-11-02"
+doi: 10.5281/zenodo.23874202
+url: https://zenodo.org/records/23874202

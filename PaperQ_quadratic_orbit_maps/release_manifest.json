@@ -1,0 +1,32 @@
+{
+  "paper": "Q",
+  "pages": 73,
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "version": "2026-11-02.2",
+  "record_id": 23882876,
+  "doi": "10.5281/zenodo.23882876",
+  "tag": "paperQ-v2026.11.02.2",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperQ-v2026.11.02.2",
+  "payload_dir": "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\github\\PaperQ_release_structure_2026-11-02\\payload",
+  "local_zip": "C:\\Users\\master\\Documents\\Codex\\mywebsite\\output\\pdf\\PaperQ_source_and_verification_2026-11-02.2.zip",
+  "entry_sha256": "776e5573e2d68962f1ddfad27a166bebc86becdcafa1a89f7660c521823eab4f",
+  "assets": [
+    {
+      "name": "PaperQ.pdf",
+      "bytes": 500900,
+      "sha256": "3bec143274959a82c56b6925b2c1881fc84f9cfba31a3de2afcdf610569d72b2",
+      "md5": "db571bbaa84756682e451818cb9ac3f9"
+    },
+    {
+      "name": "PaperQ_source_and_verification.zip",
+      "bytes": 1018634,
+      "sha256": "da8fa66ef2902613b37e92ef27abfcdab0094ea16faec67a0acbb93cae3de746",
+      "md5": "e275cba9a5b8967fcbf12b4f8714511d"
+    }
+  ],
+  "only_Q_remote_prefix": "PaperQ_quadratic_orbit_maps/",
+  "third_round_publication": false
+}
