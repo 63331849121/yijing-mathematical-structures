@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "method": "F2 circulant determinant and exact Cramer solution parametrization",
+  "all_125_residue_classes": true,
+  "SMT_used": false,
+  "generator_code_imported": false,
+  "counts": {
+    "unique": 540,
+    "partner_checks": 28611,
+    "largest_line_period": 3,
+    "collision": 127,
+    "allowed": 5
+  },
+  "all_nodes_checked": 672,
+  "conclusion": "Every fifth-norm tail-palindromic input is the stated progression or degree-10 exception; sufficiency checked separately"
+}

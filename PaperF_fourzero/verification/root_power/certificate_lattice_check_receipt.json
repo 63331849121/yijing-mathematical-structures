@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "norm_method": "multiplication matrix modulo z^ell+Y; subset determinant",
+  "integer_method": "unimodular Bezout lattice; Apery semigroup distances; integer line intervals",
+  "other_checkers_or_generators_imported": false,
+  "domain": "all nonnegative integer gap parameters; no degree cutoff",
+  "cubic": {
+    "noncollision_checks": 768,
+    "unbounded": 41,
+    "singleton": 1
+  },
+  "quintic": {
+    "unique": 540,
+    "partner_checks": 28611,
+    "collision": 127,
+    "allowed": 5
+  }
+}

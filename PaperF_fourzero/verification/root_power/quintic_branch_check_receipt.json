@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "sufficient_families": [
+    {
+      "d_residue_mod10": 1,
+      "Q_support": [
+        [
+          0,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          24,
+          2
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          30,
+          2
+        ],
+        [
+          30,
+          3
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          40,
+          4
+        ],
+        [
+          42,
+          4
+        ],
+        [
+          44,
+          4
+        ],
+        [
+          46,
+          4
+        ],
+        [
+          50,
+          4
+        ],
+        [
+          50,
+          5
+        ],
+        [
+          52,
+          5
+        ],
+        [
+          54,
+          5
+        ],
+        [
+          56,
+          5
+        ],
+        [
+          70,
+          7
+        ]
+      ],
+      "distinct_support_for_t_at_least": 1,
+      "zero_count_coefficients": [
+        20,
+        2
+      ],
+      "reflection_defect_identically_zero": true,
+      "manuscript_floor_support_formula_verified": true
+    },
+    {
+      "d_residue_mod10": 9,
+      "Q_support": [
+        [
+          0,
+          0
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          18,
+          16
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          20,
+          18
+        ],
+        [
+          24,
+          21
+        ],
+        [
+          26,
+          23
+        ],
+        [
+          28,
+          25
+        ],
+        [
+          30,
+          26
+        ],
+        [
+          30,
+          27
+        ],
+        [
+          40,
+          35
+        ],
+        [
+          40,
+          36
+        ],
+        [
+          42,
+          37
+        ],
+        [
+          44,
+          39
+        ],
+        [
+          46,
+          41
+        ],
+        [
+          50,
+          44
+        ],
+        [
+          50,
+          45
+        ],
+        [
+          52,
+          46
+        ],
+        [
+          54,
+          48
+        ],
+        [
+          56,
+          50
+        ],
+        [
+          70,
+          63
+        ]
+      ],
+      "distinct_support_for_t_at_least": 0,
+      "zero_count_coefficients": [
+        20,
+        18
+      ],
+      "reflection_defect_identically_zero": true,
+      "manuscript_floor_support_formula_verified": true
+    }
+  ],
+  "controls": {
+    "numerical_identity_controls": 250,
+    "progression_controls": [
+      {
+        "d": 1,
+        "n": 6,
+        "image_zero_count": 2,
+        "proper_S_factor": false
+      },
+      {
+        "d": 9,
+        "n": 62,
+        "image_zero_count": 18,
+        "proper_S_factor": true
+      },
+      {
+        "d": 11,
+        "n": 76,
+        "image_zero_count": 22,
+        "proper_S_factor": true
+      },
+      {
+        "d": 19,
+        "n": 132,
+        "image_zero_count": 38,
+        "proper_S_factor": true
+      },
+      {
+        "d": 21,
+        "n": 146,
+        "image_zero_count": 42,
+        "proper_S_factor": true
+      }
+    ],
+    "small_irreducible_cases": [
+      {
+        "n": 6,
+        "input": "0x61",
+        "image": "0x73",
+        "root_order": 63,
+        "image_zero_count": 2
+      },
+      {
+        "n": 10,
+        "input": "0x787",
+        "image": "0x77b",
+        "root_order": 341,
+        "image_zero_count": 2
+      }
+    ]
+  },
+  "general_factor_identity_symbolically_verified": true,
+  "extension_field_and_root_verified": true,
+  "compact_cyclic_norm_formula_verified": true,
+  "conclusion": "All listed branches are tail-palindromic; their missing-tail counts are 2d or 2, never 4"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "revision": "2026-11-02-strict-local",
+  "pdf_pages": 18,
+  "pdf_sha256": "1b32e9899076f00231f138f127e8cec601f9fc0dd1549631b2b1b6d89ee3d628",
+  "source_sha256": "5ebb01ca8bdfba8fbb4150b8d1513e8b40dca02c6ef94e1a08fb9b7c5360ee94",
+  "labels_checked": 67,
+  "bibliography_entries": 17,
+  "unchanged_blocks": [
+    "reciprocal and quadratic mathematics",
+    "classical Appendix A",
+    "arithmetic section apart from explicit proof-supplement paragraph"
+  ],
+  "unchanged_csv_hashes": {
+    "complete_counts_6_200.csv": "3b7b2855905cc334023f275b5466cad0afaaa64ff59e2e6eac24eca956cf778a",
+    "first_solutions_6_300.csv": "cd2056bc5417d187f23253e8467bd6e2614589f50ad5a9d2d8320be245ac7106"
+  },
+  "complete_count_degrees": 98,
+  "first_witness_degrees": 148,
+  "table_rows_checked": 12,
+  "abstract_words": 157,
+  "proof_check_receipts": "all four PASS; not a substitute for replay",
+  "general_factor_identity": "symbolically verified in a free positive parameter",
+  "strict_review_corrections": [
+    "Graeffe/resultant/characteristic-polynomial attribution",
+    "reflection defect stated as an iff test",
+    "explicit accepting-node necessity versus sufficiency",
+    "independent integer-lattice audit and optimized-mode rejection"
+  ],
+  "cubic_regions": {
+    "unbounded": 41,
+    "singleton": 1
+  },
+  "quintic_nodes": 672,
+  "partner_checks": 28611,
+  "new_infinite_existence_result_claimed": false,
+  "C4_main_research": "paused at user request",
+  "publication": "local unpublished revision",
+  "compile_and_layout": "PASS; no unresolved references or box warnings"
+}

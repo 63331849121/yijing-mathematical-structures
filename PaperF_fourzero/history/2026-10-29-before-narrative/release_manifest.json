@@ -8,22 +8,22 @@
   "github_tag": "paperF-v2026.10.29",
   "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.10.29",
   "pages": 12,
-  "source_sha256": "dda22b007beb2be3dfc5eec7eaf4e99dec2b469236aba4e260b73e703a1a2c79",
-  "pdf_sha256": "b0d71a7fa795bc1d74469b972d06a0837abec158c5da2ccb71ca67c9340dffc1",
+  "source_sha256": "6647c7b3a6a0585e093fbfdedc8262155758b8b234896caa6810a1ed599c27da",
+  "pdf_sha256": "c95ded15657983a67e2b98de25acb82ae5a42bf524dba048b5ed8fedac7f5ce2",
   "local_final_review_checked": true,
   "historical_arithmetic_enumeration_rerun": false,
   "files": {
     "abstract_en.txt": "8ed1169ee4ae601c7327cf51e4d67259a5d39fe5c390df521b19b284c30a9d03",
     "abstract_zh.txt": "69d93ccb3dfa1a00d80bc3a14167e0083ac6c2dd3afebdc9cabf7bb7e9513ccf",
-    "CITATION.cff": "5e0e0459ccbee1c243704e7c87863143f5ae3329162ddc7281b5312efdc2de85",
+    "CITATION.cff": "374d3a4f3ccd2adb8e510f36daf3c97fb9f4f68df993d3f4da6178e4b04a24cb",
     "complete_counts_6_200.csv": "3b7b2855905cc334023f275b5466cad0afaaa64ff59e2e6eac24eca956cf778a",
     "first_solutions_6_300.csv": "cd2056bc5417d187f23253e8467bd6e2614589f50ad5a9d2d8320be245ac7106",
     "LICENSE-code-MIT.txt": "3adea1662bfbb2f14993f862e4760fbad67a4234f23a54a7cdd77ded24444211",
-    "LICENSES.txt": "45c340511e5e7f62604790c4d6215f6c0d5a8da5e0046f3144ec90b7ef76a1fa",
-    "overview_zh.txt": "8a1c4e0403f95247d9dabdf4d2c61d923f4e80fcfa0acd8a4c1e31a824d3990b",
-    "PaperF_fourzero.pdf": "b0d71a7fa795bc1d74469b972d06a0837abec158c5da2ccb71ca67c9340dffc1",
-    "PaperF_fourzero.tex": "dda22b007beb2be3dfc5eec7eaf4e99dec2b469236aba4e260b73e703a1a2c79",
-    "README.md": "800e27cf5226f3fd5fa3c80aedeebc2721575ce23c650779d2223156cbeb1c0c",
+    "LICENSES.txt": "f925f46f682914ccbb165cf491df4ce462779a14c8ad2b0819570a71c83aea66",
+    "overview_zh.txt": "838c2aad33d3e2effd2495ae71f07557b35a9a15318a1eb90648d9d5e0231f38",
+    "PaperF_fourzero.pdf": "c95ded15657983a67e2b98de25acb82ae5a42bf524dba048b5ed8fedac7f5ce2",
+    "PaperF_fourzero.tex": "6647c7b3a6a0585e093fbfdedc8262155758b8b234896caa6810a1ed599c27da",
+    "README.md": "25623458b7c141063ab73c7f5c4b9480fb1236e0e9be47240769ae2d0e31ae43",
     "verification/b_descent/b_descent_audit.json": "fb73b8ac7e531ea9945b6ced066ce344b772416b8092e65d174d42707f9af3f3",
     "verification/b_descent/b_descent_review.txt": "260268c6a743c30932a33b842369d2d7020dd10914e83c6caba40b9f6a5a1492",
     "verification/b_descent/README.txt": "412b5a9f7b156d891e061f9d19654b354e3d90e9e921a69c309d63c8afa7222b",
@@ -94,5 +94,12 @@
     "verification/translation/proof_review.txt": "68afe665964786a95f255340aed0f1a696a79717e611e530fb45435f9487561d",
     "verification/translation/README.txt": "e32b7cdbc5d1cb61c9b6fa6b61bd30a024c93c76c94e29699b4f85231f299df0",
     "verification/translation/verify_translation.py": "7dd9bbc0d4b7265dcc3a60a27aeba3c045e108ad04d9377607d60d87d43580c9"
-  }
+  },
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "authorship_correction_date": "2026-11-02",
+  "pre_authorship_source_sha256": "dda22b007beb2be3dfc5eec7eaf4e99dec2b469236aba4e260b73e703a1a2c79",
+  "pre_authorship_pdf_sha256": "b0d71a7fa795bc1d74469b972d06a0837abec158c5da2ccb71ca67c9340dffc1"
 }

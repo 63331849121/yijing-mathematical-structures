@@ -2,7 +2,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,booktabs}
 \usepackage{hyperref}
-\hypersetup{hidelinks,pdftitle={Four-zero tail-palindromic polynomials over F2},pdfauthor={Baohua Li}}
+\hypersetup{hidelinks,pdftitle={Four-zero tail-palindromic polynomials over F2: reciprocity and transformation boundaries},pdfauthor={Wencong Huang, Baohua Li}}
 \newtheorem{proposition}{Proposition}[section]
 \newtheorem{lemma}[proposition]{Lemma}
 \newtheorem{theorem}[proposition]{Theorem}
@@ -12,20 +12,23 @@
 \theoremstyle{remark}
 \newtheorem{remark}[proposition]{Remark}
 \title{\Large Four-zero tail-palindromic polynomials over $\mathbb F_2$:\\
-reciprocal obstructions and quadratic-transform intersections}
-\author{Baohua Li}
-\date{29 October 2026}
+reciprocity and transformation boundaries}
+\author{Wencong Huang, Baohua Li}
+\date{2 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-We study monic even-degree polynomials over $\mathbb F_2$ whose nonleading coefficients form a palindrome with constant term one and exactly four zeros. We completely classify their intersections with full-degree quadratic rational transformations. The translated $Q$ branch consists of two infinite shape families and three degree-14 exceptions; the translation-invariant branch consists of four reducible polynomials at degrees 14 and 30. More generally, a translation-invariant tail palindrome of even degree $n\ge6$ has $n+2$ a power of two and is reducible whenever its number of missing tail coefficients is divisible by four. The classification determines the boundary of quadratic degree doubling: every four-zero output has degree $2$ modulo $4$, so iterated doubling from an even input degree cannot produce a member of the family. We also determine the exact reciprocal common divisor and count the position pairs surviving this obstruction. Reproducible arithmetic computations identify 2663 primitive polynomials at the 98 even degrees from 6 to 200 and verify the first solutions through degree 300. Conjecture $C_4$ on primitive existence at every even degree remains open.
+We study monic even-degree polynomials over $\mathbb F_2$ whose nonleading coefficients form a palindrome with constant term one and exactly four zeros. We classify their intersections with full-degree quadratic rational outputs and exclude iterated doubling from an even input degree. An exact reciprocal common divisor gives an arithmetic screen and a closed count of surviving position pairs. For the polynomial obtained by cubing all roots, counted with multiplicity, we prove that the tail is never palindromic. The corresponding quintic image is tail-palindromic exactly for one degree-10 exception or an explicit arithmetic-progression family; its number of missing tail coefficients is always $2$ modulo $4$. Sparse norm identities and independently checkable finite parameter certificates prove these root-power classifications for all degrees. They exclude degree-preserving cube- and fifth-root extraction within the four-zero family. Reproducible computations identify 2663 primitive polynomials at the 98 even degrees from 6 to 200 and verify first witnesses through degree 300. The primitive-existence conjecture $C_4$ remains open.
 \end{abstract}
 
 \section{The family and the question}\label{sec:intro}
-Quadratic rational transformations are a standard tool for constructing
-irreducible polynomials of doubled degree \cite{MP17}. This paper asks
-which outputs can also satisfy a rigid coefficient constraint: a
-palindromic tail with exactly four zero coefficients.
+Rational pullbacks and powers of roots give different transformations
+of a polynomial. Quadratic rational transformations are a standard
+tool for constructing irreducible polynomials of doubled degree
+\cite{MP17}; power substitution has classical irreducibility criteria
+\cite[Section 2]{BM25}. This paper determines when such constructions
+are compatible with a rigid coefficient constraint: a palindromic
+tail with exactly four zero coefficients.
 
 Put $n=2k\ge6$ and $S_n(x)=1+x+\cdots+x^n$. We consider
 \begin{equation}\label{eq:candidate}
@@ -52,26 +55,37 @@ degree. A tail palindrome can also be encoded by the self-reciprocal
 polynomial $xf(x)+1$ of odd degree $n+1$. This describes its support;
 irreducibility and primitivity refer throughout to $f$ itself.
 
-The main results completely classify the full-degree quadratic outputs.
 Theorems~\ref{thm:quadratic} and~\ref{thm:translation-classification}
-give the translated $Q$ and translation-invariant lists. A trace obstruction
-also yields uniform reducibility when the number of missing tail
-coefficients is divisible by four
+completely classify the full-degree four-zero quadratic outputs in the translated
+$Q$ and translation-invariant branches. A trace obstruction yields
+uniform reducibility when the number of missing tail coefficients is
+divisible by four
 (Proposition~\ref{prop:translation-zero-obstruction}).
 Corollary~\ref{cor:all-quadratic} combines the branches and rules out
-iterated doubling from an even input degree. The proof converts the
-coefficient constraints into coupled translation identities, whose solutions
-are determined by binary submask arguments.
+iterated doubling from an even input degree. These proofs convert
+the coefficient constraint into coupled translation identities
+and solve them by binary submask arguments.
 
 Section~\ref{sec:reciprocal-screen} gives a complementary arithmetic
-screen: an exact reciprocal common divisor and a closed count of the
-surviving position pairs (Propositions~\ref{prop:reciprocal-gcd}
+screen: an exact reciprocal common divisor and a closed count of
+the surviving position pairs (Propositions~\ref{prop:reciprocal-gcd}
 and~\ref{prop:reciprocal-survivors}).
 
-Section~\ref{sec:computations} gives reproducible primitive counts and
-first witnesses. Section~\ref{sec:limits} develops the questions suggested
-by the classification, while Appendix~\ref{sec:classical-descriptions}
-describes coefficient multiplicities and finite-field root parameters.
+Section~\ref{sec:root-powers} studies the degree-preserving operation
+of raising every root to the third or fifth power, with multiplicities
+retained. Theorem~\ref{thm:root-powers} gives a cubic obstruction and a
+complete quintic tail-symmetry classification. The quintic images
+have $2$ modulo $4$ missing coefficients, so neither operation stays
+within the four-zero family. The proof uses a fixed sparse feedback
+polynomial and exact finite parameter certificates, distinct from
+the bounded-degree arithmetic enumeration.
+
+Section~\ref{sec:computations} records primitive counts and first
+witnesses, and Section~\ref{sec:limits} states the remaining
+existence questions. Appendix~\ref{sec:classical-descriptions} gives
+classical coefficient and finite-field descriptions.
+Appendix~\ref{sec:root-certificates} specifies the exhaustive
+root-power certificate checks and their reproducibility.
 
 \section{The reciprocal obstruction}
 \label{sec:reciprocal-screen}
@@ -698,6 +712,230 @@ The three involutions thus connect the support symmetries to an
 exhaustive list of full-degree quadratic outputs.
 
 
+\section{Root powers and coefficient reflection}\label{sec:root-powers}
+Power substitution and taking powers of roots are different operations.
+For a monic $h\in\mathbb F_2[x]$ with constant term one, define
+\begin{equation}\label{eq:root-power-definition}
+ \mathcal N_\ell(h)(y)=\prod_{h(\alpha)=0}(y+\alpha^\ell),
+\end{equation}
+where roots are counted with multiplicity. Its degree is $\deg h$,
+even when a root power has a shorter Frobenius orbit. It need not be
+the minimal polynomial of a single root power.
+This is the classical generalized Graeffe transform
+\cite[Section 5]{BFSS06}, \cite[Section 3.1]{GHL15}:
+\[
+ \mathcal N_\ell(h)(y)
+   =\operatorname{Res}_z(h(z),y+z^\ell)
+   =\det(yI+C_h^\ell),
+\]
+where $C_h$ is a companion matrix of $h$.
+These identities retain multiplicities, including for a reducible $h$.
+In contrast,
+$h(x^\ell)$ has degree $\ell\deg h$; classical order criteria for its
+irreducibility are recalled in \cite[Section 2]{BM25}.
+
+\begin{theorem}[Cubic and quintic root-power images; computer-assisted]
+\label{thm:root-powers}
+Let $f=f_{n,i,j}$ be a candidate from \eqref{eq:candidate}.
+No irreducibility or squarefreeness assumption is imposed.
+\begin{enumerate}
+\item The polynomial $\mathcal N_3(f)$ is never tail-palindromic.
+\item The polynomial $\mathcal N_5(f)$ is tail-palindromic if and only if
+\begin{equation}\label{eq:quintic-parameters}
+ (n,i,j)=(10,3,4)
+ \quad\text{or}\quad
+ (n,i,j)=(7d-1,2d-1,3d-1),
+ \quad d\ge1,\quad d\equiv\pm1\pmod {10}.
+\end{equation}
+The first image has two missing tail coefficients; the second has
+exactly $2d$. In particular, neither root-power operation has a
+four-zero tail-palindromic image.
+\end{enumerate}
+\end{theorem}
+
+The finite parameter certificates used below are part of the proof.
+They cover all integer degrees and positions, rather than a bounded
+range of degrees. Appendix~\ref{sec:root-certificates} specifies the
+exact support and integer-feasibility checks, with the supplied
+independent verification programs.
+
+\subsection{A sparse reflection defect}\label{sec:sparse-norm}
+For odd $\ell$ and a primitive $\ell$th root of unity $\zeta$,
+\begin{equation}\label{eq:norm-product}
+ \mathcal N_\ell(h)(x^\ell)
+   =\prod_{s=0}^{\ell-1}h(\zeta^s x).
+\end{equation}
+This follows by multiplying $x^\ell+\alpha^\ell$ over the roots of $h$.
+It also proves that the coefficients lie in $\mathbb F_2$.
+The operation is multiplicative, commutes with reciprocity, and sends
+$1+x$ to $1+y$. These are elementary norm identities; the
+object-specific issue is the coefficient reflection of their outputs.
+
+Put $N=n+1$, $\Delta=j-i$, $R=n-1-i-j$, and
+\begin{equation}\label{eq:feedback}
+\begin{split}
+ D&=x^i(1+x^\Delta)(1+x^R),\qquad u=(1+x)D,\\
+ P&=(1+x)f=1+x^N+u,\qquad P^*=1+x^N+xu .
+\end{split}
+\end{equation}
+The identity for $P^*$ follows from
+Lemma~\ref{lem:reciprocal-multiplicity}. The eight raw terms of $u$
+may cancel when positions are adjacent; all such cancellations are
+retained. Thus $P$ has at most ten terms, independently of $n$.
+
+Let $g=\mathcal N_\ell(f)$, $Q_\ell=\mathcal N_\ell(P)$, and
+$F_\ell(x)=Q_\ell(x^\ell)$. Then $Q_\ell=(1+y)g$, so the exact
+tail-reflection test for $g$ is
+\begin{equation}\label{eq:norm-reflection}
+\begin{split}
+ \Omega_\ell(x)
+  &:=
+    x^{\ell N}F_\ell(1/x)+x^\ell F_\ell(x)
+      +(1+x^\ell)(1+x^{\ell N})\\
+  &=(1+x^\ell)
+       \bigl(g^*(x^\ell)+x^\ell g(x^\ell)+1+x^{\ell N}\bigr).
+\end{split}
+\end{equation}
+Thus $g$ is tail-palindromic if and only if $\Omega_\ell=0$:
+the bracket vanishes precisely when its nonleading coefficients
+are a palindrome.
+In a homogeneous expansion in $u$, the highest-degree terms cancel
+between $\mathcal N_\ell(P^*)$ and $y\mathcal N_\ell(P)$.
+The remaining support still has bounded size for fixed $\ell$.
+
+\begin{lemma}[Exact support certificates]\label{lem:norm-certificates}
+For $k\ge3$ and $1\le i<j<k$, the polynomial $\Omega_3$ is nonzero.
+The polynomial $\Omega_5$ is zero exactly at the parameter sets in
+\eqref{eq:quintic-parameters}.
+\end{lemma}
+\begin{proof}
+Expand the fixed support of $P$ in \eqref{eq:feedback}, separately
+in each residue class of $(k,i,j)$ modulo $\ell$. Use the positive
+gaps $i$, $j-i$ and $k-j$ to parametrize all allowed positions.
+For $\ell=3$, the supplied certificate exhibits an uncancellable
+term in each of $42$ parameter regions.
+For $\ell=5$, the supplied collision cover has $672$ nodes and
+leaves only the degree-$10$ exception and the two residue branches
+of the progression in \eqref{eq:quintic-parameters}.
+The construction, exhaustive coverage, and independent exact checks
+are detailed in Appendix~\ref{sec:root-certificates}.
+Sufficiency for the two progression branches also follows directly
+from \eqref{eq:quintic-support} below; the isolated exception is
+checked explicitly. These are finite parameter certificates, with
+no upper bound on the free integer parameters.
+\end{proof}
+
+\subsection{The quintic progression and its zero count}
+Write $f_d=f_{7d-1,2d-1,3d-1}$, where $d\equiv\pm1\pmod {10}$, and put
+\[
+ \mathcal A=\{7,8,9,12,13,14,21,22,23,26,27,28\}.
+\]
+A compact support identity for the quintic progression is
+\begin{equation}\label{eq:quintic-support}
+\begin{split}
+ (1+y)\mathcal N_5(f_d)(y)
+   ={}&1+y^{7d}
+       +\sum_{a\in\mathcal A}y^{\lfloor ad/5\rfloor}\\
+     &+\sum_{b=2}^{5}\bigl(y^{bd-1}+y^{bd}\bigr).
+\end{split}
+\end{equation}
+One obtains this identity by splitting $P$ into its five exponent
+residue classes and multiplying the five factors in
+\eqref{eq:norm-product}. Equivalently, substitute
+$d=10t+1$ or $10t+9$ into the $26$-term norm form
+\eqref{eq:quintic-norm-form}; the resulting affine exponent pairs
+are verified by the independent branch checker.
+This proves an identity in the free parameter $t$, including
+all cancellations at $d=1$.
+
+The support symmetry is visible in the formula. The set
+$\mathcal A$ is invariant under $a\mapsto35-a$, and
+\[
+ \lfloor ad/5\rfloor+\lfloor(35-a)d/5\rfloor=7d-1.
+\]
+The terms $y^{bd-1}+y^{bd}$ are paired by $b\mapsto7-b$.
+Thus the right side of \eqref{eq:quintic-support} satisfies
+the required reflection test.
+
+For $d=10t+\epsilon$, the $22$ displayed exponents are distinct
+when $\epsilon=1,t\ge1$ or $\epsilon=9,t\ge0$.
+Order them as $0=e_0<e_1<\cdots<e_{21}=7d$.
+Division by $1+y$ makes the coefficient at degree $s$ the parity
+of the number of exponents $e_r\le s$. Hence the missing coefficients
+occupy the intervals $[e_1,e_2-1]$, $[e_3,e_4-1]$, and so on, and
+\begin{equation}\label{eq:quintic-zero-count}
+ \sum_{r=0}^{9}(e_{2r+2}-e_{2r+1})
+     =20t+2\epsilon=2d.
+\end{equation}
+The ordered affine supports and this sum are included in the
+branch certificate. At $d=1$, cancellation gives
+\[
+ \mathcal N_5(f_{6,1,2})=y^6+y^5+y^4+y+1,
+\]
+again with two missing tail coefficients.
+The isolated case is
+\[
+ \mathcal N_5(f_{10,3,4})
+   =y^{10}+y^9+y^8+y^6+y^5+y^4+y^3+y+1,
+\]
+whose missing positions are $2$ and $7$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:root-powers}]
+Equation~\eqref{eq:norm-reflection} and
+Lemma~\ref{lem:norm-certificates} give the cubic obstruction and
+the complete quintic parameter list.
+Equations~\eqref{eq:quintic-support}--\eqref{eq:quintic-zero-count},
+together with the two explicit small images, give the asserted
+zero counts. Every allowed $d$ is odd, so each quintic
+tail-palindromic image has $2$ modulo $4$ missing coefficients.
+It therefore cannot belong to the four-zero family.
+\end{proof}
+
+\subsection{Irreducibility and degree-preserving extraction}
+\begin{corollary}\label{cor:root-extraction}
+For $\ell=3$ or $5$, there are no two irreducible four-zero
+candidates $h,f$ of the same degree such that $h\mid f(x^\ell)$.
+If an irreducible four-zero polynomial has a root of order $m$, then
+\[
+ \ell\not\equiv2^r\pmod m\qquad(r\ge0,\ \ell=3,5).
+\]
+\end{corollary}
+\begin{proof}
+For a root $\beta$ of $h$, the element $\beta^\ell$ is a root
+of $f$ and has a full degree-$n$ Frobenius orbit.
+Thus $\mathcal N_\ell(h)=f$, contrary to
+Theorem~\ref{thm:root-powers}. If $\ell\equiv2^r\pmod m$,
+taking the $\ell$th power merely permutes the conjugates, giving
+$\mathcal N_\ell(f)=f$ and the same contradiction.
+\end{proof}
+
+The infinite quintic shape branch itself is reducible except at $d=1$:
+\begin{equation}\label{eq:quintic-factor}
+ f_d=S_{d-1}(x)
+       \bigl(S_6(x^d)+x^{2d-1}(1+x)(1+x^{2d})\bigr).
+\end{equation}
+Indeed $S_{7d-1}=S_{d-1}S_6(x^d)$ and the four deleted terms are
+$x^{2d-1}(1+x^d)^3$.
+For $d>1$ both factors in \eqref{eq:quintic-factor} are nonconstant.
+Since $\gcd(d,5)=1$, taking fifth powers permutes the nontrivial
+$d$th roots of unity, so
+$\mathcal N_5(S_{d-1})=S_{d-1}$; the image is also reducible.
+Consequently the only irreducible inputs with a tail-palindromic
+quintic image are $f_{6,1,2}$ and $f_{10,3,4}$.
+Their root orders are respectively $63$ and $341$, as checked by
+irreducibility and exact-order tests in the supplied program.
+In particular, if $4\mid n$, the quintic image of an irreducible
+four-zero candidate is not tail-palindromic.
+
+Taking an $\ell$th root within $\mathbb F_{2^n}$ can increase a
+deficient $\ell$-primary part of an element's order.
+Corollary~\ref{cor:root-extraction} shows that for $\ell=3,5$ this
+degree-preserving one-step construction cannot also keep the
+four-zero tail. It does not classify arbitrary higher-degree
+rational transformations or constructions with intermediate
+polynomials outside the family.
+
+
 \section{Primitive counts and reproducible computations}\label{sec:computations}
 Complete enumeration of the $161700$ candidates at the $98$ even degrees
 $6\le n\le200$ gives
@@ -760,6 +998,13 @@ The data and verification programs are publicly archived at
 and in the
 \href{https://github.com/63331849121/yijing-mathematical-structures/tree/paperF-v2026.10.29-r1/PaperF_fourzero}{fixed GitHub release}.
 
+The arithmetic ranges and counts are unchanged in this revision.
+The new all-parameter proof certificates and standard-library checkers
+accompany the manuscript in \path{verification/root_power/}; see
+Appendix~\ref{sec:root-certificates}. They form part of the
+root-power proofs and are supplied in addition to the earlier
+arithmetic records.
+
 The companion programs also check the reciprocal filter, both quadratic
 classifications and the descent identities; detailed ranges accompany
 the archived outputs.
@@ -771,24 +1016,38 @@ the first term is irreducible and the next seven reducible.
 \section{Structural consequences and open questions}\label{sec:limits}
 The reciprocal screen counts positions compatible with reciprocal
 coprimality. The quadratic classifications determine every full-degree
-output and yield a uniform obstruction from translation symmetry.
+quadratic output and give a uniform obstruction from translation
+symmetry. The root-power classifications supply a different boundary:
+neither cubing nor taking fifth powers of all roots preserves the
+four-zero family.
 
-\paragraph{Irreducibility in the remaining branch.}
+\paragraph{Irreducibility in the remaining quadratic branch.}
 Within full-degree quadratic constructions, the B family
-\eqref{eq:quadratic-B} is the remaining irreducibility question in
+\eqref{eq:quadratic-B} remains the irreducibility question in
 Corollary~\ref{cor:all-quadratic}. Which polynomials $h_R$ of
-Proposition~\ref{prop:B-descent} are irreducible? The explicit descent and the
-binary $Q$ criterion make this equivalent to classifying the irreducible
-four-zero outputs in that branch.
+Proposition~\ref{prop:B-descent} are irreducible?
+The explicit descent and the binary $Q$ criterion reduce this
+to classifying the irreducible outputs in that branch.
 
-\paragraph{Primitive existence and further constructions.}
-Conjecture~\ref{conj:C4} asks for primitive members at every even degree,
-linking the prescribed support to the multiplicative order of roots.
-The complete counts and first witnesses give concrete instances; the
-quotient and finite-field descriptions in
-Appendix~\ref{sec:classical-descriptions} express the support condition
-and the order condition explicitly. Higher-degree maps, selected factors and degree-dropping
-substitutions provide further construction questions.
+\paragraph{Primitive existence.}
+Conjecture~\ref{conj:C4} still asks whether the prescribed support
+admits a primitive root at every even degree. The computations
+give finite evidence; no infinite-degree existence theorem is
+claimed. Corollary~\ref{cor:root-extraction} excludes one-step
+degree-preserving cube- and fifth-root extraction as a construction
+within the family. It imposes necessary restrictions on root orders
+but does not force maximal order.
+The reducible quintic progression in
+\eqref{eq:quintic-factor} also shows why a nonempty infinite shape
+branch need not provide full-degree roots.
+
+These are boundaries for specified constructions, not a
+nonexistence result for the conjecture. Higher-degree rational
+maps, selected factors, and constructions with intermediate
+polynomials outside the family require separate support and
+order arguments. The descriptions in
+Appendix~\ref{sec:classical-descriptions} retain both conditions
+explicitly.
 
 \appendix
 \section{Coefficient and finite-field descriptions}\label{sec:classical-descriptions}
@@ -868,6 +1127,188 @@ comparing with \eqref{eq:candidate} gives an exact coefficient-and-order
 system in which the support and the two exact-order conditions are
 imposed simultaneously.
 
+\section{Exact parameter certificates for root powers}
+\label{sec:root-certificates}
+The computer-assisted part of Theorem~\ref{thm:root-powers} checks
+affine exponent collisions, not a finite list of degrees.
+This appendix specifies the complete input, the coverage argument
+and the arithmetic decision procedures. The accompanying
+\path{verification/root_power/} directory supplies the certificates
+and independent checkers as part of the proof.
+
+\subsection{Fixed support and parameter coverage}
+Represent the exponent $e_k k+e_i i+e_j j+e_0$ by
+$(e_k,e_i,e_j,e_0)$. The complete input support of $P$ in
+\eqref{eq:feedback}, before cancellations, is
+\begin{equation}\label{eq:feedback-support}
+\begin{gathered}
+ (0,0,0,0),\ (2,0,0,1),\\
+ (0,1,0,0),\ (0,1,0,1),\
+ (0,0,1,0),\ (0,0,1,1),\\
+ (2,-1,0,-1),\ (2,-1,0,0),\
+ (2,0,-1,-1),\ (2,0,-1,0).
+\end{gathered}
+\end{equation}
+In a fixed residue class $r=(k,i,j)\bmod\ell$, the coefficient
+of this term in $P(\zeta^s x)$ is
+\[
+ \zeta^{s(e_k r_k+e_i r_i+e_j r_j+e_0)} .
+\]
+Multiplication, reciprocity and addition then give the full support
+of $\Omega_\ell$ in \eqref{eq:norm-reflection}.
+Every equality of specialized exponents is retained modulo two.
+
+Set $a=i$, $b=j-i$, $c=k-j$.
+Let $a_0,b_0,c_0\in\{1,\ldots,\ell\}$ be their positive residue
+representatives and write
+\[
+ a=a_0+\ell A,\qquad b=b_0+\ell B,\qquad c=c_0+\ell C,
+ \qquad A,B,C\in\mathbb Z_{\ge0}.
+\]
+This is a bijective parametrization of all admissible positions.
+An exponent in \eqref{eq:feedback-support} becomes
+\begin{equation}\label{eq:gap-exponent}
+\begin{split}
+ &\ell(e_k+e_i+e_j)A+\ell(e_k+e_j)B+\ell e_k C\\
+ &\hspace{12mm}
+   +e_k(a_0+b_0+c_0)+e_i a_0+e_j(a_0+b_0)+e_0 .
+\end{split}
+\end{equation}
+A split into a variable equal to zero or at least one is disjoint
+and exhaustive; in the latter branch replace it by one plus a new
+nonnegative variable.
+
+For $\ell=3$, splitting $P=p_0+p_1+p_2$ by exponent residues gives
+$F_3=p_0^3+p_1^3+p_2^3+p_0p_1p_2$ by \eqref{eq:norm-product}.
+Direct expansion leaves $16$--$36$ symbolic
+terms per residue class. The certificate covers the $27$ residue
+classes by $42$ regions: $41$ are unbounded and one is the single
+point \mbox{$(n,i,j)=(10,1,2)$}.
+In each region a selected exponent $w$ cannot equal any other
+remaining exponent $v$. Writing $d=w-v$, the equality would require
+\[
+ d_A A+d_B B+d_C C=-d_0,\qquad A,B,C\in\mathbb Z_{\ge0}.
+\]
+All $768$ comparisons are refuted by $604$ sign contradictions,
+$138$ gcd nondivisibilities and $26$ nonzero constants.
+Thus $\Omega_3\ne0$ everywhere.
+
+\subsection{The quintic collision cover}
+The five-residue norm can be computed over $\mathbb F_2$.
+If $P=p_0+\cdots+p_4$ is split by exponent residues modulo five,
+the norm is the determinant of the circulant matrix
+$(p_{(j-i)\bmod5})_{0\le i,j<5}$.
+Its $26$ terms have the compact expression
+\begin{equation}\label{eq:quintic-norm-form}
+\begin{split}
+ \Phi_5(p)={}&\sum_{i=0}^4p_i^5+\prod_{i=0}^4p_i\\
+ &+\sum_{i=0}^4p_i^3
+          (p_{i+1}p_{i-1}+p_{i+2}p_{i-2})\\
+ &+\sum_{i=0}^4
+       (p_i^2p_{i+1}^2p_{i+3}+p_i^2p_{i+2}^2p_{i+1}),
+\end{split}
+\end{equation}
+with indices modulo five. Diagonalizing the circulant over
+$\mathbb F_{16}$ gives the product in \eqref{eq:norm-product};
+expansion of the $120$ determinant permutations independently
+gives \eqref{eq:quintic-norm-form}.
+
+The $125$ residue classes are initially divided into $467$ regions.
+Of these, $354$ already have an uncancellable term and two have
+identically zero defect. The remaining $111$ are resolved by the
+following exact collision procedure.
+
+Under the accumulated affine equalities, first group identical
+exponents and cancel pairs. If the specialized polynomial is zero,
+any selected remaining term must have a partner of equal exponent.
+Branch over every feasible equality $E_w-E_v=0$. Each such branch
+raises the coefficient rank: an equality of unchanged rank would
+either have been cancelled already or be an inconsistent constant.
+With three variables, the rank can rise at most to three.
+The branches need only cover the zero set; they need not be disjoint.
+An accepting node certifies inclusion in \eqref{eq:quintic-parameters};
+it need not independently prove zero defect.
+The explicit image formulas prove sufficiency separately.
+Induction on the increasing rank therefore proves necessity:
+each zero has a feasible partner at every nonterminal node,
+and a unique-term or infeasible node cannot contain a zero.
+
+Nonnegative integer feasibility is decided exactly.
+At rank one, gcd divisibility is sufficient when coefficients have
+mixed signs: an integer solution can be shifted into the nonnegative
+orthant along a strictly positive integral kernel vector.
+For coefficients of one sign, the target is either impossible by
+sign or belongs to a finitely checked additive semigroup.
+At rank two, Cramer's rule writes the variables as rational affine
+functions of one original integer coordinate $t$.
+Nonnegativity gives an interval, and the denominators give a finite
+integrality period; an interval-and-residue test is necessary and
+sufficient. The largest period in this certificate is three.
+At rank three, test the unique rational point for nonnegative
+integrality.
+
+The resulting certificate has $672$ nodes: $540$ unique-term
+nodes, $127$ collision nodes and five accepting nodes.
+All $28\,611$ candidate-partner feasibility checks are verified.
+The accepting sets are shown below; $A,B,C$ refer to the initial
+gap variables, and $a,b,c$ to the positive gaps.
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+$(k,i,j)\bmod5$ & conditions & resulting parameters\\
+\midrule
+$(0,3,4)$ & $A=B=C=0$ & $(10,3,4)$\\
+$(3,1,2)$ & $A=B=C=0$ & $d=1$\\
+$(1,2,1)$ & $A,B\ge1,\ C=0;\ a=2b-1,\ b=2c-1$ & $d=9$\\
+$(1,2,1)$ & $A,B,C\ge1;\ a=2b-1,\ b=2c-1$ & $d=10t+9,\ t\ge1$\\
+$(3,1,2)$ & $A,B,C\ge1;\ a=2b-1,\ b=2c-1$ & $d=10t+1,\ t\ge1$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Putting $d=b$ in the last four rows gives
+$c=(d+1)/2$, $a=2d-1$ and $n=7d-1$.
+The residue conditions give exactly $d\equiv\pm1\pmod {10}$.
+This proves the necessity part of Lemma~\ref{lem:norm-certificates}.
+
+\subsection{Independent verification and supplied files}
+Run the following three programs in \path{verification/root_power/}:
+\begin{quote}\small\ttfamily
+python check\_cubic\_formal.py\\
+python check\_quintic\_classification.py\\
+python check\_quintic\_branches.py
+\end{quote}
+They use only the Python standard library.
+The cubic checker reconstructs the norm from
+$a^3+b^3+c^3+abc$, independently of the original
+three-factor $\mathbb F_4$ construction.
+The quintic classification checker uses the circulant determinant
+and Cramer parametrization, while the construction uses
+$\mathbb F_{16}$ products and Gaussian elimination.
+It checks every partition, every feasible collision partner and
+every accepting implication.
+The branch checker separately verifies
+\eqref{eq:quintic-support}, the ordered $22$-term supports,
+the zero counts, the proper factors and the two small irreducible
+inputs. It also checks $250$ actual polynomial substitutions
+across all residue classes; these are implementation controls,
+not the justification for an unbounded-degree conclusion.
+
+The complete finite certificates in that directory are
+\begin{quote}\small\ttfamily
+cubic\_certificate.json\\
+quintic\_classification\_certificate.json
+\end{quote}
+The certificates and programs constitute the finite part of the
+proof, with no SMT solver or upper degree cutoff required.
+An additional independent audit, \path{check_certificate_lattice.py},
+reconstructs both norms in the quotient algebra
+$\mathbb F_2[y,z]/(z^\ell+y)$ and checks the same certificates using
+unimodular integer solution lattices. It imports neither the generators
+nor the three verification programs above.
+
+
+\clearpage
+
 \begin{thebibliography}{99}
 \small
 \setlength{\itemsep}{1.5pt}
@@ -916,6 +1357,26 @@ S. Mattarei and M. Pizzato,
 \emph{Generalizations of self-reciprocal polynomials},
 Finite Fields Appl. \textbf{48} (2017), 271--288.
 \href{https://doi.org/10.1016/j.ffa.2017.08.004}{doi:10.1016/j.ffa.2017.08.004}.
+
+\bibitem{BFSS06}
+A. Bostan, P. Flajolet, B. Salvy and \'E. Schost,
+\emph{Fast computation of special resultants},
+J. Symbolic Comput. \textbf{41} (2006), 1--29.
+\href{https://doi.org/10.1016/j.jsc.2005.07.001}{doi:10.1016/j.jsc.2005.07.001}.
+
+\bibitem{GHL15}
+B. Grenet, J. van der Hoeven and G. Lecerf,
+\emph{Randomized root finding over finite FFT-fields using tangent Graeffe transforms},
+Proc. ISSAC 2015, 197--204.
+\href{https://doi.org/10.1145/2755996.2756647}{doi:10.1145/2755996.2756647}.
+Author version, Section 3.1:
+\href{https://www.texmacs.org/joris/rmodroots/rmodroots.html}{generalized Graeffe transforms}.
+
+\bibitem{BM25}
+A. Bassa and R. Menares,
+\emph{The $R$-transform as power map and its generalizations to higher degree},
+Finite Fields Appl. \textbf{102} (2025), 102546.
+\href{https://doi.org/10.1016/j.ffa.2024.102546}{doi:10.1016/j.ffa.2024.102546}.
 
 \bibitem{Reis20}
 L. Reis,

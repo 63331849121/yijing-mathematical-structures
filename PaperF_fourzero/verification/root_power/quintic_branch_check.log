@@ -1,0 +1,4 @@
+PASS: both unbounded progression branches have identically zero reflection defect
+PASS: exact zero counts 2d for d=1,9 mod10, and 2 for the degree-10 exception
+PASS: d>1 input/output proper S-factor and complete small irreducible cases
+PASS: 250 independent numerical norm/reflection controls in all residue classes

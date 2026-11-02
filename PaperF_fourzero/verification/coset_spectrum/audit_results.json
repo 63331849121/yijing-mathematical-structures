@@ -1,0 +1,961 @@
+{
+  "date": "2026-10-29",
+  "status": "all_checks_passed",
+  "source_sha256": "dda22b007beb2be3dfc5eec7eaf4e99dec2b469236aba4e260b73e703a1a2c79",
+  "scope": {
+    "coset_checks_k": [
+      3,
+      128
+    ],
+    "candidate_pairs_checked": 341376,
+    "moments_t": [
+      1,
+      6
+    ],
+    "moment_checks": 756,
+    "all_image_characters_k": [
+      3,
+      20
+    ],
+    "character_checks": 3066,
+    "all_half_masks_k": [
+      3,
+      20
+    ],
+    "kernel_masks_checked": 1048572,
+    "entire_coset_weight_enumerator_checks": 3066
+  },
+  "same_coset_different_primitivity": {
+    "n": 8,
+    "syndrome": 3,
+    "primitive": {
+      "polynomial_hex": "0x1c3",
+      "degree": 8,
+      "irreducible": true,
+      "primitive": true,
+      "rabin_gcds": {
+        "2": 1
+      },
+      "frobenius_final": "0x2",
+      "order_test_residues": {
+        "3": "0xac",
+        "5": "0x93",
+        "17": "0xee"
+      },
+      "proper_divisor_hex": null,
+      "zero_half_positions": [
+        2,
+        3
+      ],
+      "syndrome": 3
+    },
+    "nonprimitive": {
+      "polynomial_hex": "0x1a5",
+      "degree": 8,
+      "irreducible": false,
+      "primitive": false,
+      "rabin_gcds": {
+        "2": 7
+      },
+      "frobenius_final": "0x10",
+      "order_test_residues": {},
+      "proper_divisor_hex": "0x7",
+      "zero_half_positions": [
+        1,
+        3
+      ],
+      "syndrome": 3
+    },
+    "tail_difference_hex": "0x66",
+    "difference_common_half_hex": "0x6"
+  },
+  "rows": [
+    {
+      "k": 3,
+      "n": 6,
+      "candidate_pairs": 1,
+      "occupied_cosets": 1,
+      "second_moment": 1
+    },
+    {
+      "k": 4,
+      "n": 8,
+      "candidate_pairs": 3,
+      "occupied_cosets": 2,
+      "second_moment": 5
+    },
+    {
+      "k": 5,
+      "n": 10,
+      "candidate_pairs": 6,
+      "occupied_cosets": 4,
+      "second_moment": 10
+    },
+    {
+      "k": 6,
+      "n": 12,
+      "candidate_pairs": 10,
+      "occupied_cosets": 4,
+      "second_moment": 28
+    },
+    {
+      "k": 7,
+      "n": 14,
+      "candidate_pairs": 15,
+      "occupied_cosets": 7,
+      "second_moment": 37
+    },
+    {
+      "k": 8,
+      "n": 16,
+      "candidate_pairs": 21,
+      "occupied_cosets": 7,
+      "second_moment": 69
+    },
+    {
+      "k": 9,
+      "n": 18,
+      "candidate_pairs": 28,
+      "occupied_cosets": 11,
+      "second_moment": 82
+    },
+    {
+      "k": 10,
+      "n": 20,
+      "candidate_pairs": 36,
+      "occupied_cosets": 11,
+      "second_moment": 128
+    },
+    {
+      "k": 11,
+      "n": 22,
+      "candidate_pairs": 45,
+      "occupied_cosets": 16,
+      "second_moment": 145
+    },
+    {
+      "k": 12,
+      "n": 24,
+      "candidate_pairs": 55,
+      "occupied_cosets": 16,
+      "second_moment": 205
+    },
+    {
+      "k": 13,
+      "n": 26,
+      "candidate_pairs": 66,
+      "occupied_cosets": 22,
+      "second_moment": 226
+    },
+    {
+      "k": 14,
+      "n": 28,
+      "candidate_pairs": 78,
+      "occupied_cosets": 22,
+      "second_moment": 300
+    },
+    {
+      "k": 15,
+      "n": 30,
+      "candidate_pairs": 91,
+      "occupied_cosets": 29,
+      "second_moment": 325
+    },
+    {
+      "k": 16,
+      "n": 32,
+      "candidate_pairs": 105,
+      "occupied_cosets": 29,
+      "second_moment": 413
+    },
+    {
+      "k": 17,
+      "n": 34,
+      "candidate_pairs": 120,
+      "occupied_cosets": 37,
+      "second_moment": 442
+    },
+    {
+      "k": 18,
+      "n": 36,
+      "candidate_pairs": 136,
+      "occupied_cosets": 37,
+      "second_moment": 544
+    },
+    {
+      "k": 19,
+      "n": 38,
+      "candidate_pairs": 153,
+      "occupied_cosets": 46,
+      "second_moment": 577
+    },
+    {
+      "k": 20,
+      "n": 40,
+      "candidate_pairs": 171,
+      "occupied_cosets": 46,
+      "second_moment": 693
+    },
+    {
+      "k": 21,
+      "n": 42,
+      "candidate_pairs": 190,
+      "occupied_cosets": 56,
+      "second_moment": 730
+    },
+    {
+      "k": 22,
+      "n": 44,
+      "candidate_pairs": 210,
+      "occupied_cosets": 56,
+      "second_moment": 860
+    },
+    {
+      "k": 23,
+      "n": 46,
+      "candidate_pairs": 231,
+      "occupied_cosets": 67,
+      "second_moment": 901
+    },
+    {
+      "k": 24,
+      "n": 48,
+      "candidate_pairs": 253,
+      "occupied_cosets": 67,
+      "second_moment": 1045
+    },
+    {
+      "k": 25,
+      "n": 50,
+      "candidate_pairs": 276,
+      "occupied_cosets": 79,
+      "second_moment": 1090
+    },
+    {
+      "k": 26,
+      "n": 52,
+      "candidate_pairs": 300,
+      "occupied_cosets": 79,
+      "second_moment": 1248
+    },
+    {
+      "k": 27,
+      "n": 54,
+      "candidate_pairs": 325,
+      "occupied_cosets": 92,
+      "second_moment": 1297
+    },
+    {
+      "k": 28,
+      "n": 56,
+      "candidate_pairs": 351,
+      "occupied_cosets": 92,
+      "second_moment": 1469
+    },
+    {
+      "k": 29,
+      "n": 58,
+      "candidate_pairs": 378,
+      "occupied_cosets": 106,
+      "second_moment": 1522
+    },
+    {
+      "k": 30,
+      "n": 60,
+      "candidate_pairs": 406,
+      "occupied_cosets": 106,
+      "second_moment": 1708
+    },
+    {
+      "k": 31,
+      "n": 62,
+      "candidate_pairs": 435,
+      "occupied_cosets": 121,
+      "second_moment": 1765
+    },
+    {
+      "k": 32,
+      "n": 64,
+      "candidate_pairs": 465,
+      "occupied_cosets": 121,
+      "second_moment": 1965
+    },
+    {
+      "k": 33,
+      "n": 66,
+      "candidate_pairs": 496,
+      "occupied_cosets": 137,
+      "second_moment": 2026
+    },
+    {
+      "k": 34,
+      "n": 68,
+      "candidate_pairs": 528,
+      "occupied_cosets": 137,
+      "second_moment": 2240
+    },
+    {
+      "k": 35,
+      "n": 70,
+      "candidate_pairs": 561,
+      "occupied_cosets": 154,
+      "second_moment": 2305
+    },
+    {
+      "k": 36,
+      "n": 72,
+      "candidate_pairs": 595,
+      "occupied_cosets": 154,
+      "second_moment": 2533
+    },
+    {
+      "k": 37,
+      "n": 74,
+      "candidate_pairs": 630,
+      "occupied_cosets": 172,
+      "second_moment": 2602
+    },
+    {
+      "k": 38,
+      "n": 76,
+      "candidate_pairs": 666,
+      "occupied_cosets": 172,
+      "second_moment": 2844
+    },
+    {
+      "k": 39,
+      "n": 78,
+      "candidate_pairs": 703,
+      "occupied_cosets": 191,
+      "second_moment": 2917
+    },
+    {
+      "k": 40,
+      "n": 80,
+      "candidate_pairs": 741,
+      "occupied_cosets": 191,
+      "second_moment": 3173
+    },
+    {
+      "k": 41,
+      "n": 82,
+      "candidate_pairs": 780,
+      "occupied_cosets": 211,
+      "second_moment": 3250
+    },
+    {
+      "k": 42,
+      "n": 84,
+      "candidate_pairs": 820,
+      "occupied_cosets": 211,
+      "second_moment": 3520
+    },
+    {
+      "k": 43,
+      "n": 86,
+      "candidate_pairs": 861,
+      "occupied_cosets": 232,
+      "second_moment": 3601
+    },
+    {
+      "k": 44,
+      "n": 88,
+      "candidate_pairs": 903,
+      "occupied_cosets": 232,
+      "second_moment": 3885
+    },
+    {
+      "k": 45,
+      "n": 90,
+      "candidate_pairs": 946,
+      "occupied_cosets": 254,
+      "second_moment": 3970
+    },
+    {
+      "k": 46,
+      "n": 92,
+      "candidate_pairs": 990,
+      "occupied_cosets": 254,
+      "second_moment": 4268
+    },
+    {
+      "k": 47,
+      "n": 94,
+      "candidate_pairs": 1035,
+      "occupied_cosets": 277,
+      "second_moment": 4357
+    },
+    {
+      "k": 48,
+      "n": 96,
+      "candidate_pairs": 1081,
+      "occupied_cosets": 277,
+      "second_moment": 4669
+    },
+    {
+      "k": 49,
+      "n": 98,
+      "candidate_pairs": 1128,
+      "occupied_cosets": 301,
+      "second_moment": 4762
+    },
+    {
+      "k": 50,
+      "n": 100,
+      "candidate_pairs": 1176,
+      "occupied_cosets": 301,
+      "second_moment": 5088
+    },
+    {
+      "k": 51,
+      "n": 102,
+      "candidate_pairs": 1225,
+      "occupied_cosets": 326,
+      "second_moment": 5185
+    },
+    {
+      "k": 52,
+      "n": 104,
+      "candidate_pairs": 1275,
+      "occupied_cosets": 326,
+      "second_moment": 5525
+    },
+    {
+      "k": 53,
+      "n": 106,
+      "candidate_pairs": 1326,
+      "occupied_cosets": 352,
+      "second_moment": 5626
+    },
+    {
+      "k": 54,
+      "n": 108,
+      "candidate_pairs": 1378,
+      "occupied_cosets": 352,
+      "second_moment": 5980
+    },
+    {
+      "k": 55,
+      "n": 110,
+      "candidate_pairs": 1431,
+      "occupied_cosets": 379,
+      "second_moment": 6085
+    },
+    {
+      "k": 56,
+      "n": 112,
+      "candidate_pairs": 1485,
+      "occupied_cosets": 379,
+      "second_moment": 6453
+    },
+    {
+      "k": 57,
+      "n": 114,
+      "candidate_pairs": 1540,
+      "occupied_cosets": 407,
+      "second_moment": 6562
+    },
+    {
+      "k": 58,
+      "n": 116,
+      "candidate_pairs": 1596,
+      "occupied_cosets": 407,
+      "second_moment": 6944
+    },
+    {
+      "k": 59,
+      "n": 118,
+      "candidate_pairs": 1653,
+      "occupied_cosets": 436,
+      "second_moment": 7057
+    },
+    {
+      "k": 60,
+      "n": 120,
+      "candidate_pairs": 1711,
+      "occupied_cosets": 436,
+      "second_moment": 7453
+    },
+    {
+      "k": 61,
+      "n": 122,
+      "candidate_pairs": 1770,
+      "occupied_cosets": 466,
+      "second_moment": 7570
+    },
+    {
+      "k": 62,
+      "n": 124,
+      "candidate_pairs": 1830,
+      "occupied_cosets": 466,
+      "second_moment": 7980
+    },
+    {
+      "k": 63,
+      "n": 126,
+      "candidate_pairs": 1891,
+      "occupied_cosets": 497,
+      "second_moment": 8101
+    },
+    {
+      "k": 64,
+      "n": 128,
+      "candidate_pairs": 1953,
+      "occupied_cosets": 497,
+      "second_moment": 8525
+    },
+    {
+      "k": 65,
+      "n": 130,
+      "candidate_pairs": 2016,
+      "occupied_cosets": 529,
+      "second_moment": 8650
+    },
+    {
+      "k": 66,
+      "n": 132,
+      "candidate_pairs": 2080,
+      "occupied_cosets": 529,
+      "second_moment": 9088
+    },
+    {
+      "k": 67,
+      "n": 134,
+      "candidate_pairs": 2145,
+      "occupied_cosets": 562,
+      "second_moment": 9217
+    },
+    {
+      "k": 68,
+      "n": 136,
+      "candidate_pairs": 2211,
+      "occupied_cosets": 562,
+      "second_moment": 9669
+    },
+    {
+      "k": 69,
+      "n": 138,
+      "candidate_pairs": 2278,
+      "occupied_cosets": 596,
+      "second_moment": 9802
+    },
+    {
+      "k": 70,
+      "n": 140,
+      "candidate_pairs": 2346,
+      "occupied_cosets": 596,
+      "second_moment": 10268
+    },
+    {
+      "k": 71,
+      "n": 142,
+      "candidate_pairs": 2415,
+      "occupied_cosets": 631,
+      "second_moment": 10405
+    },
+    {
+      "k": 72,
+      "n": 144,
+      "candidate_pairs": 2485,
+      "occupied_cosets": 631,
+      "second_moment": 10885
+    },
+    {
+      "k": 73,
+      "n": 146,
+      "candidate_pairs": 2556,
+      "occupied_cosets": 667,
+      "second_moment": 11026
+    },
+    {
+      "k": 74,
+      "n": 148,
+      "candidate_pairs": 2628,
+      "occupied_cosets": 667,
+      "second_moment": 11520
+    },
+    {
+      "k": 75,
+      "n": 150,
+      "candidate_pairs": 2701,
+      "occupied_cosets": 704,
+      "second_moment": 11665
+    },
+    {
+      "k": 76,
+      "n": 152,
+      "candidate_pairs": 2775,
+      "occupied_cosets": 704,
+      "second_moment": 12173
+    },
+    {
+      "k": 77,
+      "n": 154,
+      "candidate_pairs": 2850,
+      "occupied_cosets": 742,
+      "second_moment": 12322
+    },
+    {
+      "k": 78,
+      "n": 156,
+      "candidate_pairs": 2926,
+      "occupied_cosets": 742,
+      "second_moment": 12844
+    },
+    {
+      "k": 79,
+      "n": 158,
+      "candidate_pairs": 3003,
+      "occupied_cosets": 781,
+      "second_moment": 12997
+    },
+    {
+      "k": 80,
+      "n": 160,
+      "candidate_pairs": 3081,
+      "occupied_cosets": 781,
+      "second_moment": 13533
+    },
+    {
+      "k": 81,
+      "n": 162,
+      "candidate_pairs": 3160,
+      "occupied_cosets": 821,
+      "second_moment": 13690
+    },
+    {
+      "k": 82,
+      "n": 164,
+      "candidate_pairs": 3240,
+      "occupied_cosets": 821,
+      "second_moment": 14240
+    },
+    {
+      "k": 83,
+      "n": 166,
+      "candidate_pairs": 3321,
+      "occupied_cosets": 862,
+      "second_moment": 14401
+    },
+    {
+      "k": 84,
+      "n": 168,
+      "candidate_pairs": 3403,
+      "occupied_cosets": 862,
+      "second_moment": 14965
+    },
+    {
+      "k": 85,
+      "n": 170,
+      "candidate_pairs": 3486,
+      "occupied_cosets": 904,
+      "second_moment": 15130
+    },
+    {
+      "k": 86,
+      "n": 172,
+      "candidate_pairs": 3570,
+      "occupied_cosets": 904,
+      "second_moment": 15708
+    },
+    {
+      "k": 87,
+      "n": 174,
+      "candidate_pairs": 3655,
+      "occupied_cosets": 947,
+      "second_moment": 15877
+    },
+    {
+      "k": 88,
+      "n": 176,
+      "candidate_pairs": 3741,
+      "occupied_cosets": 947,
+      "second_moment": 16469
+    },
+    {
+      "k": 89,
+      "n": 178,
+      "candidate_pairs": 3828,
+      "occupied_cosets": 991,
+      "second_moment": 16642
+    },
+    {
+      "k": 90,
+      "n": 180,
+      "candidate_pairs": 3916,
+      "occupied_cosets": 991,
+      "second_moment": 17248
+    },
+    {
+      "k": 91,
+      "n": 182,
+      "candidate_pairs": 4005,
+      "occupied_cosets": 1036,
+      "second_moment": 17425
+    },
+    {
+      "k": 92,
+      "n": 184,
+      "candidate_pairs": 4095,
+      "occupied_cosets": 1036,
+      "second_moment": 18045
+    },
+    {
+      "k": 93,
+      "n": 186,
+      "candidate_pairs": 4186,
+      "occupied_cosets": 1082,
+      "second_moment": 18226
+    },
+    {
+      "k": 94,
+      "n": 188,
+      "candidate_pairs": 4278,
+      "occupied_cosets": 1082,
+      "second_moment": 18860
+    },
+    {
+      "k": 95,
+      "n": 190,
+      "candidate_pairs": 4371,
+      "occupied_cosets": 1129,
+      "second_moment": 19045
+    },
+    {
+      "k": 96,
+      "n": 192,
+      "candidate_pairs": 4465,
+      "occupied_cosets": 1129,
+      "second_moment": 19693
+    },
+    {
+      "k": 97,
+      "n": 194,
+      "candidate_pairs": 4560,
+      "occupied_cosets": 1177,
+      "second_moment": 19882
+    },
+    {
+      "k": 98,
+      "n": 196,
+      "candidate_pairs": 4656,
+      "occupied_cosets": 1177,
+      "second_moment": 20544
+    },
+    {
+      "k": 99,
+      "n": 198,
+      "candidate_pairs": 4753,
+      "occupied_cosets": 1226,
+      "second_moment": 20737
+    },
+    {
+      "k": 100,
+      "n": 200,
+      "candidate_pairs": 4851,
+      "occupied_cosets": 1226,
+      "second_moment": 21413
+    },
+    {
+      "k": 101,
+      "n": 202,
+      "candidate_pairs": 4950,
+      "occupied_cosets": 1276,
+      "second_moment": 21610
+    },
+    {
+      "k": 102,
+      "n": 204,
+      "candidate_pairs": 5050,
+      "occupied_cosets": 1276,
+      "second_moment": 22300
+    },
+    {
+      "k": 103,
+      "n": 206,
+      "candidate_pairs": 5151,
+      "occupied_cosets": 1327,
+      "second_moment": 22501
+    },
+    {
+      "k": 104,
+      "n": 208,
+      "candidate_pairs": 5253,
+      "occupied_cosets": 1327,
+      "second_moment": 23205
+    },
+    {
+      "k": 105,
+      "n": 210,
+      "candidate_pairs": 5356,
+      "occupied_cosets": 1379,
+      "second_moment": 23410
+    },
+    {
+      "k": 106,
+      "n": 212,
+      "candidate_pairs": 5460,
+      "occupied_cosets": 1379,
+      "second_moment": 24128
+    },
+    {
+      "k": 107,
+      "n": 214,
+      "candidate_pairs": 5565,
+      "occupied_cosets": 1432,
+      "second_moment": 24337
+    },
+    {
+      "k": 108,
+      "n": 216,
+      "candidate_pairs": 5671,
+      "occupied_cosets": 1432,
+      "second_moment": 25069
+    },
+    {
+      "k": 109,
+      "n": 218,
+      "candidate_pairs": 5778,
+      "occupied_cosets": 1486,
+      "second_moment": 25282
+    },
+    {
+      "k": 110,
+      "n": 220,
+      "candidate_pairs": 5886,
+      "occupied_cosets": 1486,
+      "second_moment": 26028
+    },
+    {
+      "k": 111,
+      "n": 222,
+      "candidate_pairs": 5995,
+      "occupied_cosets": 1541,
+      "second_moment": 26245
+    },
+    {
+      "k": 112,
+      "n": 224,
+      "candidate_pairs": 6105,
+      "occupied_cosets": 1541,
+      "second_moment": 27005
+    },
+    {
+      "k": 113,
+      "n": 226,
+      "candidate_pairs": 6216,
+      "occupied_cosets": 1597,
+      "second_moment": 27226
+    },
+    {
+      "k": 114,
+      "n": 228,
+      "candidate_pairs": 6328,
+      "occupied_cosets": 1597,
+      "second_moment": 28000
+    },
+    {
+      "k": 115,
+      "n": 230,
+      "candidate_pairs": 6441,
+      "occupied_cosets": 1654,
+      "second_moment": 28225
+    },
+    {
+      "k": 116,
+      "n": 232,
+      "candidate_pairs": 6555,
+      "occupied_cosets": 1654,
+      "second_moment": 29013
+    },
+    {
+      "k": 117,
+      "n": 234,
+      "candidate_pairs": 6670,
+      "occupied_cosets": 1712,
+      "second_moment": 29242
+    },
+    {
+      "k": 118,
+      "n": 236,
+      "candidate_pairs": 6786,
+      "occupied_cosets": 1712,
+      "second_moment": 30044
+    },
+    {
+      "k": 119,
+      "n": 238,
+      "candidate_pairs": 6903,
+      "occupied_cosets": 1771,
+      "second_moment": 30277
+    },
+    {
+      "k": 120,
+      "n": 240,
+      "candidate_pairs": 7021,
+      "occupied_cosets": 1771,
+      "second_moment": 31093
+    },
+    {
+      "k": 121,
+      "n": 242,
+      "candidate_pairs": 7140,
+      "occupied_cosets": 1831,
+      "second_moment": 31330
+    },
+    {
+      "k": 122,
+      "n": 244,
+      "candidate_pairs": 7260,
+      "occupied_cosets": 1831,
+      "second_moment": 32160
+    },
+    {
+      "k": 123,
+      "n": 246,
+      "candidate_pairs": 7381,
+      "occupied_cosets": 1892,
+      "second_moment": 32401
+    },
+    {
+      "k": 124,
+      "n": 248,
+      "candidate_pairs": 7503,
+      "occupied_cosets": 1892,
+      "second_moment": 33245
+    },
+    {
+      "k": 125,
+      "n": 250,
+      "candidate_pairs": 7626,
+      "occupied_cosets": 1954,
+      "second_moment": 33490
+    },
+    {
+      "k": 126,
+      "n": 252,
+      "candidate_pairs": 7750,
+      "occupied_cosets": 1954,
+      "second_moment": 34348
+    },
+    {
+      "k": 127,
+      "n": 254,
+      "candidate_pairs": 7875,
+      "occupied_cosets": 2017,
+      "second_moment": 34597
+    },
+    {
+      "k": 128,
+      "n": 256,
+      "candidate_pairs": 8001,
+      "occupied_cosets": 2017,
+      "second_moment": 35469
+    }
+  ],
+  "limitations": [
+    "Finite checks supplement algebraic proofs.",
+    "Historical n<=200 primitivity counts not audited here.",
+    "No global literature priority certification."
+  ]
+}

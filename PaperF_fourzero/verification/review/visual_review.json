@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "review_date": "2026-11-02",
+  "pdf_sha256": "1b32e9899076f00231f138f127e8cec601f9fc0dd1549631b2b1b6d89ee3d628",
+  "contact_review_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "full_page_review": [
+    10,
+    11,
+    16,
+    17,
+    18
+  ],
+  "method": "Final Poppler PNGs: all 18 pages in contact sheets; full-size final review of the corrected norm definition/reflection test, collision-cover argument, certificates and references.",
+  "findings": [
+    "No clipping, overlaps, unreadable symbols or broken tables.",
+    "Corrected iff reflection test and explicit classical attribution are legible.",
+    "The full bibliography starts on page 18; no isolated first reference.",
+    "The computer-assisted theorem and certificate roles remain explicit."
+  ],
+  "unresolved_defects": []
+}

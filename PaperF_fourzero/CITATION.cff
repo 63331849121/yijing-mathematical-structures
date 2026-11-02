@@ -1,12 +1,25 @@
 cff-version: 1.2.0
-message: "Please cite this research note using its version DOI."
-type: article
-title: "Four-zero tail-palindromic polynomials over F2: reciprocal obstructions and quadratic-transform intersections"
+message: "This archive accompanies the research note; please cite the preferred citation."
+type: dataset
+title: "Four-zero tail-palindromic polynomials over F2: reciprocity and transformation boundaries"
 authors:
+  - family-names: Huang
+    given-names: Wencong
   - family-names: Li
     given-names: Baohua
-version: "2.1"
-date-released: 2026-10-29
-doi: "10.5281/zenodo.23766722"
-url: "https://doi.org/10.5281/zenodo.23766722"
+version: "3.0"
+date-released: 2026-11-02
+doi: 10.5281/zenodo.23880299
+url: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.11.02
 license: CC-BY-4.0
+preferred-citation:
+  type: article
+  title: "Four-zero tail-palindromic polynomials over F2: reciprocity and transformation boundaries"
+  authors:
+    - family-names: Huang
+      given-names: Wencong
+    - family-names: Li
+      given-names: Baohua
+  year: 2026
+  doi: 10.5281/zenodo.23880299
+  version: "3.0"

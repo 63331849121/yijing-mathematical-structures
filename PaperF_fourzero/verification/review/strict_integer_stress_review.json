@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "additional_integer_systems_compared": 7446,
+  "methods": [
+    "integral Bezout kernel and Apery distances",
+    "rational Cramer form and congruence intervals"
+  ],
+  "random_seed": 20261102,
+  "purpose": "stress-check the new audit arithmetic; certificate replay carries the all-parameter conclusion"
+}

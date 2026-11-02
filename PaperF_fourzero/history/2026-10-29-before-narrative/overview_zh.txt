@@ -1,6 +1,6 @@
 四零尾回文多项式 论文与核验材料阅读指南
 
-作者 Baohua Li
+作者 Wencong Huang, Baohua Li
 论文12页 2026年10月29日
 DOI https://doi.org/10.5281/zenodo.23764251
 GitHub固定版本 https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.10.29

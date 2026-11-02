@@ -1,0 +1,13 @@
+{
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "date": "2026-11-02",
+  "source_before_sha256": "5ebb01ca8bdfba8fbb4150b8d1513e8b40dca02c6ef94e1a08fb9b7c5360ee94",
+  "source_after_sha256": "36c52628cd5071e39b7337a7c4db827d9fdc13d35a4377a18930475dd6eccbe9",
+  "pdf_after_sha256": "79d1cc1b31ad0613ca9f3fb6abf8e89431c4602ba41d7c32bd216922c40be2c5",
+  "document_body_byte_equal_after_newline_normalization": true,
+  "prior_strict_review_applies_to_unchanged_mathematical_body": true,
+  "review_reports_are_historical_prepublication_records": true
+}

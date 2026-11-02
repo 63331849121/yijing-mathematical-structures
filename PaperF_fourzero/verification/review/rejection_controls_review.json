@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "control": "missing cubic residue class",
+      "checker": "check_cubic_formal.py",
+      "rejected": true
+    },
+    {
+      "control": "missing cubic residue class",
+      "checker": "check_certificate_lattice.py",
+      "rejected": true
+    },
+    {
+      "control": "missing feasible quintic collision partner",
+      "checker": "check_quintic_classification.py",
+      "rejected": true
+    },
+    {
+      "control": "missing feasible quintic collision partner",
+      "checker": "check_certificate_lattice.py",
+      "rejected": true
+    },
+    {
+      "control": "incorrect accepting-family label",
+      "checker": "check_quintic_classification.py",
+      "rejected": true
+    },
+    {
+      "control": "incorrect accepting-family label",
+      "checker": "check_certificate_lattice.py",
+      "rejected": true
+    },
+    {
+      "control": "missing initial quintic parameter region",
+      "checker": "check_quintic_classification.py",
+      "rejected": true
+    },
+    {
+      "control": "missing initial quintic parameter region",
+      "checker": "check_certificate_lattice.py",
+      "rejected": true
+    },
+    {
+      "control": "optimized Python would disable assertions",
+      "checker": "check_cubic_formal.py",
+      "rejected": true
+    },
+    {
+      "control": "optimized Python would disable assertions",
+      "checker": "check_quintic_classification.py",
+      "rejected": true
+    },
+    {
+      "control": "optimized Python would disable assertions",
+      "checker": "check_quintic_branches.py",
+      "rejected": true
+    },
+    {
+      "control": "optimized Python would disable assertions",
+      "checker": "check_certificate_lattice.py",
+      "rejected": true
+    }
+  ],
+  "purpose": "Deliberately incomplete/mislabelled proof data and disabled assertions are rejected; not a substitute for full positive replay."
+}

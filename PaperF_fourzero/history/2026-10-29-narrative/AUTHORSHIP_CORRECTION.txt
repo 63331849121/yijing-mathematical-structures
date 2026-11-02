@@ -1,0 +1,7 @@
+Authorship correction, 2 November 2026
+
+Authors, in order: Wencong Huang, Baohua Li.
+Only author attribution and corresponding citation/file metadata are corrected.
+The mathematical content and historical publication date are retained.
+The original MIT code copyright notice is retained.
+Historical version DOI: 10.5281/zenodo.23766722

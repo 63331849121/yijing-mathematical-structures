@@ -1,0 +1,390 @@
+{
+  "scope": {
+    "reciprocal_gcd_all_even_degrees": [
+      6,
+      100
+    ],
+    "squarefree_factor_parity_max_degree": 64,
+    "independent_irreducibility_crosscheck_max_degree": 24
+  },
+  "totals": {
+    "all_gcd_checks": 19600,
+    "squarefree_parity_checks": 4743,
+    "berlekamp_rabin_crosschecks": 207
+  },
+  "by_degree": [
+    {
+      "n": 6,
+      "candidates": 1,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 0
+    },
+    {
+      "n": 8,
+      "candidates": 3,
+      "nontrivial_reciprocal_obstruction": 1,
+      "not_squarefree": 0
+    },
+    {
+      "n": 10,
+      "candidates": 6,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 0
+    },
+    {
+      "n": 12,
+      "candidates": 10,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 0
+    },
+    {
+      "n": 14,
+      "candidates": 15,
+      "nontrivial_reciprocal_obstruction": 10,
+      "not_squarefree": 1
+    },
+    {
+      "n": 16,
+      "candidates": 21,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 1
+    },
+    {
+      "n": 18,
+      "candidates": 28,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 2
+    },
+    {
+      "n": 20,
+      "candidates": 36,
+      "nontrivial_reciprocal_obstruction": 23,
+      "not_squarefree": 1
+    },
+    {
+      "n": 22,
+      "candidates": 45,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 2
+    },
+    {
+      "n": 24,
+      "candidates": 55,
+      "nontrivial_reciprocal_obstruction": 17,
+      "not_squarefree": 6
+    },
+    {
+      "n": 26,
+      "candidates": 66,
+      "nontrivial_reciprocal_obstruction": 34,
+      "not_squarefree": 0
+    },
+    {
+      "n": 28,
+      "candidates": 78,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 1
+    },
+    {
+      "n": 30,
+      "candidates": 91,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 5
+    },
+    {
+      "n": 32,
+      "candidates": 105,
+      "nontrivial_reciprocal_obstruction": 64,
+      "not_squarefree": 4
+    },
+    {
+      "n": 34,
+      "candidates": 120,
+      "nontrivial_reciprocal_obstruction": 61,
+      "not_squarefree": 7
+    },
+    {
+      "n": 36,
+      "candidates": 136,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 7
+    },
+    {
+      "n": 38,
+      "candidates": 153,
+      "nontrivial_reciprocal_obstruction": 92,
+      "not_squarefree": 11
+    },
+    {
+      "n": 40,
+      "candidates": 171,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 5
+    },
+    {
+      "n": 42,
+      "candidates": 190,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 0
+    },
+    {
+      "n": 44,
+      "candidates": 210,
+      "nontrivial_reciprocal_obstruction": 148,
+      "not_squarefree": 12
+    },
+    {
+      "n": 46,
+      "candidates": 231,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 11
+    },
+    {
+      "n": 48,
+      "candidates": 253,
+      "nontrivial_reciprocal_obstruction": 60,
+      "not_squarefree": 18
+    },
+    {
+      "n": 50,
+      "candidates": 276,
+      "nontrivial_reciprocal_obstruction": 163,
+      "not_squarefree": 17
+    },
+    {
+      "n": 52,
+      "candidates": 300,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 16
+    },
+    {
+      "n": 54,
+      "candidates": 325,
+      "nontrivial_reciprocal_obstruction": 148,
+      "not_squarefree": 6
+    },
+    {
+      "n": 56,
+      "candidates": 351,
+      "nontrivial_reciprocal_obstruction": 206,
+      "not_squarefree": 2
+    },
+    {
+      "n": 58,
+      "candidates": 378,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 19
+    },
+    {
+      "n": 60,
+      "candidates": 406,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 18
+    },
+    {
+      "n": 62,
+      "candidates": 435,
+      "nontrivial_reciprocal_obstruction": 289,
+      "not_squarefree": 18
+    },
+    {
+      "n": 64,
+      "candidates": 465,
+      "nontrivial_reciprocal_obstruction": 205,
+      "not_squarefree": 27
+    },
+    {
+      "n": 66,
+      "candidates": 496,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 26
+    },
+    {
+      "n": 68,
+      "candidates": 528,
+      "nontrivial_reciprocal_obstruction": 307,
+      "not_squarefree": 14
+    },
+    {
+      "n": 70,
+      "candidates": 561,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 14
+    },
+    {
+      "n": 72,
+      "candidates": 595,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 28
+    },
+    {
+      "n": 74,
+      "candidates": 630,
+      "nontrivial_reciprocal_obstruction": 447,
+      "not_squarefree": 41
+    },
+    {
+      "n": 76,
+      "candidates": 666,
+      "nontrivial_reciprocal_obstruction": 253,
+      "not_squarefree": 32
+    },
+    {
+      "n": 78,
+      "candidates": 703,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 52
+    },
+    {
+      "n": 80,
+      "candidates": 741,
+      "nontrivial_reciprocal_obstruction": 403,
+      "not_squarefree": 50
+    },
+    {
+      "n": 82,
+      "candidates": 780,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 17
+    },
+    {
+      "n": 84,
+      "candidates": 820,
+      "nontrivial_reciprocal_obstruction": 346,
+      "not_squarefree": 15
+    },
+    {
+      "n": 86,
+      "candidates": 861,
+      "nontrivial_reciprocal_obstruction": 496,
+      "not_squarefree": 49
+    },
+    {
+      "n": 88,
+      "candidates": 903,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 43
+    },
+    {
+      "n": 90,
+      "candidates": 946,
+      "nontrivial_reciprocal_obstruction": 343,
+      "not_squarefree": 42
+    },
+    {
+      "n": 92,
+      "candidates": 990,
+      "nontrivial_reciprocal_obstruction": 569,
+      "not_squarefree": 49
+    },
+    {
+      "n": 94,
+      "candidates": 1035,
+      "nontrivial_reciprocal_obstruction": 430,
+      "not_squarefree": 55
+    },
+    {
+      "n": 96,
+      "candidates": 1081,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 19
+    },
+    {
+      "n": 98,
+      "candidates": 1128,
+      "nontrivial_reciprocal_obstruction": 706,
+      "not_squarefree": 27
+    },
+    {
+      "n": 100,
+      "candidates": 1176,
+      "nontrivial_reciprocal_obstruction": 0,
+      "not_squarefree": 79
+    }
+  ],
+  "examples": {
+    "no_reciprocal_obstruction_but_reducible": {
+      "n": 8,
+      "i": 1,
+      "j": 2,
+      "polynomial_hex": "0x199",
+      "distinct_irreducible_factors": 2
+    },
+    "passes_parity_but_reducible": {
+      "n": 12,
+      "i": 4,
+      "j": 5,
+      "polynomial_hex": "0x1f0f",
+      "distinct_irreducible_factors": 3
+    },
+    "not_squarefree": {
+      "n": 14,
+      "i": 2,
+      "j": 5,
+      "polynomial_hex": "0x76db",
+      "derivative_gcd_hex": "0x1145"
+    }
+  },
+  "parity_pattern_counterexamples": {
+    "same_n_and_zero_positions_mod_8": [
+      {
+        "n": 24,
+        "i": 1,
+        "j": 10,
+        "polynomial_hex": "0x1bfdbfd",
+        "distinct_irreducible_factors": 2
+      },
+      {
+        "n": 24,
+        "i": 9,
+        "j": 10,
+        "polynomial_hex": "0x1ff99ff",
+        "distinct_irreducible_factors": 3
+      }
+    ]
+  },
+  "unbounded_degree_factor_family": [
+    {
+      "a": 3,
+      "n": 8,
+      "i": 1,
+      "j": 3,
+      "forced_factor_degree": 2
+    },
+    {
+      "a": 5,
+      "n": 14,
+      "i": 3,
+      "j": 5,
+      "forced_factor_degree": 4
+    },
+    {
+      "a": 7,
+      "n": 20,
+      "i": 5,
+      "j": 7,
+      "forced_factor_degree": 6
+    },
+    {
+      "a": 11,
+      "n": 32,
+      "i": 9,
+      "j": 11,
+      "forced_factor_degree": 10
+    },
+    {
+      "a": 21,
+      "n": 62,
+      "i": 19,
+      "j": 21,
+      "forced_factor_degree": 20
+    },
+    {
+      "a": 35,
+      "n": 104,
+      "i": 33,
+      "j": 35,
+      "forced_factor_degree": 34
+    }
+  ]
+}

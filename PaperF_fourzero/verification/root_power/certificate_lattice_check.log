@@ -1,0 +1,2 @@
+PASS: quotient-algebra cubic norm; 27 residue classes and all 768 noncollisions
+PASS: quotient-algebra quintic norm; all 672 nodes and 28611 partner tests

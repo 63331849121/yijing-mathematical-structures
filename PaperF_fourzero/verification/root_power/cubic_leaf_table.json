@@ -1,0 +1,818 @@
+[
+  {
+    "residue": [
+      0,
+      0,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 24
+  },
+  {
+    "residue": [
+      0,
+      0,
+      1
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      2,
+      0,
+      2,
+      5
+    ],
+    "support_terms": 16
+  },
+  {
+    "residue": [
+      0,
+      0,
+      1
+    ],
+    "path": [
+      [
+        1,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      0,
+      0,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 16
+  },
+  {
+    "residue": [
+      0,
+      0,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 24
+  },
+  {
+    "residue": [
+      0,
+      1,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      0,
+      1,
+      1
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 16
+  },
+  {
+    "residue": [
+      0,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 8
+  },
+  {
+    "residue": [
+      0,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      2,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 16
+  },
+  {
+    "residue": [
+      0,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      0,
+      2,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 24
+  },
+  {
+    "residue": [
+      0,
+      2,
+      1
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      0,
+      2,
+      2
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 24
+  },
+  {
+    "residue": [
+      1,
+      0,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      0,
+      1
+    ],
+    "path": [],
+    "witness_Y": [
+      2,
+      2,
+      2,
+      5
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      0,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      2,
+      0,
+      0,
+      4
+    ],
+    "support_terms": 8
+  },
+  {
+    "residue": [
+      1,
+      0,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 12
+  },
+  {
+    "residue": [
+      1,
+      0,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      1,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      1,
+      1
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      2,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 8
+  },
+  {
+    "residue": [
+      1,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "+"
+      ],
+      [
+        0,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      0,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 8
+  },
+  {
+    "residue": [
+      1,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "+"
+      ],
+      [
+        0,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 12
+  },
+  {
+    "residue": [
+      1,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      2,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      2,
+      1
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 20
+  },
+  {
+    "residue": [
+      1,
+      2,
+      2
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 36
+  },
+  {
+    "residue": [
+      2,
+      0,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 16
+  },
+  {
+    "residue": [
+      2,
+      0,
+      1
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 8
+  },
+  {
+    "residue": [
+      2,
+      0,
+      1
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      2,
+      0,
+      2,
+      6
+    ],
+    "support_terms": 16
+  },
+  {
+    "residue": [
+      2,
+      0,
+      1
+    ],
+    "path": [
+      [
+        1,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      2,
+      0,
+      2
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      1,
+      0,
+      3
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      2,
+      1,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      2,
+      1,
+      1
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 24
+  },
+  {
+    "residue": [
+      2,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "0"
+      ],
+      [
+        0,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      0,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 6
+  },
+  {
+    "residue": [
+      2,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "0"
+      ],
+      [
+        0,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 12
+  },
+  {
+    "residue": [
+      2,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "+"
+      ],
+      [
+        0,
+        "0"
+      ]
+    ],
+    "witness_Y": [
+      0,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 8
+  },
+  {
+    "residue": [
+      2,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "0"
+      ],
+      [
+        2,
+        "+"
+      ],
+      [
+        0,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "support_terms": 12
+  },
+  {
+    "residue": [
+      2,
+      1,
+      2
+    ],
+    "path": [
+      [
+        1,
+        "+"
+      ]
+    ],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 24
+  },
+  {
+    "residue": [
+      2,
+      2,
+      0
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 28
+  },
+  {
+    "residue": [
+      2,
+      2,
+      1
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 24
+  },
+  {
+    "residue": [
+      2,
+      2,
+      2
+    ],
+    "path": [],
+    "witness_Y": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "support_terms": 24
+  }
+]

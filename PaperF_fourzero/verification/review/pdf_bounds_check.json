@@ -1,0 +1,119 @@
+{
+  "pdf_sha256": "1b32e9899076f00231f138f127e8cec601f9fc0dd1549631b2b1b6d89ee3d628",
+  "page_count": 18,
+  "pages": [
+    {
+      "page": 1,
+      "word_count": 435,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 2,
+      "word_count": 480,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 3,
+      "word_count": 586,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 4,
+      "word_count": 437,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 5,
+      "word_count": 629,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 6,
+      "word_count": 596,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 7,
+      "word_count": 519,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 8,
+      "word_count": 571,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 9,
+      "word_count": 566,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 10,
+      "word_count": 411,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 11,
+      "word_count": 501,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 12,
+      "word_count": 466,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 13,
+      "word_count": 390,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 14,
+      "word_count": 447,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 15,
+      "word_count": 466,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 16,
+      "word_count": 493,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 17,
+      "word_count": 468,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    },
+    {
+      "page": 18,
+      "word_count": 371,
+      "text_inside_page": true,
+      "footer_page_number_verified": true
+    }
+  ],
+  "contact_sheets": [
+    "final-contact-1.png",
+    "final-contact-2.png",
+    "final-contact-3.png"
+  ]
+}

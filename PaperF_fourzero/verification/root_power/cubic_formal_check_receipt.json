@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "independent_norm": "F2 cubic formula; no F4 code imported",
+  "parameter_domain": "all integer k>=3, 1<=i<j<k; no upper bound",
+  "certificate_checks": {
+    "sign": 604,
+    "gcd": 138,
+    "leaves": 42,
+    "depth_0": 20,
+    "constant": 26,
+    "depth_1": 9,
+    "depth_2": 7,
+    "depth_3": 6
+  },
+  "parameter_regions": {
+    "unbounded": 41,
+    "singleton": 1
+  },
+  "SMT_used_by_checker": false
+}

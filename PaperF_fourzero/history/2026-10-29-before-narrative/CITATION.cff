@@ -3,6 +3,8 @@ message: "Please cite the version DOI for this research note."
 type: article
 title: "Four-zero tail-palindromic polynomials over F2: reciprocal obstructions and quadratic-transform intersections"
 authors:
+  - family-names: Huang
+    given-names: Wencong
   - family-names: Li
     given-names: Baohua
 version: "2.0"

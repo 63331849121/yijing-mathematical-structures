@@ -59,22 +59,22 @@ list have also been clarified. See [revision notes](PaperA_revision_notes.md).
 - [Earlier note LaTeX source](PaperA_singer_TDK.tex)
 - [English abstract](abstract_en.txt) / [Chinese abstract](abstract_zh.txt)
 
-### Paper F: four-zero tail-palindromic polynomials
-
-**Four-zero tail-palindromic polynomials over F2: reciprocal obstructions
-and quadratic-transform intersections.** Baohua Li · Research note · 12 pages.
-
-Complete quadratic-transform support classifications, a uniform translation
-obstruction, an exact reciprocal screen, and an explicit B-family descent
-(Proposition 3.5). The general primitive-existence conjecture C4 remains open.
-
-- [Manuscript and editable source](PaperF_fourzero/).
-- [Submission archive: PDF and TeX](PaperF_fourzero/PaperF_submission.zip).
-- [Optional mathematical data and verification programs](PaperF_fourzero/PaperF_data_and_code.zip).
-- [Version DOI](https://doi.org/10.5281/zenodo.23766722).
-- [Fixed GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.10.29-r1).
-- [Previous public version](https://doi.org/10.5281/zenodo.23764251), preserved.
-
+### Paper F: four-zero tail-palindromic polynomials
+
+**Four-zero tail-palindromic polynomials over F2: reciprocity and transformation boundaries.** Wencong Huang, Baohua Li · Version 3.0 · 18 pages.
+
+Exact reciprocal and quadratic-transform classifications, together with
+computer-assisted cubic and quintic root-power classifications. The complete
+parameter certificates and four standard-library checkers are required proof
+materials. The primitive-existence conjecture C4 remains open.
+
+- [Manuscript and editable source](PaperF_fourzero/).
+- [Required proof materials and data](PaperF_fourzero/PaperF_data_and_code.zip).
+- [Complete manuscript and proof bundle](PaperF_fourzero/PaperF_revision_bundle.zip).
+- [Version DOI](https://doi.org/10.5281/zenodo.23880299).
+- [Fixed GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.11.02).
+- [Authorship-corrected earlier versions](PaperF_fourzero/history/).
+
 ## Reproduce Paper A's computations
 
 For the current paper, start with the [current source and verification package](PaperA_norm_fibers/).

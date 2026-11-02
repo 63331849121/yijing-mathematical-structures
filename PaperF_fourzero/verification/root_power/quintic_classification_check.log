@@ -1,0 +1,4 @@
+PASS: all 125 residue classes, orthant partitions and 672 collision-certificate nodes
+PASS: necessary classification into the arithmetic progression and degree-10 exception
+PASS: independent F2 determinant + Cramer arithmetic, no generator imports or SMT
+{'unique': 540, 'partner_checks': 28611, 'largest_line_period': 3, 'collision': 127, 'allowed': 5}

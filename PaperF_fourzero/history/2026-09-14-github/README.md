@@ -2,7 +2,7 @@
 
 Title: Four-zero tail-palindromic primitive polynomials: coefficient geometry, Dickson reduction, and computational evidence
 
-Author: Baohua Li
+Author: Wencong Huang, Baohua Li
 
 DOI: [10.5281/zenodo.22745836](https://doi.org/10.5281/zenodo.22745836)
 

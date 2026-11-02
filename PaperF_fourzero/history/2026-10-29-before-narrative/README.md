@@ -1,7 +1,7 @@
 # Four-zero tail-palindromic polynomials over F2
 
 **Four-zero tail-palindromic polynomials over F2: reciprocal obstructions and quadratic-transform intersections**  
-Baohua Li · Research note · 12 pages · 29 October 2026
+Wencong Huang, Baohua Li · Research note · 12 pages · 29 October 2026
 
 - Version DOI: https://doi.org/10.5281/zenodo.23764251
 - All versions: https://doi.org/10.5281/zenodo.22745835

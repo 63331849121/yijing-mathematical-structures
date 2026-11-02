@@ -1,0 +1,105 @@
+--- pre_strict_18page_revision.tex
++++ strictly_reviewed_18page_revision.tex
+@@ -714,13 +714,23 @@
+ 
+ \section{Root powers and coefficient reflection}\label{sec:root-powers}
+ Power substitution and taking powers of roots are different operations.
+-For a monic polynomial $h$ with constant term one, define
++For a monic $h\in\mathbb F_2[x]$ with constant term one, define
+ \begin{equation}\label{eq:root-power-definition}
+  \mathcal N_\ell(h)(y)=\prod_{h(\alpha)=0}(y+\alpha^\ell),
+ \end{equation}
+ where roots are counted with multiplicity. Its degree is $\deg h$,
+ even when a root power has a shorter Frobenius orbit. It need not be
+-the minimal polynomial of a single root power. In contrast,
++the minimal polynomial of a single root power.
++This is the classical generalized Graeffe transform
++\cite[Section 5]{BFSS06}, \cite[Section 3.1]{GHL15}:
++\[
++ \mathcal N_\ell(h)(y)
++   =\operatorname{Res}_z(h(z),y+z^\ell)
++   =\det(yI+C_h^\ell),
++\]
++where $C_h$ is a companion matrix of $h$.
++These identities retain multiplicities, including for a reducible $h$.
++In contrast,
+ $h(x^\ell)$ has degree $\ell\deg h$; classical order criteria for its
+ irreducibility are recalled in \cite[Section 2]{BM25}.
+ 
+@@ -783,11 +793,12 @@
+     x^{\ell N}F_\ell(1/x)+x^\ell F_\ell(x)
+       +(1+x^\ell)(1+x^{\ell N})\\
+   &=(1+x^\ell)
+-       \bigl(g^*(x^\ell)+x^\ell g(x^\ell)+1+x^{\ell N}\bigr)=0 .
++       \bigl(g^*(x^\ell)+x^\ell g(x^\ell)+1+x^{\ell N}\bigr).
+ \end{split}
+ \end{equation}
+-The converse holds as well: the bracket vanishes precisely when
+-the nonleading coefficients of $g$ are a palindrome.
++Thus $g$ is tail-palindromic if and only if $\Omega_\ell=0$:
++the bracket vanishes precisely when its nonleading coefficients
++are a palindrome.
+ In a homogeneous expansion in $u$, the highest-degree terms cancel
+ between $\mathcal N_\ell(P^*)$ and $y\mathcal N_\ell(P)$.
+ The remaining support still has bounded size for fixed $\ell$.
+@@ -1167,7 +1178,9 @@
+ and exhaustive; in the latter branch replace it by one plus a new
+ nonnegative variable.
+ 
+-For $\ell=3$, direct norm expansion leaves $16$--$36$ symbolic
++For $\ell=3$, splitting $P=p_0+p_1+p_2$ by exponent residues gives
++$F_3=p_0^3+p_1^3+p_2^3+p_0p_1p_2$ by \eqref{eq:norm-product}.
++Direct expansion leaves $16$--$36$ symbolic
+ terms per residue class. The certificate covers the $27$ residue
+ classes by $42$ regions: $41$ are unbounded and one is the single
+ point \mbox{$(n,i,j)=(10,1,2)$}.
+@@ -1213,6 +1226,12 @@
+ either have been cancelled already or be an inconsistent constant.
+ With three variables, the rank can rise at most to three.
+ The branches need only cover the zero set; they need not be disjoint.
++An accepting node certifies inclusion in \eqref{eq:quintic-parameters};
++it need not independently prove zero defect.
++The explicit image formulas prove sufficiency separately.
++Induction on the increasing rank therefore proves necessity:
++each zero has a feasible partner at every nonterminal node,
++and a unique-term or infeasible node cannot contain a zero.
+ 
+ Nonnegative integer feasibility is decided exactly.
+ At rank one, gcd divisibility is sufficient when coefficients have
+@@ -1281,7 +1300,14 @@
+ \end{quote}
+ The certificates and programs constitute the finite part of the
+ proof, with no SMT solver or upper degree cutoff required.
+-
++An additional independent audit, \path{check_certificate_lattice.py},
++reconstructs both norms in the quotient algebra
++$\mathbb F_2[y,z]/(z^\ell+y)$ and checks the same certificates using
++unimodular integer solution lattices. It imports neither the generators
++nor the three verification programs above.
++
++
++\clearpage
+ 
+ \begin{thebibliography}{99}
+ \small
+@@ -1332,6 +1358,20 @@
+ Finite Fields Appl. \textbf{48} (2017), 271--288.
+ \href{https://doi.org/10.1016/j.ffa.2017.08.004}{doi:10.1016/j.ffa.2017.08.004}.
+ 
++\bibitem{BFSS06}
++A. Bostan, P. Flajolet, B. Salvy and \'E. Schost,
++\emph{Fast computation of special resultants},
++J. Symbolic Comput. \textbf{41} (2006), 1--29.
++\href{https://doi.org/10.1016/j.jsc.2005.07.001}{doi:10.1016/j.jsc.2005.07.001}.
++
++\bibitem{GHL15}
++B. Grenet, J. van der Hoeven and G. Lecerf,
++\emph{Randomized root finding over finite FFT-fields using tangent Graeffe transforms},
++Proc. ISSAC 2015, 197--204.
++\href{https://doi.org/10.1145/2755996.2756647}{doi:10.1145/2755996.2756647}.
++Author version, Section 3.1:
++\href{https://www.texmacs.org/joris/rmodroots/rmodroots.html}{generalized Graeffe transforms}.
++
+ \bibitem{BM25}
+ A. Bassa and R. Menares,
+ \emph{The $R$-transform as power map and its generalizations to higher degree},

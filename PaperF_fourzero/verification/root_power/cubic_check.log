@@ -1,0 +1,3 @@
+PASS: independent norm expansion, 27 residues / 41 unbounded regions + 1 singleton
+PASS: every unique coefficient checked by constant, gcd, sign or finite coin refutation
+PASS: standard-library-only checker; no SMT oracle; no bound on n

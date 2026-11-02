@@ -1,0 +1,50 @@
+论文F严格复核：经典前驱与归属边界（2026-11-02）
+
+1. 直接前驱：广义Graeffe/根幂变换。
+Bostan, Flajolet, Salvy, Schost, Fast computation of special resultants,
+J. Symbolic Comput.41(2006),1--29，DOI 10.1016/j.jsc.2005.07.001。
+已读作者全文第5节末“Graeffe polynomials”：根取N次幂的同次数多项式是既有对象。
+作者全文准确下载：
+https://cs.uwaterloo.ca/~eschost/publications/BoFlSaSc05.pdf
+刊本入口：
+https://doi.org/10.1016/j.jsc.2005.07.001
+
+Grenet, van der Hoeven, Lecerf, Randomized root finding over finite FFT-fields using tangent Graeffe transforms,
+ISSAC2015,197--204，DOI 10.1145/2755996.2756647。
+已读作者2015-01-16版本第3.1节（PDF第4页）：明确给出广义Graeffe结果式、根取幂、商代数中特征多项式及单位根乘积公式。
+作者版本标题略去“FFT-”，稿中引文采用会议版题名，另提供作者版3.1节链接。
+准确全文下载：
+https://www.texmacs.org/joris/rmodroots/rmodroots.pdf
+可读HTML：
+https://www.texmacs.org/joris/rmodroots/rmodroots.html
+刊本入口：
+https://doi.org/10.1145/2755996.2756647
+
+两篇作者全文可读。刊本DOI页面本轮未直接取到全文，不冒称逐页阅读刊本。只引用已从作者全文核对的定义与恒等式，不移用其中的算法复杂度、光滑群阶或无重根前提。本文F2下的符号、重数和单位根公式另自足证明：结果式与特征多项式解释不要求无重根；单位根乘积只在奇数l使用。
+
+2. 相邻而不同的经典操作：f(x^t)的幂复合。
+Bassa--Menares, The R-transform as power map and its generalizations to higher degree,
+Finite Fields Appl.102(2025),102546，DOI 10.1016/j.ffa.2024.102546。
+已读作者v2第2节定理2.1、第1节单位根作用和变换定义。其对象是幂代换/分式线性共轭，不是本文单变量根幂像的四零分类。
+可读原文：https://arxiv.org/html/1909.02608v2
+准确下载：https://arxiv.org/pdf/1909.02608v2
+刊本入口：https://doi.org/10.1016/j.ffa.2024.102546
+
+该定理本身明确归于Cohen(1969),Theorem1；稿中用Bassa--Menares作为可读的经典准则入口，没有将该准则认领为本轮结果。
+原Cohen刊本入口：https://doi.org/10.1017/S0305004100045023
+Butler(1955)更早因式分解入口：https://doi.org/10.1112/jlms/s1-30.4.480
+两早期刊本仍未逐页核验。新分类没有依赖其未读细节，不能声称已完成这些原典的全文审查。
+
+3. 合成积不能冒充单变量根幂的直接不可约性定理。
+Munemasa--Nakamura(2016)对Brawley--Carlitz定理的作者证明已重读定义、Theorem1.1与第2节。它讨论两个独立根集的二元操作及相应消去条件；不能将互素次数结论直接套给alpha↦alpha^l。
+可读：https://arxiv.org/html/1602.02361v1
+准确下载：https://arxiv.org/pdf/1602.02361v1
+1987原刊入口：https://doi.org/10.1016/0012-365X(87)90135-X
+原1987刊本未逐页核验。稿中新定理不以此为推导依据。
+
+4. 本次可主张的对象特定增量。
+全体四零候选的三次尾反射全排除、五次尾反射完整参数分类、显式支撑与零数后果，以及对同次数一步开根的限制。
+不主张：发明广义Graeffe、范数/互反交换、循环行列式、Cramer或Bezout算法，也不把初等几何和因子恒等式作为新的通用因式分解理论。
+
+5. 检索范围与限度。
+本轮检索了广义Graeffe、root powering/resultant、tail-palindromic及four-zero/四零密集系数相关关键词，并核对上述直接原文。未发现能够直接代替本族三次/五次分类的既有定理。术语与索引检索不构成全球优先权证明，因此稿中不使用“首次发现该变换”或“已证明全球首创”等表述。
