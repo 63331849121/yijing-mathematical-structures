@@ -1,4 +1,5 @@
 {
+  "status": "PUBLISHED_AND_PUBLIC_DOWNLOADS_VERIFIED",
   "paper": "S",
   "version": "2026-11-02",
   "pages": 56,
@@ -6,7 +7,27 @@
   "conceptdoi": "10.5281/zenodo.23852660",
   "record_url": "https://zenodo.org/records/23873752",
   "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperS-v2026.11.02",
-  "files": [
+  "github_commit": "cf551312d25f56d125e5c87005ed8605fa7c7917",
+  "github_tag": "paperS-v2026.11.02",
+  "github_files": [
+    {
+      "name": "PaperS.pdf",
+      "bytes": 424775,
+      "sha256": "d315c5afaf0ab54f02329e0142811e78a7bd831b886734aeb4fb57259cdc04a1",
+      "md5": "73886cff480c7f4227652006ce0d25f3",
+      "public_download_url": "https://github.com/63331849121/yijing-mathematical-structures/releases/download/paperS-v2026.11.02/PaperS.pdf",
+      "public_sha256_matches": true
+    },
+    {
+      "name": "PaperS_draft_and_source.zip",
+      "bytes": 961750,
+      "sha256": "ce414aa052c4207c4b5e7202fdad6bba2ce3a5d9a6272f61b2eef822be79c932",
+      "md5": "fbf94f940d504e9f65dc2b6e6b75b640",
+      "public_download_url": "https://github.com/63331849121/yijing-mathematical-structures/releases/download/paperS-v2026.11.02/PaperS_draft_and_source.zip",
+      "public_sha256_matches": true
+    }
+  ],
+  "zenodo_files": [
     {
       "name": "PaperS.pdf",
       "bytes": 424775,
@@ -26,5 +47,22 @@
       "public_sha256_matches": true
     }
   ],
-  "status": "ZENODO_PUBLISHED_AND_PUBLIC_DOWNLOADS_VERIFIED"
+  "doi_resolution": [
+    {
+      "doi": "10.5281/zenodo.23873752",
+      "url": "https://doi.org/10.5281/zenodo.23873752",
+      "http_status": 200,
+      "final_url": "https://zenodo.org/records/23873752",
+      "new_version_confirmed": true
+    },
+    {
+      "doi": "10.5281/zenodo.23852660",
+      "url": "https://doi.org/10.5281/zenodo.23852660",
+      "http_status": 200,
+      "final_url": "https://zenodo.org/records/23873752",
+      "new_version_confirmed": true
+    }
+  ],
+  "previous_versions_preserved": true,
+  "verified_utc": "2026-11-02T01:29:40.744906+00:00"
 }
