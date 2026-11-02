@@ -1,0 +1,41 @@
+{
+  "status": "FROZEN_RELEASE_SNAPSHOT",
+  "paper_code": "C (formerly G-III)",
+  "date": "2026-11-02",
+  "updated": "2026-11-02T18:57:46+08:00",
+  "author": "Wencong Huang, Baohua Li",
+  "pages": 40,
+  "source_entry": "PaperG_central_depth.tex",
+  "pdf": "PaperG_central_depth.pdf",
+  "pdf_sha256": "e6a94ae03f5657cc1827e0a52d806b98bdd1ef401b0709579a9622a72444c5ff",
+  "baseline": {
+    "pages": 28,
+    "pdf_sha256": "dcc221b4170f6df8f59164b36efe5c4a65810a9b6141e4f85cfef357c4559a37",
+    "public_doi": "10.5281/zenodo.23874234",
+    "author": "Baohua Li"
+  },
+  "built_in_compiler": "PASS",
+  "local_export": "PASS",
+  "source_references": "PASS",
+  "visual_QA": "PASS",
+  "fresh_replay_invocations": 16,
+  "unchanged_extended_tasks_not_rerun": 10,
+  "retained_verification_files": 92,
+  "package": "PaperG_central_depth_source_and_verification_2026-11-02_r2.zip",
+  "new_doi_assigned": true,
+  "master_209_pages_frozen": true,
+  "proof_review": "General interfaces rederived internally; finite checks retain their declared roles.",
+  "external_priority_certification": false,
+  "whole_paper_proof_assistant_formalization": false,
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "version": "2026-11-02-r2",
+  "doi": "10.5281/zenodo.23882658",
+  "conceptdoi": "10.5281/zenodo.23874233",
+  "doi_state_at_packaging": "reserved; publication is verified in a separate receipt",
+  "record_url": "https://zenodo.org/records/23882658",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperC-v2026.11.02-r2",
+  "github_snapshot": "https://github.com/63331849121/yijing-mathematical-structures/tree/paperC-v2026.11.02-r2/PaperC_central_depth/revisions/2026-11-02-r2"
+}

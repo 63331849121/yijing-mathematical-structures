@@ -1,0 +1,33 @@
+{
+  "paper": "C",
+  "version": "2026-11-02-r2",
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "pages": 40,
+  "doi": "10.5281/zenodo.23882658",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperC-v2026.11.02-r2",
+  "source_archive_root": "PaperC/",
+  "source_entry": "PaperG_central_depth.tex",
+  "assets": [
+    {
+      "name": "PaperC.pdf",
+      "bytes": 306334,
+      "sha256": "e6a94ae03f5657cc1827e0a52d806b98bdd1ef401b0709579a9622a72444c5ff",
+      "md5": "b05e803745b4430fd9f56a655e230938"
+    },
+    {
+      "name": "PaperC_source_and_verification.zip",
+      "bytes": 6972085,
+      "sha256": "8059a8315369ad696207695fbf2293c2d7b21e8d37de3e63891038a4ed39353c",
+      "md5": "ae16d104d0d07d882c0f166ba6a9d8e7"
+    }
+  ],
+  "old_version": {
+    "doi": "10.5281/zenodo.23874234",
+    "pages": 28,
+    "author": "Baohua Li",
+    "preserved": true
+  }
+}

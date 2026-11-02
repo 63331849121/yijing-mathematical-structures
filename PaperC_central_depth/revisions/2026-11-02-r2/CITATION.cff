@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this version using its version DOI."
+type: article
+title: "Central-depth stability and optimal central realizations of three-Engel Lie algebras"
+authors:
+  - family-names: Huang
+    given-names: Wencong
+  - family-names: Li
+    given-names: Baohua
+year: 2026
+date-released: 2026-11-02
+version: "2026-11-02-r2"
+doi: 10.5281/zenodo.23882658
+url: https://zenodo.org/records/23882658
+repository-code: https://github.com/63331849121/yijing-mathematical-structures/tree/paperC-v2026.11.02-r2/PaperC_central_depth/revisions/2026-11-02-r2
