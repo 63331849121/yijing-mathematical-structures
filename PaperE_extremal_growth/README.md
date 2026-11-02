@@ -1,27 +1,27 @@
 # Extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras
 
-Baohua Li. Preprint, **80 pages**, version **2026-11-02**.
+**Wencong Huang, Baohua Li.** Preprint, **84 pages**, version **2026-11-02.2**.
 
 - [PDF](PaperE.pdf)
-- [Editable LaTeX and necessary exact verification](PaperE_source_and_verification.zip)
-- Version DOI: https://doi.org/10.5281/zenodo.23874228
-- Fixed GitHub release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperE-v2026.11.02
+- [Editable source and verification](PaperE_source_and_verification.zip)
+- [Version DOI](https://doi.org/10.5281/zenodo.23881010)
+- [Fixed release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperE-v2026.11.02.2)
 
-## Mathematical scope
+## Scope
 
-We determine extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras in characteristic two and their binary quadratic orbit realizations. For class c at least five, the two binary minimum dimensions are 2^c + 2c - 6 and 2^c + 2c - 2. All equality objects and their coordinate transformations are classified. Increasing the first minimum by two binary dimensions changes a linearly growing type population into a doubly exponential one. Over finite characteristic-two fields of size at least four, a sharp square-root-of-two normalized-surplus threshold separates typical minimum-derived objects from the competing population. Macroscopic growth, typical dimension allocation and a discrete staircase refine this transition. The probability measure is uniform on unlabelled isomorphism types. This independently readable 80-page preprint develops the extremal and enumerative part of Paper G.
+We determine extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras in characteristic two and their binary quadratic orbit realizations. This 84-page revision includes complete isomorphism fibers and residual groups, uniform multiplicative counts for all diagonal-rank strata, the full-layer finite-product partition and joint defect/rank law in a specified growing critical window, and rank-deficiency limits on actual integer dimension layers. The field is fixed, of characteristic two and size at least four. The measure is uniform on unlabelled isomorphism types. Classical matrix rank distributions are credited to Fulman and Goldstein; the contribution is their realization in the full Lie population with a proved tail comparison.
 
-## Source and verification
+Authors: Wencong Huang, Baohua Li. Wencong Huang joins beginning with version 2026-11-02.2. All earlier versions, including the 80-page version DOI 10.5281/zenodo.23874228, retain Baohua Li as sole author.
 
-The archive root is `PaperE/`; its TeX entry is `PaperG_extremal_growth.tex`. The original checked TeX and PDF bytes are preserved. Use a standard XeLaTeX installation. Read `verification/README.txt` for exact dependencies, finite proof inputs and replay scope. Existing supplied certificates and replay reports are retained.
+The deposit contains the PDF and editable LaTeX with exact finite controls and replay instructions. Six directly relevant controls were rerun for the mathematical merge; the historical entire suite was not rerun. The new authorship update changes no mathematical statements. Shared origin: frozen Paper G, DOI 10.5281/zenodo.23874173. Q/C/S supply no new proof input. Wider multiplicative windows, growing fields and transfer to a second object class remain open.
 
-Manuscript and original mathematical data: CC BY 4.0; original verification code: MIT. Bundled third-party assets retain their own licenses.
+Fixed GitHub release: https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperE-v2026.11.02.2. Manuscript and original mathematical data: CC BY 4.0. Original verification code: MIT. Third-party materials retain their existing licenses.
 
-## Related manuscripts
+## Version history
 
-- Paper G: Quadratic maps satisfying f composed with f = f + id: nilpotence, Lie reconstruction, and growth — https://doi.org/10.5281/zenodo.23874173
-- Paper Q: Quadratic orbit maps and three-Engel Lie algebras in characteristic two — https://doi.org/10.5281/zenodo.23874202
-- Paper E: Extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras — https://doi.org/10.5281/zenodo.23874228
-- Paper C: Central-depth stability and optimal central realizations of three-Engel Lie algebras — https://doi.org/10.5281/zenodo.23874234
+Wencong Huang joins beginning with this version. Earlier versions retain Baohua Li alone.
+The [80-page version](https://doi.org/10.5281/zenodo.23874228) and its [GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperE-v2026.11.02) remain unchanged.
 
-Paper S is independent: https://doi.org/10.5281/zenodo.23873752 .
+## Reproduction
+
+The archive root is `PaperE/`; compile `PaperG_extremal_growth.tex`. Read `verification/README.txt` and `INTEGRATION_NOTES.txt` for proof/control correspondence and scope. The manifest fingerprints all portable inputs. No other paper source is needed.

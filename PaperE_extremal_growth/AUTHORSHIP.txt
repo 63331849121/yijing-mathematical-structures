@@ -1,0 +1,4 @@
+Current revision 2026-11-02.2: Wencong Huang, Baohua Li.
+Wencong Huang joins beginning with this revision.
+Earlier versions, including the published 80-page version DOI 10.5281/zenodo.23874228, retain Baohua Li as sole author.
+No earlier author attribution is changed.
