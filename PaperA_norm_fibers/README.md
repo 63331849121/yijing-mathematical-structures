@@ -1,27 +1,36 @@
 # Norm-fiber densities and relative traces in characteristic two
 
-Baohua Li · research preprint · 29 October 2026
+Wencong Huang; Baohua Li | research preprint | 2 November 2026
 
-- [Main paper](main.pdf), 37 pages, and [supplement](supplement.pdf), 40 pages.
-- [Chinese reading guide](overview_zh.txt).
-- [Editable LaTeX](LaTeX_sources.zip).
-- [Public research sources, raw data, exact certificates and verifiers](source_and_verification.zip).
-- [Selective Lean sources](formalization/) / [download](Lean_verification.zip).
-- [Exact scope](formalization/INTERFACE_SCOPE.txt), [citation](CITATION.cff), [checksums](SHA256SUMS.txt).
-- [Versioned release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.10.29-v21) and [Zenodo version DOI](https://doi.org/10.5281/zenodo.23757428).
+- [Main paper](main.pdf): 44 pages. [Supplement](supplement.pdf): 45 pages.
+- [Version DOI](https://doi.org/10.5281/zenodo.23880175); [all versions](https://doi.org/10.5281/zenodo.23721669).
+- [Pinned GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.11.02-v22).
+- [Chinese reading guide](overview_zh.txt), [citation](CITATION.cff), [authorship correction](AUTHORS_CORRECTION.txt).
+- [Editable LaTeX](LaTeX_sources.zip); [sources and verification](source_and_verification.zip).
+- [Raw research data](https://github.com/63331849121/yijing-mathematical-structures/releases/download/paperA-v2026.11.02-v22/research_data.zip).
+- [Retained selective Lean sources](Lean_verification.zip); [replay instructions](REPRODUCE.txt).
+- [Checksums](SHA256SUMS.txt) and [licenses](LICENSES.txt).
 
-The paper gives effective norm-fiber estimates in a growing-index binary quartic family,
-uniform relative-trace bounds, the complete C9/C11 exceptional classification,
-distribution identities and affine companion applications. Classical frameworks and
-general methods are credited. Manuscript title pages omit internal version labels;
-this repository/archive identifies the release as v21.
+This general revision adds complete support on prescribed primitive inner
+norms for all s>=2, including composite t^2+1, and distribution results across
+those norms. The latter include the exact Kloosterman formula, unsieved
+variance, the cubic genus-two reduction, a mixed second moment excluding all
+relevant rank-one Lang twists, and the refined 8M-12 full-order error.
 
-The 21 original data files and selective Lean sources retain their earlier bytes.
-Nine modules have 129 theorem/lemma declarations and 33 definitions. Read the stated
-formalization boundary; full geometric estimates and complete classification are
-not formalized. This editorial publication adds no new Lean build or peer review.
+The mixed constant is defined by a fixed conductor and is not numerically
+evaluated. The full-order variance bound retains W(A)^2; it has no asserted
+asymptotic main term. The old selective Lean scope is retained; no Lean proof
+of these new geometric or all-parameter results is claimed. Internal
+independent proof checks are not external journal peer review.
 
-The research archive excludes author-internal reviews and unconfirmed submission
-declarations. Existing manuscript CC BY 4.0, code/Lean MIT and font licenses remain.
-Earlier releases and DOI records are preserved. The graphical overview PDF currently
-in the repository is a dated historical illustration; use the current text guide above.
+To reproduce, extract source_and_verification.zip and research_data.zip into
+the same directory. The second archive supplies data_deposit/; it preserves
+the earlier raw data. LaTeX_sources.zip is the smaller editable manuscript
+package. Research sources exclude browser caches, internal review notes,
+third-party research PDFs and historical rendered-page images.
+
+The formal title omits internal version labels. Release metadata identifies
+v22. Earlier Paper A DOI files and tags are preserved. The corrected historical
+author metadata and current byline are explained in AUTHORS_CORRECTION.txt.
+The distinct Singer note keeps its own citation and DOI. Manuscripts are
+CC BY 4.0; code and Lean are MIT; fonts keep their supplied licenses.

@@ -1,0 +1,30 @@
+{
+  "status": "RELEASE_PAYLOAD",
+  "paper": "A",
+  "title": "Norm-fiber densities and relative traces in characteristic two",
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "version": "v22",
+  "release_date": "2026-11-02",
+  "formal_title_contains_version": false,
+  "doi": "10.5281/zenodo.23880175",
+  "concept_doi": "10.5281/zenodo.23721669",
+  "previous_version_doi": "10.5281/zenodo.23757428",
+  "github_repository": "https://github.com/63331849121/yijing-mathematical-structures",
+  "github_tag": "paperA-v2026.11.02-v22",
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperA-v2026.11.02-v22",
+  "pages": {
+    "main": 44,
+    "supplement": 45
+  },
+  "authorship_correction": "Wencong Huang contributed to earlier versions and was omitted. Correct metadata; preserve historical files.",
+  "fresh_checks": "verification/general_revision_2026-11-02/fresh_replay_results.json",
+  "formalization_scope": "Retained historical selective scope. New support and mixed-moment arguments not Lean-formalized.",
+  "limitations": [
+    "Fixed conductor constant not numerically evaluated",
+    "Full-order variance retains W(A)^2"
+  ],
+  "receipt_location": "Publication verification receipts are saved separately after platform publication."
+}

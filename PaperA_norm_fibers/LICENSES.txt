@@ -1,4 +1,4 @@
-Copyright 2026 Baohua Li.
+Copyright 2026 Wencong Huang and Baohua Li.
 
 Existing repository terms are retained: manuscript and supplementary PDFs and
 the historical overview are CC BY 4.0; verification code and Lean sources are

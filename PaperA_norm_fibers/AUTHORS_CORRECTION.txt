@@ -1,0 +1,11 @@
+Authorship correction, 2 November 2026
+
+Correct author order for this paper: Wencong Huang; Baohua Li.
+Wencong Huang contributed to the work reported in earlier Paper A versions
+and was omitted from their bylines. The creators metadata of the v17 and v21
+records in the same concept-DOI chain is corrected accordingly.
+Historical deposited PDFs, source archives, file hashes, dates and Git tags
+are preserved. Their original bylines are part of the version history.
+The current revision carries the corrected byline throughout the active
+manuscripts, PDF metadata, release description and citation files.
+The separate earlier Singer note is a distinct record and is not relabelled.

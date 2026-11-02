@@ -1,202 +1,87 @@
 {
-  "version": "v21",
-  "tag": "paperA-v2026.10.29-v21",
-  "doi": "10.5281/zenodo.23757428",
-  "main_pages": 37,
-  "supplement_pages": 40,
-  "paper_title_pages_have_version_labels": false,
-  "new_Lean_build": false,
-  "author_internal_packet_uploaded": false,
-  "files": [
-    {
-      "path": ".gitattributes",
-      "bytes": 51,
-      "sha256": "fa1297928a9e57bb6072a1d69d46c6c1f92fd2e0b104c9de71846eea0599fcef"
+  "paper": "A",
+  "title": "Norm-fiber densities and relative traces in characteristic two",
+  "authors": [
+    "Wencong Huang",
+    "Baohua Li"
+  ],
+  "version": "v22",
+  "doi": "10.5281/zenodo.23880175",
+  "github_tag": "paperA-v2026.11.02-v22",
+  "pages": {
+    "main": 44,
+    "supplement": 45
+  },
+  "artifacts": {
+    "AUTHORS_CORRECTION.txt": {
+      "bytes": 693,
+      "sha256": "28792dba442f921f46809722c1fbcaa4229c8614d083fd41f0baf890f7e6adb5",
+      "md5": "940b682e333d02d94ca92dfc5d874f22"
     },
-    {
-      "path": ".gitignore",
-      "bytes": 138,
-      "sha256": "6a1051a359ad7a509b8422e4899603ba9de7922aa629144725ca1730f38ea8c2"
+    "CITATION.cff": {
+      "bytes": 563,
+      "sha256": "cdce084698505af09654d9bd431c893bcafd4b4f6aed8f5de99c17d0b06f73aa",
+      "md5": "d50b7ee1c2667713834342e9029b72c8"
     },
-    {
-      "path": "abstract_en.txt",
-      "bytes": 1291,
-      "sha256": "8078980ff53e79b07d85d9bca9347ae037ad0a5b340143cb09ddfb195218b7d3"
+    "LaTeX_sources.zip": {
+      "bytes": 189337,
+      "sha256": "9d38e2a061e14a9e02b521a6834adfc9ef6a8e95cbacc80c0e468956fc311736",
+      "md5": "e7eccdf6a8359a3f137aac821f9dd3db"
     },
-    {
-      "path": "abstract_zh.txt",
-      "bytes": 1202,
-      "sha256": "d8c4e283f29bd5f83ddd17cefcc53b44cf941238a621cee99451328bd290ae0c"
+    "Lean_verification.zip": {
+      "bytes": 41198,
+      "sha256": "c1576a57ecd470d1bac1befd898af7956c267aedb0745bda037ab7ae346790e1",
+      "md5": "031d245c52c313330f22dcd13c15d8b6"
     },
-    {
-      "path": "CITATION.cff",
-      "bytes": 901,
-      "sha256": "17b507421962cb3f7709bbb69c357bb9ef0c5daf2864f2e0c0e01b7b5ddcf83f"
+    "LICENSES.txt": {
+      "bytes": 491,
+      "sha256": "a1b92959c331170b4ee3a079b7339d10ede27106afc15417675645aa04614e51",
+      "md5": "e68978726785260e5da34bdd507696ce"
     },
-    {
-      "path": "formalization/CyclicSupport.lean",
-      "bytes": 10012,
-      "sha256": "b2d4899bed8e9d1d59bfd800995f956c6151278fc1ba9dedd6f7c70b10a4de83"
+    "main.pdf": {
+      "bytes": 738118,
+      "sha256": "0f6b77a450dd70558d9605e863556b967dbc73c007ff2df16fa03678aa674d3b",
+      "md5": "8d550345dbcb542124f40d673f7d01ae"
     },
-    {
-      "path": "formalization/INTERFACE_SCOPE.txt",
-      "bytes": 4961,
-      "sha256": "fe33b74b23bea5cc89ccb9f1c36edc0e7ce652b645b8fee09e12f0876421166a"
+    "overview_zh.txt": {
+      "bytes": 3016,
+      "sha256": "db1e1e5f78b582c0d556274449e3847351bf05a974e145f95e80d3617c99933e",
+      "md5": "0703559db9264035cbbd0b7581a725ad"
     },
-    {
-      "path": "formalization/interfaces_check.json",
-      "bytes": 31398,
-      "sha256": "a3408d9bf6e80607a0d2abe9688ee5a956e6c5a43e05b671a4f19482c4bef510"
+    "PUBLICATION.json": {
+      "bytes": 1329,
+      "sha256": "a06f520cf94e0f4511c4ece53a7539337ec966f28cef20222134c36190dd5761",
+      "md5": "81c4835257bcaa1dfc3e77afe20713ee"
     },
-    {
-      "path": "formalization/interfaces_check.log",
-      "bytes": 27583,
-      "sha256": "5eca3ec64904bb83b64caec0b62eb76582cb360ad3e20b78a7e494cc18ff2d94"
+    "README.md": {
+      "bytes": 2477,
+      "sha256": "b23874cb9f646f788ba566f74c87bd63a94100fc8929080ace82bbd745a81d48",
+      "md5": "e653ce2f19413882e4eb21d332b928dc"
     },
-    {
-      "path": "formalization/InverseSupportGrid.lean",
-      "bytes": 5126,
-      "sha256": "5ff0bf27baf27d41845e61308d4296a0271c8307d4ef6ea4560efe95ad160c8d"
+    "RELEASE_NOTES.md": {
+      "bytes": 1718,
+      "sha256": "5d20f6845f84714ea0fd9d1c4b1f4f27ba1b9e56dbdd307525776fecf29bf340",
+      "md5": "7365c9261dc512193618c6cb749cadb0"
     },
-    {
-      "path": "formalization/lake-manifest.json",
-      "bytes": 3536,
-      "sha256": "efd94616e661386c4e7154130f0c331a6e7e3162c660b1248cf23da2a98764b7"
+    "REPRODUCE.txt": {
+      "bytes": 3048,
+      "sha256": "451b036e547f66a8d58b0d50c6ac9948422863e8dc3e83a53b08abd1388af5b6",
+      "md5": "379b7280d8262c4f7dfb7af316c62a90"
     },
-    {
-      "path": "formalization/lakefile.lean",
-      "bytes": 476,
-      "sha256": "92fb6409217f028fa8101110fad404932ba35d9d87d3012dba35641b60c1cd72"
+    "research_data.zip": {
+      "bytes": 52704931,
+      "sha256": "9172bf2f1c1c2b5fa99d8ae00769cadfd6a10d04f5be4e8f120f651fae3f7f21",
+      "md5": "9f943b4a40559bb96258b0ba8da9533f"
     },
-    {
-      "path": "formalization/lean-toolchain",
-      "bytes": 25,
-      "sha256": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee"
+    "source_and_verification.zip": {
+      "bytes": 3943682,
+      "sha256": "f75adb627c907609501035286f2e49c0eb54eafa6b81423504ef0b2511b2053d",
+      "md5": "519c60a12faf97c337ec0b7546125e9c"
     },
-    {
-      "path": "formalization/lean_check.json",
-      "bytes": 2354,
-      "sha256": "82f9b44ae301130ebc7711fbb198d54c82011a3aee21cecde5b0525f35170eb5"
-    },
-    {
-      "path": "formalization/lean_check.log",
-      "bytes": 609,
-      "sha256": "05e776ac077956342a4e367aa4e137bd05a17508ed146e1a77db94bd860ad70d"
-    },
-    {
-      "path": "formalization/MultiplicativeSupport.lean",
-      "bytes": 7342,
-      "sha256": "651a5670aecbdf36a13b570d650a944516ea46848b6511231b0fee47b072c3ac"
-    },
-    {
-      "path": "formalization/NamedNormTraceTransfer.lean",
-      "bytes": 6536,
-      "sha256": "a04b656308ba7f4673e1acd27807f527ea19434be197a8989741b1627b9950a0"
-    },
-    {
-      "path": "formalization/NormOneSupportBridge.lean",
-      "bytes": 9586,
-      "sha256": "5f74ce93cc9ab0e9c97e12f2576ee9248c76dbd3a207024a5289f463ff1720ad"
-    },
-    {
-      "path": "formalization/README.txt",
-      "bytes": 2452,
-      "sha256": "fd976c1540e4fb5d626ca27b44f80ab9fc244c5466e3dbb3db19eeaf8f4a4422"
-    },
-    {
-      "path": "formalization/ReciprocalTraceCounting.lean",
-      "bytes": 10257,
-      "sha256": "4f34fa3802314b2e6028aa03b5dc5158895b1f57edb9b107d1ded8ca7e907894"
-    },
-    {
-      "path": "formalization/ReciprocalTraceSupport.lean",
-      "bytes": 6512,
-      "sha256": "0186ed9ea2572a6f71595e9413558235dbf66c9f0b8b6a06faf9232a4233f6fd"
-    },
-    {
-      "path": "formalization/RelativeTraceTransfer.lean",
-      "bytes": 17975,
-      "sha256": "314c59b80a61dfd23e9cb353ecaa2d5f1bd65329b62845d03182ba955cbcf79f"
-    },
-    {
-      "path": "formalization/STANDALONE_SCOPE.txt",
-      "bytes": 428,
-      "sha256": "5c76f85766ad44a9640fa6437b0a661786a5a6aa73b1d0e13214f693e06eb398"
-    },
-    {
-      "path": "formalization/SupportCoverBranches.lean",
-      "bytes": 3001,
-      "sha256": "b059a4a300120a4c30a09456cf5b2f72a58f79c47965a0dc3828f651b5e512ad"
-    },
-    {
-      "path": "formalization/verify_interfaces.py",
-      "bytes": 9826,
-      "sha256": "37b5b9d95d3d37130281d6c7b7a9ee9e82c3c35a654dc15e16df39309746f4bc"
-    },
-    {
-      "path": "formalization/verify_lean.py",
-      "bytes": 4156,
-      "sha256": "9912c7660b65dd9900b2a21fd207e3d787d336d7d2caf5a2b2b3f22801671698"
-    },
-    {
-      "path": "history/2026-10-26/SHA256SUMS.txt.ots",
-      "bytes": 840,
-      "sha256": "225a77b22c71cac2a7fc095d3d2792e21f78c43ecb3c25f85275d1f4e909e4be"
-    },
-    {
-      "path": "history/2026-10-26/TIMESTAMP.txt",
-      "bytes": 1305,
-      "sha256": "86c39c98a52d0a03558d19e20a959e86d07a3d9a3f0fad20a03d90a10ba34f89"
-    },
-    {
-      "path": "LaTeX_sources.zip",
-      "bytes": 152490,
-      "sha256": "148d8441f49683f6d5eed1ac2373371d52a85cd968b2a1e71532d4dbb4a139cc"
-    },
-    {
-      "path": "Lean_verification.zip",
-      "bytes": 40603,
-      "sha256": "271d64580df6aab4b36f8b32f0c871212e9b6f6b5cdd080d5130b79888c6b3b5"
-    },
-    {
-      "path": "LICENSES.txt",
-      "bytes": 473,
-      "sha256": "bdc2a08e3834c0c1f129717eef889a57c3f4c49513ddb7486f422863d4ee887e"
-    },
-    {
-      "path": "main.pdf",
-      "bytes": 678698,
-      "sha256": "b5d9756d4e6fa76e4f1dba78e0e39a55d51be5d206c5270769832dd7d439eb85"
-    },
-    {
-      "path": "overview_zh.pdf",
-      "bytes": 551261,
-      "sha256": "7f1fb169032b229125f40a4cfcdbc3270ad34cad9ac70ded95702c1d40cb1dad"
-    },
-    {
-      "path": "overview_zh.txt",
-      "bytes": 16282,
-      "sha256": "a545785fef385fef5d0274ed44b0adb4698fb365fa84bdf751a1497c9af1ed3a"
-    },
-    {
-      "path": "README.md",
-      "bytes": 1846,
-      "sha256": "55551f16626d0166d9f726ee4f5077d6d0d49d6a235068d5dd05e19d5e4f30ce"
-    },
-    {
-      "path": "source_and_verification.zip",
-      "bytes": 53532308,
-      "sha256": "f1d8ad6ae0eac6066affbead5041c1d8dcb0294702fa64ae56148885d048be7e"
-    },
-    {
-      "path": "supplement.pdf",
-      "bytes": 678982,
-      "sha256": "e42bc3079ab27db6165fd29430b0c79227db3107c5d894fe57e14fce2b4abc0a"
-    },
-    {
-      "path": "TIMESTAMP.txt",
-      "bytes": 237,
-      "sha256": "fb96d153312f402f93ec252c91879baa4f072820bab6301d4c69ea939b0ac594"
+    "supplement.pdf": {
+      "bytes": 728247,
+      "sha256": "ae7da6b524309f04f04c3addf20da1c35397a83ec5e2db877377faff923ca086",
+      "md5": "8fbee04c9ecd0b8edad9f321259e8503"
     }
-  ]
+  }
 }
