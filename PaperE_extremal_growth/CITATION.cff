@@ -1,14 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite this version DOI."
+message: "Please cite the version DOI."
 type: article
 title: "Extremal dimensions and critical isomorphism growth of metabelian three-Engel Lie algebras"
 authors:
-  - family-names: Huang
-    given-names: Wencong
   - family-names: Li
     given-names: Baohua
 year: 2026
-date-released: 2026-11-02
-version: "2026-11-02.2"
-doi: 10.5281/zenodo.23881010
-url: https://zenodo.org/records/23881010
+version: "2026-11-03.1"
+doi: 10.5281/zenodo.23903013

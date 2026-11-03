@@ -130,7 +130,7 @@
     },
     {
       "path": "AUTHORSHIP.txt",
-      "sha256": "215c16ba8331c0eafb4283727bfaf2122a76456c271422a9f6f2fc022e8b4cd2"
+      "sha256": "378ad6a6eb25e86fc32721dbc5290ad1bffc8fe4e0279f5d52a99b2a1057fecd"
     },
     {
       "path": "DEPENDENCIES.json",
@@ -138,23 +138,23 @@
     },
     {
       "path": "INTEGRATION_NOTES.txt",
-      "sha256": "0509f115db1abafb67981d714f1287a329d9c18ed6a2fccf4c69f55ffa7b0bc9"
+      "sha256": "b5a1b3ba4f9bb314ea4007a0f6b5e3fbb0c8e758164f67c870df9262ef2af79a"
     },
     {
       "path": "PUBLICATION.json",
-      "sha256": "583ceb879dee6147463d38bbd3ecd41d5b5af1f10ac2299463ed9e5577af0aff"
+      "sha256": "dff898a8effa85e20a2b2dd47c92d9740599f19ce43c2aaadc6e0e1d609399b1"
     },
     {
       "path": "PaperG_extremal_growth.pdf",
-      "sha256": "dacff8f2dfafa8ee710943f794400abba95a4b70de59b58d082730fb7223b00e"
+      "sha256": "e5a750a859091799ea9e319ff1ead4411b5eb753b4a53a513cf9d57b992ec56f"
     },
     {
       "path": "PaperG_extremal_growth.tex",
-      "sha256": "27678d807da425eee3752e5be5e60f37a4ff1774186dfcd965ad629c8b48fc9b"
+      "sha256": "01bac750e52fd8fde2d7bfc6f7c4b996639f8e1a55fe5935cd642caccb8ea6d6"
     },
     {
       "path": "README.txt",
-      "sha256": "bcb1fffa6a206e94a965b750453c846eca1d012baae7b2daabf7a2f357216ddf"
+      "sha256": "ca51e97440d3f79619d3359fd7990e188b35745725739e33a1c97d522c8b61b3"
     },
     {
       "path": "build.ps1",
@@ -230,7 +230,7 @@
     },
     {
       "path": "verification/README.txt",
-      "sha256": "4ad5050219bbef95fdb17ebf11ca4fca850f0ed778bff4df4e5cb39f18c57422"
+      "sha256": "32cc84e6231ef986e8bc330de4f4efd4e2acd716ae749f0fc49d58f6f056741d"
     },
     {
       "path": "verification/REPLAY_TASKS.json",
@@ -266,7 +266,7 @@
     },
     {
       "path": "verification/automorphism_kernel_controls.json",
-      "sha256": "7b1e3814d0ca0f72e0cbafe37c8efef56e25e62a7acfea5ef034346ffcd3ad58"
+      "sha256": "7b780f4e8b502a6c5c3fffbc36547c9ad85b784eada618decf2f9dcb523e97f4"
     },
     {
       "path": "verification/automorphism_kernel_controls.py",
@@ -278,7 +278,7 @@
     },
     {
       "path": "verification/critical_constant/action_subspace_controls.json",
-      "sha256": "915635290ed554ed7a22a93a1b6607133dd59da5bd549f0106b333aa17adbc48"
+      "sha256": "b736b3442f2c10f2319c888e0e31d5af5b993229b9896ed4bed164a1e8bbfe94"
     },
     {
       "path": "verification/critical_constant/action_subspace_controls.py",
@@ -286,7 +286,7 @@
     },
     {
       "path": "verification/critical_constant/all_fixed_r_controls.json",
-      "sha256": "0f7cf2aa8da4df605768eb334a96fd58b5077c4ea9f338aad93ca00952256293"
+      "sha256": "68779a868c5237a2f2eb1e081ceb33911195bf605c6d81fcd8d008391db14163"
     },
     {
       "path": "verification/critical_constant/all_fixed_r_controls.py",
@@ -294,7 +294,7 @@
     },
     {
       "path": "verification/critical_constant/coupled_defect_controls.json",
-      "sha256": "4ba126da9f98570c822b0a33f29adef9349fcda78f4fb12db24e08a3b4cdfd56"
+      "sha256": "0a336724dee23df3ddbad1478508161c420c870b49c3cc6b596fe514e24e730d"
     },
     {
       "path": "verification/critical_constant/coupled_defect_controls.py",
@@ -318,7 +318,7 @@
     },
     {
       "path": "verification/critical_window/growing_principal_controls.json",
-      "sha256": "8d75978dee9639ed2322d8b5db6f0b399b9220d73f1ec788b74b5028a67643da"
+      "sha256": "d25d0875a2e3894b887a67c5d463fd35690759fb15056b763366e1e7e3c51f13"
     },
     {
       "path": "verification/critical_window/growing_principal_controls.py",
@@ -326,7 +326,7 @@
     },
     {
       "path": "verification/critical_window/higher_coupled_defect_controls.json",
-      "sha256": "d9120bb8a1a710f9b0029a87cbd38fc3335313880c4b9373ebb71227d5f87964"
+      "sha256": "3685521737a48f3504aaf46927f8c041a4dde5e6097749928a7d190156ea7d92"
     },
     {
       "path": "verification/critical_window/higher_coupled_defect_controls.py",
@@ -334,7 +334,7 @@
     },
     {
       "path": "verification/fixed_surplus/count_bookkeeping_checks.json",
-      "sha256": "b87d25a27e26f628dac2187a496872054e6763b77dc8159f0599a9e2c061cf66"
+      "sha256": "6b2fb9b0d71ee44f9ae43d7bbae57c5b5952b678a4747b32bd785981ced3d838"
     },
     {
       "path": "verification/fixed_surplus/count_bookkeeping_checks.py",
@@ -342,7 +342,7 @@
     },
     {
       "path": "verification/fixed_surplus/finite_field_scope_controls.json",
-      "sha256": "60b7810cbfc47272a92e5500901dd9b40535212841edca4f26051ab3509c991a"
+      "sha256": "48a9b345fdc8641c817653d63e3206ad8684173cd566aeb4d091bf9fbf6c6c72"
     },
     {
       "path": "verification/fixed_surplus/finite_field_scope_controls.py",
@@ -350,7 +350,7 @@
     },
     {
       "path": "verification/fixed_surplus/fixed_r_lower_controls.json",
-      "sha256": "6af58eacedbdf2db32cf38622fd0e7c7006ce7acc4cc4cc27367167f674b4be2"
+      "sha256": "c089fce710c2b91047e0b3441068895bfde6116f44af38bffa2e52ffdd5a4abf"
     },
     {
       "path": "verification/fixed_surplus/fixed_r_lower_controls.py",
@@ -358,7 +358,7 @@
     },
     {
       "path": "verification/fixed_surplus/nonsplit_module_checks.json",
-      "sha256": "ff2b9dc480f2efd77fbce81f22b5b2e889ae0bb35ff2373a7081d06de3c1ce5d"
+      "sha256": "1dd919c17822e8d32771f1330d9f23fe8d245240f43b9c4e99dabb0afa993ef7"
     },
     {
       "path": "verification/fixed_surplus/nonsplit_module_checks.py",
@@ -366,7 +366,7 @@
     },
     {
       "path": "verification/full_partition/README.txt",
-      "sha256": "c4240e8b7cf2993d547b3428a28e4e20c4a9d3e525512711fc2660ea46faa7c6"
+      "sha256": "cefead276549db3ff4a3f84b57d1b85d6456b7f20f6a2495474afe74200dd99b"
     },
     {
       "path": "verification/full_partition/check_first_defect_fibers.py",
@@ -390,11 +390,11 @@
     },
     {
       "path": "verification/mu_extremizers/README.txt",
-      "sha256": "d0c3dff5d640ce1e129d9d97d09dcb9b2f18b02ddb2d67a5d16c5c15142b19d5"
+      "sha256": "556c83d1b5019d8a7297d2f09ce2744642b2b22a35b0006f7d67f1c6334a577b"
     },
     {
       "path": "verification/mu_extremizers/aut_kernel_fresh_controls.json",
-      "sha256": "a734bc09bc0f66d7c5aed00ece6a393ed19f40f6717589b75cb7c4d12ca13fc6"
+      "sha256": "1914df76c9cd761f7dfad24e05700118e5d4afa1e5fc71b2c2e4670414351025"
     },
     {
       "path": "verification/mu_extremizers/aut_kernel_fresh_controls.py",
@@ -402,7 +402,7 @@
     },
     {
       "path": "verification/mu_extremizers/mu_module_controls.json",
-      "sha256": "8f67bf52b08c034a480514b8ddf786ce51095695260b21092f9e97b5e88e5226"
+      "sha256": "b4974c9d762d24448c208fe745f6ac5374080b658ac721d1a41e7401055619b5"
     },
     {
       "path": "verification/mu_extremizers/mu_module_controls.py",
@@ -410,7 +410,7 @@
     },
     {
       "path": "verification/mu_extremizers/mu_orbit_fresh_controls.json",
-      "sha256": "3435c4850412db45d66b11ac8deb0d8913f84650591f51b5c0b8f291efd7fb7e"
+      "sha256": "7644b4ef9b586c65af7c9de904a54f1ccdc2a934b894d96a56340993a3313cd5"
     },
     {
       "path": "verification/mu_extremizers/mu_orbit_fresh_controls.py",
@@ -418,7 +418,7 @@
     },
     {
       "path": "verification/mu_extremizers/parabolic_action_controls.json",
-      "sha256": "4ed86c75d49eeca5bf4514fa88e1f069933cc914ee99e55c726343722c79d448"
+      "sha256": "5d5f7ed05f92686e6aff6366f23349f26b24c3accd0fb9e84f6cfb28758b1e53"
     },
     {
       "path": "verification/mu_extremizers/parabolic_action_controls.py",
@@ -426,7 +426,7 @@
     },
     {
       "path": "verification/mu_extremizers/root_mu_action_controls.json",
-      "sha256": "9907ac823f1044564e9f390a2cf48ddf037c66155a212d6a5f215f115dc9a72e"
+      "sha256": "51b675594df7c4d062633be6880c25349f555d5cbcbf216df4d945971d4a0e1e"
     },
     {
       "path": "verification/mu_extremizers/root_mu_action_controls.py",
@@ -434,7 +434,7 @@
     },
     {
       "path": "verification/mu_extremizers/root_mu_d4_orbits.json",
-      "sha256": "8c6600c61a960df7ec77dd8458e7c7e61e219af351a88a05ab25e8f4fa88eda4"
+      "sha256": "8eb8a01f1241d859433d843fb32dd5f23eab8af8bd0bb61a1aaf41ae2eebca80"
     },
     {
       "path": "verification/mu_extremizers/root_mu_d4_orbits.py",
@@ -442,7 +442,7 @@
     },
     {
       "path": "verification/near_minimum_controls.json",
-      "sha256": "93d8c9e2fa502b8f9468dc3b07a63de79a52d4d1932c6e90d51169c9921edee1"
+      "sha256": "c0762866cfaf649c172b9efdd276190501e2abf05f783e52ae1b0b404541cf6b"
     },
     {
       "path": "verification/near_minimum_controls.py",
@@ -590,7 +590,7 @@
     },
     {
       "path": "verification/surplus_transition/exact_cohomology_controls.json",
-      "sha256": "a82cca94a461e14eef72e6f508a0f6fc46424179e43423c3b8a10230f02fcf9f"
+      "sha256": "f203b9fdef19cd20cb48ea606abcee20a19c4807376c3be7f31780550826bec5"
     },
     {
       "path": "verification/surplus_transition/exact_cohomology_controls.py",
@@ -598,7 +598,7 @@
     },
     {
       "path": "verification/surplus_transition/shear_and_exterior_controls.json",
-      "sha256": "30cc60df1b146914923a6def4e811ef2bcce8c4089cffe51dba70b37173b6b09"
+      "sha256": "4291020d91cf1757ca909fcbffb8ddff0519cdfde2630e7da6b0480dafdbea4a"
     },
     {
       "path": "verification/surplus_transition/shear_and_exterior_controls.py",
@@ -606,7 +606,7 @@
     },
     {
       "path": "verification/surplus_transition/transition_quotient_controls.json",
-      "sha256": "593b2755f49187908f3d3b08eda027b1fb61b006231d77ee09f13add10edae69"
+      "sha256": "810d6236ca8eab29415f21c114a5cd1cbd583633a864270349e238471e07a26b"
     },
     {
       "path": "verification/surplus_transition/transition_quotient_controls.py",
@@ -614,7 +614,6 @@
     }
   ],
   "authors": [
-    "Wencong Huang",
     "Baohua Li"
   ],
   "doi": "10.5281/zenodo.23881010"
