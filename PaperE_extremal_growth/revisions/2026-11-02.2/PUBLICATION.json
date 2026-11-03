@@ -2,11 +2,11 @@
   "status": "PUBLIC_RELEASE_SNAPSHOT",
   "paper_code": "PaperG-II",
   "date": "2026-11-02",
-  "author": "Wencong Huang, Baohua Li",
+  "author": "Baohua Li",
   "pages": 84,
   "source_entry": "PaperG_extremal_growth.tex",
   "pdf": "PaperG_extremal_growth.pdf",
-  "pdf_sha256": "dacff8f2dfafa8ee710943f794400abba95a4b70de59b58d082730fb7223b00e",
+  "pdf_sha256": "e5a750a859091799ea9e319ff1ead4411b5eb753b4a53a513cf9d57b992ec56f",
   "built_in_compiler": "PASS",
   "local_export": "PASS",
   "source_references": "PASS",
@@ -28,12 +28,12 @@
   },
   "local_package": "PaperE_source_and_verification_v2026.11.02.2.zip",
   "authors": [
-    "Wencong Huang",
     "Baohua Li"
   ],
-  "authorship_note": "Wencong Huang joins beginning with this revision. All earlier versions retain Baohua Li as sole author.",
+  "authorship_note": "Baohua Li is the sole author of all versions of Paper E; corrected on 2026-11-03.",
   "version": "2026-11-02.2",
   "doi": "10.5281/zenodo.23881010",
   "conceptdoi": "10.5281/zenodo.23874227",
-  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperE-v2026.11.02.2"
+  "github_release": "https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperE-v2026.11.02.2",
+  "authorship_corrected": "2026-11-03"
 }
