@@ -3,7 +3,7 @@ message: "Please cite this 73-page version; authorship corrected to Baohua Li ac
 type: article
 title: "Quadratic orbit maps and three-Engel Lie algebras in characteristic two"
 authors:
-- family-names: Li
+  - family-names: Li
     given-names: Baohua
 version: "2026-11-02.2"
 date-released: "2026-11-02"
