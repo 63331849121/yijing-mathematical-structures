@@ -1,6 +1,6 @@
 # Paper Q — version 2026-11-03.2 (81 pages)
 
-**Wencong Huang, Baohua Li**
+**Baohua Li**
 
 Quadratic orbit maps and three-Engel Lie algebras in characteristic two.
 

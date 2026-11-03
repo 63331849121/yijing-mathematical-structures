@@ -1,7 +1,7 @@
 # Paper Q: structure and quadratic realization
 
 Paper Q / version 2026-11-02.2 / 73 pages
-Wencong Huang, Baohua Li
+Baohua Li
 ============================================================
 Entry: PaperG_structure.tex. Read PaperG_structure.pdf.
 Version DOI: https://doi.org/10.5281/zenodo.23882876

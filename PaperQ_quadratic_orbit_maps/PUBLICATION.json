@@ -3,7 +3,6 @@
   "version": "2026-11-02.2",
   "pages": 73,
   "authors": [
-    "Wencong Huang",
     "Baohua Li"
   ],
   "doi": "10.5281/zenodo.23882876",
@@ -12,17 +11,18 @@
   "assets": [
     {
       "name": "PaperQ.pdf",
-      "bytes": 500900,
-      "sha256": "3bec143274959a82c56b6925b2c1881fc84f9cfba31a3de2afcdf610569d72b2",
-      "md5": "db571bbaa84756682e451818cb9ac3f9"
+      "bytes": 500206,
+      "sha256": "0efc1148a08c01f6c647c48f992b58e3ced433bdfa0a92c910b270ea6af7d0f4",
+      "md5": "7b15665f386554435392b8ca5ac9d494"
     },
     {
       "name": "PaperQ_source_and_verification.zip",
-      "bytes": 1018634,
-      "sha256": "da8fa66ef2902613b37e92ef27abfcdab0094ea16faec67a0acbb93cae3de746",
-      "md5": "e275cba9a5b8967fcbf12b4f8714511d"
+      "bytes": 1025343,
+      "sha256": "236cc903009047c2737f02fe26f2908e8d8dcd0d70d1a065225be7e0dece1df7",
+      "md5": "9861dde61a7251e00cefa292b7f4fb9f"
     }
   ],
   "third_round": "Local research only; not included in article or deposit.",
-  "old_version_authorship_preserved": true
+  "old_version_authorship_preserved": false,
+  "authorship_correction": "2026-11-03: sole author Baohua Li; mathematics unchanged."
 }

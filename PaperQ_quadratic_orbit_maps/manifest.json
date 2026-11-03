@@ -2,33 +2,39 @@
   "version": "2026-11-02.2",
   "pages": 73,
   "authors": [
-    "Wencong Huang",
     "Baohua Li"
   ],
   "files": [
     {
       "path": "CITATION.cff",
-      "sha256": "5e731b2b28d01f8a0442b8e159dc5bf56d856cceedd718db9468e7dba34214bb"
-    },
-    {
-      "path": "PaperQ.pdf",
-      "sha256": "3bec143274959a82c56b6925b2c1881fc84f9cfba31a3de2afcdf610569d72b2"
-    },
-    {
-      "path": "PaperQ_source_and_verification.zip",
-      "sha256": "da8fa66ef2902613b37e92ef27abfcdab0094ea16faec67a0acbb93cae3de746"
+      "sha256": "27df7cd33a694b3c96a6d7fd3e03a8244885586d9df282c239c4537202d54c1f",
+      "bytes": 471
     },
     {
       "path": "PUBLICATION.json",
-      "sha256": "74cbe7d4fb40b4e12b11144b87e6cb4a390a1dd96cd0e928ea523bcf825b5c16"
+      "sha256": "c179674a260430953acc81af1286f45467219b8a9318fccca90af19c76e5b8e4",
+      "bytes": 992
+    },
+    {
+      "path": "PaperQ.pdf",
+      "sha256": "0efc1148a08c01f6c647c48f992b58e3ced433bdfa0a92c910b270ea6af7d0f4",
+      "bytes": 500206
+    },
+    {
+      "path": "PaperQ_source_and_verification.zip",
+      "sha256": "236cc903009047c2737f02fe26f2908e8d8dcd0d70d1a065225be7e0dece1df7",
+      "bytes": 1025343
     },
     {
       "path": "README.md",
-      "sha256": "ffe8d26f27e771ecb0c113d8005c3e4faeed2da25d679546160896fbc685b2ac"
+      "sha256": "57f22f95ecdc8d7bae18811dc1092d96266749421dbc976e888157d3345631df",
+      "bytes": 2401
     },
     {
       "path": "release_manifest.json",
-      "sha256": "ed413304492a54b93c566fa8fe5aeda15fde186c3d25622def1cd87b072ae50f"
+      "sha256": "3c04761a48b7285d22f0f20729b66e4929a685ce0b366a0263b7d38a7dfd6189",
+      "bytes": 1271
     }
-  ]
+  ],
+  "authorship_correction": "2026-11-03: sole author Baohua Li; mathematics unchanged."
 }
