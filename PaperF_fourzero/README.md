@@ -1,5 +1,9 @@
 # Four-zero tail-palindromic polynomials over F2
 
+**Current version: [Paper F v4.0](v4.0/)** (Wencong Huang, Baohua Li, 24 pages). [Version DOI](https://doi.org/10.5281/zenodo.24444307) · [GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v4.0).
+
+## Earlier version 3.0
+
 **Four-zero tail-palindromic polynomials over F2: reciprocity and transformation boundaries**
 
 **Wencong Huang, Baohua Li** · Version 3.0 · 18 pages · 2 November 2026

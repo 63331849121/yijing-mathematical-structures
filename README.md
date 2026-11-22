@@ -70,19 +70,14 @@ list have also been clarified. See [revision notes](PaperA_revision_notes.md).
 
 ### Paper F: four-zero tail-palindromic polynomials
 
-**Four-zero tail-palindromic polynomials over F2: reciprocity and transformation boundaries.** Wencong Huang, Baohua Li · Version 3.0 · 18 pages.
+**Four-zero tail-palindromic polynomials over F2: reciprocity and transformation boundaries.** Wencong Huang, Baohua Li · Version 4.0 · 24 pages.
 
-Exact reciprocal and quadratic-transform classifications, together with
-computer-assisted cubic and quintic root-power classifications. The complete
-parameter certificates and four standard-library checkers are required proof
-materials. The primitive-existence conjecture C4 remains open.
+The 24-page revision adds root-ratio and root-product criteria in twice prime degree, fixed-phase bounds of 28 and 32 labels, and the B-family quadratic and cubic extension classifications with the degree-12 period and closed-orbit bound. Section 5 connects the verified primitive witnesses to sparse feedback. Section 6 states the open existence questions, including C4.
 
-- [Manuscript and editable source](PaperF_fourzero/).
-- [Required proof materials and data](PaperF_fourzero/PaperF_data_and_code.zip).
-- [Complete manuscript and proof bundle](PaperF_fourzero/PaperF_revision_bundle.zip).
-- [Version DOI](https://doi.org/10.5281/zenodo.23880299).
-- [Fixed GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v2026.11.02).
-- [Authorship-corrected earlier versions](PaperF_fourzero/history/).
+- [Manuscript and verification bundle](PaperF_fourzero/v4.0/).
+- [Version DOI](https://doi.org/10.5281/zenodo.24444307).
+- [Fixed GitHub release](https://github.com/63331849121/yijing-mathematical-structures/releases/tag/paperF-v4.0).
+- [Earlier releases and authorship history](PaperF_fourzero/).
 
 ## Reproduce Paper N's computations
 
